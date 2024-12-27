@@ -6,6 +6,7 @@ import { matchSorter } from "match-sorter";
 // @ts-expect-error - no types, but it's a tiny function
 import sortBy from "sort-by";
 import invariant from "tiny-invariant";
+import { IServicesItem } from "utils/interfaces/components";
 
 type ContactMutation = {
   id?: string;
@@ -314,3 +315,35 @@ export async function deleteContact(id: string) {
     id: `${contact.first.toLowerCase()}-${contact.last.toLocaleLowerCase()}`,
   });
 });
+
+
+
+
+
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+
+export const serviceItems:IServicesItem [] = [
+  {
+    id: 'si-1',
+    count: 1,
+    title: 'Web Development'
+  },
+  {
+    id: 'si-2',
+    count: 2,
+    title: 'Mobile Development'
+  },
+  {
+    id: 'si-3',
+    count: 3,
+    title: 'Dev. Ops.'
+  },
+  {
+    id: 'si-4',
+    count: 4,
+    title: 'UI/UX Design'
+  },
+]

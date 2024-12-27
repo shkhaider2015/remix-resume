@@ -1,0 +1,99 @@
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+* {
+    --box-width: 450px;
+    --box-height: 180px;
+}
+
+.service-item-container {
+    position: relative;
+    width: var(--box-width);
+    height: var(--box-height);
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    transition: transform .5s linear;
+}
+
+.service-item-container .content-con {
+    width: calc(var(--box-width) - 5px);
+    height: calc(var(--box-height) - 5px);
+    ;
+    border-radius: 10px;
+    background-color: var(--dark-gray);
+    position: relative;
+    padding: 10px;
+    transition: background-color .3s linear;
+}
+
+.service-item-container::after, .service-item-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--box-width);
+    height: var(--box-height);
+    border-radius: 10px;
+    background-image: conic-gradient(from var(--angle), transparent 100%, var(--primary-green));
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .7s ease-out;
+}
+
+.service-item-container .content-con .count {
+    text-align: end;
+    margin: 0;
+    opacity: .3;
+    transition: opacity .7s ease-out;
+    font-family: Bungee Outline;
+    font-size: 26px;
+    letter-spacing: 3px;
+
+}
+
+.service-item-container .content-con .title {
+    text-align: center;
+    font-family: Protest Riot;
+    font-size: 32px;
+    opacity: .3;
+    transition: opacity .7s ease-out;
+    margin-top: 20px;
+
+}
+.service-item-container:hover {
+    transform: scale(1.07);
+}
+.service-item-container:hover:after, .service-item-container:hover::before {
+    opacity: 1;
+    background-image: conic-gradient(from var(--angle), transparent 70%, var(--primary-green));
+    animation: spin 5s linear infinite;
+}
+
+.service-item-container::before {
+    filter: blur(.5rem);
+}
+
+
+.service-item-container:hover .content-con {
+    background-color: var(--gray07);
+}
+.service-item-container:hover .content-con .count,
+.service-item-container:hover .content-con .title {
+    opacity: 1;
+}
+
+@keyframes spin {
+    from {
+        --angle: -0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}

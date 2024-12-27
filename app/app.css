@@ -1,6 +1,8 @@
 :root {
   --primary-green: #00E96C;
   --light-green: '';
+  --dark-gray: #191919;
+  --gray07: #232323;
 }
 
 html {
@@ -48,6 +50,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   gap: 40px 0px;
+  z-index: 10;
 }
 
 .navbar .nav-item-container {

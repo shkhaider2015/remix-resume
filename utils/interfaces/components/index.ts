@@ -7,3 +7,9 @@ export interface NavIconProps {
     selected?: boolean;
     name?: string;
 }
+
+export interface IServicesItem {
+    id: string;
+    count: number;
+    title: string;
+}
