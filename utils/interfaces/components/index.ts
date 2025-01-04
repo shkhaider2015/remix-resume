@@ -13,3 +13,9 @@ export interface IServicesItem {
     count: number;
     title: string;
 }
+
+export interface IExperienceItem {
+    date: string;
+    title: string;
+    companyName: string;
+}

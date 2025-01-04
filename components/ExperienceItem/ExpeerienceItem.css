@@ -1,0 +1,155 @@
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+* {
+    --box-width: 450px;
+    --box-height: 180px;
+}
+
+.experience-item-con {
+    position: relative;
+    width: var(--box-width);
+    height: var(--box-height);
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    transition: transform .5s linear;
+}
+
+.experience-item-con .content-con {
+    width: calc(var(--box-width) - 5px);
+    height: calc(var(--box-height) - 5px);
+    border-radius: 10px;
+    background-color: var(--dark-gray);
+    position: relative;
+    padding: 10px 10px 10px 20px;
+    transition: background-color .3s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.experience-item-con::after, .experience-item-con::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--box-width);
+    height: var(--box-height);
+    border-radius: 10px;
+    background: var(--gray02);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .7s ease-out;
+}
+
+.experience-item-con .content-con .date {
+    margin: 0;
+    opacity: .3;
+    transition: opacity .7s ease-out, color .3s ease-out;
+    font-family: Orbitron;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.experience-item-con .content-con > .title {
+    font-family: Questrial;
+    font-size: 26px;
+    opacity: .3;
+    transition: opacity .7s ease-out;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    font-weight: 800;
+
+}
+.experience-item-con:hover {
+    transform: scale(1.02);
+}
+.experience-item-con:hover:after, .experience-item-con:hover::before {
+    opacity: .3;
+    background: var(--gray02);
+    animation: spin 5s linear infinite;
+}
+
+.experience-item-con::before {
+    filter: blur(.5rem);
+}
+
+
+.experience-item-con:hover .content-con {
+    background-color: var(--gray07);
+}
+.experience-item-con:hover .content-con .date {
+    opacity: 1;
+    color: var(--primary-green);
+}
+.experience-item-con:hover .content-con .title {
+    opacity: 1;
+}
+
+
+.experience-item-con .content-con .company {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Questrial;
+    opacity: .3;
+    transition: opacity .7s ease-out;
+    letter-spacing: 4px;
+}
+.experience-item-con .content-con .company > .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    transition: background-color .3s ease-out;
+}
+
+.experience-item-con .content-con .company > .title {
+    font-size: 12px;
+}
+
+.experience-item-con:hover .content-con .company {
+    opacity: .7;
+}
+
+.experience-item-con:hover .content-con .company .circle {
+    background-color: var(--primary-green);
+}
+
+.experience-item-con .content-con .left-tringle {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 80px solid transparent; /* Height of the triangle */
+    border-right: 80px solid var(--primary-green);   /* Base of the triangle and its color */
+    border-bottom: 0px solid transparent; /* Symmetric to top */
+    border-bottom-right-radius: 10px;
+    opacity: 0;
+    transition: opacity .3s ease-out;
+}
+.experience-item-con:hover .content-con .left-tringle {
+    opacity: 1;
+}
+
+@keyframes spin {
+    from {
+        --angle: -0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
