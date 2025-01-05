@@ -134,15 +134,14 @@
     width: 0;
     height: 0;
     border-top: 80px solid transparent; /* Height of the triangle */
-    border-right: 80px solid rgb(51, 51, 51);   /* Base of the triangle and its color */
+    border-right: 80px solid var(--primary-green);   /* Base of the triangle and its color */
     border-bottom: 0px solid transparent; /* Symmetric to top */
     border-bottom-right-radius: 10px;
-    opacity: .3;
-    transition: opacity .3s ease-out, border-right .3s ease-out;
+    opacity: 0;
+    transition: opacity .3s ease-out;
 }
 .experience-item-con:hover .content-con .left-tringle {
     opacity: 1;
-    border-right: 80px solid var(--primary-green);  
 }
 
 @keyframes spin {
@@ -154,3 +153,43 @@
         --angle: 360deg;
     }
 }
+
+
+
+
+/* ----------------------------------------------------- */
+/* ---------------------- Ribbon ----------------------- */
+/* ----------------------------------------------------- */
+
+
+
+/* HTML: <div class="ribbon">Your text content</div> */
+.ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: -55px;
+    margin-top: -20px;
+    font-size: 22px;
+    font-weight: normal;
+    color: transparent;
+    font-family: Poppins;
+    letter-spacing: 6px;
+  }
+  .ribbon {
+    --s: 1.8em; /* the ribbon size */
+    --d: .8em;  /* the depth */
+    --c: .8em;  /* the cutout part */
+    
+    padding: 0 calc(var(--s) + .5em) var(--d) var(--c);
+    line-height: 1.8;
+    background: conic-gradient(at right var(--s) bottom var(--d),#0004 62.5%,#0008 0 75%,#0000 0);
+    clip-path: polygon(var(--c) 0,  calc(100% - var(--s)) 0,calc(100% - var(--s)) var(--d),100% var(--d),calc(100% - var(--c)) calc(50% + var(--d)/2),100% 100%,calc(100% - var(--s) - var(--d)) 100%,calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),var(--c) calc(100% - var(--d)),0 calc(50% - var(--d)/2));
+    background-color: var(--gray07); /* the main color */
+    width: fit-content;
+    transition: background-color .7s ease-out;
+  }
+
+  .experience-item-con:hover .ribbon {
+    background-color: var(--primary-green);
+  }
