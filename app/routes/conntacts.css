@@ -1,0 +1,27 @@
+.contacts-container {
+    min-height: 100vh;
+    padding: 8% 5% 0% 15%;
+    opacity: 0;
+    animation: fade 1s ease-out forwards
+}
+
+.contacts-container .screen-title {
+    font-family:'Protest Riot';
+    font-size: 72px;
+    letter-spacing: 8px;
+    margin: 0px;
+    color: var(--primary-green);
+}
+
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

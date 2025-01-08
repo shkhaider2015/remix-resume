@@ -43,6 +43,15 @@
     margin-top: 3%;
 }
 
+.tab-screen-con .skills-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px 5%;
+    margin-top: 3%;
+    width: 70%;
+}
 
 
 @keyframes fade {

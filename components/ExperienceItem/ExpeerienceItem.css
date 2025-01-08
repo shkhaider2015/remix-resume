@@ -134,14 +134,14 @@
     width: 0;
     height: 0;
     border-top: 80px solid transparent; /* Height of the triangle */
-    border-right: 80px solid rgb(51, 51, 51);   /* Base of the triangle and its color */
+    border-right: 80px solid rgb(43, 43, 43);   /* Base of the triangle and its color */
     border-bottom: 0px solid transparent; /* Symmetric to top */
     border-bottom-right-radius: 10px;
-    opacity: .3;
+    opacity: 1;
     transition: opacity .3s ease-out, border-right .3s ease-out;
 }
 .experience-item-con:hover .content-con .left-tringle {
-    opacity: 1;
+    /* opacity: 1; */
     border-right: 80px solid var(--primary-green);  
 }
 

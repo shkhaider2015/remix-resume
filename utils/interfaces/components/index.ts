@@ -19,3 +19,15 @@ export interface IExperienceItem {
     title: string;
     companyName: string;
 }
+
+export interface IWorkItem {
+    count: number;
+    title: string;
+    desc: string;
+    techStack: string[];
+    links: {
+        github?: string;
+        web?: string;
+    };
+    image: string
+}

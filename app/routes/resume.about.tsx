@@ -1,7 +1,11 @@
 const About = () => {
   return (
     <div className="tab-screen-con">
-      <h1>About</h1>
+      <p className="descriptiion about-desc" >
+        Lorem ipsum dollar sit amet Lorem ipsum dollar sit amet Lorem ipsum
+        dollar sit amet Lorem ipsum dollar sit amet Lorem ipsum dollar sit amet
+        Lorem ipsum dollar sit amet{" "}
+      </p>
     </div>
   );
 };

@@ -1,0 +1,42 @@
+.carousal-con {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5rem;
+}
+
+.carousal-con > .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.carousal-con .carousal-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    /* border: 1px solid red; */
+} 
+
+
+
+.carousal-con .buttons .prev ,
+.carousal-con .buttons .next {
+    width: 60px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: rgb(162, 162, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s linear;
+    cursor: pointer;
+}
+
+.carousal-con .buttons .prev:hover ,
+.carousal-con .buttons .next:hover {
+    background-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,1 @@
+export { default as NextLogo } from './logos/NextLogo'

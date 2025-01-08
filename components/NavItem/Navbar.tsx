@@ -1,8 +1,8 @@
 import HomeIcon from "assets/icons/Home";
 import ServicesIcon from "assets/icons/Services";
-import ResumeIcon from "assets/icons/resume";
-import WorkIcon from "assets/icons/work";
-import ContactsIcon from "assets/icons/contacts";
+import ResumeIcon from "assets/icons/Resume";
+import WorkIcon from "assets/icons/Work";
+import ContactsIcon from "assets/icons/Contacts";
 import { NavLink } from "@remix-run/react";
 
 const Navbar = () => {
