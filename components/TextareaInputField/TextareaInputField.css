@@ -1,0 +1,35 @@
+.ta-if-container {
+    height: 120px;
+    width: 100%;
+    border-radius: 7px;
+    background-color: none;
+    padding: 1px;
+    margin: 15px 0px;
+    transition: background-color .3s linear;
+}
+
+.ta-if-container > textarea {
+    width: 100%;
+    height: 100%;
+    padding: 15px 15px;
+    color: whitesmoke;
+    background-color: rgb(12, 12, 12);
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-family: Questrial;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.ta-if-container > textarea::placeholder {
+    letter-spacing: 3px;
+
+}
+
+.ta-if-container:has(textarea:focus){
+    background-color: var(--primary-green);
+}
+/* .if-container > input:focus {
+    outline: none;
+} */

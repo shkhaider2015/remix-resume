@@ -339,7 +339,7 @@ export const serviceItems:IServicesItem [] = [
   {
     id: 'si-3',
     count: 3,
-    title: 'Dev. Ops.'
+    title: 'DevOps'
   },
   {
     id: 'si-4',

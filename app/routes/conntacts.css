@@ -13,7 +13,67 @@
     color: var(--primary-green);
 }
 
+.contacts-container .contacts-content {
+    display: flex;
+    /* align-items: center; */
+    min-height: max-content;
+    margin-top: 5rem;
+}
 
+.contacts-container .contacts-content .form-con {
+    width: 50%;
+    height: max-content;
+}
+
+.contacts-container .contacts-content .contacts-list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    border: 1px solid red;
+    padding: 5% 5%;
+}
+
+form {
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: #2B2A2A;
+}
+
+form .title {
+    font-family: Questrial;
+    font-size: 32px;
+    letter-spacing: 10px;
+    color: var(--primary-green);
+    margin: 15px 0px;
+    font-weight: normal;
+}
+form .desc {
+    font-family: Questrial;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    margin: 5px 0px;
+}
+
+form .fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 20px 0px; */
+    margin: 0px;
+}
+
+form .fields .if-container {
+    width: 45%;
+}
+
+form > .btn-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
 
 
 @keyframes fade {

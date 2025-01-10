@@ -5,3 +5,6 @@ export { default as WorkIcon } from './icons/Work';
 export { default as ContactsIcon } from './icons/Contacts';
 export { default as ChevronLeft } from './icons/ArrowLeft';
 export { default as ChevronRight } from './icons/ArrowRight';
+export { default as EmailIcon } from './icons/Email';
+export { default as LocationIcon } from './icons/Location';
+export { default as PhoneIcon } from './icons/Phone';

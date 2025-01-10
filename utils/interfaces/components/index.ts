@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface NavIconProps {
     width?: number;
     height?: number;
@@ -30,4 +32,21 @@ export interface IWorkItem {
         web?: string;
     };
     image: string
+}
+
+export interface ISelect {
+    options: IOption[];
+    placeholder?: string;
+    onChange: (e:IOption) => void
+}
+
+export interface IOption {
+    label: string;
+    value: string;
+}
+
+export interface IContactItem {
+    label: string;
+    value: string;
+    Icon: React.ElementType<any>
 }
