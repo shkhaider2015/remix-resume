@@ -27,4 +27,6 @@
 
 .ci-container .text-con .value {
     font-size: 16px;
+    text-decoration: none;
+    color: white;
 }

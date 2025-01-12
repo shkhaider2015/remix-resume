@@ -83,7 +83,10 @@
 .service-item-container:hover .content-con {
     background-color: var(--gray07);
 }
-.service-item-container:hover .content-con .count,
+.service-item-container:hover .content-con .count {
+    color: var(--primary-green);
+    opacity: 1;
+}
 .service-item-container:hover .content-con .title {
     opacity: 1;
 }

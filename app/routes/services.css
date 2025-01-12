@@ -1,7 +1,7 @@
 .services-container {
     width: 100%;
     min-height: 100vh;
-    padding: 0% 5% 0% 10%;
+    padding: 5rem 5% 0% 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,19 +15,31 @@
     grid-template-columns: 1fr 1fr;
     width: 80%;
     gap: 3rem;
-    margin-left: 5%;
-    margin-top: 5rem;
+    /* margin-left: 5%; */
+    margin-top: 3rem;
 }
 
 .services-container > h1 {
+    position: relative;
     font-family:'Protest Riot';
     font-size: 72px;
-    letter-spacing: 8px;
+    letter-spacing: 16px;
     margin: 0px;
     color: var(--primary-green);
-    margin-left: 5%;
+    margin-left: 0%;
     margin-top: -10rem;
+    z-index: 0;
 }
+
+/* .services-container > h1::after {
+    content: "Services";
+    position: absolute;
+    color: var(--primary-green);
+    top: 0;
+    left: 0;
+    filter: blur(.4rem);
+    z-index: -1;
+} */
 
 @keyframes fade {
     0% {

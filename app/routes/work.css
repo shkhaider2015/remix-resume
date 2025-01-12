@@ -8,7 +8,7 @@
 .work-container .screen-title {
     font-family:'Protest Riot';
     font-size: 72px;
-    letter-spacing: 8px;
+    letter-spacing: 16px;
     margin: 0px;
     color: var(--primary-green);
 }

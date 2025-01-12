@@ -4,7 +4,7 @@ import { useOutsideClick } from "~/hooks/useOutsideClick";
 import { IOption, ISelect } from "utils/interfaces/components";
 
 const SelectField = (props: ISelect) => {
-  const { options = [], placeholder = "Select an option", onChange } = props;
+  const { name, options = [], placeholder = "Select an option", onChange } = props;
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState<IOption | null>(null);
 

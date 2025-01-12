@@ -2,11 +2,38 @@
 // 🛑 Nothing in here has anything to do with Remix, it's just a fake database
 ////////////////////////////////////////////////////////////////////////////////
 
+import { EmailIcon, LocationIcon, PhoneIcon } from "assets/icon";
+import {
+  DjangoLogo,
+  FlaskLogo,
+  MaterialUILogo,
+  MongoDBLogo,
+  MySQLLogo,
+  NestLogo,
+  NextLogo,
+  PostgresSQLLogo,
+  PythonLogo,
+  ReactLogo,
+  ReduxLogo,
+  RemixLogo,
+  ThreeJSLogo,
+  WebpackLogo,
+  JSLogo,
+  TypescriptLogo,
+  GitLogo,
+  GithubLogo,
+  FigmaLogo,
+  TensorflowLogo,
+} from "assets/logos";
 import { matchSorter } from "match-sorter";
 // @ts-expect-error - no types, but it's a tiny function
 import sortBy from "sort-by";
 import invariant from "tiny-invariant";
-import { IServicesItem } from "utils/interfaces/components";
+import {
+  IContactItem,
+  IServicesItem,
+  ISkillItem,
+} from "utils/interfaces/components";
 
 type ContactMutation = {
   id?: string;
@@ -316,34 +343,134 @@ export async function deleteContact(id: string) {
   });
 });
 
-
-
-
-
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
 
-export const serviceItems:IServicesItem [] = [
+export const serviceItems: IServicesItem[] = [
   {
-    id: 'si-1',
+    id: "si-1",
     count: 1,
-    title: 'Web Development'
+    title: "Web Development",
   },
   {
-    id: 'si-2',
+    id: "si-2",
     count: 2,
-    title: 'Mobile Development'
+    title: "Mobile Development",
   },
   {
-    id: 'si-3',
+    id: "si-3",
     count: 3,
-    title: 'DevOps'
+    title: "DevOps",
   },
   {
-    id: 'si-4',
+    id: "si-4",
     count: 4,
-    title: 'UI/UX Design'
+    title: "UI/UX Design",
   },
-]
+];
+
+export const skillItems: ISkillItem[] = [
+  {
+    name: "Nest JS",
+    Icon: NestLogo,
+  },
+  {
+    name: "Django",
+    Icon: DjangoLogo,
+  },
+  {
+    name: "Flask",
+    Icon: FlaskLogo,
+  },
+  {
+    name: "PostgresSQL",
+    Icon: PostgresSQLLogo,
+  },
+  {
+    name: "MySQL",
+    Icon: MySQLLogo,
+  },
+  {
+    name: "MongoDB",
+    Icon: MongoDBLogo,
+  },
+  {
+    name: "Python",
+    Icon: PythonLogo,
+  },
+  {
+    name: "Next JS",
+    Icon: NextLogo,
+  },
+  {
+    name: "Remix JS",
+    Icon: RemixLogo,
+  },
+  {
+    name: "React JS",
+    Icon: ReactLogo,
+  },
+  {
+    name: "Three JS",
+    Icon: ThreeJSLogo,
+  },
+  {
+    name: "Redux JS",
+    Icon: ReduxLogo,
+  },
+  {
+    name: "WebPack",
+    Icon: WebpackLogo,
+  },
+  {
+    name: "Material UI",
+    Icon: MaterialUILogo,
+  },
+  {
+    name: "JavaScript",
+    Icon: JSLogo,
+  },
+  {
+    name: "TypeScript",
+    Icon: TypescriptLogo,
+  },
+  {
+    name: "Git",
+    Icon: GitLogo,
+  },
+  {
+    name: "GitHub",
+    Icon: GithubLogo,
+  },
+  {
+    name: "Figma",
+    Icon: FigmaLogo,
+  },
+  {
+    name: "TensorFlow",
+    Icon: TensorflowLogo,
+  },
+];
+
+export const contacts: IContactItem[] = [
+  {
+    label: "Email",
+    value: "shkhaider2015@gmail.com",
+    Icon: EmailIcon,
+    type: 'EMAIL'
+  },
+  {
+    label: "Phone No.",
+    value: "+92 346 0027852",
+    Icon: PhoneIcon,
+    type: 'PHONE'
+  },
+  {
+    label: "Address",
+    value: "Banaras, Pathan Colony, Karachi, Pakistan",
+    Icon: LocationIcon,
+    type: 'ADDRESS'
+  },
+];

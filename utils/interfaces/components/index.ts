@@ -22,6 +22,11 @@ export interface IExperienceItem {
     companyName: string;
 }
 
+export interface ISkillItem {
+    name: string;
+    Icon: React.ElementType<any>
+}
+
 export interface IWorkItem {
     count: number;
     title: string;
@@ -35,6 +40,7 @@ export interface IWorkItem {
 }
 
 export interface ISelect {
+    name: string
     options: IOption[];
     placeholder?: string;
     onChange: (e:IOption) => void
@@ -48,5 +54,6 @@ export interface IOption {
 export interface IContactItem {
     label: string;
     value: string;
+    type: 'EMAIL' | 'PHONE' | 'ADDRESS'
     Icon: React.ElementType<any>
 }

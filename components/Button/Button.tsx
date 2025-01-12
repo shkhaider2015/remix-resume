@@ -3,7 +3,7 @@ import './Button.css'
 
 const Button = (props:IButton) => {
     const { label, width, ...rest } = props;
-    return <div className="button-con" {...rest} style={{ width }}>
+    return <div className="button-con" role="button" tabIndex={0} {...rest} style={{ width }}>
         <p >{label}</p>
     </div>
 }
