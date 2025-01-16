@@ -4,7 +4,13 @@ import { useOutsideClick } from "~/hooks/useOutsideClick";
 import { IOption, ISelect } from "utils/interfaces/components";
 
 const SelectField = (props: ISelect) => {
-  const { name, options = [], placeholder = "Select an option", onChange } = props;
+  const {
+    name,
+    error,
+    options = [],
+    placeholder = "Select an option",
+    onChange,
+  } = props;
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState<IOption | null>(null);
 
@@ -20,6 +26,7 @@ const SelectField = (props: ISelect) => {
 
   return (
     <div ref={ref} className="select-container">
+      <input id={name} name={name} type="text" value={selectedOption?.value} hidden />
       {/* Select Box */}
       <div
         className={`select-box ${!selectedOption ? "placeholder" : ""} ${
@@ -29,7 +36,9 @@ const SelectField = (props: ISelect) => {
       >
         {selectedOption ? selectedOption.label : placeholder}
       </div>
-
+      {
+        error && <span className="error" >{error}</span>
+      }
       {/* Options Dropdown */}
       <div className={`options-container ${isOpen ? "open" : ""}`}>
         {options.length === 0 && <p>Empty</p>}

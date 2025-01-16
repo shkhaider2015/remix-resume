@@ -4,10 +4,12 @@ import InputField from "components/InputField/InputField";
 import TextareaInputField from "components/TextareaInputField/TextareaInputField";
 import Button from "components/Button/Button";
 import SelectField from "components/SelectField/SelectField";
-import { IOption } from "utils/interfaces/components";
+import { EService, IOption } from "utils/interfaces/components";
 import ContactItem from "components/ContactItem/ContactItem";
 import { contacts } from "~/data";
-import { Form } from "@remix-run/react";
+import { Form, useActionData, useFetcher } from "@remix-run/react";
+import { IContactActionResponse, IContactForm, IContactFormError } from "utils/interfaces/functions";
+import nodemailer from "nodemailer";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: contactsStyleHref },
@@ -16,40 +18,90 @@ export const links: LinksFunction = () => [
 export const action = async ({ params, request }: ActionFunctionArgs) => {
   // invariant(params.contactId, "Missing contactId param");
   const formData = await request.formData();
-  
-  console.log("Submit : ", formData.entries())
+  const data = Object.fromEntries(formData) as unknown as IContactForm;
+  console.log("Submit : ", Object.fromEntries(formData));
 
+  const errors: IContactFormError | undefined = {};
+
+  if (data.email === "") errors.email = "Please enter your email";
+  if ((data.service as any) === "") errors.service = "Please select service";
+
+  if (Object.keys(errors).length > 0) return errors;
+
+  const sendEmail = await _sendEmail({})
+  
+  if(!sendEmail) return {
+    message: "Something wrong happened!"
+  }
   // await updateContact(params.contactId, updates);
   // return redirect(`/contacts/${params.contactId}`);
-  return null
+  return {
+    message: "Thanks You, I will connect to you ASAP.",
+  };
+};
+
+const _sendEmail = async (data: any): Promise<boolean> => {
+  try {
+
+    const SMTP_Email = process.env.EMAIL_USER_SMTP;
+    const SMTP_PASSWORD = process.env.EMAIL_PASSWORD_SMTP;
+
+    console.log("Creds ", SMTP_Email, SMTP_PASSWORD);
+    
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: SMTP_Email,
+        pass: SMTP_PASSWORD,
+      },
+    });
+
+    await transporter.sendMail({
+      from: '"Your Name" <shkhaider2015@gmail.com>', // sender address
+      to: "shakeel@yopmail.com, shkhaider2015@gmail.com", // list of receivers
+      subject: "Medium @edigleyssonsilva ✔", // Subject line
+      text: "There is a new article. It's about sending emails, check it out!", // plain text body
+      html: "<b>There is a new article. It's about sending emails, check it out!</b>", // html body
+    });
+    return true
+  } catch (error: any) {
+    console.log("Error SMTP : ", error);
+    return false
+  }
 };
 
 export default function Contacts() {
+  const fetcher = useFetcher<typeof action>();
+  const actionData = fetcher.data;
   const options: IOption[] = [
     {
       label: "Web Development",
-      value: "web-development",
+      value: EService.WEB_DEVELOPMENT,
     },
     {
       label: "Mobile Development",
-      value: "mobile-development",
+      value: EService.MOBILE_DEVELOPMENT,
     },
     {
       label: "UI/UX Design",
-      value: "ui-ux-design",
+      value: EService.UI_UX_DESIGN,
     },
     {
       label: "DevOps",
-      value: "dev-ops",
+      value: EService.DEV_OPS,
     },
   ];
+  console.log("action data ", actionData);
 
   return (
     <div className="contacts-container">
+      {actionData?.message && (
+        <div className="success">{actionData.message}</div>
+      )}
       <h1 className="screen-title">Contacts</h1>
       <div className="contacts-content">
         <div className="form-con">
-          <Form id="contact-form" method="post">
+          <fetcher.Form method="POST">
             <h4 className="title">Let’s Work Together</h4>
             <h5 className="desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
@@ -58,26 +110,61 @@ export default function Contacts() {
               exercitationem ullam harum commodi.
             </h5>
             <div className="fields">
-              <InputField name="firstName" type="text" autoCapitalize="on" placeholder="First Name" required />
-              <InputField name="lastName" type="text" autoCapitalize="on" placeholder="Last Name" required />
+              <InputField
+                name="firstName"
+                type="text"
+                autoCapitalize="on"
+                placeholder="First Name"
+                required={true}
+              />
+              <InputField
+                name="lastName"
+                type="text"
+                autoCapitalize="on"
+                placeholder="Last Name"
+                required
+              />
             </div>
             <div className="fields">
-              <InputField name="email" type="email" placeholder="Email" required />
+              <InputField
+                name="email"
+                type="email"
+                placeholder="Email"
+                required
+                error={actionData?.email}
+              />
               <InputField name="phone" type="tel" placeholder="Phone No." />
             </div>
             <SelectField
               name="service"
               placeholder="Select Sevice"
               options={options}
-              onChange={(e) => console.log("e ", e)}
+              error={actionData?.service}
+              onChange={(e) => {
+                console.log("e ");
+              }}
             />
-            <TextareaInputField placeholder="Message" />
+            <TextareaInputField
+              name="message"
+              placeholder="Message"
+              required={true}
+            />
             <div className="btn-con">
-              <Button onClick={() => {
-                document.querySelector("form")?.submit();
-              }} label="Send" width={"40%"} />
+              <Button
+                onClick={() => {
+                  // document.querySelector("form")?.submit();
+                  fetcher.submit(
+                    new FormData(
+                      document.querySelector("form") as HTMLFormElement
+                    ),
+                    { method: "post" }
+                  );
+                }}
+                label="Send"
+                width={"40%"}
+              />
             </div>
-          </Form>
+          </fetcher.Form>
         </div>
         <div className="contacts-list">
           {contacts.map((item) => (
