@@ -22,3 +22,9 @@ export interface IContactActionResponse {
     errorMessage?: string;
     successMessage?: string
 }
+
+export interface ISendEmail {
+    email: string;
+    message?: string;
+    service: EService
+}

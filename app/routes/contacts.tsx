@@ -8,7 +8,7 @@ import { EService, IOption } from "utils/interfaces/components";
 import ContactItem from "components/ContactItem/ContactItem";
 import { contacts } from "~/data";
 import { Form, useActionData, useFetcher } from "@remix-run/react";
-import { IContactActionResponse, IContactForm, IContactFormError } from "utils/interfaces/functions";
+import { IContactActionResponse, IContactForm, IContactFormError, ISendEmail } from "utils/interfaces/functions";
 import nodemailer from "nodemailer";
 
 export const links: LinksFunction = () => [
@@ -19,7 +19,6 @@ export const action = async ({ params, request }: ActionFunctionArgs) => {
   // invariant(params.contactId, "Missing contactId param");
   const formData = await request.formData();
   const data = Object.fromEntries(formData) as unknown as IContactForm;
-  console.log("Submit : ", Object.fromEntries(formData));
 
   const errors: IContactFormError | undefined = {};
 
@@ -28,7 +27,7 @@ export const action = async ({ params, request }: ActionFunctionArgs) => {
 
   if (Object.keys(errors).length > 0) return errors;
 
-  const sendEmail = await _sendEmail({})
+  const sendEmail = await _sendEmail(data)
   
   if(!sendEmail) return {
     message: "Something wrong happened!"
@@ -40,13 +39,12 @@ export const action = async ({ params, request }: ActionFunctionArgs) => {
   };
 };
 
-const _sendEmail = async (data: any): Promise<boolean> => {
+const _sendEmail = async (data: IContactForm): Promise<boolean> => {
   try {
 
     const SMTP_Email = process.env.EMAIL_USER_SMTP;
     const SMTP_PASSWORD = process.env.EMAIL_PASSWORD_SMTP;
-
-    console.log("Creds ", SMTP_Email, SMTP_PASSWORD);
+    const MY_EMAIL = process.env.SENDER_EMAIL;
     
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -57,11 +55,21 @@ const _sendEmail = async (data: any): Promise<boolean> => {
     });
 
     await transporter.sendMail({
-      from: '"Your Name" <shkhaider2015@gmail.com>', // sender address
-      to: "shakeel@yopmail.com, shkhaider2015@gmail.com", // list of receivers
-      subject: "Medium @edigleyssonsilva ✔", // Subject line
-      text: "There is a new article. It's about sending emails, check it out!", // plain text body
-      html: "<b>There is a new article. It's about sending emails, check it out!</b>", // html body
+      from: `"Resume" <${MY_EMAIL}`, // sender address
+      to: MY_EMAIL, // list of receivers
+      subject: "Through Your Resume 🚀", // Subject line
+      text: `${data.message}`, // plain text body
+      html: `<div>Hi, <b>Shakeel</b>
+        <h3>You have new message through your resume</h3>
+        <h5>Here are the details of client </h5>
+        <div>
+          <div>First Name : ${data.firstName} - Last Name : ${data.lastName}  </div>
+          <div>Email : ${data.email} </div>
+          <div>Phone : ${data.phone} </div>
+          <div>Service : ${data.service} </div>
+          <div>Message : ${data.message} </div>
+        </div>
+      </div>`, // html body
     });
     return true
   } catch (error: any) {
