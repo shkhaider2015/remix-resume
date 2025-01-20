@@ -43,6 +43,15 @@ export default function App() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <meta property="og:title" content={"Shakeel Haider Resume"} />
+        <meta property="og:site_name" content="shakeel haider" />
+        <meta property="og:url" content="shakeel-haider.com" />
+        <meta
+          property="og:description"
+          content="Software Developer Shakeel haider's portfolio/resume web development, mobile development"
+        />
+        <meta property="og:type" content="profile" />
+        <meta property="og:image" content="" />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
