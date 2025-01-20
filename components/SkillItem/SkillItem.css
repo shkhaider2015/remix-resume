@@ -111,3 +111,11 @@
         --angle: 0deg;
     }
 }
+
+@media screen and (max-width: 550px) { 
+    .si-container {
+        width: 90px;
+        height: 90px;
+        border-radius: 50px; 
+    }
+ }

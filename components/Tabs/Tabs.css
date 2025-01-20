@@ -48,3 +48,17 @@
     filter: blur(.2rem);
     /* z-index: -1; */
 }
+
+@media screen and (max-width: 800px) { 
+    .tabs-container {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+ }
+
+@media screen and (max-width: 550px) { 
+    .tabs-container {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+ }

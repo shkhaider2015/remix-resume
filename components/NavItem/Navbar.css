@@ -1,0 +1,199 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 2rem;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px 0px;
+  z-index: 10;
+  /* border: 1px solid red; */
+}
+
+.navbar .nav-item-container {
+  padding: 5px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  /* Smooth scaling animation */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.navbar .nav-item-container .svg-path {
+  fill: #bcbcbc;
+  transition: fill 0.2s ease;
+  /* Add hover animation */
+}
+
+.navbar .nav-item-container .nav-label {
+  position: absolute;
+  top: 5px;
+  left: 32px;
+  font-size: 8px;
+  transition: fill 0.3s ease;
+  visibility: hidden;
+  color: #ffffff;
+}
+
+.navbar .nav-item-container.active,
+.navbar .nav-item-container:hover {
+  transform: scale(2) translateX(8px);
+  position: relative;
+}
+
+.navbar .nav-item-container.active .nav-label,
+.navbar .nav-item-container:hover .nav-label {
+  visibility: visible;
+  font-size: -7px;
+}
+
+.navbar .nav-item-container.active::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  top: auto;
+  left: 15;
+  bottom: 0;
+  background-color: var(--primary-green);
+  animation: expand-line 0.5s ease-out forwards;
+  /* Animation */
+}
+
+.navbar .nav-item-container:hover+.nav-item-container:not(.active) {
+  transform: scale(1.5) translateX(6px);
+  /* Slightly scale the next item */
+}
+
+.navbar :has(+ .nav-item-container:hover):not(.active) {
+  transform: scale(1.5) translateX(6px);
+}
+
+.navbar .mobile-nav {
+  display: none;
+}
+
+/* .navbar .nav-item-container:hover .svg-path {
+  fill: rgb(68, 241, 65);
+} */
+
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    /* display: none; */
+    width: 100%;
+    margin: 0px;
+    bottom: auto;
+    height: 100px;
+    /* position: relative; */
+  }
+
+  .navbar .nav-item-container {
+    display: none;
+  }
+
+  .navbar .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 120px 0px;
+    gap: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 120vh;
+    background-color: rgb(40, 40, 40);
+    z-index: 4;
+    /* transform: scale(0);
+    transform-origin: top left;
+    transition: transform .5s ease;
+    border-bottom-right-radius: 200px;
+    border-bottom: 2px solid rgb(29, 29, 29); */
+
+    clip-path: circle(50px at 90% -5%);
+    -webkit-clip-path: circle(50px at 90% -5%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .navbar .hamburger {
+    height: 40px;
+    /* width: 50px; */
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 25px;
+    margin-top: 25px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .navbar .hamburger .line1 {
+    background-color: var(--primary-green);
+    width: 25px;
+    height: 2px;
+    transition: all 0.7s ease;
+  }
+
+  .navbar .hamburger .line2 {
+    background-color: var(--primary-green);
+    width: 25px;
+    height: 2px;
+    transition: all 0.7s ease;
+  }
+
+  .navbar .hamburger .line3 {
+    background-color: var(--primary-green);
+    width: 25px;
+    height: 2px;
+    transition: all 0.7s ease;
+  }
+
+  .navbar .hamburger.toggle~.mobile-nav {
+    clip-path: circle(1000px at 93% -2%);
+    -webkit-clip-path: circle(1000px at 93% -2%);
+    pointer-events: all;
+}
+
+  .navbar .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 4px);
+    background-color: var(--primary-green);
+  }
+
+  .navbar .toggle .line2 {
+    width: 0;
+    background-color: var(--primary-green);
+  }
+
+  .navbar .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -4px);
+    background-color: var(--primary-green);
+  }
+
+  .navbar .mobile-nav .mobile-nav-item {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Poppins;
+    letter-spacing: 5px;
+    color: white;
+  }
+
+  .navbar .mobile-nav .mobile-nav-item.active {
+    color: var(--primary-green);
+  }
+}

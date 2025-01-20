@@ -1,6 +1,6 @@
 .contacts-container {
     min-height: 100vh;
-    padding: 5rem 5% 0% 15%;
+    padding: 5rem 5% 5% 15%;
     opacity: 0;
     animation: fade 1s ease-out forwards
 }
@@ -105,3 +105,46 @@ form > .btn-con {
         opacity: 1;
     }
 }
+
+
+@media screen and (max-width: 1200px) {
+
+    .contacts-container .contacts-content .form-con {
+        width: 60%;
+     }
+
+    .contacts-container .contacts-content .contacts-list {
+        width: 40%;
+        padding: 5% 0% 5% 2%;
+     }
+ }
+
+ @media screen and (max-width: 1000px) {
+
+    .contacts-container {
+        padding: 5rem 2% 5% 20%;
+    }
+    .contacts-container .contacts-content {
+        flex-direction: column;
+    }
+
+    .contacts-container .contacts-content .form-con {
+        width: 100%;
+     }
+
+    .contacts-container .contacts-content .contacts-list {
+        width: 100%;
+        padding: 5% 0% 5% 2%;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 30px 50px;
+     }
+ }
+
+ @media screen and (max-width: 550px) {
+    .contacts-container {
+        padding: 5rem 5% 5% 5%;
+    }
+  }
+

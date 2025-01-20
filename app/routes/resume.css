@@ -83,3 +83,69 @@
         opacity: 1;
     }
 }
+
+
+@media screen and (max-width: 1200px) {
+    .resume-container {
+        padding: 5rem 0% 3% 20%;
+    }
+ }
+
+ @media screen and (max-width: 800px) { 
+    .tab-screen-con > .descriptiion {
+        width: 90%;
+        text-align: center;
+    }
+
+    .tab-screen-con > .experience-items {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    .tab-screen-con > .education-items {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .tab-screen-con .skills-items {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px 5%;
+        margin-top: 1%;
+        width: 100%;
+        padding: 3% 3%;
+        /* max-height: 50vh;
+        overflow-y: auto; */
+    }
+ }
+
+ @media screen and (max-width: 550px) { 
+    .resume-container {
+        padding: 5rem 1% 5% 1%;
+    }
+    .tab-screen-con > .descriptiion {
+        width: 100%;
+        text-align: center;
+        padding: 0px 5%;
+    }
+
+    .tab-screen-con > .experience-items {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-top: 5%;
+        justify-items: center;
+    }
+    
+    .tab-screen-con > .education-items {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-top: 5%;
+        justify-items: center;
+    }
+
+    .resume-container .screen-title {
+        text-align: center;
+    }
+ }

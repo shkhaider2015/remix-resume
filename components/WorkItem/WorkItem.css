@@ -88,3 +88,19 @@
 .wi-container .right-sec .buttons .next:hover {
     background-color: rgb(255, 255, 255);
 } */
+
+
+@media screen and (max-width: 800px) {
+    .wi-container .left-sec .count {
+        font-size: 30px;
+        font-family: Bungee;
+    
+    }
+    
+    .wi-container .left-sec .title {
+        font-size: 26px;
+        font-family: Questrial;
+        margin: 15px 0px;
+        font-weight: bold;
+    }
+}

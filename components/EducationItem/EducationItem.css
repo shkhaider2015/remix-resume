@@ -5,14 +5,14 @@
 }
 
 * {
-    --box-width: 450px;
-    --box-height: 180px;
+    --edu-box-width: 450px;
+    --edu-box-height: 180px;
 }
 
 .experience-item-con {
     position: relative;
-    width: var(--box-width);
-    height: var(--box-height);
+    width: var(--edu-box-width);
+    height: var(--edu-box-height);
     z-index: 0;
     display: flex;
     justify-content: center;
@@ -22,8 +22,8 @@
 }
 
 .experience-item-con .content-con {
-    width: calc(var(--box-width) - 5px);
-    height: calc(var(--box-height) - 5px);
+    width: calc(var(--edu-box-width) - 5px);
+    height: calc(var(--edu-box-height) - 5px);
     border-radius: 10px;
     background-color: var(--dark-gray);
     position: relative;
@@ -40,8 +40,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: var(--box-width);
-    height: var(--box-height);
+    width: var(--edu-box-width);
+    height: var(--edu-box-height);
     border-radius: 10px;
     background: var(--gray02);
     opacity: 0;
@@ -192,4 +192,43 @@
 
   .experience-item-con:hover .ribbon {
     background-color: var(--primary-green);
+  }
+
+  @media screen and (max-width: 1200px) {
+    * {
+        --edu-box-width: 390px;
+        --edu-box-height: 180px;
+    }
+ }
+
+ @media screen and (max-width: 1000px) {
+    * {
+        --edu-box-width: 320px;
+        --edu-box-height: 150px;
+    }
+
+    .experience-item-con .content-con .date {
+        font-size: 12px;
+    }
+    
+    .experience-item-con .content-con > .title {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+ }
+
+ @media screen and (max-width: 800px) {
+    * {
+        --edu-box-width: 420px;
+        --edu-box-height: 180px;
+    }
+
+    .experience-item-con .content-con .date {
+        font-size: 16px;
+    }
+    
+    .experience-item-con .content-con > .title {
+        font-size: 26px;
+        letter-spacing: 4px;
+    }
   }

@@ -29,3 +29,27 @@
         opacity: 1;
     }
 }
+
+
+
+@media screen and (max-width: 1400px) {
+    .work-container > .work-items {
+        width: 85%;
+    }
+ }
+
+ @media screen and (max-width: 1200px) {
+    .work-container > .work-items {
+        width: 95%;
+    }
+ }
+
+ @media screen and (max-width: 1000px) {
+    .work-container > .work-items {
+        width: 100%;
+    }
+ }
+
+ @media screen and (max-width: 800px) {
+    
+ }

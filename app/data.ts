@@ -34,6 +34,7 @@ import {
   IServicesItem,
   ISkillItem,
 } from "utils/interfaces/components";
+import { INavItem } from "utils/interfaces/routes";
 
 type ContactMutation = {
   id?: string;
@@ -347,6 +348,30 @@ export async function deleteContact(id: string) {
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
+
+export const navData: INavItem[] = [
+  {
+    name: '',
+    label: 'Home'
+  },
+  {
+    name: 'services',
+    label: 'Services'
+  },
+  {
+    name: 'resume',
+    label: 'Resume'
+  },
+  {
+    name: 'work',
+    label: 'Work'
+  },
+  {
+    name: 'contacts',
+    label: 'Contacts'
+  },
+
+]
 
 export const serviceItems: IServicesItem[] = [
   {

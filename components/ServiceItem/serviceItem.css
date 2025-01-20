@@ -5,14 +5,14 @@
 }
 
 * {
-    --box-width: 450px;
-    --box-height: 180px;
+    --service-box-width: 450px;
+    --service-box-height: 180px;
 }
 
 .service-item-container {
     position: relative;
-    width: var(--box-width);
-    height: var(--box-height);
+    width: var(--service-box-width);
+    height: var(--service-box-height);
     z-index: 0;
     display: flex;
     justify-content: center;
@@ -22,8 +22,8 @@
 }
 
 .service-item-container .content-con {
-    width: calc(var(--box-width) - 5px);
-    height: calc(var(--box-height) - 5px);
+    width: calc(var(--service-box-width) - 5px);
+    height: calc(var(--service-box-height) - 5px);
     ;
     border-radius: 10px;
     background-color: var(--dark-gray);
@@ -37,8 +37,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: var(--box-width);
-    height: var(--box-height);
+    width: var(--service-box-width);
+    height: var(--service-box-height);
     border-radius: 10px;
     background-image: conic-gradient(from var(--angle), transparent 100%, var(--primary-green));
     opacity: 0;
@@ -100,3 +100,69 @@
         --angle: 360deg;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    * {
+        --service-box-width: 380px;
+        --service-box-height: 180px;
+    }
+ }
+
+ @media screen and (max-width: 1000px) {
+    * {
+        --service-box-width: 320px;
+        --service-box-height: 160px;
+    }
+
+    .service-item-container .content-con .count {
+
+        font-size: 20px;
+        letter-spacing: 3px;
+    
+    }
+    
+    .service-item-container .content-con .title {
+        font-size: 26px;
+        margin-top: 20px;
+    
+    }
+ }
+
+ @media screen and (max-width: 800px) {
+    * {
+        --service-box-width: 450px;
+        --service-box-height: 180px;
+    }
+
+    .service-item-container .content-con .count {
+        font-size: 32px;
+        letter-spacing: 3px;
+    
+    }
+    
+    .service-item-container .content-con .title {
+        font-size: 32px;
+        margin-top: 20px;
+    
+    }
+ }
+
+ @media screen and (max-width: 550px) {
+    * {
+        --service-box-width: 400px;
+        --service-box-height: 160px;
+    }
+
+    .service-item-container .content-con .count {
+        font-size: 28px;
+        letter-spacing: 3px;
+    
+    }
+    
+    .service-item-container .content-con .title {
+        font-size: 26px;
+        letter-spacing: 3px;
+        margin-top: 20px;
+    
+    }
+  }

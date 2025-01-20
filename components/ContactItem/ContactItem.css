@@ -13,6 +13,8 @@
     justify-content: center;
     align-items: center;
     background-color: #2B2A2A;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .ci-container .text-con {
@@ -30,3 +32,10 @@
     text-decoration: none;
     color: white;
 }
+
+@media screen and (max-width: 1200px) {
+    .ci-container .text-con {
+        text-wrap-mode: reset;
+        text-wrap: wrap;
+     }
+ }
