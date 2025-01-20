@@ -44,7 +44,7 @@ jobs:
 
 
       - name: Install & Build
-        run:
+        run: |
           yarn
           yarn build
       - name: Setup Pages
