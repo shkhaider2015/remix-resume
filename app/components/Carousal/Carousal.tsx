@@ -1,8 +1,8 @@
-import { ChevronLeft, ChevronRight } from "assets/icon";
-import WorkItem from "components/WorkItem/WorkItem";
+import { ChevronLeft, ChevronRight } from "~/assets/icon";
+import WorkItem from "~/components/WorkItem/WorkItem";
 import "./Carousal.css";
-import { IWorkItem } from "utils/interfaces/components";
-import { RunofshowImage } from "assets/images";
+import { IWorkItem } from "~/utils/interfaces/components";
+import { RunofshowImage } from "~/assets/images";
 import { useState } from "react";
 
 const data: IWorkItem[] = [

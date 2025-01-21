@@ -1,4 +1,4 @@
-import SkillItem from "components/SkillItem/SkillItem";
+import SkillItem from "~/components/SkillItem/SkillItem";
 import { skillItems } from "~/data";
 
 const Skills = () => {

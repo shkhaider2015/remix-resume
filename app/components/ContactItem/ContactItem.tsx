@@ -1,4 +1,4 @@
-import { IContactItem } from "utils/interfaces/components";
+import { IContactItem } from "~/utils/interfaces/components";
 import "./ContactItem.css";
 
 const ContactItem = (props: IContactItem) => {

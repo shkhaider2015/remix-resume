@@ -17,7 +17,7 @@ import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 import appStylesHref from "./app.css?url";
 import { getContacts, createEmptyContact } from "./data";
 import { useEffect } from "react";
-import Navbar from "components/NavItem/Navbar";
+import Navbar from "~/components/NavItem/Navbar";
 
 export const action = async () => {
   const contact = await createEmptyContact();

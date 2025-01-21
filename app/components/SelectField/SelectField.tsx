@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./SelectField.css"; // CSS file for styles
 import { useOutsideClick } from "~/hooks/useOutsideClick";
-import { IOption, ISelect } from "utils/interfaces/components";
+import { IOption, ISelect } from "~/utils/interfaces/components";
 
 const SelectField = (props: ISelect) => {
   const {

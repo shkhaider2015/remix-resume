@@ -2,7 +2,7 @@
 // 🛑 Nothing in here has anything to do with Remix, it's just a fake database
 ////////////////////////////////////////////////////////////////////////////////
 
-import { EmailIcon, LocationIcon, PhoneIcon } from "assets/icon";
+import { EmailIcon, LocationIcon, PhoneIcon } from "~/assets/icon";
 import {
   DjangoLogo,
   FlaskLogo,
@@ -24,7 +24,7 @@ import {
   GithubLogo,
   FigmaLogo,
   TensorflowLogo,
-} from "assets/logos";
+} from "~/assets/logos";
 import { matchSorter } from "match-sorter";
 // @ts-expect-error - no types, but it's a tiny function
 import sortBy from "sort-by";
@@ -33,8 +33,8 @@ import {
   IContactItem,
   IServicesItem,
   ISkillItem,
-} from "utils/interfaces/components";
-import { INavItem } from "utils/interfaces/routes";
+} from "~/utils/interfaces/components";
+import { INavItem } from "~/utils/interfaces/routes";
 
 type ContactMutation = {
   id?: string;

@@ -1,5 +1,5 @@
 import "./serviceItem.css";
-import { IServicesItem } from "utils/interfaces/components";
+import { IServicesItem } from "~/utils/interfaces/components";
 
 export default function ServiceItem(props: IServicesItem) {
   return (

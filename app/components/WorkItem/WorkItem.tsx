@@ -1,5 +1,5 @@
 import "./WorkItem.css";
-import { IWorkItem } from "utils/interfaces/components";
+import { IWorkItem } from "~/utils/interfaces/components";
 
 const WorkItem = (props: IWorkItem) => {
   const { count, title, desc, techStack, links, image } = props;

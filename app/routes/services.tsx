@@ -1,6 +1,6 @@
 import { LinksFunction } from "@remix-run/node";
 import servicesStyleHref from "./services.css?url";
-import ServiceItem from "components/ServiceItem/ServiceItem";
+import ServiceItem from "~/components/ServiceItem/ServiceItem";
 import { serviceItems } from "~/data";
 
 export const links: LinksFunction = () => [

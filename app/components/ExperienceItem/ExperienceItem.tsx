@@ -1,4 +1,4 @@
-import { IExperienceItem } from 'utils/interfaces/components';
+import { IExperienceItem } from '~/utils/interfaces/components';
 import './ExpeerienceItem.css'
 
 const ExperienceItem = (props:IExperienceItem) => {

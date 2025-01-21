@@ -1,4 +1,4 @@
-import EducationItem from "components/EducationItem/EducationItem";
+import EducationItem from "~/components/EducationItem/EducationItem";
 
 const Education = () => {
   return (

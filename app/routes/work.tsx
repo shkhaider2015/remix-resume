@@ -1,7 +1,6 @@
 import { LinksFunction } from "@remix-run/node";
 import worStyleHref from "./work.css?url";
-import WorkItem from "components/WorkItem/WorkItem";
-import Carousal from "components/Carousal/Carousal";
+import Carousal from "~/components/Carousal/Carousal";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: worStyleHref },

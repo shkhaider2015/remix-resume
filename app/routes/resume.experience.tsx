@@ -1,4 +1,4 @@
-import ExperienceItem from "components/ExperienceItem/ExperienceItem";
+import ExperienceItem from "~/components/ExperienceItem/ExperienceItem";
 
 const Experience = () => {
   return (

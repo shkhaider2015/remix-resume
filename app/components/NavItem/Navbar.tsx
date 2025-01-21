@@ -1,8 +1,8 @@
-import HomeIcon from "assets/icons/Home";
-import ServicesIcon from "assets/icons/Services";
-import ResumeIcon from "assets/icons/Resume";
-import WorkIcon from "assets/icons/Work";
-import ContactsIcon from "assets/icons/Contacts";
+import HomeIcon from "~/assets/icons/Home";
+import ServicesIcon from "~/assets/icons/Services";
+import ResumeIcon from "~/assets/icons/Resume";
+import WorkIcon from "~/assets/icons/Work";
+import ContactsIcon from "~/assets/icons/Contacts";
 import "./Navbar.css";
 import { NavLink } from "@remix-run/react";
 import { navData } from "~/data";
@@ -28,6 +28,7 @@ const Navbar = () => {
       <div className="mobile-nav">
         {navData.map((navItem) => (
           <NavLink
+            key={navItem.label}
             to={navItem.name}
             className={({ isActive, isPending }) => {
               return `mobile-nav-item ${

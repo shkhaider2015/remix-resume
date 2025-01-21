@@ -1,14 +1,14 @@
 import { ActionFunctionArgs, LinksFunction } from "@remix-run/node";
 import contactsStyleHref from "./conntacts.css?url";
-import InputField from "components/InputField/InputField";
-import TextareaInputField from "components/TextareaInputField/TextareaInputField";
-import Button from "components/Button/Button";
-import SelectField from "components/SelectField/SelectField";
-import { EService, IOption } from "utils/interfaces/components";
-import ContactItem from "components/ContactItem/ContactItem";
+import InputField from "~/components/InputField/InputField";
+import TextareaInputField from "~/components/TextareaInputField/TextareaInputField";
+import Button from "~/components/Button/Button";
+import SelectField from "~/components/SelectField/SelectField";
+import { EService, IOption } from "~/utils/interfaces/components";
+import ContactItem from "~/components/ContactItem/ContactItem";
 import { contacts } from "~/data";
 import { Form, useActionData, useFetcher } from "@remix-run/react";
-import { IContactActionResponse, IContactForm, IContactFormError, ISendEmail } from "utils/interfaces/functions";
+import { IContactActionResponse, IContactForm, IContactFormError, ISendEmail } from "~/utils/interfaces/functions";
 import nodemailer from "nodemailer";
 
 export const links: LinksFunction = () => [

@@ -1,5 +1,5 @@
 import { NavLink } from "@remix-run/react";
-import { NavIconProps } from "utils/interfaces/components";
+import { NavIconProps } from "~/utils/interfaces/components";
 
 const ServicesIcon = (props: NavIconProps) => {
   const {

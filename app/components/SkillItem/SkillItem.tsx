@@ -1,6 +1,6 @@
-import { NextLogo } from "assets/logos";
+import { NextLogo } from "~/assets/logos";
 import './SkillItem.css'
-import { ISkillItem } from "utils/interfaces/components";
+import { ISkillItem } from "~/utils/interfaces/components";
 
 const SkillItem = (props:ISkillItem) => {
     const { name, Icon } = props;

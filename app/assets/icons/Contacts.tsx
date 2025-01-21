@@ -1,5 +1,5 @@
 import { NavLink, useLoaderData } from "@remix-run/react";
-import { NavIconProps } from "utils/interfaces/components";
+import { NavIconProps } from "~/utils/interfaces/components";
 
 const ContactsIcon = (props: NavIconProps) => {
   const {

@@ -1,6 +1,6 @@
 import { LinksFunction, LoaderFunction } from "@remix-run/node";
 import resumeStyleHref from "./resume.css?url";
-import Tabs from "components/Tabs/Tabs";
+import Tabs from "~/components/Tabs/Tabs";
 import { Outlet, redirect } from "@remix-run/react";
 
 // Add css via link
