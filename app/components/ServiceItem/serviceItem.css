@@ -19,12 +19,13 @@
     align-items: center;
     transform: scale(1);
     transition: transform .5s linear;
+    background-color: var(--gray061);
+    border-radius: 10px;
 }
 
 .service-item-container .content-con {
     width: calc(var(--service-box-width) - 5px);
     height: calc(var(--service-box-height) - 5px);
-    ;
     border-radius: 10px;
     background-color: var(--dark-gray);
     position: relative;
@@ -49,7 +50,7 @@
 .service-item-container .content-con .count {
     text-align: end;
     margin: 0;
-    opacity: .3;
+    opacity: .6;
     transition: opacity .7s ease-out;
     font-family: Bungee Outline;
     font-size: 26px;
@@ -61,11 +62,23 @@
     text-align: center;
     font-family: Protest Riot;
     font-size: 32px;
-    opacity: .3;
+    opacity: .6;
     transition: opacity .7s ease-out;
     margin-top: 20px;
 
 }
+
+.service-item-container .content-con .image {
+    width: calc(var(--service-box-height) - 50px);
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-20%, 30% ) rotate(30deg);
+    opacity: .3;
+}
+
+
 .service-item-container:hover {
     transform: scale(1.07);
 }
@@ -155,14 +168,16 @@
 
     .service-item-container .content-con .count {
         font-size: 28px;
-        letter-spacing: 3px;
+        letter-spacing: 5px;
+        opacity: 1;
     
     }
     
     .service-item-container .content-con .title {
         font-size: 26px;
-        letter-spacing: 3px;
+        letter-spacing: 4px;
         margin-top: 20px;
+        opacity: 1;
     
     }
   }

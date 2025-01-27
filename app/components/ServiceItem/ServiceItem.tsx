@@ -7,6 +7,7 @@ export default function ServiceItem(props: IServicesItem) {
       <div className="content-con">
         <h4 className="count">0{props.count}</h4>
         <p className="title">{props.title}</p>
+        <img className="image" alt={`${props.title} logo`} src={props.imageURI} />
       </div>
     </div>
   );

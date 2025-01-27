@@ -5,7 +5,7 @@
     margin-top: 5rem;
 }
 
-.carousal-con > .buttons {
+.carousal-con>.buttons {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -19,11 +19,14 @@
     display: flex;
     transition: transform 1s ease-in-out;
     /* border: 1px solid red; */
-} 
+}
 
 
 
-.carousal-con .buttons .prev ,
+
+
+
+.carousal-con .buttons .prev,
 .carousal-con .buttons .next {
     width: 60px;
     height: 40px;
@@ -36,7 +39,22 @@
     cursor: pointer;
 }
 
-.carousal-con .buttons .prev:hover ,
+.carousal-con .buttons .prev:hover,
 .carousal-con .buttons .next:hover {
     background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 800px) {
+    .carousal-con>.buttons {
+        position: fixed;
+        padding: 0px 0px 15px 0px;
+        bottom: 0;
+        left: 0;
+        justify-content: space-evenly;
+    }
+
+    .carousal-con .buttons .prev,
+    .carousal-con .buttons .next {
+        background-color: rgb(255, 255, 255);
+    }
 }

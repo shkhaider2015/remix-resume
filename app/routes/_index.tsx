@@ -12,10 +12,11 @@ export default function Index() {
         <h1>Shakeel Haider</h1>
         <h3>Software Developer</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
-          atque id voluptate aperiam reprehenderit mollitia cumque doloribus
-          sint officiis porro sunt quas voluptas vero pariatur, nostrum officia
-          nam error quam.
+          I'm a passionate software developer with over 5 years of experience in
+          frontend, backend, and database development. Skilled in creating
+          user-friendly interfaces, scalable applications, and efficient data
+          solutions, I thrive on solving complex problems and delivering
+          high-quality software. Let's build innovative solutions together! 🚀
         </p>
       </div>
       <div className="home-section home-right">

@@ -44,14 +44,14 @@
     height: var(--edu-box-height);
     border-radius: 10px;
     background: var(--gray02);
-    opacity: 0;
+    opacity: .1;
     z-index: -1;
     transition: opacity .7s ease-out;
 }
 
 .experience-item-con .content-con .date {
     margin: 0;
-    opacity: .3;
+    opacity: .6;
     transition: opacity .7s ease-out, color .3s ease-out;
     font-family: Orbitron;
     font-size: 16px;
@@ -62,7 +62,7 @@
 .experience-item-con .content-con > .title {
     font-family: Questrial;
     font-size: 26px;
-    opacity: .3;
+    opacity: .6;
     transition: opacity .7s ease-out;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -101,7 +101,7 @@
     align-items: center;
     gap: 10px;
     font-family: Questrial;
-    opacity: .3;
+    opacity: .6;
     transition: opacity .7s ease-out;
     letter-spacing: 4px;
 }

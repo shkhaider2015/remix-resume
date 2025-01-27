@@ -1,5 +1,6 @@
 import {
   Form,
+  isRouteErrorResponse,
   json,
   Link,
   Links,
@@ -11,6 +12,7 @@ import {
   ScrollRestoration,
   useLoaderData,
   useNavigation,
+  useRouteError,
   useSubmit,
 } from "@remix-run/react";
 import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
@@ -96,6 +98,34 @@ export default function App() {
           <Outlet />
         </div>
         <ScrollRestoration />
+        <Scripts />
+      </body>
+    </html>
+  );
+}
+
+export function ErrorBoundary() {
+  const error = useRouteError();
+  return (
+    <html>
+      <head>
+        <title>Oops!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <main className="error-container">
+          {isRouteErrorResponse(error) ? (
+            <div>
+              <h1>{error.status}</h1>
+              <h3>{error.statusText}</h3>
+            </div>
+          ) : error instanceof Error ? (
+            <h1>{error.message}</h1>
+          ) : (
+            <h1>Unknown Error</h1>
+          )}
+        </main>
         <Scripts />
       </body>
     </html>

@@ -89,18 +89,27 @@
 }
 
 .home-container .home-section.home-left h3 {
-    font-family: 'Questrial';
+    font-family: 'Poppins';
     font-size: 32px;
     margin: 0px;
     opacity: .8;
+    letter-spacing: 3px;
 }
 
-.home-container .home-section.home-left p {
+.home-container .home-section.home-left > p {
     font-family: 'Poppins';
     font-size: 14px;
     margin-top: 5%;
     max-width: 60%;
     opacity: .5;
+    transition: opacity .3s linear;
+}
+.home-container .home-section.home-left > p:hover {
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin-top: 5%;
+    max-width: 60%;
+    opacity: 1;
 }
 
 @keyframes spin {

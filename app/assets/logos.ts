@@ -18,3 +18,5 @@ export { default as TensorflowLogo } from "./logos/TensorflowLogo";
 export { default as ThreeJSLogo } from "./logos/ThreeJSLogo";
 export { default as TypescriptLogo } from "./logos/TypescriptLogo";
 export { default as WebpackLogo } from "./logos/WebpackLogo";
+export { default as InternetLogo } from "./logos/Internet";
+export { default as GooglePlayLogo } from "./logos/GooglePlay";

@@ -1,34 +1,14 @@
 import EducationItem from "~/components/EducationItem/EducationItem";
+import { educationItem, educationParagraph } from "~/data";
 
 const Education = () => {
   return (
     <div className="tab-screen-con">
-      <p className="descriptiion education-desc" >
-        Lorem ipsum dollar sit amet Lorem ipsum dollar sit amet Lorem ipsum
-        dollar sit amet Lorem ipsum dollar sit amet Lorem ipsum dollar sit amet
-        Lorem ipsum dollar sit amet{" "}
-      </p>
+      <p className="descriptiion education-desc">{educationParagraph}</p>
       <div className="education-items">
-        <EducationItem
-          date="2019 - 2022"
-          title="Full Stack Developer"
-          companyName="Retrocue"
-        />
-        <EducationItem
-          date="2019 - 2022"
-          title="Full Stack Developer"
-          companyName="Retrocue"
-        />
-        <EducationItem
-          date="2019 - 2022"
-          title="Full Stack Developer"
-          companyName="Retrocue"
-        />
-        <EducationItem
-          date="2019 - 2022"
-          title="Full Stack Developer"
-          companyName="Retrocue"
-        />
+        {educationItem.map((edu) => (
+          <EducationItem key={edu.date} {...edu} />
+        ))}
       </div>
     </div>
   );

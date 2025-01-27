@@ -14,6 +14,7 @@ export interface IServicesItem {
   id: string;
   count: number;
   title: string;
+  imageURI: string;
 }
 
 export interface IExperienceItem {
@@ -30,11 +31,13 @@ export interface ISkillItem {
 export interface IWorkItem {
   count: number;
   title: string;
+  role: string;
   desc: string;
   techStack: string[];
   links: {
     github?: string;
     web?: string;
+    playStore?: string;
   };
   image: string;
 }

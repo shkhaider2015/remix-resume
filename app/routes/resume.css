@@ -20,12 +20,34 @@
 }
 
 .tab-screen-con > .descriptiion {
-    width: 40%;
+    width: 75%;
     font-size: 12px;
     font-family: Poppins;
     font-weight: normal;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     line-height: 22px;
+    opacity: .8;
+    transition: opacity .3s linear;
+}
+
+.tab-screen-con > .descriptiion.about-desc {
+    opacity: 1;
+}
+
+.tab-screen-con > .descriptiion.others-desc {
+    width: 50%;
+    font-size: 14px;
+    font-family: Poppins;
+    line-height: 25px;
+    text-align: left;
+}
+
+.tab-screen-con > .about-header {
+
+}
+
+.tab-screen-con > .descriptiion:hover {
+    opacity: 1;
 }
 
 .tab-screen-con > .experience-items {
@@ -89,7 +111,17 @@
     .resume-container {
         padding: 5rem 0% 3% 20%;
     }
+
+    .tab-screen-con > .descriptiion.others-desc {
+        width: 60%;
+    }
  }
+
+ @media screen and (max-width: 1000px) {
+    .tab-screen-con > .descriptiion.others-desc {
+        width: 80%;
+    }
+  }
 
  @media screen and (max-width: 800px) { 
     .tab-screen-con > .descriptiion {
@@ -128,6 +160,16 @@
     .tab-screen-con > .descriptiion {
         width: 100%;
         text-align: center;
+        padding: 0px 5%;
+        opacity: 1;
+    }
+
+    .tab-screen-con > .descriptiion.others-desc {
+        width: 100%;
+        padding: 0px 5%;
+    }
+
+    .tab-screen-con > .about-header {
         padding: 0px 5%;
     }
 
