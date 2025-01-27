@@ -4,7 +4,7 @@ import './EducationItem.css'
 const EducationItem = (props:IExperienceItem) => {
   const { date, title, companyName } = props;
 
-  return <div className="experience-item-con">
+  return <div className="edu-item-con">
     <div className="content-con">
       <div className="ribbon" >some</div>
         <h4 className="date">{date}</h4>

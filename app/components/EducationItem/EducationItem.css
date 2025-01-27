@@ -9,7 +9,7 @@
     --edu-box-height: 180px;
 }
 
-.experience-item-con {
+.edu-item-con {
     position: relative;
     width: var(--edu-box-width);
     height: var(--edu-box-height);
@@ -21,7 +21,7 @@
     transition: transform .5s linear;
 }
 
-.experience-item-con .content-con {
+.edu-item-con .content-con {
     width: calc(var(--edu-box-width) - 5px);
     height: calc(var(--edu-box-height) - 5px);
     border-radius: 10px;
@@ -35,7 +35,7 @@
     align-items: flex-start;
 }
 
-.experience-item-con::after, .experience-item-con::before {
+.edu-item-con::after, .edu-item-con::before {
     content: '';
     position: absolute;
     top: 0;
@@ -49,7 +49,7 @@
     transition: opacity .7s ease-out;
 }
 
-.experience-item-con .content-con .date {
+.edu-item-con .content-con .date {
     margin: 0;
     opacity: .6;
     transition: opacity .7s ease-out, color .3s ease-out;
@@ -59,7 +59,7 @@
     color: white;
 }
 
-.experience-item-con .content-con > .title {
+.edu-item-con .content-con > .title {
     font-family: Questrial;
     font-size: 26px;
     opacity: .6;
@@ -70,33 +70,33 @@
     font-weight: 800;
 
 }
-.experience-item-con:hover {
+.edu-item-con:hover {
     transform: scale(1.02);
 }
-.experience-item-con:hover:after, .experience-item-con:hover::before {
+.edu-item-con:hover:after, .edu-item-con:hover::before {
     opacity: .3;
     background: var(--gray02);
     animation: spin 5s linear infinite;
 }
 
-.experience-item-con::before {
+.edu-item-con::before {
     filter: blur(.5rem);
 }
 
 
-.experience-item-con:hover .content-con {
+.edu-item-con:hover .content-con {
     background-color: var(--gray07);
 }
-.experience-item-con:hover .content-con .date {
+.edu-item-con:hover .content-con .date {
     opacity: 1;
     color: var(--primary-green);
 }
-.experience-item-con:hover .content-con .title {
+.edu-item-con:hover .content-con .title {
     opacity: 1;
 }
 
 
-.experience-item-con .content-con .company {
+.edu-item-con .content-con .company {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -105,7 +105,7 @@
     transition: opacity .7s ease-out;
     letter-spacing: 4px;
 }
-.experience-item-con .content-con .company > .circle {
+.edu-item-con .content-con .company > .circle {
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -113,19 +113,19 @@
     transition: background-color .3s ease-out;
 }
 
-.experience-item-con .content-con .company > .title {
+.edu-item-con .content-con .company > .title {
     font-size: 12px;
 }
 
-.experience-item-con:hover .content-con .company {
+.edu-item-con:hover .content-con .company {
     opacity: .7;
 }
 
-.experience-item-con:hover .content-con .company .circle {
+.edu-item-con:hover .content-con .company .circle {
     background-color: var(--primary-green);
 }
 
-.experience-item-con .content-con .left-tringle {
+.edu-item-con .content-con .left-tringle {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -140,7 +140,7 @@
     opacity: 0;
     transition: opacity .3s ease-out;
 }
-.experience-item-con:hover .content-con .left-tringle {
+.edu-item-con:hover .content-con .left-tringle {
     opacity: 1;
 }
 
@@ -168,7 +168,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: -55px;
+    margin-right: -42px;
     margin-top: -20px;
     font-size: 22px;
     font-weight: normal;
@@ -177,7 +177,7 @@
     letter-spacing: 6px;
   }
   .ribbon {
-    --s: 1.8em; /* the ribbon size */
+    --s: 1em; /* the ribbon size */
     --d: .8em;  /* the depth */
     --c: .8em;  /* the cutout part */
     
@@ -190,7 +190,7 @@
     transition: background-color .7s ease-out;
   }
 
-  .experience-item-con:hover .ribbon {
+  .edu-item-con:hover .ribbon {
     background-color: var(--primary-green);
   }
 
@@ -207,11 +207,11 @@
         --edu-box-height: 150px;
     }
 
-    .experience-item-con .content-con .date {
+    .edu-item-con .content-con .date {
         font-size: 12px;
     }
     
-    .experience-item-con .content-con > .title {
+    .edu-item-con .content-con > .title {
         font-size: 20px;
         letter-spacing: 2px;
     }
@@ -223,12 +223,80 @@
         --edu-box-height: 180px;
     }
 
-    .experience-item-con .content-con .date {
+    .edu-item-con .content-con .date {
         font-size: 16px;
     }
     
-    .experience-item-con .content-con > .title {
+    .edu-item-con .content-con > .title {
         font-size: 26px;
         letter-spacing: 4px;
     }
   }
+
+  @media screen and (max-width: 550px) {
+    * {
+        --edu-box-width: 340px;
+        --edu-box-height: 160px;
+    }
+   
+    .edu-item-con .content-con .date {
+        font-size: 16px;
+        letter-spacing: 5px;
+        margin-top: 10px;
+        opacity: 1;
+    
+    }
+    
+    .edu-item-con .content-con .title {
+        font-size: 22px;
+        letter-spacing: 4px;
+        opacity: 1;
+    }
+
+    .edu-item-con .content-con .company > .circle {
+        width: 6px;
+        height: 6px;
+    }
+
+    .edu-item-con .content-con .company > .title {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    * {
+        --edu-box-width: 250px;
+        --edu-box-height: 160px;
+    } .ribbon {
+        --s: .7em;
+    }
+    .edu-item-con .content-con .date {
+        font-size: 20px;
+    
+    }
+    .edu-item-con .content-con .title {
+        font-size: 14px;
+    }
+    .edu-item-con .content-con .company > .title {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    * {
+        --edu-box-width: 200px;
+        --edu-box-height: 200px;
+    }.edu-item-con .content-con .date {
+        font-size: 18px;
+    
+    }
+    .edu-item-con .content-con .title {
+        font-size: 16px;
+    }
+
+    .edu-item-con .content-con .company > .title {
+        font-size: 8px;
+    }
+}

@@ -175,7 +175,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        margin-left: 40px;
+        margin-left: 20px;
     }
     
     .wi-container .left-sec .title {
@@ -214,4 +214,46 @@
     .wi-container .left-sec .links .icon > .skill-icon path  {
         fill: rgb(255, 255, 255);
     }
+
+    .wi-container .left-sec .role::before {
+        width: 10px;
+        height: 10px;
+        transform: translate(-20px, 10px);
+    }
  }
+
+ @media screen and (max-width: 400px) {
+    .wi-container .right-sec {
+        width: 100%;
+     }
+    .wi-container .left-sec .count {
+        font-size: 22px;
+     }
+
+     .wi-container .left-sec .tech-stack {
+        gap: 10px 20px;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+     .wi-container .left-sec .links {
+        margin-top: 15px;
+        
+    }
+
+        
+    .wi-container .left-sec .role {
+        font-size: 22px;
+        margin: 3px 0px;
+    }
+
+    .wi-container .left-sec .role::before {
+        width: 8px;
+        height: 8px;
+        transform: translate(-15px, 10px);
+    }
+
+    .wi-container .left-sec .desc {
+        padding: 0px 6% 0px 6%;
+    }
+  }
