@@ -78,6 +78,10 @@
     background-color: rgb(42, 39, 39);
 }
 
+.home-container .home-section.home-right .circle .inner-circle img {
+    width: 100%;
+    height: 100%;
+}
 
 
 .home-container .home-section.home-left h1 {
@@ -104,11 +108,16 @@
     opacity: .5;
     transition: opacity .3s linear;
 }
-.home-container .home-section.home-left > p:hover {
-    font-family: 'Poppins';
+.home-container .home-section.home-left > p span {
+    font-weight: normal;
     font-size: 14px;
-    margin-top: 5%;
-    max-width: 60%;
+    transition: font-weight .3s linear, font-size .3s linear;
+} 
+.home-container .home-section.home-left > p:hover span {
+    font-weight: bold;
+    font-size: 16px;
+}
+.home-container .home-section.home-left > p:hover {
     opacity: 1;
 }
 
@@ -220,18 +229,22 @@
     *:root {
         --circle-size: 300px;
     }
+
     .home-container {
         flex-direction: column;
         justify-content: center;
         min-height: 100vh;
-        padding: 0%;
+        padding: 0% 10px 0% 10px;
     }
 
-    .home-section.home-left {
+    .home-container .home-section.home-left {
         width: 100%;
         /* border: 1px solid red; */
     }
 
+    .home-container .home-section.home-left > p {
+        opacity: 1;
+     }
     .home-container .home-section.home-left h1 {
         font-size: 40px;
         letter-spacing: 8px;
