@@ -3,12 +3,12 @@ import './Button.css'
 
 const Button = (props:IButton) => {
     const { label, width, ...rest } = props;
-    return <div className="button-con" role="button" tabIndex={0} {...rest} style={{ width }}>
+    return <button className="button-con" {...rest} style={{ width }}>
         <p >{label}</p>
-    </div>
+    </button>
 }
 
-interface IButton extends React.ButtonHTMLAttributes<HTMLDivElement> {
+interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     label?: string;
     width?: string | number;
 }

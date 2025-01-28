@@ -10,6 +10,7 @@ import { contacts } from "~/data";
 import { Form, useActionData, useFetcher } from "@remix-run/react";
 import { IContactActionResponse, IContactForm, IContactFormError, ISendEmail } from "~/utils/interfaces/functions";
 import nodemailer from "nodemailer";
+import Loader from "~/components/Loader/Loader";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: contactsStyleHref },
@@ -35,7 +36,7 @@ export const action = async ({ params, request }: ActionFunctionArgs) => {
   // await updateContact(params.contactId, updates);
   // return redirect(`/contacts/${params.contactId}`);
   return {
-    message: "Thanks You, I will connect to you ASAP.",
+    message: "Thank you for reaching out. I will get back to you at the earliest opportunity.",
   };
 };
 
@@ -99,13 +100,14 @@ export default function Contacts() {
       value: EService.DEV_OPS,
     },
   ];
-  console.log("action data ", actionData);
+  console.log("action data ", fetcher.state);
 
   return (
     <div className="contacts-container">
       {actionData?.message && (
-        <div className="success">{actionData.message}</div>
+        <div className="success">{actionData?.message}</div>
       )}
+      <Loader isSubmitting={fetcher.state !== "idle"} />
       <h1 className="screen-title">Contacts</h1>
       <div className="contacts-content">
         <div className="form-con">
@@ -159,15 +161,16 @@ export default function Contacts() {
             />
             <div className="btn-con">
               <Button
-                onClick={() => {
-                  // document.querySelector("form")?.submit();
-                  fetcher.submit(
-                    new FormData(
-                      document.querySelector("form") as HTMLFormElement
-                    ),
-                    { method: "post" }
-                  );
-                }}
+                // onClick={() => {
+                //   // document.querySelector("form")?.submit();
+                //   fetcher.submit(
+                //     new FormData(
+                //       document.querySelector("form") as HTMLFormElement
+                //     ),
+                //     { method: "post" }
+                //   );
+                // }}
+                type="submit"
                 label="Send"
                 width={"40%"}
               />
