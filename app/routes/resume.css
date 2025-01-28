@@ -19,6 +19,7 @@
     opacity: 0;
     max-height: 65vh;
     overflow-y: auto;
+    padding-left: 10px;
     padding-bottom: 50px;
     animation: fade 1.3s ease-out forwards
 }
@@ -112,6 +113,9 @@
   }
 
  @media screen and (max-width: 800px) { 
+    .tab-screen-con {
+        padding-left: 0px;
+    }
     .tab-screen-con > .descriptiion {
         width: 90%;
         text-align: center;

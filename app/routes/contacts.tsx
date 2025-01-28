@@ -100,7 +100,6 @@ export default function Contacts() {
       value: EService.DEV_OPS,
     },
   ];
-  console.log("action data ", fetcher.state);
 
   return (
     <div className="contacts-container">
@@ -108,7 +107,7 @@ export default function Contacts() {
         <div className="success">{actionData?.message}</div>
       )}
       <Loader isSubmitting={fetcher.state !== "idle"} />
-      <h1 className="screen-title">Contacts</h1>
+      <h1 className="screen-title">CONTACTS</h1>
       <div className="contacts-content">
         <div className="form-con">
           <fetcher.Form method="POST">

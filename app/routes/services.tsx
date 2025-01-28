@@ -10,7 +10,7 @@ export const links: LinksFunction = () => [
 export default function Services() {
   return (
     <div className="services-container">
-      <h1>Services</h1>
+      <h1>SERVICES</h1>
       <div className="services-items">
         {serviceItems.map((item) => (
           <ServiceItem key={item.id} {...item} />

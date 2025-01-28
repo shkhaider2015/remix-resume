@@ -17,6 +17,7 @@
     "@remix-run/react": "*",
     "@remix-run/serve": "*",
     "fs-extra": "^11.2.0",
+    "gsap": "^3.12.7",
     "isbot": "^4.1.0",
     "match-sorter": "^6.3.1",
     "nodemailer": "^6.9.16",

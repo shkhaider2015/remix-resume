@@ -1,0 +1,17 @@
+.cursor {
+    pointer-events: none;
+  }
+  
+  .cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+  }
+  
+  .cursor__ball circle {
+    fill: #ffffff20;
+    stroke-width: 1;
+    stroke: rgb(255, 255, 255);
+  }

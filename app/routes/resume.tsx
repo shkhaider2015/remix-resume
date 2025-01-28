@@ -23,7 +23,7 @@ export const loader:LoaderFunction = ({ request }) => {
 export default function Resume() {
   return (
     <div className="resume-container">
-      <h1 className="screen-title">Resume</h1>
+      <h1 className="screen-title">RESUME</h1>
       <Tabs />
       <Outlet />
     </div>

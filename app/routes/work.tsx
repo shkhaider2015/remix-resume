@@ -9,7 +9,7 @@ export const links: LinksFunction = () => [
 export default function Work() {
   return (
     <div className="work-container">
-      <h1 className="screen-title">Work</h1>
+      <h1 className="screen-title">WORK</h1>
       <div className="work-items">
         <Carousal />
       </div>

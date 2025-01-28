@@ -12,8 +12,6 @@ const HomeIcon = (props: NavIconProps) => {
     name = "home",
   } = props;
 
-  const _onClickItem = () => {};
-
   return (
     <NavLink
       to={name}
