@@ -20,6 +20,7 @@ import appStylesHref from "./app.css?url";
 import { getContacts, createEmptyContact } from "./data";
 import { useEffect } from "react";
 import Navbar from "~/components/NavItem/Navbar";
+import Loader from "./components/Loader/Loader";
 
 export const action = async () => {
   const contact = await createEmptyContact();
@@ -93,6 +94,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <Loader />
         <Navbar />
         <div id="detail">
           <Outlet />

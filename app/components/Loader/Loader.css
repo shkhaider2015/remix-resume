@@ -1,0 +1,58 @@
+.loader-con {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.515);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: all .2s linear;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader-con .loader {
+    height: 80px;
+    aspect-ratio: 1;
+    display: grid;
+}
+
+.loader-con .loader:before,
+.loader-con .loader:after {
+    content: "";
+    --c: no-repeat linear-gradient(var(--primary-green) 0 0);
+    background: var(--c), var(--c);
+    background-size: 25% 50%;
+    animation: l5 1.5s infinite linear;
+}
+
+.loader-con .loader:after {
+    transform: scale(-1);
+}
+
+@keyframes l5 {
+
+    0%,
+    5% {
+        background-position: 33.4% 100%, 66.6% 100%
+    }
+
+    25% {
+        background-position: 33.4% 100%, 100% 0
+    }
+
+    50% {
+        background-position: 0 0, 100% 0
+    }
+
+    75% {
+        background-position: 0 0, 66.6% 100%
+    }
+
+    95%,
+    100% {
+        background-position: 33.4% 100%, 66.6% 100%
+    }
+}
