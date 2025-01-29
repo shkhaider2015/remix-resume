@@ -1,10 +1,15 @@
 import { LinksFunction } from "@remix-run/node";
 import indexStylesHref from "./_index.css?url";
 import { ProfilePictre } from "~/assets/images";
+import { MetaFunction } from "@remix-run/react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: indexStylesHref },
 ];
+
+export const meta: MetaFunction = () => {
+  return [{ title: "Shakeel Haider's Portfolio" }];
+};
 
 export default function Index() {
   return (
@@ -17,7 +22,8 @@ export default function Index() {
           frontend, backend, and database development. Skilled in creating
           user-friendly interfaces, scalable applications, and efficient data
           solutions, I thrive on solving complex problems and delivering
-          high-quality software.<br /> <span>Let's build innovative solutions together! 🚀</span> 
+          high-quality software.
+          <br /> <span>Let's build innovative solutions together! 🚀</span>
         </p>
       </div>
       <div className="home-section home-right">

@@ -1,5 +1,3 @@
-import { IContactForm } from "~/utils/interfaces/functions";
+import { IContactForm, MetaProps } from "~/utils/interfaces/functions";
 
-export const contactFormValidation = (data: IContactForm) => {
-
-}
+export const contactFormValidation = (data: IContactForm) => {};

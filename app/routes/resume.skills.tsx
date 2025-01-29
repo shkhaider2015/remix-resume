@@ -1,5 +1,10 @@
+import { MetaFunction } from "@remix-run/react";
 import SkillItem from "~/components/SkillItem/SkillItem";
 import { skillItems, skillItemsParagraps } from "~/data";
+
+export const meta: MetaFunction = () => {
+  return [{ title: "Shakeel's Skills" }];
+};
 
 const Skills = () => {
   return (

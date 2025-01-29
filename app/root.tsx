@@ -48,14 +48,14 @@ export default function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <meta property="og:title" content={"Shakeel Haider Resume"} />
-        <meta property="og:site_name" content="shakeel haider" />
-        <meta property="og:url" content="shakeel-haider.com" />
+        <meta property="og:site_name" content="shakeel haider Portfolio" />
+        <meta property="og:url" content="https://shakeel-haider-portfolio.netlify.app/" />
         <meta
           property="og:description"
           content="Software Developer Shakeel haider's portfolio/resume web development, mobile development"
         />
-        <meta property="og:type" content="profile" />
-        <meta property="og:image" content="" />
+        <meta property="og:type" content="Portfolio" />
+        <meta property="og:image" content="https://shakeel-haider-portfolio.netlify.app/skyelectric.png" />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"

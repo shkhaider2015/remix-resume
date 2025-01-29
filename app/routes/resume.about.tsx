@@ -1,3 +1,9 @@
+import { MetaFunction } from "@remix-run/react";
+
+export const meta: MetaFunction = () => {
+  return [{ title: "Shakeel's About" }];
+};
+
 const About = () => {
   return (
     <div className="tab-screen-con">

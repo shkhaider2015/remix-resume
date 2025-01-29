@@ -2,10 +2,15 @@ import { LinksFunction } from "@remix-run/node";
 import servicesStyleHref from "./services.css?url";
 import ServiceItem from "~/components/ServiceItem/ServiceItem";
 import { serviceItems } from "~/data";
+import { MetaFunction } from "@remix-run/react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: servicesStyleHref },
 ];
+
+export const meta: MetaFunction = () => {
+  return [{ title: "Shakeel's Services" }];
+};
 
 export default function Services() {
   return (

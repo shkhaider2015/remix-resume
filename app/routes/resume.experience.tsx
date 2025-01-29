@@ -1,5 +1,10 @@
+import { MetaFunction } from "@remix-run/react";
 import ExperienceItem from "~/components/ExperienceItem/ExperienceItem";
 import { experienceItems, experienceParagraph } from "~/data";
+
+export const meta: MetaFunction = () => {
+  return [{ title: "Shakeel's Experience" }];
+};
 
 const Experience = () => {
   return (

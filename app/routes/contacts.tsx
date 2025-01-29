@@ -7,7 +7,7 @@ import SelectField from "~/components/SelectField/SelectField";
 import { EService, IOption } from "~/utils/interfaces/components";
 import ContactItem from "~/components/ContactItem/ContactItem";
 import { contacts } from "~/data";
-import { Form, useActionData, useFetcher } from "@remix-run/react";
+import { Form, MetaFunction, useActionData, useFetcher } from "@remix-run/react";
 import { IContactActionResponse, IContactForm, IContactFormError, ISendEmail } from "~/utils/interfaces/functions";
 import nodemailer from "nodemailer";
 import Loader from "~/components/Loader/Loader";
@@ -15,6 +15,10 @@ import Loader from "~/components/Loader/Loader";
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: contactsStyleHref },
 ];
+
+export const meta: MetaFunction = () => {
+  return [{ title: "Shakeel's Contacts" }];
+};
 
 export const action = async ({ params, request }: ActionFunctionArgs) => {
   // invariant(params.contactId, "Missing contactId param");

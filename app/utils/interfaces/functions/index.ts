@@ -1,30 +1,37 @@
 import { EService } from "../components";
 
 export interface IContactForm {
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone?: string;
-    service: EService;
-    message?: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone?: string;
+  service: EService;
+  message?: string;
 }
 
 export interface IContactFormError {
-    firstName?: string;
-    lastName?: string;
-    email?: string;
-    phone?: string;
-    service?: string;
-    message?: string;
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+  phone?: string;
+  service?: string;
+  message?: string;
 }
 
 export interface IContactActionResponse {
-    errorMessage?: string;
-    successMessage?: string
+  errorMessage?: string;
+  successMessage?: string;
 }
 
 export interface ISendEmail {
-    email: string;
-    message?: string;
-    service: EService
+  email: string;
+  message?: string;
+  service: EService;
+}
+
+export interface MetaProps {
+  title?: string;
+  description?: string;
+  image?: string;
+  url?: string;
 }
