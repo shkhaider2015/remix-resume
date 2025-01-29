@@ -7,8 +7,8 @@ import SelectField from "~/components/SelectField/SelectField";
 import { EService, IOption } from "~/utils/interfaces/components";
 import ContactItem from "~/components/ContactItem/ContactItem";
 import { contacts } from "~/data";
-import { Form, MetaFunction, useActionData, useFetcher } from "@remix-run/react";
-import { IContactActionResponse, IContactForm, IContactFormError, ISendEmail } from "~/utils/interfaces/functions";
+import { MetaFunction, useFetcher } from "@remix-run/react";
+import { IContactForm, IContactFormError } from "~/utils/interfaces/functions";
 import nodemailer from "nodemailer";
 import Loader from "~/components/Loader/Loader";
 
@@ -164,15 +164,6 @@ export default function Contacts() {
             />
             <div className="btn-con">
               <Button
-                // onClick={() => {
-                //   // document.querySelector("form")?.submit();
-                //   fetcher.submit(
-                //     new FormData(
-                //       document.querySelector("form") as HTMLFormElement
-                //     ),
-                //     { method: "post" }
-                //   );
-                // }}
                 type="submit"
                 label="Send"
                 width={"40%"}

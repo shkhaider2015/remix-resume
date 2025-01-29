@@ -31,16 +31,6 @@
     z-index: 0;
 }
 
-/* .services-container > h1::after {
-    content: "Services";
-    position: absolute;
-    color: var(--primary-green);
-    top: 0;
-    left: 0;
-    filter: blur(.4rem);
-    z-index: -1;
-} */
-
 @keyframes fade {
     0% {
         opacity: 0;
