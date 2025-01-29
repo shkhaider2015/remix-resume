@@ -37,7 +37,17 @@ import {
   IWorkItem,
 } from "~/utils/interfaces/components";
 import { INavItem } from "~/utils/interfaces/routes";
-import { DevOps, MobApps, RunofshowImage, ShoeStore, StuntListing, UIUX, WebApps } from "./assets/images";
+import {
+  DevOps,
+  MobApps,
+  RunofshowImages,
+  ShoeStoreImages,
+  StuntListingImages,
+  SkyElectricImages,
+  UIUX,
+  WebApps,
+  MingleeImages,
+} from "./assets/images";
 
 type ContactMutation = {
   id?: string;
@@ -380,25 +390,25 @@ export const serviceItems: IServicesItem[] = [
     id: "si-1",
     count: 1,
     title: "Web Development",
-    imageURI: WebApps
+    imageURI: WebApps,
   },
   {
     id: "si-2",
     count: 2,
     title: "Mobile Development",
-    imageURI: MobApps
+    imageURI: MobApps,
   },
   {
     id: "si-3",
     count: 3,
     title: "DevOps",
-    imageURI: DevOps
+    imageURI: DevOps,
   },
   {
     id: "si-4",
     count: 4,
     title: "UI/UX Design",
-    imageURI: UIUX
+    imageURI: UIUX,
   },
 ];
 
@@ -558,11 +568,11 @@ With over 5 years in software development, I’ve worked across frontend, mobile
 
 export const educationParagraph: string = `
 My educational journey began with SSC from Al Nasir School Pvt., sparking my interest in problem-solving. I pursued FSc Pre-Engineering at Pakistan Shipowner's College, strengthening my analytical skills. Later, I earned a BS in Software Engineering from Indus University Pvt. Ltd., gaining expertise in programming and software design. This academic foundation has shaped my technical skills and growth mindset, preparing me for a successful career in software development.
-`
+`;
 
-export const skillItemsParagraps: string =  `
+export const skillItemsParagraps: string = `
 I specialize in frontend, backend, and database development, with expertise in building user-friendly interfaces, scalable server-side applications, and efficient database management systems. My skills span across creating seamless user experiences, robust APIs, and optimized data storage solutions, ensuring end-to-end development of high-performing and reliable software applications.
-`
+`;
 
 export const workItems: IWorkItem[] = [
   {
@@ -574,9 +584,9 @@ export const workItems: IWorkItem[] = [
     links: {
       playStore: "some",
       github: "some",
-      web: "some"
+      web: "some",
     },
-    image: RunofshowImage,
+    image: RunofshowImages,
   },
   {
     count: 2,
@@ -587,9 +597,9 @@ export const workItems: IWorkItem[] = [
     links: {
       playStore: "some",
       github: "some",
-      web: "some"
+      web: "some",
     },
-    image: StuntListing,
+    image: StuntListingImages,
   },
   {
     count: 3,
@@ -600,8 +610,34 @@ export const workItems: IWorkItem[] = [
     links: {
       playStore: "some",
       github: "some",
-      web: "some"
+      web: "some",
     },
-    image: ShoeStore,
+    image: ShoeStoreImages,
+  },
+  {
+    count: 4,
+    title: "Minglee",
+    role: "Full Stack Developer",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, alias obcaecati? Repellendus ut id, alias asperiores odio velit, voluptatibus quam nisi cum, ullam quisquam minus dolores unde voluptatem temporibus fugiat?",
+    techStack: ["Next.js", "React.js", "Redux.js", "Material UI"],
+    links: {
+      playStore: "some",
+      github: "some",
+      web: "some",
+    },
+    image: MingleeImages,
+  },
+  {
+    count: 5,
+    title: "Sky Electric",
+    role: "Mobile Developer",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, alias obcaecati? Repellendus ut id, alias asperiores odio velit, voluptatibus quam nisi cum, ullam quisquam minus dolores unde voluptatem temporibus fugiat?",
+    techStack: ["Next.js", "React.js", "Redux.js", "Material UI"],
+    links: {
+      playStore: "some",
+      github: "some",
+      web: "some",
+    },
+    image: SkyElectricImages,
   },
 ];
