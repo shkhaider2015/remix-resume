@@ -12,6 +12,7 @@ import appStylesHref from "./app.css?url";
 import Navbar from "~/components/NavItem/Navbar";
 import Loader from "./components/Loader/Loader";
 import Cursor from "./components/Cursor/Cursor";
+import { BASE_URL } from "./assets/constants";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: appStylesHref },
@@ -28,7 +29,7 @@ export default function App() {
         <meta property="og:site_name" content="shakeel haider Portfolio" />
         <meta
           property="og:url"
-          content="https://shakeel-haider-portfolio.netlify.app/"
+          content={`${BASE_URL}/`}
         />
         <meta
           property="og:description"
@@ -37,7 +38,7 @@ export default function App() {
         <meta property="og:type" content="Portfolio" />
         <meta
           property="og:image"
-          content="https://shakeel-haider-portfolio.netlify.app/portfolio-image.png"
+          content={`${BASE_URL}/portfolio-image.png`}
         />
         <meta name="twitter:card" content="App" />
         <meta name="twitter:title" content="Shakeel Haider's Portfolio" />
@@ -47,11 +48,11 @@ export default function App() {
         />
         <meta
           name="twitter:image"
-          content="https://shakeel-haider-portfolio.netlify.app/portfolio-image.png"
+          content={`${BASE_URL}/portfolio-image.png`}
         />
         <meta
           name="twitter:url"
-          content="https://shakeel-haider-portfolio.netlify.app/"
+          content={`${BASE_URL}/`}
         />
         <meta name="twitter:site" content="Portfolio" />
         <meta name="twitter:creator" content="Shakeel Haider" />
