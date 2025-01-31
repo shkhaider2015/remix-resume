@@ -105,7 +105,7 @@
     font-size: 14px;
     margin-top: 5%;
     max-width: 60%;
-    opacity: .5;
+    opacity: .8;
     transition: opacity .3s linear;
 }
 .home-container .home-section.home-left > p span {

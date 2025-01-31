@@ -55,20 +55,29 @@
 
 .wi-container .left-sec .tech-stack {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px 20px;
     margin-top: 10%;
 }
 .wi-container .left-sec .tech-stack a {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin: 0px;
-    padding: 0px;
+    padding: 3px 10px;
     font-size: 16;
     font-family: Questrial;
     letter-spacing: 2px;
     font-style: italic;
-    color: var(--primary-green);
+    color: var(--black);
     text-decoration: none;
+    background-color: var(--primary-green);
+    border-radius: 5px;
+    opacity: .8;
+    transition: opacity .3s linear;
+}
+
+.wi-container .left-sec .tech-stack a:hover {
+    opacity: 1;
 }
 
 .wi-container .left-sec .links {

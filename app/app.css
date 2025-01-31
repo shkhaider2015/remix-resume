@@ -1,6 +1,8 @@
 :root {
   --primary-green: #00E96C;
   --light-green: '';
+  --black: #000000;
+  --white: #ffffff;
   --dark-gray: #191919;
   --gray07: #232323;
   --gray061: #3b3b3b;
@@ -40,7 +42,11 @@ body {
   background: rgb(22, 22, 22);
   overflow-y: auto;
   /* background: linear-gradient(137deg, rgba(22, 22, 22, 1) 34%, rgba(29, 29, 29, 1) 70%,rgb(39, 28, 28) 83%, rgb(62, 45, 45) 96%); */
-  background: linear-gradient(137deg, rgba(22, 22, 22, 1) 34%, rgba(29, 29, 29, 1) 70%,rgb(42, 39, 39) 83%, rgb(58, 54, 54) 96%);
+  /* background: linear-gradient(137deg, rgba(22, 22, 22, 1) 34%, rgba(29, 29, 29, 1) 70%,rgb(42, 39, 39) 83%, rgb(58, 54, 54) 96%); */
+  /* background-image: url("./assets/images/background.svg"); */
+  background-image: url("./assets/images/bg-green.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #error-page {
@@ -95,3 +101,8 @@ body {
   outline: 1px solid var(--primary-green);
 }
 
+@media screen and (max-width: 400px) {
+  body {
+    background-image: url("./assets/images/bg-green-mob.svg");
+  }
+}
