@@ -13,12 +13,21 @@ import Navbar from "~/components/NavItem/Navbar";
 import Loader from "./components/Loader/Loader";
 import Cursor from "./components/Cursor/Cursor";
 import { BASE_URL } from "./assets/constants";
+import { useEffect } from "react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: appStylesHref },
 ];
 
 export default function App() {
+  useEffect(() => {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js").catch((error) => {
+        console.error("Service Worker registration failed:", error);
+      });
+    }
+  }, []);
+
   return (
     <html lang="en">
       <head>
@@ -27,19 +36,13 @@ export default function App() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <meta property="og:title" content={"Shakeel Haider's Portfolio"} />
         <meta property="og:site_name" content="shakeel haider Portfolio" />
-        <meta
-          property="og:url"
-          content={`${BASE_URL}/`}
-        />
+        <meta property="og:url" content={`${BASE_URL}/`} />
         <meta
           property="og:description"
           content="Explore the portfolio of Shakeel Haider, a skilled full-stack developer specializing in React, React Native, NestJS, TypeScript, and Python. Crafting high-performance web and mobile applications with clean code and modern technologies. Let's build something amazing together!"
         />
         <meta property="og:type" content="Portfolio" />
-        <meta
-          property="og:image"
-          content={`${BASE_URL}/portfolio-image.png`}
-        />
+        <meta property="og:image" content={`${BASE_URL}/portfolio-image.png`} />
         <meta name="twitter:card" content="App" />
         <meta name="twitter:title" content="Shakeel Haider's Portfolio" />
         <meta
@@ -50,10 +53,7 @@ export default function App() {
           name="twitter:image"
           content={`${BASE_URL}/portfolio-image.png`}
         />
-        <meta
-          name="twitter:url"
-          content={`${BASE_URL}/`}
-        />
+        <meta name="twitter:url" content={`${BASE_URL}/`} />
         <meta name="twitter:site" content="Portfolio" />
         <meta name="twitter:creator" content="Shakeel Haider" />
         <link
