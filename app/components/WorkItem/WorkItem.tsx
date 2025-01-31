@@ -1,4 +1,4 @@
-import { GithubLogo, GooglePlayLogo, InternetLogo } from "~/assets/logos";
+import { AppleLogo, GithubLogo, GooglePlayLogo, InternetLogo } from "~/assets/logos";
 import "./WorkItem.css";
 import { IWorkItem } from "~/utils/interfaces/components";
 
@@ -14,7 +14,9 @@ const WorkItem = (props: IWorkItem) => {
         <div className="desc">{desc}</div>
         <div className="tech-stack">
           {techStack.map((tech, index) => (
-            <h5 key={index}>{tech}</h5>
+            <a key={tech.name + index} href={tech.url} target="_blank">
+              {tech.name}
+            </a>
           ))}
         </div>
         <div className="links">
@@ -23,14 +25,19 @@ const WorkItem = (props: IWorkItem) => {
               <InternetLogo />
             </a>
           )}
-          {
-            links.playStore && <a href={links.web} className="icon" target="_blank">
-            <GooglePlayLogo />
-          </a>
-          }
+          {links.playStore && (
+            <a href={links.playStore} className="icon" target="_blank">
+              <GooglePlayLogo />
+            </a>
+          )}
           {links.github && (
             <a href={links.github} className="icon" target="_blank">
               <GithubLogo />
+            </a>
+          )}
+          {links.appStore && (
+            <a href={links.appStore} className="icon" target="_blank">
+              <AppleLogo />
             </a>
           )}
         </div>

@@ -43,8 +43,8 @@ import {
   UIUX,
   WebApps,
   MingleeImages,
+  RunofshowAppImages,
 } from "./assets/images";
-
 
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
@@ -268,12 +268,30 @@ export const workItems: IWorkItem[] = [
     count: 1,
     title: "The RunOfShow",
     role: "Frontend Lead",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, alias obcaecati? Repellendus ut id, alias asperiores odio velit, voluptatibus quam nisi cum, ullam quisquam minus dolores unde voluptatem temporibus fugiat?",
-    techStack: ["Next.js", "React.js", "Redux.js", "Ant Design", "AWS Auth"],
+    desc: "The RunOfShow is a web application that helps event organizers manage their events efficiently. It provides a platform to create, manage, and share event schedules, enabling users to organize and execute events seamlessly. As the Frontend Lead Developer, I led the development of the application, creating user-friendly interfaces and ensuring a smooth user experience.",
+    techStack: [
+      {
+        name: "React.js",
+        url: "https://reactjs.org/",
+      },
+      {
+        name: "Redux.js",
+        url: "https://redux.js.org/",
+      },
+      {
+        name: "Ant Design",
+        url: "https://ant.design/",
+      },
+      {
+        name: "AWS Cognito",
+        url: "https://aws.amazon.com/cognito/",
+      },
+    ],
     links: {
-      playStore: "some",
-      github: "some",
-      web: "some",
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.runofshow&hl=en",
+      appStore: "https://apps.apple.com/us/app/run-of-show/id1602822977",
+      web: "https://www.runofshowapp.com/",
     },
     image: RunofshowImages,
   },
@@ -281,12 +299,27 @@ export const workItems: IWorkItem[] = [
     count: 2,
     title: "Stunt Listing",
     role: "Frontend Developer",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, alias obcaecati? Repellendus ut id, alias asperiores odio velit, voluptatibus quam nisi cum, ullam quisquam minus dolores unde voluptatem temporibus fugiat?",
-    techStack: ["Next.js", "React.js", "Redux.js", "Material UI"],
+    desc: "Stunt Listing is a web application that connects stunt performers with event organizers. It allows performers to create profiles, showcase their skills, and apply for gigs, while organizers can post events, view performer profiles, and hire talent. As a Frontend Developer, I contributed to the development of the application, focusing on creating responsive and intuitive user interfaces.",
+    techStack: [
+      {
+        name: "Next.js",
+        url: "https://nextjs.org/",
+      },
+      {
+        name: "React.js",
+        url: "https://reactjs.org/",
+      },
+      {
+        name: "Redux.js",
+        url: "https://redux.js.org/",
+      },
+      {
+        name: "Material UI",
+        url: "https://material-ui.com/",
+      },
+    ],
     links: {
-      playStore: "some",
-      github: "some",
-      web: "some",
+      web: "https://stuntlisting.com/about_us",
     },
     image: StuntListingImages,
   },
@@ -294,12 +327,24 @@ export const workItems: IWorkItem[] = [
     count: 3,
     title: "Shoe Store",
     role: "Frontend Developer",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, alias obcaecati? Repellendus ut id, alias asperiores odio velit, voluptatibus quam nisi cum, ullam quisquam minus dolores unde voluptatem temporibus fugiat?",
-    techStack: ["Next.js", "React.js", "Redux.js", "Material UI"],
+    desc: "Shoe Store is a dummy e-commerce website that sells shoes online. It features a catalog of shoes and shopping cart, allowing users to browse and select products. As a Frontend Developer, I built the website using React.js, Redux.js, and Material UI, focusing on creating an engaging and user-friendly shopping experience.",
+    techStack: [
+      {
+        name: "React.js",
+        url: "https://reactjs.org/",
+      },
+      {
+        name: "Redux.js",
+        url: "https://redux.js.org/",
+      },
+      {
+        name: "Material UI",
+        url: "https://material-ui.com/",
+      },
+    ],
     links: {
-      playStore: "some",
-      github: "some",
-      web: "some",
+      web: "https://shkhaider_shoes_store.surge.sh/",
+      github: "https://github.com/shkhaider2015/Project3_ShoesStore_React"
     },
     image: ShoeStoreImages,
   },
@@ -308,24 +353,74 @@ export const workItems: IWorkItem[] = [
     title: "Minglee",
     role: "Full Stack Developer",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, alias obcaecati? Repellendus ut id, alias asperiores odio velit, voluptatibus quam nisi cum, ullam quisquam minus dolores unde voluptatem temporibus fugiat?",
-    techStack: ["Next.js", "React.js", "Redux.js", "Material UI"],
-    links: {
-      playStore: "some",
-      github: "some",
-      web: "some",
-    },
+    techStack: [
+      {
+        name: "React Native",
+        url: "https://reactnative.dev/",
+      },
+      {
+        name: "Redux Toolkit",
+        url: "https://redux-toolkit.js.org/",
+      },
+      {
+        name: "Nest.js",
+        url: "https://nestjs.com/",
+      },
+      {
+        name: "Cometchat",
+        url: "https://www.cometchat.com/",
+      },
+    ],
+    links: {},
     image: MingleeImages,
   },
   {
     count: 5,
+    title: "Runofshow App",
+    role: "Mobile Developer",
+    desc: "RunOfShowApp is a mobile application that helps event organizers manage their events efficiently. It provides a platform to create, manage, and share event schedules, enabling users to organize and execute events seamlessly. As a Mobile Developer, I contributed to the development of the application, focusing on creating a seamless user experience and intuitive interface.",
+    techStack: [
+      {
+        name: "React Native",
+        url: "https://reactnative.dev/",
+      },
+      {
+        name: "Redux.js",
+        url: "https://redux.js.org/",
+      },
+      {
+        name: "AWS Cognito",
+        url: "https://aws.amazon.com/cognito/",
+      },
+    ],
+    links: {
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.runofshow&hl=en",
+      web: "https://www.runofshowapp.com/",
+      appStore: "https://apps.apple.com/us/app/run-of-show/id1602822977",
+    },
+    image: RunofshowAppImages,
+  },
+  {
+    count: 6,
     title: "Sky Electric",
     role: "Mobile Developer",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, alias obcaecati? Repellendus ut id, alias asperiores odio velit, voluptatibus quam nisi cum, ullam quisquam minus dolores unde voluptatem temporibus fugiat?",
-    techStack: ["Next.js", "React.js", "Redux.js", "Material UI"],
+    desc: "SkyElectric is a mobile application that allows users to monitor and control their solar energy systems. It provides real-time data on energy production, consumption, and savings, enabling users to optimize their energy usage. As a Mobile Developer, I contributed to the development of the application, focusing on creating a user-friendly interface and seamless user experience.",
+    techStack: [
+      {
+        name: "React Native",
+        url: "https://reactnative.dev/",
+      },
+      {
+        name: "Redux.js",
+        url: "https://redux.js.org/",
+      },
+    ],
     links: {
-      playStore: "some",
-      github: "some",
-      web: "some",
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.skyelectric.smartapp&hl=en",
+      web: "https://www.skyelectric.com/",
+      appStore: "https://apps.apple.com/pk/app/skyelectric/id1407222778",
     },
     image: SkyElectricImages,
   },

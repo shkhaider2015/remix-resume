@@ -33,14 +33,22 @@ export interface IWorkItem {
   title: string;
   role: string;
   desc: string;
-  techStack: string[];
-  links: {
-    github?: string;
-    web?: string;
-    playStore?: string;
-  };
+  techStack: ITechStack[];
+  links: ILink;
   image: string;
 }
+
+interface ILink {
+  github?: string;
+  web?: string;
+  playStore?: string;
+  appStore?: string;
+}
+
+interface ITechStack {
+  name: string;
+  url?: string;
+ }
 
 export interface ISelect {
   name: string;

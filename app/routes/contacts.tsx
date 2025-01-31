@@ -115,12 +115,10 @@ export default function Contacts() {
       <div className="contacts-content">
         <div className="form-con">
           <fetcher.Form method="POST">
-            <h4 className="title">Let’s Work Together</h4>
+            <h4 className="title">Let's Work Together</h4>
             <h5 className="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              aliquam in consequuntur laboriosam repellendus ipsa itaque ab
-              libero eos iste culpa quisquam ipsum voluptate saepe id,
-              exercitationem ullam harum commodi.
+              I am available for freelance work. Connect with me through the form
+              below or email me directly at given email.
             </h5>
             <div className="fields">
               <InputField
