@@ -103,6 +103,26 @@ export const serviceItems: IServicesItem[] = [
 
 export const skillItems: ISkillItem[] = [
   {
+    name: "Next JS",
+    Icon: NextLogo,
+  },
+  {
+    name: "Remix JS",
+    Icon: RemixLogo,
+  },
+  {
+    name: "React JS",
+    Icon: ReactLogo,
+  },
+  {
+    name: "Three JS",
+    Icon: ThreeJSLogo,
+  },
+  {
+    name: "Redux JS",
+    Icon: ReduxLogo,
+  },
+  {
     name: "Nest JS",
     Icon: NestLogo,
   },
@@ -127,30 +147,6 @@ export const skillItems: ISkillItem[] = [
     Icon: MongoDBLogo,
   },
   {
-    name: "Python",
-    Icon: PythonLogo,
-  },
-  {
-    name: "Next JS",
-    Icon: NextLogo,
-  },
-  {
-    name: "Remix JS",
-    Icon: RemixLogo,
-  },
-  {
-    name: "React JS",
-    Icon: ReactLogo,
-  },
-  {
-    name: "Three JS",
-    Icon: ThreeJSLogo,
-  },
-  {
-    name: "Redux JS",
-    Icon: ReduxLogo,
-  },
-  {
     name: "WebPack",
     Icon: WebpackLogo,
   },
@@ -165,6 +161,10 @@ export const skillItems: ISkillItem[] = [
   {
     name: "TypeScript",
     Icon: TypescriptLogo,
+  },
+  {
+    name: "Python",
+    Icon: PythonLogo,
   },
   {
     name: "Git",
@@ -352,7 +352,7 @@ export const workItems: IWorkItem[] = [
     count: 4,
     title: "Minglee",
     role: "Full Stack Developer",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, alias obcaecati? Repellendus ut id, alias asperiores odio velit, voluptatibus quam nisi cum, ullam quisquam minus dolores unde voluptatem temporibus fugiat?",
+    desc: "Minglee is a social networking application that connects users based on shared interests. It allows users to create profiles, connect with others, and share content, fostering a community of like-minded individuals. As a Full Stack Developer, I contributed to the development of the application, focusing on creating a seamless user experience and robust backend architecture.",
     techStack: [
       {
         name: "React Native",
