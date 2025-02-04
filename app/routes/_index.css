@@ -98,6 +98,7 @@
     margin: 0px;
     opacity: .8;
     letter-spacing: 3px;
+    color: var(--white);
 }
 
 .home-container .home-section.home-left > p {
@@ -106,6 +107,7 @@
     margin-top: 5%;
     max-width: 60%;
     opacity: .8;
+    color: var(--white);
     transition: opacity .3s linear;
 }
 .home-container .home-section.home-left > p span {

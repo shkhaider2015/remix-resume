@@ -50,12 +50,12 @@
 .service-item-container .content-con .count {
     text-align: end;
     margin: 0;
-    opacity: .6;
+    opacity: .7;
     transition: opacity .7s ease-out;
     font-family: Bungee Outline;
     font-size: 26px;
     letter-spacing: 3px;
-
+    color: var(--white);
 }
 
 .service-item-container .content-con .title {
@@ -65,6 +65,7 @@
     opacity: .6;
     transition: opacity .7s ease-out;
     margin-top: 20px;
+    color: var(--white);
 
 }
 
