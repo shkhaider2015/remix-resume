@@ -16,6 +16,7 @@ button {
     font-size: 30px;
     background-color: transparent;
     transition: background-color .3s linear;
+    animation: rotate .3s linear forwards;
 }
 
 .tt-container.dark {
@@ -35,3 +36,13 @@ button {
         font-size: 18px;
     }
  }
+
+
+ @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

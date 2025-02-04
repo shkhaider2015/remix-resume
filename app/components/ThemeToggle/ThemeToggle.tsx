@@ -20,11 +20,11 @@ export default function ThemeToggle() {
   };
 
   return (
-    <button onClick={_handleToggle} className={`tt-container ${theme} `} >
+    <button key={theme} onClick={_handleToggle} className={`tt-container ${theme} `}>
       {/* <span className={theme === "dark" ? "active" : ""} >🌙</span>
       <span className={theme === "light" ? "active" : ""} >☀️</span> */}
       {/* <div className={theme}> */}
-        {theme === "dark" ? "☀️" : "🌙"}
+      {theme === "dark" ? "☀️" : "🌙"}
 
       {/* </div> */}
     </button>
