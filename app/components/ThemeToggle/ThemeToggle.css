@@ -1,0 +1,37 @@
+button {
+    all: unset;
+}
+.tt-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    margin: 25px 25px 0px 25px;
+    z-index: 11;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 30px;
+    background-color: transparent;
+    transition: background-color .3s linear;
+}
+
+.tt-container.dark {
+    background-color: #cfeeff;
+}
+.tt-container.light {
+    background-color: #6f7071;
+}
+
+@media screen and (max-width: 550px) {
+    .tt-container {
+        left: 0;
+        right: auto;
+        width: 35px;
+        height: 35px;
+        margin: 30px 25px 0px 25px;
+        font-size: 18px;
+    }
+ }

@@ -9,6 +9,7 @@
     --exp-box-height: 180px;
 }
 
+
 .experience-item-con {
     position: relative;
     width: var(--exp-box-width);
@@ -56,7 +57,7 @@
     font-family: Orbitron;
     font-size: 16px;
     letter-spacing: 3px;
-    color: white;
+    color: var(--white);
 }
 
 .experience-item-con .content-con > .title {
@@ -109,7 +110,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white);
     transition: background-color .3s ease-out;
 }
 
@@ -134,7 +135,7 @@
     width: 0;
     height: 0;
     border-top: 80px solid transparent; /* Height of the triangle */
-    border-right: 80px solid rgb(43, 43, 43);   /* Base of the triangle and its color */
+    border-right: 80px solid var(--left-triangle);   /* Base of the triangle and its color */
     border-bottom: 0px solid transparent; /* Symmetric to top */
     border-bottom-right-radius: 10px;
     opacity: 1;

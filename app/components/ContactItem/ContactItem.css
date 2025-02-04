@@ -12,9 +12,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2B2A2A;
+    background-color: var(--contact-form-bg);
     flex-shrink: 0;
     flex-grow: 0;
+}
+
+.ci-container .icon-con svg:not(.icon-location) path {
+    stroke: var(--white);
+}
+
+.ci-container .icon-con svg.icon-location path {
+    fill: var(--white);
 }
 
 .ci-container .text-con {
@@ -30,7 +38,7 @@
 .ci-container .text-con .value {
     font-size: 16px;
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 @media screen and (max-width: 1200px) {

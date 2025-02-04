@@ -8,7 +8,7 @@ const RemixLogo = () => {
       xmlns="http://www.w3.org/2000/svg"
       className="skill-icon"
     >
-      <g clip-path="url(#clip0_102_65)">
+      <g clipPath="url(#clip0_102_65)">
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"

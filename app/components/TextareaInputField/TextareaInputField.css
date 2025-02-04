@@ -12,8 +12,8 @@
     width: 100%;
     height: 100%;
     padding: 15px 15px;
-    color: whitesmoke;
-    background-color: rgb(12, 12, 12);
+    color: var(--white);
+    background-color: var(--input-bg);
     border-radius: 7px;
     border: none;
     outline: none;

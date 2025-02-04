@@ -57,7 +57,7 @@
 form {
     padding: 20px 30px;
     border-radius: 10px;
-    background-color: #2B2A2A;
+    background-color: var(--contact-form-bg);
 }
 
 form .title {

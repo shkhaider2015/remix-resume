@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Protest Riot';
-    color: black;
+    color: var(--black);
     letter-spacing: 3px;
     cursor: pointer;
     transition: background-color .3s linear, color .3s linear;
@@ -18,6 +18,6 @@
 
 .button-con:hover {
     border: 1px solid var(--primary-green);
-    background-color: black;
+    background-color: var(--black);
     color: var(--primary-green);
 }

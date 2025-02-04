@@ -31,7 +31,7 @@
     width: 60px;
     height: 40px;
     border-radius: 8px;
-    background-color: rgb(162, 162, 162);
+    background-color: var(--carousel-btns);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@
 
 .carousal-con .buttons .prev:hover,
 .carousal-con .buttons .next:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--carousel-btns-hvr);
 }
 
 @media screen and (max-width: 800px) {

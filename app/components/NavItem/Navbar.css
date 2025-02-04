@@ -27,7 +27,7 @@
 }
 
 .navbar .nav-item-container .svg-path {
-  fill: #bcbcbc;
+  fill: var(--nav-svgs);
   transition: fill 0.2s ease;
   /* Add hover animation */
 }
@@ -39,7 +39,7 @@
   font-size: 8px;
   transition: fill 0.3s ease;
   visibility: hidden;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .navbar .nav-item-container.active,
@@ -113,7 +113,7 @@
     bottom: 0;
     width: 100vw;
     height: 120vh;
-    background-color: rgb(40, 40, 40);
+    background-color: var(--mobile-nav-bg);
     z-index: 4;
     /* transform: scale(0);
     transform-origin: top left;
@@ -191,7 +191,7 @@
     font-size: 20px;
     font-family: Poppins;
     letter-spacing: 5px;
-    color: white;
+    color: var(--white);
   }
 
   .navbar .mobile-nav .mobile-nav-item.active {

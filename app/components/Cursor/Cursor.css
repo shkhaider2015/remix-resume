@@ -11,7 +11,7 @@
   }
   
   .cursor__ball circle {
-    fill: #ffffff20;
+    fill: var(--cursor-fill);
     stroke-width: 1;
     stroke: rgb(255, 255, 255);
   }
