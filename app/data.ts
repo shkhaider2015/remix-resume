@@ -2,7 +2,16 @@
 // 🛑 Nothing in here has anything to do with Remix, it's just a fake database
 ////////////////////////////////////////////////////////////////////////////////
 
-import { EmailIcon, LocationIcon, PhoneIcon } from "~/assets/icon";
+import {
+  EmailIcon,
+  LocationIcon,
+  PhoneIcon,
+  Gmail,
+  Linkedin,
+  Stackoverflow,
+  Instagram,
+  Whatsapp,
+} from "~/assets/icon";
 import {
   DjangoLogo,
   FlaskLogo,
@@ -45,11 +54,50 @@ import {
   MingleeImages,
   RunofshowAppImages,
 } from "./assets/images";
+import React from "react";
+import Github from "./assets/icons/Github";
 
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
+
+export const socialLinks: {
+  name: string;
+  url: string;
+  Icon: React.FC<React.SVGProps<SVGSVGElement>>;
+}[] = [
+  {
+    name: "Gmail",
+    url: "mailto:shkhaider2015@gmail.com",
+    Icon: Gmail,
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/shakeel-haider-818233176/",
+    Icon: Linkedin,
+  },
+  {
+    name: "Github",
+    url: "https://github.com/shkhaider2015",
+    Icon: Github,
+  },
+  {
+    name: "Stackoverflow",
+    url: "https://stackoverflow.com/users/8307195/shakeel-haider",
+    Icon: Stackoverflow,
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/shkhaider2k15/",
+    Icon: Instagram,
+  },
+  {
+    name: "Whatsapp",
+    url: "https://wa.me/+923460027852",
+    Icon: Whatsapp,
+  },
+];
 
 export const navData: INavItem[] = [
   {
@@ -344,7 +392,7 @@ export const workItems: IWorkItem[] = [
     ],
     links: {
       web: "https://shkhaider_shoes_store.surge.sh/",
-      github: "https://github.com/shkhaider2015/Project3_ShoesStore_React"
+      github: "https://github.com/shkhaider2015/Project3_ShoesStore_React",
     },
     image: ShoeStoreImages,
   },
