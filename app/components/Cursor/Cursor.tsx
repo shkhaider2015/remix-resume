@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import "./Cursor.css"; // Assuming you move Stylus to CSS or use a preprocessor
+import { useNavigation } from "@remix-run/react";
 
 const Cursor: React.FC = () => {
+  const navigation = useNavigation();
   useEffect(() => {
     const bigBall = document.querySelector(".cursor__ball--big") as HTMLDivElement;
     const smallBall = document.querySelector(".cursor__ball--small") as HTMLDivElement;
@@ -49,7 +51,7 @@ const Cursor: React.FC = () => {
         hoverable.removeEventListener("mouseleave", onMouseHoverOut);
       });
     };
-  }, []);
+  }, [navigation]);
 
   return (
     <div className="cursor">

@@ -6,7 +6,7 @@ const Gmail = () => {
       viewBox="0 0 200 200"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="social-icon"
+      className="social-icon hoverable"
     >
       <g clip-path="url(#clip0_141_169)">
         <path

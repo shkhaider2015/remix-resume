@@ -16,7 +16,7 @@
     stroke: rgb(255, 255, 255);
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 550px) {
     .cursor {
       display: none;
     }
