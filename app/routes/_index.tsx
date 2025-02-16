@@ -2,13 +2,6 @@ import { LinksFunction } from "@remix-run/node";
 import indexStylesHref from "./_index.css?url";
 import { ProfilePictre } from "~/assets/images";
 import { MetaFunction } from "@remix-run/react";
-import {
-  Gmail,
-  Instagram,
-  Linkedin,
-  Stackoverflow,
-  Whatsapp,
-} from "~/assets/icon";
 import { socialLinks } from "~/data";
 
 export const links: LinksFunction = () => [
