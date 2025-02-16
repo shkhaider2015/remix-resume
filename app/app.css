@@ -1,5 +1,9 @@
 :root {
   --primary-green: #00E96C;
+  /* --primary-green: #55e900; */
+  /* --primary-green: #e1ff00; */
+  /* --primary-green: #40ffff; */
+  /* --primary-green: #f540ff; */
   --light-green: '';
   --black: #000000;
   --white: #ffffff;
@@ -45,8 +49,10 @@
   --background-image-mob: url("./assets/images/bg-light-mob.svg");
 }
 
+
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -62,6 +68,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -99,25 +106,29 @@ body {
   align-items: center;
 }
 
-.error-container > div {
+.error-container>div {
   text-align: center;
 }
 
-.error-container > div > h1 {
+.error-container>div>h1 {
   font-size: 7rem;
   margin: 0;
 }
-.error-container > div > h3 {
+
+.error-container>div>h3 {
   font-size: 2rem;
   margin: 0;
 }
 
 @keyframes expand-line {
   0% {
-    width: 0; /* Start with 0 width */
+    width: 0;
+    /* Start with 0 width */
   }
+
   100% {
-    width: 100%; /* Expand to full width */
+    width: 100%;
+    /* Expand to full width */
   }
 }
 
@@ -127,13 +138,13 @@ body {
   width: 2px;
 }
 
- 
+
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background-color:  var(--primary-green);
+  background-color: var(--primary-green);
   outline: 1px solid var(--primary-green);
 }
 

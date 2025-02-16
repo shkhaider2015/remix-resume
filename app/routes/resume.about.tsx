@@ -16,7 +16,7 @@ const About = () => {
         technical expertise to create innovative applications that make a real
         impact.
       </p>
-      <h3 className="about-header" >Experience</h3>
+      <h3 className="about-header">💼  Experience</h3>
       <p className="descriptiion about-desc others-desc">
         My career began with an internship at Sky Electric Pvt. Ltd, where I
         gained foundational knowledge in software development and honed my
@@ -38,7 +38,7 @@ const About = () => {
         crafting intuitive user interfaces, or optimizing database performance,
         I am committed to delivering excellence in every project I undertake.
       </p>
-      <h3 className="about-header">Education</h3>
+      <h3 className="about-header">📖  Education</h3>
       <p className="descriptiion about-desc others-desc">
         My educational journey has been the foundation of my career in software
         development. It began with my SSC (Matriculation) from Al Nasir School
@@ -59,7 +59,7 @@ const About = () => {
         with the tools to continuously learn, adapt, and excel in the
         ever-evolving field of software development.
       </p>
-      <h3 className="about-header">Skills</h3>
+      <h3 className="about-header">💡  Skills</h3>
       <p className="descriptiion about-desc others-desc">
         I possess a diverse skill set that spans frontend, backend, and database
         development, enabling me to build end-to-end solutions for complex
