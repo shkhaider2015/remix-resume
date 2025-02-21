@@ -24,7 +24,7 @@ export default function ThemeToggle() {
       {/* <span className={theme === "dark" ? "active" : ""} >🌙</span>
       <span className={theme === "light" ? "active" : ""} >☀️</span> */}
       {/* <div className={theme}> */}
-      {theme === "dark" ? "☀️" : "🌙"}
+      {theme === "dark" ? "🌙" : "☀️"}
 
       {/* </div> */}
     </button>
