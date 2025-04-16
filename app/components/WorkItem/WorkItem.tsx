@@ -1,6 +1,7 @@
 import { AppleLogo, GithubLogo, GooglePlayLogo, InternetLogo } from "~/assets/logos";
 import "./WorkItem.css";
 import { IWorkItem } from "~/utils/interfaces/components";
+import MyImage from "../Image";
 
 const WorkItem = (props: IWorkItem) => {
   const { count, title, role, desc, techStack, links, image } = props;
@@ -43,7 +44,7 @@ const WorkItem = (props: IWorkItem) => {
         </div>
       </div>
       <div className="right-sec">
-        <img src={image} alt="Runofshow" />
+        <MyImage src={image} alt={title} />
       </div>
     </div>
   );
