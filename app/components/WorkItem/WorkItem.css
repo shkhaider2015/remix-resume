@@ -182,7 +182,7 @@
     .wi-container .right-sec {
         width: 70%;
         order: 1;
-        min-height: auto;
+        min-height: 400px;
     }
 
     .wi-container .left-sec .count {
@@ -240,6 +240,7 @@
  @media screen and (max-width: 400px) {
     .wi-container .right-sec {
         width: 100%;
+        min-height: 300px;
      }
     .wi-container .left-sec .count {
         font-size: 22px;
