@@ -9,5 +9,4 @@ export { default as MobApps } from '~/assets/images/smartphone.png';
 export { default as UIUX } from '~/assets/images/ux-design.png';
 export { default as DevOps } from '~/assets/images/devops.png';
 export { default as ProfilePictre } from '~/assets/images/profile-picture.png';
-export { default as ProfilePictre2 } from '~/assets/images/profile-picture-ghibli.png';
 export { default as ProfilePictre3 } from '~/assets/images/profile-picture-ghibli-2.png';
