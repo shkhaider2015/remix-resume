@@ -1,1 +1,1 @@
-export const BASE_URL = "https://shakeel-haider-portfolio.netlify.app";
+export const BASE_URL = "https://www.shakeelhaider.com";
