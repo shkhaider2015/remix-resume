@@ -9,7 +9,7 @@ const THEME_COOKIE_NAME = "theme";
 export function getThemeFromCookies(request: Request): "light" | "dark" {
   const cookieHeader = request.headers.get("Cookie");
   const cookies = cookieHeader ? parse(cookieHeader) : {};
-  return cookies[THEME_COOKIE_NAME] === "dark" ? "dark" : "light";
+  return cookies[THEME_COOKIE_NAME] === "light" ? "light" : "dark";
 }
 
 /**
