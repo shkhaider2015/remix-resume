@@ -27,7 +27,7 @@ const MyImage = (props: IImage) => {
             visibility: loaded ? "visible" : "hidden",
             position: loaded ? "relative" : "absolute",
           }}
-          // onLoad={() => setLoaded(true)}
+          onLoad={() => setLoaded(true)}
           onError={() => setHasError(true)}
         />
       ) : (
