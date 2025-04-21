@@ -46,7 +46,7 @@ export default function App() {
 
   return (
     <ThemeProvider initialTheme={theme}>
-      <html lang="en" >
+      <html lang="en">
         <head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -76,11 +76,14 @@ export default function App() {
           <meta name="twitter:url" content={`${BASE_URL}/`} />
           <meta name="twitter:site" content="Portfolio" />
           <meta name="twitter:creator" content="Shakeel Haider" />
-          <link
-            rel="icon"
-            sizes="180x180"
-            href="/favicon"
+
+          {/* For Bing search engine */}
+          <meta
+            name="msvalidate.01"
+            content="07B20D201CA84FDD3652BA3812A08DDF"
           />
+
+          <link rel="icon" sizes="180x180" href="/favicon" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
