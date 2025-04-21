@@ -25,8 +25,8 @@ const PythonLogo = () => {
           y2="63.7606"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00E96C" />
-          <stop offset="1" stop-color="#52FFA2" />
+          <stop stopColor="#00E96C" />
+          <stop offset="1" stopColor="#52FFA2" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_102_54"
@@ -36,8 +36,8 @@ const PythonLogo = () => {
           y2="65.3101"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00E96C" />
-          <stop offset="1" stop-color="#57FFA5" />
+          <stop stopColor="#00E96C" />
+          <stop offset="1" stopColor="#57FFA5" />
         </linearGradient>
       </defs>
     </svg>
