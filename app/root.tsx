@@ -82,7 +82,7 @@ export default function App() {
             name="msvalidate.01"
             content="07B20D201CA84FDD3652BA3812A08DDF"
           />
-
+          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
           <link rel="icon" sizes="180x180" href="/favicon" />
           <link
             rel="apple-touch-icon"
