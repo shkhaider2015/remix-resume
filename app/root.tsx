@@ -77,6 +77,11 @@ export default function App() {
           <meta name="twitter:site" content="Portfolio" />
           <meta name="twitter:creator" content="Shakeel Haider" />
           <link
+            rel="icon"
+            sizes="180x180"
+            href="/favicon"
+          />
+          <link
             rel="apple-touch-icon"
             sizes="180x180"
             href="/apple-touch-icon.png"
