@@ -149,7 +149,7 @@
 
 .home-container .home-section.home-left .socials a .social-icon {
     width: 30px;
-    height: fit-content;
+    height: 30px;
     transform: scale(1);
     transition: transform .3s linear;
     border-radius: 5px;
