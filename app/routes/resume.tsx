@@ -12,11 +12,11 @@ export const loader:LoaderFunction = ({ request }) => {
     const url = new URL(request.url);
 
     // Check if the current path is `/resume`
-    if (url.pathname === "/resume") {
+    if (url.pathname === "/resume" || url.pathname === "/resume/") {
       return redirect("/resume/experience");
     }
   
-    // If not `/resume`, do nothing (allow the route to render as-is)
+    // If not `/resume` or `/resume/`, do nothing (allow the route to render as-is)
     return null;
 }
 
