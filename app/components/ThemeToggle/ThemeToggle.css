@@ -20,10 +20,10 @@ button {
 }
 
 .tt-container.dark {
-    background-color: #cfeeff;
+    background-color:  #6f7071 ;
 }
 .tt-container.light {
-    background-color: #6f7071;
+    background-color: #8fd8ff;
 }
 
 @media screen and (max-width: 550px) {
