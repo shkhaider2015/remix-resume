@@ -1,6 +1,6 @@
 import { LinksFunction } from "@remix-run/node";
 import indexStylesHref from "./_index.css?url";
-import { ProfilePictre3 } from "~/assets/images";
+import { ProfilePictre3, ProfilePictre } from "~/assets/images";
 import { MetaFunction } from "@remix-run/react";
 import { socialLinks } from "~/data";
 
