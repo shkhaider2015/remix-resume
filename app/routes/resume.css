@@ -6,13 +6,56 @@
     animation: fade 1s ease-out forwards;
 }
 
-.resume-container .screen-title {
+.resume-container .resume-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+    min-height: 10vh;
+}
+
+.resume-container .resume-header .screen-title {
     font-family: 'Protest Riot';
     font-size: 72px;
     letter-spacing: 16px;
     margin: 0px;
     margin-top: -10px;
     color: var(--primary-green);
+}
+
+.resume-container .resume-header {
+    text-decoration: none;
+}
+
+.resume-container .resume-header .pdf-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    row-gap: 5px;
+
+}
+
+.resume-container .resume-header .pdf-logo::after {
+    content: 'Download PDF';
+    font-family: Poppins;
+    font-style: italic;
+    font-size: 8px;
+    text-align: center;
+    color: var(--primary-green);
+    width: 100px;
+    height: 20px;
+}
+
+.resume-container .resume-header img {
+    width: 30px;
+    height: 30px;
 }
 
 .tab-screen-con {
@@ -187,7 +230,12 @@
         justify-items: center;
     }
 
-    .resume-container .screen-title {
+    .resume-container .resume-header {
+        justify-content: center;
+        column-gap: 5px;
+    }
+
+    .resume-container .resume-header .screen-title {
         text-align: center;
         font-size: 35px;
     }

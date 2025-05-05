@@ -11,13 +11,14 @@
     left: 0;
     margin: 20px 0px 0px 10%;
     width: 80%;
-    height: 40px;
+    min-height: 40px;
     background-color:  rgb(0, 250, 0);
     border-radius: 5px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 20px;
+    padding: 10px 20px;
     font-size: 14px;
     font-family: Poppins;
     letter-spacing: 2px;
@@ -150,6 +151,10 @@ form > .btn-con {
     .contacts-container .screen-title { 
         font-size: 35px;
         text-align: center;
+    }
+
+    .contacts-container .success {
+        width: 80%;
     }
 
     form .fields {

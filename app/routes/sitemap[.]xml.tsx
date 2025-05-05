@@ -12,6 +12,7 @@ export const loader = () => {
     "/resume/experience",
     "/resume/skills",
     "/resume/about",
+    "/resume/download",
   ];
   const timezoneOffset = "+05:00";
   const lastMod = new Date().toISOString().replace("Z", timezoneOffset);

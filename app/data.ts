@@ -247,7 +247,7 @@ export const contacts: IContactItem[] = [
   },
   {
     label: "Address",
-    value: "Banaras, Pathan Colony, Karachi, Pakistan",
+    value: "Banaras, Karachi, Pakistan",
     Icon: LocationIcon,
     type: "ADDRESS",
   },
