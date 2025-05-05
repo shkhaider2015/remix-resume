@@ -19,6 +19,7 @@ import { useEffect } from "react";
 import { ThemeProvider } from "./context/theme";
 import { getThemeFromCookies } from "./utils/theme.server";
 import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: appStylesHref },
@@ -30,11 +31,16 @@ export const loader: LoaderFunction = async ({
   request: Request;
 }) => {
   const theme = getThemeFromCookies(request);
-  return json({ theme });
+  return json({
+    theme,
+    ENV: {
+      RECAPTCHA_SITE_KEY: process.env.RECAPTCHA_SITE_KEY,
+    },
+  });
 };
 
 export default function App() {
-  const { theme } = useLoaderData<typeof loader>();
+  const { theme, ENV } = useLoaderData<typeof loader>();
 
   useEffect(() => {
     if ("serviceWorker" in navigator) {
@@ -85,7 +91,7 @@ export default function App() {
             content="07B20D201CA84FDD3652BA3812A08DDF"
           />
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-          
+
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -120,13 +126,9 @@ export default function App() {
             type="image/png"
             sizes="512x512"
             href="/android-chrome-512x512.png"
-          /> 
-
-          <link
-            rel="shortcut icon"
-            href="/favicon.ico"
-            type="image/x-icon"
           />
+
+          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="manifest" href="/site.webmanifest"></link>
           <link
             rel="preconnect"
@@ -151,7 +153,17 @@ export default function App() {
           <Navbar />
           <div id="detail">
             <Cursor />
-            <Outlet />
+            <GoogleReCaptchaProvider
+              reCaptchaKey={ENV.RECAPTCHA_SITE_KEY}
+              scriptProps={{
+                async: true,
+                defer: true,
+                appendTo: "head",
+                nonce: undefined,
+              }}
+            >
+              <Outlet />
+            </GoogleReCaptchaProvider>
           </div>
           <ScrollRestoration />
           <Scripts />

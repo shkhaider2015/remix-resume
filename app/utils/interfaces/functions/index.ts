@@ -35,3 +35,8 @@ export interface MetaProps {
   image?: string;
   url?: string;
 }
+
+export interface IContactActionResponse {
+  error?: string | IContactForm ;
+  message: string | undefined;
+}
