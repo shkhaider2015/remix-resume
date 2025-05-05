@@ -24,14 +24,15 @@
     align-items: flex-start;
     margin-left: 5%;
     opacity: 0;
-    animation: fade 1s ease-out forwards
+    animation: fade 1s ease-out forwards;
 }
 
 .home-container .home-section.home-right {
     /* width: 60%; */
     align-items: center;
     padding: 5% 0% 5% 0%;
-    animation: fade 1s ease-out forwards
+    animation: fade 1s ease-out forwards;
+    position: relative;
 }
 
 @property --angle {
