@@ -1,4 +1,5 @@
 import { BASE_URL } from "~/assets/constants";
+import { blogPosts } from "~/assets/data";
 
 export const loader = () => {
   const base_url = BASE_URL;
@@ -13,6 +14,7 @@ export const loader = () => {
     "/resume/skills",
     "/resume/about",
     "/resume/download",
+    "/blog"
   ];
   const timezoneOffset = "+05:00";
   const lastMod = new Date().toISOString().replace("Z", timezoneOffset);
@@ -28,6 +30,12 @@ export const loader = () => {
             </url>`
           )
           .join("")}
+
+          ${blogPosts.map(slug =>  `<url>
+            <loc>${base_url + "/blog/" + slug.slug}</loc>
+            <lastmod>${lastMod}</lastmod>
+            <priority>1.0</priority>
+        </url>`)}
         </urlset>
       `;
   // Return the response with the content, a status 200 message, and the appropriate headers for an XML page
