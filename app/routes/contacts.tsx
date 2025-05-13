@@ -27,7 +27,7 @@ export const links: LinksFunction = () => [
 ];
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Shakeel's Contacts" }];
+  return [{ title: "Shakeel Haider's Contacts" }];
 };
 
 export const action = async ({
