@@ -7,6 +7,7 @@ import "./Navbar.css";
 import { NavLink } from "@remix-run/react";
 import { navData } from "~/data";
 import { useState } from "react";
+import { BlogIcon } from "~/assets/icon";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -46,6 +47,7 @@ const Navbar = () => {
       <ResumeIcon name="resume" label="Resume" />
       <WorkIcon name="work" label="Work" />
       <ContactsIcon name="contacts" label="Contact" />
+      <BlogIcon name="blog" label="Blog" />
     </nav>
   );
 };

@@ -8,7 +8,12 @@ export const links: LinksFunction = () => [
 ];
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Shakeel's Work" }];
+  return [
+    { title: "Shakeel's Work" },
+    { name: "description", content: "Shakeel's Work" },
+    { name: "keywords", content: "work, shakeel haider, projects, portfolio" },
+    { name: "author", content: "Shakeel Haider" },
+  ];
 };
 
 export default function Work() {

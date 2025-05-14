@@ -1,7 +1,7 @@
 import { LinksFunction, LoaderFunction } from "@remix-run/node";
 import resumeStyleHref from "./resume.css?url";
 import Tabs from "~/components/Tabs/Tabs";
-import { Link, Outlet, redirect } from "@remix-run/react";
+import { Link, MetaFunction, Outlet, redirect } from "@remix-run/react";
 import MyImage from "~/components/Image";
 import { PDFLogo } from "~/assets/images";
 import Loader from "~/components/Loader/Loader";
@@ -11,6 +11,16 @@ import { useState } from "react";
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: resumeStyleHref },
 ];
+
+// Add meta tags
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Shakeel Haider's Resume" },
+    { name: "description", content: "Shakeel Haider's Resume" },
+    { name: "keywords", content: "portfolio, resume, shakeel haider, cv, curriculum vitae, skills" },
+  ];
+}
+// Add loader function to handle redirects
 
 export const loader: LoaderFunction = ({ request }) => {
   const url = new URL(request.url);
