@@ -3,7 +3,17 @@ import SkillItem from "~/components/SkillItem/SkillItem";
 import { skillItems, skillItemsParagraps } from "~/data";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Shakeel's Skills" }];
+  return [
+    { title: "Shakeel's Skills" },
+    { name: "description", content: "Shakeel's Skills" },
+    {
+      name: "keywords",
+      content: `skills, shakeel haider, web development, software development, UI/UX Design, DevOps, Development, operation ${skillItems.map(
+        (item) => item.name
+      )} `,
+    },
+    { name: "author", content: "Shakeel Haider" },
+  ];
 };
 
 const Skills = () => {

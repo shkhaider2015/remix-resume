@@ -120,6 +120,10 @@ export const navData: INavItem[] = [
     name: "contacts",
     label: "Contacts",
   },
+  {
+    name: "blog",
+    label: "Blog",
+  },
 ];
 
 export const serviceItems: IServicesItem[] = [

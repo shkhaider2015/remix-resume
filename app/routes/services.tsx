@@ -9,7 +9,12 @@ export const links: LinksFunction = () => [
 ];
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Shakeel's Services" }];
+  return [
+    { title: "Shakeel's Services" }, 
+    { name: "description", content: "Shakeel's Services" },
+    { name: "keywords", content: "services, shakeel haider, web development, software development, UI/UX Design, DevOps, Development, operation" },
+    { name: "author", content: "Shakeel Haider" },
+  ];
 };
 
 export default function Services() {

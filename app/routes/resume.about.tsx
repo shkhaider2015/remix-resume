@@ -1,7 +1,15 @@
 import { MetaFunction } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Shakeel's About" }];
+  return [
+    { title: "Shakeel's About" },
+    { name: "description", content: "Shakeel's About" },
+    {
+      name: "keywords",
+      content: `about, shakeel haider, web development, software development, UI/UX Design, DevOps, Development, operation`,
+    },
+    { name: "author", content: "Shakeel Haider" },
+  ];
 };
 
 const About = () => {

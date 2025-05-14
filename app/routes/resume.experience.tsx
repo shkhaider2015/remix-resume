@@ -3,7 +3,17 @@ import ExperienceItem from "~/components/ExperienceItem/ExperienceItem";
 import { experienceItems, experienceParagraph } from "~/data";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Shakeel's Experience" }];
+  return [
+    { title: "Shakeel's Experience" },
+    { name: "description", content: "Shakeel's Experience" },
+    {
+      name: "keywords",
+      content: `experience, shakeel haider, web development, software development, UI/UX Design, DevOps, Development, operation ${experienceItems.map(
+        (item) => item.title
+      )} `,
+    },
+    { name: "author", content: "Shakeel Haider" },
+  ];
 };
 
 const Experience = () => {

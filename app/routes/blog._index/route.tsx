@@ -10,7 +10,12 @@ export const links: LinksFunction = () => [
 ];
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Shakeel Haider's Blog" }];
+  return [
+    { title: "Shakeel Haider's Blog" },
+    { name: "description", content: "Shakeel Haider's Blog" },
+    { name: "keywords", content: "blog, shakeel haider, article, blogs, articles" },
+    { name: "author", content: "Shakeel Haider" },
+  ];
 };
 
 export const loader: LoaderFunction = async ({
