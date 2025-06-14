@@ -1,12 +1,14 @@
 import {
   isRouteErrorResponse,
   json,
+  Link,
   Links,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
   useLoaderData,
+  useNavigate,
   useRouteError,
 } from "@remix-run/react";
 import type { LinksFunction, LoaderFunction } from "@remix-run/node";
@@ -175,6 +177,11 @@ export default function App() {
 
 export function ErrorBoundary() {
   const error = useRouteError();
+  const navigate = useNavigate();
+
+  const _goBack = () => {
+    navigate(-1);
+  };
   return (
     <html>
       <head>
@@ -182,19 +189,34 @@ export function ErrorBoundary() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <main className="error-container">
-          {isRouteErrorResponse(error) ? (
-            <div>
-              <h1>{error.status}</h1>
-              <h3>{error.statusText}</h3>
-            </div>
-          ) : error instanceof Error ? (
-            <h1>{error.message}</h1>
-          ) : (
-            <h1>Unknown Error</h1>
-          )}
-        </main>
+      <body className="error-body">
+        <div className="noise"></div>
+        <div className="overlay"></div>
+        <div className="terminal">
+          <h1>
+            Error <span className="errorcode">404</span>
+          </h1>
+          <p className="output">
+            The page you are looking for might have been removed, had its name
+            changed or is temporarily unavailable.
+          </p>
+          <p className="output">
+            Please try to <Link className="error-link" to="#" replace onClick={_goBack}>go back</Link> or{" "}
+            <Link className="error-link" to="/" replace>return to the homepage</Link>.
+          </p>
+          <p className="output">Good luck.</p>
+          <p className="underscore" >&nbsp;</p>
+        </div>
+        {/* {isRouteErrorResponse(error) ? (
+          <div>
+            <h1>{error.status}</h1>
+            <h3>{error.statusText}</h3>
+          </div>
+        ) : error instanceof Error ? (
+          <h1>{error.message}</h1>
+        ) : (
+          <h1>Unknown Error</h1>
+        )} */}
         <Scripts />
       </body>
     </html>
