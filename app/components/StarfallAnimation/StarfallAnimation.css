@@ -1,0 +1,24 @@
+
+.starfall-container > .star {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(141, 141, 141, 0.548);
+    /* filter: blur(3px); */
+    /* border-radius: 50%; */
+    border-radius: 5px;
+    animation: floatDown ease-in infinite;
+}
+
+
+
+@keyframes floatDown {
+    0% {
+        transform: translateY(-160px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-0px);
+        opacity: 0;
+    }
+}

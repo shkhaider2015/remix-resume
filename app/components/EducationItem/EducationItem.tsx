@@ -1,11 +1,13 @@
 import { IExperienceItem } from '~/utils/interfaces/components';
 import './EducationItem.css'
+import StarffallAnimation from '../StarfallAnimation/StarfallAnimation';
 
 const EducationItem = (props:IExperienceItem) => {
   const { date, title, companyName } = props;
 
   return <div className="edu-item-con">
     <div className="content-con">
+      <StarffallAnimation />
       <div className="ribbon" >some</div>
         <h4 className="date">{date}</h4>
         <p className="title">{title}</p>
@@ -17,5 +19,7 @@ const EducationItem = (props:IExperienceItem) => {
       </div>
   </div>;
 };
+
+
 
 export default EducationItem;

@@ -1,7 +1,7 @@
 self.addEventListener("install", (event) => {
     event.waitUntil(
-      caches.open("remix-pwa-cache").then((cache) => {
-        return cache.addAll(["/offline.html"]);
+      caches.open("shakeel-haider-cache").then((cache) => {
+        return cache.addAll(["/offline.html?v=2"]);
       })
     );
   });
@@ -9,7 +9,9 @@ self.addEventListener("install", (event) => {
   self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(event.request).catch(() => {
-        return caches.match("/offline.html");
+        if(event.request.mode === "navigate") {
+          return caches.match("/offline.html?v=2");
+        }
       })
     );
   });
