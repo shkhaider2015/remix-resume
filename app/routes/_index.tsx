@@ -1,6 +1,6 @@
 import { LinksFunction } from "@remix-run/node";
 import indexStylesHref from "./_index.css?url";
-import { ProfilePictre3, ProfilePictre } from "~/assets/images";
+import { ProfilePictre } from "~/assets/images";
 import { MetaFunction } from "@remix-run/react";
 import { socialLinks } from "~/data";
 
@@ -46,7 +46,7 @@ export default function Index() {
       <div className="home-section home-right">
         <div className="circle">
           <div className="inner-circle">
-            <img src={ProfilePictre3} alt="shakeel haider's" />
+            <img src={ProfilePictre} alt="shakeel haider's Profile Picture" />
           </div>
         </div>
       </div>
