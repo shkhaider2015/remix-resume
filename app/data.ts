@@ -53,6 +53,7 @@ import {
   WebApps,
   MingleeImages,
   RunofshowAppImages,
+  HelloAya,
 } from "./assets/images";
 import React from "react";
 import Github from "./assets/icons/Github";
@@ -349,6 +350,46 @@ export const workItems: IWorkItem[] = [
   },
   {
     count: 2,
+    title: "Hello Aya",
+    role: "Full Stack Developer",
+    desc: "Hello Aya is a web application that provides users to reserve and book room or appartment for their stay. It allows users to search for available rooms, view details, and make reservations. As a Full Stack Developer, I contributed to the development of the application, focusing on creating responsive and intuitive user interfaces and robust backend functionality.",
+    techStack: [
+      {
+        name: "React.js",
+        url: "https://reactjs.org/",
+      },
+      {
+        name: "Redux.js",
+        url: "https://redux.js.org/",
+      },
+      {
+        name: "Material UI",
+        url: "https://material-ui.com/",
+      },
+      {
+        name: "MySQL",
+        url: "https://www.mysql.com/",
+      },
+      {
+        name: "Wordpress",
+        url: "https://wordpress.org/",
+      },
+      {
+        name: "Node.js",
+        url: "https://nodejs.org/",
+      },
+      {
+        name: "Express.js",
+        url: "https://expressjs.com/",
+      },
+    ],
+    links: {
+      web: "https://helloaya.com/"
+    },
+    image: HelloAya,
+  },
+  {
+    count: 3,
     title: "Stunt Listing",
     role: "Frontend Developer",
     desc: "Stunt Listing is a web application that connects stunt performers with event organizers. It allows performers to create profiles, showcase their skills, and apply for gigs, while organizers can post events, view performer profiles, and hire talent. As a Frontend Developer, I contributed to the development of the application, focusing on creating responsive and intuitive user interfaces.",
@@ -376,7 +417,7 @@ export const workItems: IWorkItem[] = [
     image: StuntListingImages,
   },
   {
-    count: 3,
+    count: 4,
     title: "Shoe Store",
     role: "Frontend Developer",
     desc: "Shoe Store is a dummy e-commerce website that sells shoes online. It features a catalog of shoes and shopping cart, allowing users to browse and select products. As a Frontend Developer, I built the website using React.js, Redux.js, and Material UI, focusing on creating an engaging and user-friendly shopping experience.",
@@ -401,7 +442,7 @@ export const workItems: IWorkItem[] = [
     image: ShoeStoreImages,
   },
   {
-    count: 4,
+    count: 5,
     title: "Minglee",
     role: "Full Stack Developer",
     desc: "Minglee is a social networking application that connects users based on shared interests. It allows users to create profiles, connect with others, and share content, fostering a community of like-minded individuals. As a Full Stack Developer, I contributed to the development of the application, focusing on creating a seamless user experience and robust backend architecture.",
@@ -427,7 +468,7 @@ export const workItems: IWorkItem[] = [
     image: MingleeImages,
   },
   {
-    count: 5,
+    count: 6,
     title: "Runofshow App",
     role: "Mobile Developer",
     desc: "RunOfShowApp is a mobile application that helps event organizers manage their events efficiently. It provides a platform to create, manage, and share event schedules, enabling users to organize and execute events seamlessly. As a Mobile Developer, I contributed to the development of the application, focusing on creating a seamless user experience and intuitive interface.",
@@ -454,7 +495,7 @@ export const workItems: IWorkItem[] = [
     image: RunofshowAppImages,
   },
   {
-    count: 6,
+    count: 7,
     title: "Sky Electric",
     role: "Mobile Developer",
     desc: "SkyElectric is a mobile application that allows users to monitor and control their solar energy systems. It provides real-time data on energy production, consumption, and savings, enabling users to optimize their energy usage. As a Mobile Developer, I contributed to the development of the application, focusing on creating a user-friendly interface and seamless user experience.",
