@@ -33,6 +33,7 @@ import {
   GithubLogo,
   FigmaLogo,
   TensorflowLogo,
+  AngularLogo,
 } from "~/assets/logos";
 import {
   IContactItem,
@@ -54,6 +55,7 @@ import {
   MingleeImages,
   RunofshowAppImages,
   HelloAya,
+  HeyPlanner,
 } from "./assets/images";
 import React from "react";
 import Github from "./assets/icons/Github";
@@ -166,6 +168,10 @@ export const skillItems: ISkillItem[] = [
   {
     name: "React JS",
     Icon: ReactLogo,
+  },
+  {
+    name: "Angular JS",
+    Icon: AngularLogo,
   },
   {
     name: "Three JS",
@@ -390,6 +396,38 @@ export const workItems: IWorkItem[] = [
   },
   {
     count: 3,
+    title: "Hey Planner",
+    role: "Full Stack Developer",
+    desc: "Hey Planner is a web application that helps users plan and organize events. It provides a platform to create, manage, and share event details, enabling users to coordinate and execute events seamlessly. As a Full Stack Developer, I contributed to the development of the application, focusing on creating responsive and intuitive user interfaces and robust backend functionality.",
+    techStack: [
+      {
+        name: "Node.js",
+        url: "https://nodejs.org/",
+      },
+      {
+        name: "Express.js",
+        url: "https://expressjs.com/",
+      },
+      {
+        name: "MongoDB",
+        url: "https://www.mongodb.com/",
+      },
+      {
+        name: "AWS",
+        url: "https://aws.amazon.com/",
+      },
+      {
+        name: "Angular.js",
+        url: "https://angular.io/",
+      }
+    ],
+    links: {
+      web: "https://www.heyplanner.com/",
+    },
+    image: HeyPlanner,
+  },
+  {
+    count: 4,
     title: "Stunt Listing",
     role: "Frontend Developer",
     desc: "Stunt Listing is a web application that connects stunt performers with event organizers. It allows performers to create profiles, showcase their skills, and apply for gigs, while organizers can post events, view performer profiles, and hire talent. As a Frontend Developer, I contributed to the development of the application, focusing on creating responsive and intuitive user interfaces.",
@@ -415,31 +453,6 @@ export const workItems: IWorkItem[] = [
       web: "https://stuntlisting.com/about_us",
     },
     image: StuntListingImages,
-  },
-  {
-    count: 4,
-    title: "Shoe Store",
-    role: "Frontend Developer",
-    desc: "Shoe Store is a dummy e-commerce website that sells shoes online. It features a catalog of shoes and shopping cart, allowing users to browse and select products. As a Frontend Developer, I built the website using React.js, Redux.js, and Material UI, focusing on creating an engaging and user-friendly shopping experience.",
-    techStack: [
-      {
-        name: "React.js",
-        url: "https://reactjs.org/",
-      },
-      {
-        name: "Redux.js",
-        url: "https://redux.js.org/",
-      },
-      {
-        name: "Material UI",
-        url: "https://material-ui.com/",
-      },
-    ],
-    links: {
-      web: "https://shkhaider_shoes_store.surge.sh/",
-      github: "https://github.com/shkhaider2015/Project3_ShoesStore_React",
-    },
-    image: ShoeStoreImages,
   },
   {
     count: 5,
@@ -516,5 +529,30 @@ export const workItems: IWorkItem[] = [
       appStore: "https://apps.apple.com/pk/app/skyelectric/id1407222778",
     },
     image: SkyElectricImages,
+  },
+   {
+    count: 8,
+    title: "Shoe Store",
+    role: "Frontend Developer",
+    desc: "Shoe Store is a dummy e-commerce website that sells shoes online. It features a catalog of shoes and shopping cart, allowing users to browse and select products. As a Frontend Developer, I built the website using React.js, Redux.js, and Material UI, focusing on creating an engaging and user-friendly shopping experience.",
+    techStack: [
+      {
+        name: "React.js",
+        url: "https://reactjs.org/",
+      },
+      {
+        name: "Redux.js",
+        url: "https://redux.js.org/",
+      },
+      {
+        name: "Material UI",
+        url: "https://material-ui.com/",
+      },
+    ],
+    links: {
+      web: "https://shkhaider_shoes_store.surge.sh/",
+      github: "https://github.com/shkhaider2015/Project3_ShoesStore_React",
+    },
+    image: ShoeStoreImages,
   },
 ];
