@@ -22,3 +22,4 @@ export { default as InternetLogo } from "./logos/Internet";
 export { default as GooglePlayLogo } from "./logos/GooglePlay";
 export { default as AppleLogo } from "./logos/AppleLogo";
 export { default as AppLogo } from "./logos/AppLogo";
+export { default as AngularLogo } from "./logos/AngularLogo";
