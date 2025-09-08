@@ -11,3 +11,4 @@ export { default as DevOps } from '~/assets/images/devops.png';
 export { default as ProfilePictre } from '~/assets/images/newDP.png';
 export { default as PDFLogo } from '~/assets/images/pdf.png';
 export { default as HelloAya } from '~/assets/images/hello-aya.png';
+export { default as HeyPlanner } from '~/assets/images/hey-planner.png';
