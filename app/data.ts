@@ -34,6 +34,9 @@ import {
   FigmaLogo,
   TensorflowLogo,
   AngularLogo,
+  GraphQLLogo,
+  DockerLogo,
+  AwsLogo,
 } from "~/assets/logos";
 import {
   IContactItem,
@@ -206,6 +209,10 @@ export const skillItems: ISkillItem[] = [
     Icon: MongoDBLogo,
   },
   {
+    name: "GraphQL",
+    Icon: GraphQLLogo,
+  },
+  {
     name: "WebPack",
     Icon: WebpackLogo,
   },
@@ -232,6 +239,14 @@ export const skillItems: ISkillItem[] = [
   {
     name: "GitHub",
     Icon: GithubLogo,
+  },
+  {
+    name: "Docker",
+    Icon: DockerLogo,
+  },
+  {
+    name: "AWS",
+    Icon: AwsLogo,
   },
   {
     name: "Figma",
