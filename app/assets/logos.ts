@@ -23,3 +23,6 @@ export { default as GooglePlayLogo } from "./logos/GooglePlay";
 export { default as AppleLogo } from "./logos/AppleLogo";
 export { default as AppLogo } from "./logos/AppLogo";
 export { default as AngularLogo } from "./logos/AngularLogo";
+export { default as AwsLogo } from "./logos/Aws";
+export { default as DockerLogo } from "./logos/Docker";
+export { default as GraphQLLogo } from "./logos/GraphQL";
