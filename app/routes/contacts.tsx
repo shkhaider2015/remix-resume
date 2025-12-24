@@ -1,4 +1,8 @@
-import { ActionFunctionArgs, LinksFunction } from "@remix-run/node";
+import {
+  ActionFunctionArgs,
+  LinksFunction,
+  LoaderFunction,
+} from "@remix-run/node";
 import contactsStyleHref from "./conntacts.css?url";
 import InputField from "~/components/InputField/InputField";
 import TextareaInputField from "~/components/TextareaInputField/TextareaInputField";
@@ -8,8 +12,10 @@ import { EService, IOption } from "~/utils/interfaces/components";
 import ContactItem from "~/components/ContactItem/ContactItem";
 import { contacts } from "~/data";
 import {
+  json,
   MetaFunction,
   useFetcher,
+  useLoaderData,
   useNavigate,
 } from "@remix-run/react";
 import {
@@ -20,7 +26,10 @@ import {
 import nodemailer from "nodemailer";
 import Loader from "~/components/Loader/Loader";
 import { useCallback, useEffect, useState } from "react";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import {
+  GoogleReCaptchaProvider,
+  useGoogleReCaptcha,
+} from "react-google-recaptcha-v3";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: contactsStyleHref },
@@ -88,6 +97,18 @@ export const action = async ({
   };
 };
 
+export const loader: LoaderFunction = async ({
+  request,
+}: {
+  request: Request;
+}) => {
+  return json({
+    ENV: {
+      RECAPTCHA_SITE_KEY: process.env.RECAPTCHA_SITE_KEY,
+    },
+  });
+};
+
 const _sendEmail = async (data: IContactForm): Promise<boolean> => {
   try {
     const SMTP_Email = process.env.EMAIL_USER_SMTP;
@@ -126,7 +147,7 @@ const _sendEmail = async (data: IContactForm): Promise<boolean> => {
   }
 };
 
-export default function Contacts() {
+const ContactScreen = () => {
   const navigate = useNavigate();
   const fetcher = useFetcher<typeof action>();
   const actionData = fetcher.data as any;
@@ -157,9 +178,12 @@ export default function Contacts() {
     if (!executeRecaptcha) {
       return;
     }
-
-    const token = await executeRecaptcha("submit");
-    setCaptchaToken(token);
+    try {
+      const token = await executeRecaptcha("submit");
+      setCaptchaToken(token);
+    } catch (error) {
+      console.error(error);
+    }
   }, [executeRecaptcha]);
 
   useEffect(() => {
@@ -259,5 +283,23 @@ export default function Contacts() {
         </div>
       </div>
     </div>
+  );
+};
+
+export default function Contacts() {
+  const { ENV } = useLoaderData<typeof loader>();
+
+  return (
+    <GoogleReCaptchaProvider
+      reCaptchaKey={ENV.RECAPTCHA_SITE_KEY}
+      scriptProps={{
+        async: true,
+        defer: true,
+        appendTo: "head",
+        nonce: undefined,
+      }}
+    >
+      <ContactScreen />
+    </GoogleReCaptchaProvider>
   );
 }
