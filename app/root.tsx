@@ -1,5 +1,4 @@
 import {
-  isRouteErrorResponse,
   json,
   Link,
   Links,
@@ -21,7 +20,6 @@ import { useEffect } from "react";
 import { ThemeProvider } from "./context/theme";
 import { getThemeFromCookies } from "./utils/theme.server";
 import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: appStylesHref },
@@ -36,7 +34,7 @@ export const loader: LoaderFunction = async ({
   return json({
     theme,
     ENV: {
-      RECAPTCHA_SITE_KEY: process.env.RECAPTCHA_SITE_KEY,
+      GOOGLE_TAG_ID: process.env.GOOGLE_TAG_ID
     },
   });
 };
@@ -56,6 +54,21 @@ export default function App() {
     <ThemeProvider initialTheme={theme}>
       <html lang="en">
         <head>
+           {/* Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${ENV.GOOGLE_TAG_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${ENV.GOOGLE_TAG_ID}');
+              `,
+            }}
+          />
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -155,17 +168,7 @@ export default function App() {
           <Navbar />
           <div id="detail">
             <Cursor />
-            <GoogleReCaptchaProvider
-              reCaptchaKey={ENV.RECAPTCHA_SITE_KEY}
-              scriptProps={{
-                async: true,
-                defer: true,
-                appendTo: "head",
-                nonce: undefined,
-              }}
-            >
               <Outlet />
-            </GoogleReCaptchaProvider>
           </div>
           <ScrollRestoration />
           <Scripts />
@@ -207,16 +210,6 @@ export function ErrorBoundary() {
           <p className="output">Good luck.</p>
           <p className="underscore" >&nbsp;</p>
         </div>
-        {/* {isRouteErrorResponse(error) ? (
-          <div>
-            <h1>{error.status}</h1>
-            <h3>{error.statusText}</h3>
-          </div>
-        ) : error instanceof Error ? (
-          <h1>{error.message}</h1>
-        ) : (
-          <h1>Unknown Error</h1>
-        )} */}
         <Scripts />
       </body>
     </html>
