@@ -1,8 +1,9 @@
 import { LinksFunction } from "@remix-run/node";
 import indexStylesHref from "./_index.css?url";
-import { ProfilePictre } from "~/assets/images";
+import { ProfilePictreDarker, ProfilePictreLight } from "~/assets/images";
 import { MetaFunction } from "@remix-run/react";
 import { socialLinks } from "~/data";
+import { useTheme } from "~/context/theme";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: indexStylesHref },
@@ -20,6 +21,21 @@ export const meta: MetaFunction = () => {
     { name: "author", content: "Shakeel Haider" },
   ];
 };
+
+const ProfilePicture = () => {
+  const { theme } = useTheme();
+  const isLightMode = theme === "light";
+
+  return (
+    <picture>
+      <source srcSet={isLightMode ? ProfilePictreLight : ProfilePictreDarker} media="(prefers-color-scheme: dark)" />
+      <img
+        src={isLightMode ? ProfilePictreLight : ProfilePictreDarker}
+        alt="shakeel haider's Profile Picture"
+      />
+    </picture>
+  );
+}
 
 export default function Index() {
   return (
@@ -46,7 +62,7 @@ export default function Index() {
       <div className="home-section home-right">
         <div className="circle">
           <div className="inner-circle">
-            <img src={ProfilePictre} alt="shakeel haider's Profile Picture" />
+            <ProfilePicture />
           </div>
         </div>
       </div>
