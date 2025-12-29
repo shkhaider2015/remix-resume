@@ -100,7 +100,7 @@ export const socialLinks: {
   },
   {
     name: "Whatsapp",
-    url: "https://wa.me/+923460027852",
+    url: "https://wa.me/+923172001732",
     Icon: Whatsapp,
   },
 ];
