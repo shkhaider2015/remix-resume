@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import "./image.css";
+import { useTheme } from "~/context/theme";
 
 interface IImage extends React.ImgHTMLAttributes<HTMLImageElement> {
   error?: string;
@@ -11,6 +12,9 @@ const MyImage = (props: IImage) => {
   const [loaded, setLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
   const [isClientSide, setIsClientSide] = useState(false);
+  let { theme } = useTheme();
+
+  theme = theme || "light"; 
 
   useEffect(() => {
     setIsClientSide(true);
@@ -19,7 +23,7 @@ const MyImage = (props: IImage) => {
 
   return ( 
     <div className={` ${loaded ? "" : "image-wrapper" } ${className || ""}`}>
-      {!loaded && !hasError && <div className="image-placeholder" />}
+      {!loaded && !hasError && <div className={`image-placeholder ${theme} `} />}
       {!hasError && isClientSide ? (
         <img
           {...rest}
