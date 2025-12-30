@@ -28,7 +28,7 @@
 }
 
 [data-theme="light"] {
-  --primary-green: #04592c;
+  --primary-green: #009c49;
   --black: #ffffff;
   --white: #000000;
   --nav-svgs: #3e3e3e;
@@ -40,7 +40,7 @@
   --skill-item-border: rgb(198, 198, 198);
   --mobile-nav-bg: rgb(211, 211, 211);
   --carousel-btns: #07b95a;
-  --carousel-btns-hvr: #087a3d;
+  --carousel-btns-hvr: #08a04f;
   --contact-form-bg: #e3e3e3;
   --input-bg: #d3d3d3;
   --cursor-fill: #f2f2f200;
