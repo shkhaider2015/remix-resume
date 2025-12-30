@@ -14,3 +14,5 @@ export { default as HeyPlanner } from '~/assets/images/hey-planner.png';
 export { default as ProfilePictreDarker } from '~/assets/images/profile-darker.png';
 export { default as ProfilePictreDark } from '~/assets/images/profile-dark.png';
 export { default as ProfilePictreLight } from '~/assets/images/profile-light.png';
+export { default as ProfilePictreDarkerReduce } from '~/assets/images/profile-darker-reduce.png';
+export { default as ProfilePictreLightReduce } from '~/assets/images/profile-light-reduce.png';

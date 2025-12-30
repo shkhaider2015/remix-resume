@@ -1,6 +1,6 @@
 import { LinksFunction } from "@remix-run/node";
 import indexStylesHref from "./_index.css?url";
-import { ProfilePictreDarker, ProfilePictreLight } from "~/assets/images";
+import { ProfilePictreDarkerReduce, ProfilePictreLightReduce } from "~/assets/images";
 import { MetaFunction } from "@remix-run/react";
 import { socialLinks } from "~/data";
 import { useTheme } from "~/context/theme";
@@ -28,9 +28,9 @@ const ProfilePicture = () => {
 
   return (
     <picture>
-      <source srcSet={isLightMode ? ProfilePictreLight : ProfilePictreDarker} media="(prefers-color-scheme: dark)" />
+      <source srcSet={isLightMode ? ProfilePictreLightReduce : ProfilePictreDarkerReduce} media="(prefers-color-scheme: dark)" />
       <img
-        src={isLightMode ? ProfilePictreLight : ProfilePictreDarker}
+        src={isLightMode ? ProfilePictreLightReduce : ProfilePictreDarkerReduce}
         alt="shakeel haider's Profile Picture"
       />
     </picture>
