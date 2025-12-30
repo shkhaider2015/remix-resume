@@ -93,11 +93,11 @@ export const socialLinks: {
     url: "https://stackoverflow.com/users/8307195/shakeel-haider",
     Icon: Stackoverflow,
   },
-  {
-    name: "Instagram",
-    url: "https://www.instagram.com/shkhaider2k15/",
-    Icon: Instagram,
-  },
+  // {
+  //   name: "Instagram",
+  //   url: "https://www.instagram.com/shkhaider2k15/",
+  //   Icon: Instagram,
+  // },
   {
     name: "Whatsapp",
     url: "https://wa.me/+923172001732",
