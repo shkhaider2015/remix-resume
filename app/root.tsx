@@ -20,6 +20,9 @@ import { useEffect } from "react";
 import { ThemeProvider } from "./context/theme";
 import { getThemeFromCookies } from "./utils/theme.server";
 import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
+import { useChangeLanguage } from "remix-i18next/react";
+import { useTranslation } from "react-i18next";
+import { getLocaleFromUrl } from "./utils/functions/functions.server";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: appStylesHref },
@@ -31,16 +34,27 @@ export const loader: LoaderFunction = async ({
   request: Request;
 }) => {
   const theme = getThemeFromCookies(request);
+  let locale = getLocaleFromUrl(request);
+  
   return json({
     theme,
     ENV: {
       GOOGLE_TAG_ID: process.env.GOOGLE_TAG_ID
     },
+    locale,
   });
 };
 
+export let handle = {
+  i18n: "common",
+};
+
 export default function App() {
-  const { theme, ENV } = useLoaderData<typeof loader>();
+  const { theme, ENV, locale } = useLoaderData<typeof loader>();
+   // Get the locale from the loader
+  let { i18n } = useTranslation();
+
+  useChangeLanguage(locale);
 
   useEffect(() => {
     if ("serviceWorker" in navigator) {
@@ -52,7 +66,7 @@ export default function App() {
 
   return (
     <ThemeProvider initialTheme={theme}>
-      <html lang="en">
+      <html lang={locale} dir={i18n.dir()}>
         <head>
            {/* Google Analytics */}
           <script
