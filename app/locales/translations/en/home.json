@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "title": "Shakeel Haider's Portfolio",
+        "description": "Shakeel Haider's Portfolio",
+        "keywords": "portfolio, shakeel haider, software engineer, web developer, software developer, mobile apps, full-stack developer",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "Shakeel Haider",
+        "role": "Software Engineer 👨🏻‍💻",
+        "description": "I'm a passionate software engineer with over 5 years of experience in 🔴 frontend, 🟢 backend, and 🔵 database development. Skilled in creating user-friendly interfaces, scalable applications, and efficient data solutions, I thrive on solving complex problems and delivering high-quality software.",
+        "cta": "Let's build innovative solutions together! 🚀"
+    },
+    "others": {
+        "profile_picture_alt": "Shakeel Haider's Profile Picture"
+    }
+}
