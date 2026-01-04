@@ -179,7 +179,7 @@ export default function App() {
         <body>
           <ThemeToggle />
           <Loader />
-          <Navbar />
+          <Navbar locale={locale} />
           <div id="detail">
             <Cursor />
               <Outlet />

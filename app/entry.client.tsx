@@ -13,7 +13,7 @@ i18next
   .use(Backend)
   .init({
     ...i18n, // The same config we created for the server
-    ns: getInitialNamespaces(),
+    ns: [], // Get the initial namespaces from the server
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json",
     },

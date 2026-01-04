@@ -31,7 +31,6 @@ export const meta: MetaFunction = ({ data: { meta } }: any) => {
 export const loader: LoaderFunction = async ({ request }) => {
 
   const locale = getLocaleFromUrl(request);
-  console.log("Loader locale:", locale);
   let t = await i18next.getFixedT(locale, "home");
 
   let data: IServerProps = {

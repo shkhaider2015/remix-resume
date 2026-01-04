@@ -20,6 +20,7 @@ const HomeIcon = (props: NavIconProps) => {
           isActive ? "active" : isPending ? "pending" : ""
         }`;
       }}
+      end
     >
       <svg
         width={width}

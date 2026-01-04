@@ -9,7 +9,7 @@ import { navData } from "~/data";
 import { useState } from "react";
 import { BlogIcon } from "~/assets/icon";
 
-const Navbar = () => {
+const Navbar = ({ locale="en" }: { locale: string }) => {
   const [toggle, setToggle] = useState(false);
 
   const _toggleMenu = () => {
@@ -30,7 +30,7 @@ const Navbar = () => {
         {navData.map((navItem) => (
           <NavLink
             key={navItem.label}
-            to={navItem.name}
+            to={`${locale}/${navItem.name}`}
             className={({ isActive, isPending }) => {
               return `mobile-nav-item ${
                 isActive ? "active" : isPending ? "pending" : ""
@@ -42,12 +42,12 @@ const Navbar = () => {
           </NavLink>
         ))}
       </div>
-      <HomeIcon name="" label="Home" />
-      <ServicesIcon name="services" label="Services" />
-      <ResumeIcon name="resume" label="Resume" />
-      <WorkIcon name="work" label="Work" />
-      <ContactsIcon name="contacts" label="Contact" />
-      <BlogIcon name="blog" label="Blog" />
+      <HomeIcon name={`${locale}`} label="Home" />
+      <ServicesIcon name={`${locale}/services`} label="Services" />
+      <ResumeIcon name={`${locale}/resume`} label="Resume" />
+      <WorkIcon name={`${locale}/work`} label="Work" />
+      <ContactsIcon name={`${locale}/contacts`} label="Contact" />
+      <BlogIcon name={`${locale}/blog`} label="Blog" />
     </nav>
   );
 };

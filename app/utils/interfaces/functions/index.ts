@@ -51,4 +51,5 @@ export type BlogListApiResponse<T> = {
   status: "success" | "error";
   message: string;
   data: BlogPost[] | null;
+  isListingPage?: boolean;
 };

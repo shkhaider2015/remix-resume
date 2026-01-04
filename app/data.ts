@@ -136,25 +136,25 @@ export const serviceItems: IServicesItem[] = [
   {
     id: "si-1",
     count: 1,
-    title: "Web Development",
+    title: "web_development",
     imageURI: WebApps,
   },
   {
     id: "si-2",
     count: 2,
-    title: "Mobile Development",
+    title: "mobile_development",
     imageURI: MobApps,
   },
   {
     id: "si-3",
     count: 3,
-    title: "DevOps",
+    title: "devops",
     imageURI: DevOps,
   },
   {
     id: "si-4",
     count: 4,
-    title: "UI/UX Design",
+    title: "uiux_design",
     imageURI: UIUX,
   },
 ];

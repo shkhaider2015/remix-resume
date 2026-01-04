@@ -79,19 +79,19 @@
     color: var(--white);
 }
 
-.tab-screen-con>.descriptiion.about-desc {
+.tab-screen-con .descriptiion.about-desc {
     opacity: 1;
 }
 
-.tab-screen-con>.descriptiion.others-desc {
+.tab-screen-con .descriptiion.others-desc {
     width: 50%;
-    font-size: 14px;
+    font-size: 16px;
     font-family: Poppins;
     line-height: 25px;
     text-align: left;
 }
 
-.tab-screen-con>.about-header {
+.tab-screen-con .about-header {
     background-color: var(--primary-green);
     padding: 2px 10px;
     color: var(--black);
