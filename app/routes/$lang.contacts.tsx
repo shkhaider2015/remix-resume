@@ -8,7 +8,7 @@ import InputField from "~/components/InputField/InputField";
 import TextareaInputField from "~/components/TextareaInputField/TextareaInputField";
 import Button from "~/components/Button/Button";
 import SelectField from "~/components/SelectField/SelectField";
-import { EService, IOption } from "~/utils/interfaces/components";
+import { EService, IContactItem, IOption } from "~/utils/interfaces/components";
 import ContactItem from "~/components/ContactItem/ContactItem";
 import { contacts } from "~/data";
 import {
@@ -30,21 +30,23 @@ import {
   GoogleReCaptchaProvider,
   useGoogleReCaptcha,
 } from "react-google-recaptcha-v3";
+import { getLocaleFromUrl } from "~/utils/functions/functions.server";
+import i18next from "~/locales/i18next.server";
+import { IServerProps } from "~/utils/interfaces/routes";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: contactsStyleHref },
 ];
 
-export const meta: MetaFunction = () => {
+export const meta: MetaFunction = ({ data: { meta } }: any) => {
   return [
-    { title: "Shakeel Haider's Contacts" },
-    { name: "description", content: "Shakeel Haider's Contacts" },
+    { title: meta.title },
+    { name: "description", content: meta.description },
     {
       name: "keywords",
-      content:
-        "contacts, shakeel haider, web developer, software developer, software engineer",
+      content: meta.keywords,
     },
-    { name: "author", content: "Shakeel Haider" },
+    { name: "author", content: meta.author },
   ];
 };
 
@@ -55,6 +57,8 @@ export const action = async ({
   // invariant(params.contactId, "Missing contactId param");
   const formData = await request.formData();
   const recaptchaToken = formData.get("_captcha");
+  const locale = getLocaleFromUrl(request);
+  let t = await i18next.getFixedT(locale, "contacts");
 
   // Verify with Google
   const secret = process.env.RECAPTCHA_SECRET_KEY;
@@ -64,36 +68,33 @@ export const action = async ({
   );
   const verification = await response.json();
 
-  console.log("verification", verification);
-
   if (!verification.success) {
-    return { message: "reCAPTCHA verification failed. Please try again." };
+    return { message: t("data.recaptch_error") };
   }
 
   const data = Object.fromEntries(formData) as unknown as IContactForm;
 
   const errors: IContactFormError | undefined = {};
 
-  if (data.email === "") errors.email = "Please enter your email";
-  if ((data.service as any) === "") errors.service = "Please select service";
+  if (data.email === "") errors.email = t("data.email_error");
+  if ((data.service as any) === "") errors.service = t("data.service_error");
 
   if (Object.keys(errors).length > 0)
     return {
       error: errors as unknown as IContactForm,
-      message: "Please fill all the required fields",
+      message: t("data.required_error"),
     };
 
   const sendEmail = await _sendEmail(data);
 
   if (!sendEmail)
     return {
-      message: "Something wrong happened!",
+      message: t("data.something_went_wrong"),
     };
   // await updateContact(params.contactId, updates);
   // return redirect(`/contacts/${params.contactId}`);
   return {
-    message:
-      "Thank you for reaching out. I will get back to you at the earliest opportunity. ❤️❤️",
+    message: t("data.success_message"),
   };
 };
 
@@ -102,10 +103,43 @@ export const loader: LoaderFunction = async ({
 }: {
   request: Request;
 }) => {
+
+  const locale = getLocaleFromUrl(request);
+  let t = await i18next.getFixedT(locale, "contacts");
+
+  let data: IServerProps = {
+    data: {
+      title: t("data.title"),
+      subtitle: t("data.subtitle"),
+      description: t("data.description"),
+      webDevelopment: t("data.web_development"),
+      mobileDevelopment: t("data.mobile_development"),
+      uiUxDesign: t("data.ui_ux_design"),
+      devOps: t("data.dev_ops"),
+      firstName: t("data.first_name"),
+      lastName: t("data.last_name"),
+      email: t("data.email"),
+      phone: t("data.phone"),
+      select_service: t("data.select_service"),
+      message: t("data.message"),
+      email_label: t("data.email_label"),
+      phone_label: t("data.phone_label"),
+      address_label: t("data.address_label"),
+      button_label: t("data.button_label"),
+    },
+    meta: {
+      title: t("meta.title"),
+      description: t("meta.description"),
+      keywords: t("meta.keywords"),
+      author: t("meta.author"),
+    }
+  };
+
   return json({
     ENV: {
       RECAPTCHA_SITE_KEY: process.env.RECAPTCHA_SITE_KEY,
     },
+    ...data,
   });
 };
 
@@ -147,28 +181,37 @@ const _sendEmail = async (data: IContactForm): Promise<boolean> => {
   }
 };
 
+export let handle = {
+  i18n: "contacts",
+};
+
 const ContactScreen = () => {
   const navigate = useNavigate();
   const fetcher = useFetcher<typeof action>();
+  const { data } = useLoaderData<typeof loader>();
   const actionData = fetcher.data as any;
   const options: IOption[] = [
     {
-      label: "Web Development",
+      label: data?.webDevelopment,
       value: EService.WEB_DEVELOPMENT,
     },
     {
-      label: "Mobile Development",
+      label: data?.mobileDevelopment,
       value: EService.MOBILE_DEVELOPMENT,
     },
     {
-      label: "UI/UX Design",
+      label: data?.uiUxDesign,
       value: EService.UI_UX_DESIGN,
     },
     {
-      label: "DevOps",
+      label: data?.devOps,
       value: EService.DEV_OPS,
     },
   ];
+  const contactItems = contacts.map(item => ({
+    ...item,
+    label: data?.[item.label as keyof typeof data] || item.label
+  }));
 
   const [captchaToken, setCaptchaToken] = useState<string>("");
 
@@ -213,28 +256,27 @@ const ContactScreen = () => {
         </div>
       )}
       <Loader isSubmitting={fetcher.state !== "idle"} />
-      <h1 className="screen-title">CONTACTS</h1>
+      <h1 className="screen-title">{data?.title}</h1>
       <div className="contacts-content">
         <div className="form-con">
           <fetcher.Form method="POST">
-            <h4 className="title">Let's Work Together</h4>
+            <h4 className="title">{data?.subtitle}</h4>
             <h5 className="desc">
-              I am available for freelance work. Connect with me through the
-              form below or email me directly at given email.
+              {data?.description}
             </h5>
             <div className="fields">
               <InputField
                 name="firstName"
                 type="text"
                 autoCapitalize="on"
-                placeholder="First Name"
+                placeholder={data?.firstName}
                 required={true}
               />
               <InputField
                 name="lastName"
                 type="text"
                 autoCapitalize="on"
-                placeholder="Last Name"
+                placeholder={data?.lastName}
                 required
               />
             </div>
@@ -242,15 +284,15 @@ const ContactScreen = () => {
               <InputField
                 name="email"
                 type="email"
-                placeholder="Email"
+                placeholder={data?.email}
                 required
                 error={actionData?.email}
               />
-              <InputField name="phone" type="tel" placeholder="Phone No." />
+              <InputField name="phone" type="tel" placeholder={data?.phone} />
             </div>
             <SelectField
               name="service"
-              placeholder="Select Sevice"
+              placeholder={data.select_service}
               options={options}
               error={actionData?.service}
               onChange={(e) => {
@@ -259,7 +301,7 @@ const ContactScreen = () => {
             />
             <TextareaInputField
               name="message"
-              placeholder="Message"
+              placeholder={data?.message}
               required={true}
             />
 
@@ -269,7 +311,7 @@ const ContactScreen = () => {
             <div className="btn-con">
               <Button
                 type="submit"
-                label="Send"
+                label={data?.button_label}
                 width={"40%"}
                 onSubmit={() => handleReCaptchaVerify()}
               />
@@ -277,7 +319,7 @@ const ContactScreen = () => {
           </fetcher.Form>
         </div>
         <div className="contacts-list">
-          {contacts.map((item) => (
+          {contactItems?.map((item:IContactItem) => (
             <ContactItem key={item.label} {...item} />
           ))}
         </div>
