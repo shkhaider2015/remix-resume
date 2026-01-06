@@ -1,4 +1,10 @@
 {
-    "title": "Remix Resume",
-    "description": "Create and manage your resume with Remix Resume, the open-source resume builder"
+    "nav": {
+        "home": "Home",
+        "services": "Services",
+        "resume": "Resume",
+        "work": "Work",
+        "blog": "Blog",
+        "contacts": "Contacts"
+    }
 }

@@ -28,7 +28,14 @@
     text-decoration: none;
 }
 
-.resume-container .resume-header .pdf-logo {
+.resume-container .resume-header .pdf-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-container .resume-header .pdf-con .pdf-logo {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -38,11 +45,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    row-gap: 5px;
+    row-gap: 0px;
 
 }
 
-.resume-container .resume-header .pdf-logo::after {
+.resume-container .resume-header .pdf-con .download-txt {
     content: 'Download PDF';
     font-family: Poppins;
     font-style: italic;
@@ -51,6 +58,7 @@
     color: var(--primary-green);
     width: 100px;
     height: 20px;
+    margin-top: -10px;
 }
 
 .resume-container .resume-header img {

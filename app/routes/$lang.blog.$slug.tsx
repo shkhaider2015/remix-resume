@@ -11,7 +11,6 @@ export const links: LinksFunction = () => [
 ];
 
 export const meta: MetaFunction = ({ data : { meta } }: any) => {
-  console.log("Meta data in blog index:", meta);
   return [
     { title: meta.title },
     { name: "description", content: meta.description },

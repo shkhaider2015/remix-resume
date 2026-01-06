@@ -6,6 +6,7 @@ import MyImage from "~/components/Image";
 import { PDFLogo } from "~/assets/images";
 import Loader from "~/components/Loader/Loader";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 // Add css via link
 export const links: LinksFunction = () => [
@@ -38,10 +39,12 @@ export const loader: LoaderFunction = ({ request }) => {
 
 export default function Resume() {
   const [loading, setLoading] = useState(false); 
+  const { t } = useTranslation("common")
   // get the deepest active route
   const matches = useMatches();
   const activeRoute: any = matches[matches.length - 1];
   const screenTitle = activeRoute?.data?.data?.title ?? "Resume";
+  const downloadPDF = t("others.download_pdf") ?? "Download PDF";
 
   const _downloadResume = async () => {
     try {
@@ -67,11 +70,14 @@ export default function Resume() {
     <div className="resume-container">
       <div className="resume-header">
         <h1 className="screen-title">{screenTitle}</h1>
+        <div className="pdf-con">
         <MyImage
           className="pdf-logo hoverable"
           src={PDFLogo}
           onClick={() => _downloadResume()}
         />
+        <div className="download-txt" >{downloadPDF}</div>
+        </div>
       </div>
       <Loader isSubmitting={loading} />
       <Tabs />

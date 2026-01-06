@@ -15,7 +15,7 @@ i18next
     ...i18n, // The same config we created for the server
     ns: [], // Get the initial namespaces from the server
     backend: {
-      loadPath: "/locales/{{lng}}/{{ns}}.json",
+      loadPath: "/locales/translations/{{lng}}/{{ns}}.json",
     },
     detection: {
       order: ["htmlTag"],

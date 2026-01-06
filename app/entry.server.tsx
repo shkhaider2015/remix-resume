@@ -24,9 +24,6 @@ export default async function handleRequest(
   // The namespaces the routes about to render wants to use
   let ns = i18next.getRouteNamespaces(remixContext);
 
-  console.log("Detected locale:", lng);
-  console.log("Namespaces to load:", ns);
-
   await instance
     .use(initReactI18next)
     .use(Backend)

@@ -1,6 +1,7 @@
 export interface INavItem {
     name: string;
     label: string;
+    key: string;
 }
 
 export interface IServerProps {

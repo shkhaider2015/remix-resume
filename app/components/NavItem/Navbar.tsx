@@ -8,9 +8,15 @@ import { NavLink } from "@remix-run/react";
 import { navData } from "~/data";
 import { useState } from "react";
 import { BlogIcon } from "~/assets/icon";
+import { useTranslation } from "react-i18next";
 
 const Navbar = ({ locale="en" }: { locale: string }) => {
   const [toggle, setToggle] = useState(false);
+  const { t } = useTranslation("common");
+  let navData1 = navData.map((navItem) => ({
+    ...navItem,
+    label: t(`nav.${navItem.key}`),
+  })); 
 
   const _toggleMenu = () => {
     setToggle(pS => !pS)
@@ -27,7 +33,7 @@ const Navbar = ({ locale="en" }: { locale: string }) => {
         <div className="line3" />
       </div>
       <div className="mobile-nav">
-        {navData.map((navItem) => (
+        {navData1.map((navItem) => (
           <NavLink
             key={navItem.label}
             to={`${locale}/${navItem.name}`}
@@ -42,12 +48,12 @@ const Navbar = ({ locale="en" }: { locale: string }) => {
           </NavLink>
         ))}
       </div>
-      <HomeIcon name={`${locale}`} label="Home" />
-      <ServicesIcon name={`${locale}/services`} label="Services" />
-      <ResumeIcon name={`${locale}/resume`} label="Resume" />
-      <WorkIcon name={`${locale}/work`} label="Work" />
-      <ContactsIcon name={`${locale}/contacts`} label="Contact" />
-      <BlogIcon name={`${locale}/blog`} label="Blog" />
+      <HomeIcon name={`${locale}`} label={t("nav.home")} />
+      <ServicesIcon name={`${locale}/services`} label={t("nav.services")} />
+      <ResumeIcon name={`${locale}/resume`} label={t("nav.resume")} />
+      <WorkIcon name={`${locale}/work`} label={t("nav.work")} />
+      <ContactsIcon name={`${locale}/contacts`} label={t("nav.contacts")} />
+      <BlogIcon name={`${locale}/blog`} label={t("nav.blog")} />
     </nav>
   );
 };

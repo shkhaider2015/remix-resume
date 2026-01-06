@@ -109,26 +109,32 @@ export const navData: INavItem[] = [
   {
     name: "",
     label: "Home",
+    key: "home",
   },
   {
     name: "services",
     label: "Services",
+    key: "services",
   },
   {
     name: "resume",
     label: "Resume",
+    key: "resume",
   },
   {
     name: "work",
     label: "Work",
+    key: "work",
   },
   {
     name: "contacts",
     label: "Contacts",
+    key: "contacts",
   },
   {
     name: "blog",
     label: "Blog",
+    key: "blog",
   },
 ];
 

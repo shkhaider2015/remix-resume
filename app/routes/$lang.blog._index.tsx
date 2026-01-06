@@ -1,6 +1,5 @@
 import { LinksFunction, LoaderFunction, MetaFunction } from "@remix-run/node";
 import { json, Link, Outlet, useLoaderData } from "@remix-run/react";
-// import { blogPosts } from "~/assets/data/data.server";
 import blogStyleHref from "./blog.css?url";
 import { BlogListApiResponse } from "~/utils/interfaces/functions";
 import MyImage from "~/components/Image";
@@ -12,7 +11,6 @@ export const links: LinksFunction = () => [
 ];
 
 export const meta: MetaFunction = ({ data: { meta } }: any) => {
-  console.log("Meta data in blog index:", meta);
   return [
     { title: meta.title },
     { name: "description", content: meta.description },
@@ -73,8 +71,6 @@ const PostItem = (prop: BlogPost) => {
   const { title, slug, content } = prop;
   const image = content.find((block) => block.type === "image");
   const paragraphs = content.filter((block) => block.type === "paragraph")?.[0];
-
-  console.log("PostItem image:", image);
 
   return (
     <Link to={slug} className="blog-item">

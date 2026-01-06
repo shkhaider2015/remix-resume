@@ -1,5 +1,4 @@
 import { BASE_URL } from "~/assets/constants";
-import { blogPosts } from "~/assets/data/data.server";
 
 interface IPage {
   slug: string;
@@ -8,6 +7,7 @@ interface IPage {
 }
 
 export const loader = () => {
+  const blogPosts:any = []
   const base_url = BASE_URL;
   const timezoneOffset = "+05:00";
   const lastMod = new Date().toISOString().replace("Z", timezoneOffset);
@@ -24,7 +24,7 @@ export const loader = () => {
     { slug: "/resume/about", lastmod: lastMod, priority: 0.7 },
     { slug: "/resume/download", lastmod: lastMod, priority: 0.8 },
     { slug: "/blog", lastmod: lastMod, priority: 0.8 },
-    ...blogPosts.map((post) => ({
+    ...blogPosts.map((post:any) => ({
       slug: "/blog/" + post.slug,
       lastmod: lastMod,
       priority: 0.7,

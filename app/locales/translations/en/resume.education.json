@@ -10,6 +10,12 @@
     "description": "My educational journey began with SSC from Al Nasir School Pvt., sparking my interest in problem-solving. I pursued FSc Pre-Engineering at Pakistan Shipowner's College, strengthening my analytical skills. Later, I earned a BS in Software Engineering from Indus University Pvt. Ltd., gaining expertise in programming and software design. This academic foundation has shaped my technical skills and growth mindset, preparing me for a successful career in software development.",
     "items": [
       {
+        "title": "MS Artificial Intelligence",
+        "companyName": "Iqra University Pvt. Ltd.",
+        "date": "2026 - Continue",
+        "description": "Focused on software development, algorithms, and system design, gaining practical experience through projects and internships."
+      },
+      {
         "title": "BS Software Engineering",
         "companyName": "Indus University Pvt. Ltd.",
         "date": "2016 - 2020",
