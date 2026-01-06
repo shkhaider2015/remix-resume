@@ -1,6 +1,6 @@
 import { LinksFunction, LoaderFunction, MetaFunction } from "@remix-run/node";
 import { json, useLoaderData } from "@remix-run/react";
-import { blogPosts } from "~/assets/data";
+import { blogPosts } from "~/assets/data/data.server";
 import blogStyleHref from "./slug.css?url";
 import { ApiResponse } from "~/utils/interfaces/functions";
 import React from "react";

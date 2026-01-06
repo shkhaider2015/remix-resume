@@ -1,28 +1,34 @@
 import { LinksFunction, LoaderFunction, MetaFunction } from "@remix-run/node";
-import { json, useLoaderData } from "@remix-run/react";
-import { blogPosts } from "~/assets/data";
+import { useLoaderData } from "@remix-run/react";
 import blogStyleHref from "./slug.css?url";
 import { ApiResponse } from "~/utils/interfaces/functions";
-import React from "react";
 import CodeBlock from "~/components/CodeBlock/CodeBlock";
+import { getLocaleFromUrl } from "~/utils/functions/functions.server";
+import i18next from "~/locales/i18next.server";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: blogStyleHref },
 ];
 
-export const meta: MetaFunction = () => {
+export const meta: MetaFunction = ({ data : { meta } }: any) => {
+  console.log("Meta data in blog index:", meta);
   return [
-    { title: "Shakeel Haider's Blog" },
-    { name: "description", content: "Shakeel Haider's Blog" },
-    { name: "keywords", content: "blog, shakeel haider, article, blogs, articles" },
-    { name: "author", content: "Shakeel Haider" },
+    { title: meta.title },
+    { name: "description", content: meta.description },
+    { name: "keywords", content: meta.keywords },
+    { name: "author", content: meta.author },
   ];
 };
 
 export const loader: LoaderFunction = async ({
+  request,
   params,
 }): Promise<ApiResponse<BlogPost>> => {
   const slug = params.slug;
+  const locale = getLocaleFromUrl(request);
+  let t = await i18next.getFixedT(locale, "blog");
+  let blogPosts: BlogPost[] = t("data.items", { returnObjects: true }) as unknown as BlogPost[];
+  let meta = t("meta", { returnObjects: true });
 
   const post = blogPosts.find((post) => post.slug === slug);
 
@@ -31,27 +37,34 @@ export const loader: LoaderFunction = async ({
       status: "error",
       message: "Post not found",
       data: null,
+      meta,
     };
     return errorResponse;
+  }
+
+  meta = {
+    ...meta,
+    title: post.title,
   }
 
   const successResponse: ApiResponse<BlogPost> = {
     status: "success",
     message: "Post fetched successfully",
     data: post,
+    meta,
   };
   return successResponse;
 };
 
 export default function Post() {
-  const { data, status, message } = useLoaderData<
+  const { data, status, message, pageTitle } = useLoaderData<
     typeof loader
   >() as ApiResponse<BlogPost>;
 
   if (!data) {
     return (
       <div className="detail-container">
-        <h1>Blogs</h1>
+        <h1>{pageTitle}</h1>
         <p>{message}</p>
       </div>
     );

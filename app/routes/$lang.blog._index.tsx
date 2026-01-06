@@ -1,31 +1,43 @@
 import { LinksFunction, LoaderFunction, MetaFunction } from "@remix-run/node";
-import { json, Link, useLoaderData } from "@remix-run/react";
-import { blogPosts } from "~/assets/data/data.server";
+import { json, Link, Outlet, useLoaderData } from "@remix-run/react";
+// import { blogPosts } from "~/assets/data/data.server";
 import blogStyleHref from "./blog.css?url";
 import { BlogListApiResponse } from "~/utils/interfaces/functions";
 import MyImage from "~/components/Image";
+import { getLocaleFromUrl } from "~/utils/functions/functions.server";
+import i18next from "~/locales/i18next.server";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: blogStyleHref },
 ];
 
-export const meta: MetaFunction = () => {
+export const meta: MetaFunction = ({ data: { meta } }: any) => {
+  console.log("Meta data in blog index:", meta);
   return [
-    { title: "Shakeel Haider's Blog" },
-    { name: "description", content: "Shakeel Haider's Blog" },
-    { name: "keywords", content: "blog, shakeel haider, article, blogs, articles" },
-    { name: "author", content: "Shakeel Haider" },
+    { title: meta.title },
+    { name: "description", content: meta.description },
+    { name: "keywords", content: meta.keywords },
+    { name: "author", content: meta.author },
   ];
 };
 
 export const loader: LoaderFunction = async ({
-  params,
+    request,
+    params,
 }): Promise<BlogListApiResponse<BlogPost>> => {
+     const url = new URL(request.url);
+    const locale = getLocaleFromUrl(request);
+    let t = await i18next.getFixedT(locale, "blog");
+
+    let blogPosts: BlogPost[] = t("data.items", { returnObjects: true }) as unknown as BlogPost[];
+
   if (!blogPosts) {
     const errorResponse: BlogListApiResponse<BlogPost> = {
       status: "error",
       message: "Post not found",
       data: null,
+      pageTitle: t("data.title"),
+      meta: t("meta", { returnObjects: true }),
     };
     return errorResponse;
   }
@@ -34,20 +46,21 @@ export const loader: LoaderFunction = async ({
     status: "success",
     message: "Post fetched successfully",
     data: blogPosts,
+    pageTitle: t("data.title"),
+    meta: t("meta", { returnObjects: true }),
   };
   return successResponse;
 };
 
 export default function Posts() {
-  const { data, status, message } = useLoaderData<
+  const { data, status, message, pageTitle } = useLoaderData<
     typeof loader
   >() as BlogListApiResponse<BlogPost>;
 
   return (
     <div className="blog-container">
-      <h1 className="screen-title">BLOGS</h1>
+      <h1 className="screen-title">{pageTitle}</h1>
       <div className="content">
-        {/* <h1>Blogs list</h1> */}
         {data?.map((post, index) => (
           <PostItem key={index} {...post} />
         ))}
@@ -60,6 +73,8 @@ const PostItem = (prop: BlogPost) => {
   const { title, slug, content } = prop;
   const image = content.find((block) => block.type === "image");
   const paragraphs = content.filter((block) => block.type === "paragraph")?.[0];
+
+  console.log("PostItem image:", image);
 
   return (
     <Link to={slug} className="blog-item">

@@ -1,5 +1,5 @@
 import { BASE_URL } from "~/assets/constants";
-import { blogPosts } from "~/assets/data";
+import { blogPosts } from "~/assets/data/data.server";
 
 interface IPage {
   slug: string;
