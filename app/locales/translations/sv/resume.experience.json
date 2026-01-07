@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "Shakeel Haiders erfarenhet",
+    "description": "Shakeel Haiders erfarenhets-CV",
+    "keywords": "erfarenhet, shakeel haider, webbutveckling, mjukvaruutveckling, UI/UX-design, DevOps, Utveckling, drift Frontend Lead Developer, RunOfShowApp, Fullstack Developer, frilansare, Sky Electric Pvt. Ltd, Concept Recall Pvt. Ltd, Retrocube Pvt. Ltd",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "CV",
+    "description": "Med över 5 år inom mjukvaruutveckling har jag arbetat inom frontend-, mobil- och full-stack-domäner, började som praktikant på Sky Electric Pvt. Ltd och avancerade till roller på Concept Recall Pvt. Ltd och Retrocube Pvt. Ltd. För närvarande är jag Frontend Lead Developer på RunOfShowApp, där jag leder ett team för att skapa användarvänliga gränssnitt samtidigt som jag frilansar som Fullstack Developer sedan 2020. Min karriär visar på anpassningsförmåga, lagarbete och ett engagemang för högkvalitativa lösningar. Passionerad för kodning och problemlösning, jag lär mig och växer kontinuerligt som en mångsidig utvecklare.",
+    "items": [
+      {
+        "title": "Teamledare",
+        "companyName": "BCDApps",
+        "date": "2022 - Nuvarande",
+        "description": "Leder frontend-utveckling, övervakar ett team för att skapa användarvänliga gränssnitt och säkerställer höga kvalitetsstandarder för kod."
+      },
+      {
+        "title": "Fullstack-utvecklare (frilansare)",
+        "companyName": "Upwork",
+        "date": "2024 - Nuvarande",
+        "description": "Levererar end-to-end webblösningar för olika kunder, med fokus på både frontend- och backend-utveckling för att möta olika projektkrav."
+      },
+      {
+        "title": "Mjukvaruutvecklare",
+        "companyName": "Retrocube Pvt. Ltd.",
+        "date": "2021 - 2022",
+        "description": "Bidrog till full-stack utvecklingsprojekt, samarbetade med tvärfunktionella team för att bygga skalbara webbapplikationer."
+      },
+      {
+        "title": "Junior mjukvaruutvecklare",
+        "companyName": "Concept Recall Pvt. Ltd.",
+        "date": "2020 - 2021",
+        "description": "Assisterade i utvecklingen och underhållet av webbapplikationer, och skaffade erfarenhet inom olika teknologier och ramverk."
+      },
+      {
+        "title": "Praktikant inom mjukvaruutveckling",
+        "companyName": "Sky Electric Pvt. Ltd.",
+        "date": "2019 - 2020",
+        "description": "Fick praktisk erfarenhet av mjukvaruutveckling, arbetade med verkliga projekt och lärde sig branschens bästa metoder."
+      }
+    ]
+  }
+}

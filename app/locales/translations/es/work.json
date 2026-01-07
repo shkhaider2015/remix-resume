@@ -1,0 +1,48 @@
+{
+    "meta": {
+        "title": "Trabajos de Shakeel Haider",
+        "description": "Trabajos de Shakeel Haider",
+        "keywords": "trabajos, shakeel haider, proyectos, portafolio, desarrollo web, desarrollo de software, diseño UI/UX, DevOps, Desarrollo, operación, diseño de interfaz de usuario, diseño de experiencia de usuario, aplicaciones web, aplicaciones móviles",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "Trabajos",
+        "items": [
+            {
+                "count": "01",
+                "role": "Líder de Frontend",
+                "desc": "RunOfShow es una aplicación web que ayuda a los organizadores de eventos a gestionar sus eventos de manera eficiente. Proporciona una plataforma para crear, gestionar y compartir horarios de eventos, lo que permite a los usuarios organizar y ejecutar eventos sin problemas. Como líder de desarrollo Frontend, lideré el desarrollo de la aplicación, creando interfaces amigables para el usuario y asegurando una experiencia de usuario fluida."
+            },
+            {
+                "count": "02",
+                "role": "Desarrollador Full Stack",
+                "desc": "Hello Aya es una aplicación web que permite a los usuarios reservar y alquilar habitaciones o apartamentos para su estancia. Permite a los usuarios buscar habitaciones disponibles, ver detalles y hacer reservas. Como desarrollador Full Stack, contribuí al desarrollo de la aplicación, centrándome en la creación de interfaces de usuario responsivas e intuitivas y una sólida funcionalidad de backend."
+            },
+            {
+                "count": "03",
+                "role": "Desarrollador Full Stack",
+                "desc": "Hey Planner es una aplicación web que ayuda a los usuarios a planificar y organizar eventos. Proporciona una plataforma para crear, gestionar y compartir detalles de eventos, lo que permite a los usuarios coordinar y ejecutar eventos sin problemas. Como desarrollador Full Stack, contribuí al desarrollo de la aplicación, centrándome en la creación de interfaces de usuario responsivas e intuitivas y una sólida funcionalidad de backend."
+            },
+            {
+                "count": "04",
+                "role": "Desarrollador Frontend",
+                "desc": "Stunt Listing es una aplicación web que conecta a artistas de acrobacias con organizadores de eventos. Permite a los artistas crear perfiles, mostrar sus habilidades y postularse a trabajos, mientras que los organizadores pueden publicar eventos, ver perfiles de artistas y contratar talentos. Como desarrollador Frontend, contribuí al desarrollo de la aplicación, centrándome en la creación de interfaces de usuario responsivas e intuitivas."
+            },
+            {
+                "count": "05",
+                "role": "Desarrollador Full Stack",
+                "desc": "Minglee es una aplicación de redes sociales que conecta a usuarios basándose en intereses compartidos. Permite a los usuarios crear perfiles, conectarse con otros y compartir contenido, fomentando una comunidad de personas con ideas afines. Como desarrollador Full Stack, contribuí al desarrollo de la aplicación, centrándome en la creación de una experiencia de usuario fluida y una arquitectura backend robusta."
+            },
+            {
+                "count": "06",
+                "role": "Desarrollador Móvil",
+                "desc": "RunOfShowApp es una aplicación móvil que ayuda a los organizadores de eventos a gestionar sus eventos de manera eficiente. Proporciona una plataforma para crear, gestionar y compartir horarios de eventos, lo que permite a los usuarios organizar y ejecutar eventos sin problemas. Como desarrollador móvil, contribuí al desarrollo de la aplicación, centrándome en la creación de una experiencia de usuario fluida e una interfaz intuitiva."
+            },
+            {
+                "count": "07",
+                "role": "Desarrollador Móvil",
+                "desc": "SkyElectric es una aplicación móvil que permite a los usuarios monitorear y controlar sus sistemas de energía solar. Proporciona datos en tiempo real sobre la producción de energía, el consumo y los ahorros, lo que permite a los usuarios optimizar su uso de energía. Como desarrollador móvil, contribuí al desarrollo de la aplicación, centrándome en la creación de una interfaz amigable para el usuario y una experiencia de usuario fluida."
+            }
+        ]
+    }
+}

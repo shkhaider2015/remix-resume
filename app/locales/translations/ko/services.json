@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "title": "Shakeel Haider의 서비스",
+        "description": "Shakeel Haider의 서비스",
+        "keywords": "서비스, shakeel haider, 웹 개발, 소프트웨어 개발, UI/UX 디자인, DevOps, 개발, 운영, 사용자 인터페이스 디자인, 사용자 경험 디자인, 웹 앱, 모바일 앱",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "서비스",
+        "description": "웹 개발, 모바일 개발, DevOps 및 UI/UX 디자인을 포함하여 Shakeel Haider가 제공하는 다양한 서비스를 살펴보십시오. 귀사의 비즈니스 요구에 맞춰 고품질 솔루션을 제공합니다.",
+        "web_development": "웹 개발",
+        "mobile_development": "모바일 개발",
+        "devops": "DevOps",
+        "uiux_design": "UI/UX 디자인"
+    }
+}

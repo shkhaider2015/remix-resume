@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "title": "Portfolio de Shakeel Haider",
+        "description": "Portfolio de Shakeel Haider",
+        "keywords": "portfolio, shakeel haider, ingénieur logiciel, développeur web, développeur de logiciels, applications mobiles, développeur full-stack",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "Shakeel Haider",
+        "role": "Ingénieur logiciel 👨🏻‍💻",
+        "description": "Je suis un ingénieur logiciel passionné avec plus de 5 ans d'expérience en développement 🔴 frontend, 🟢 backend, et 🔵 base de données. Compétent dans la création d'interfaces conviviales, d'applications évolutives et de solutions de données efficaces, je m'épanouis dans la résolution de problèmes complexes et la livraison de logiciels de haute qualité.",
+        "cta": "Construisons ensemble des solutions innovantes ! 🚀"
+    },
+    "others": {
+        "profile_picture_alt": "Photo de profil de Shakeel Haider"
+    }
+}

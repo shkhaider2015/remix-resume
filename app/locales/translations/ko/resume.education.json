@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Shakeel Haider의 학력",
+    "description": "Shakeel Haider의 학력",
+    "keywords": "이력서, shakeel haider, 경험, 교육, 기술, 자기소개, 웹 개발, 소프트웨어 개발, UI/UX 디자인, DevOps, 개발, 운영, 사용자 인터페이스 디자인, 사용자 경험 디자인, 웹 앱, 모바일 앱, 소프트웨어 공학 학사, Indus 대학교, FSc 예비 공학, Pakistan Shipowner's College, SSC, Al Nasir 학교",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "이력서",
+    "description": "저의 교육 여정은 Al Nasir School Pvt.의 SSC로 시작되었으며, 문제 해결에 대한 저의 관심을 불러일으켰습니다. 저는 Pakistan Shipowner's College에서 FSc 예비 공학을 전공하여 분석 기술을 강화했습니다. 나중에 Indus University Pvt. Ltd.에서 소프트웨어 공학 학사 학위를 취득하여 프로그래밍 및 소프트웨어 설계에 대한 전문 지식을 얻었습니다. 이 학문적 기반은 저의 기술적 기술과 성장 마인드셋을 형성하여 소프트웨어 개발 분야에서 성공적인 경력을 쌓을 수 있도록 준비시켰습니다.",
+    "items": [
+      {
+        "title": "MS 인공지능",
+        "companyName": "Iqra University Pvt. Ltd.",
+        "date": "2026 - 계속",
+        "description": "소프트웨어 개발, 알고리즘 및 시스템 설계에 중점을 두어 프로젝트 및 인턴십을 통해 실무 경험을 쌓았습니다."
+      },
+      {
+        "title": "BS 소프트웨어 공학",
+        "companyName": "Indus University Pvt. Ltd.",
+        "date": "2016 - 2020",
+        "description": "소프트웨어 개발, 알고리즘 및 시스템 설계에 중점을 두어 프로젝트 및 인턴십을 통해 실무 경험을 쌓았습니다."
+      },
+      {
+        "title": "FSc 예비 공학",
+        "companyName": "Pakistan Shipowner's College",
+        "date": "2014 - 2016",
+        "description": "고급 수학, 물리학 및 화학을 학습하여 강력한 분석 및 문제 해결 능력을 개발했습니다."
+      },
+      {
+        "title": "SSC",
+        "companyName": "Al Nasir School Pvt. Ltd.",
+        "date": "2012 - 2014",
+        "description": "공학 분야의 미래 연구를 위한 기초를 마련하기 위해 과학 과목에 중점을 둔 중등 교육을 마쳤습니다."
+      }
+    ]
+  }
+}

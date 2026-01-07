@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "Doświadczenie Shakeela Haidera",
+    "description": "Życiorys doświadczenia Shakeela Haidera",
+    "keywords": "doświadczenie, shakeel haider, rozwój stron internetowych, rozwój oprogramowania, projektowanie UI/UX, DevOps, Rozwój, operacje Frontend Lead Developer, RunOfShowApp, Fullstack Developer, freelancer, Sky Electric Pvt. Ltd, Concept Recall Pvt. Ltd, Retrocube Pvt. Ltd",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "CV",
+    "description": "Z ponad 5-letnim doświadczeniem w tworzeniu oprogramowania, pracowałem w obszarach frontend, mobile i full-stack, rozpoczynając jako stażysta w Sky Electric Pvt. Ltd, a następnie awansując na stanowiska w Concept Recall Pvt. Ltd i Retrocube Pvt. Ltd. Obecnie jestem Liderem Programistów Frontend w RunOfShowApp, kierując zespołem w celu tworzenia przyjaznych dla użytkownika interfejsów, jednocześnie pracując jako freelancer Fullstack Developer od 2020 roku. Moja kariera pokazuje zdolność adaptacji, pracę zespołową i zaangażowanie w dostarczanie wysokiej jakości rozwiązań. Pasjonuję się kodowaniem i rozwiązywaniem problemów, stale uczę się i rozwijam jako wszechstronny deweloper.",
+    "items": [
+      {
+        "title": "Lider Zespołu",
+        "companyName": "BCDApps",
+        "date": "2022 - Obecnie",
+        "description": "Prowadzenie rozwoju frontend, nadzorowanie zespołu w celu tworzenia przyjaznych dla użytkownika interfejsów i zapewnianie wysokich standardów jakości kodu."
+      },
+      {
+        "title": "Programista Fullstack (Freelancer)",
+        "companyName": "Upwork",
+        "date": "2024 - Obecnie",
+        "description": "Dostarczanie kompleksowych rozwiązań internetowych dla różnych klientów, koncentrując się zarówno na rozwoju frontend, jak i backend, aby sprostać różnorodnym wymaganiom projektowym."
+      },
+      {
+        "title": "Programista Oprogramowania",
+        "companyName": "Retrocube Pvt. Ltd.",
+        "date": "2021 - 2022",
+        "description": "Współpracowałem przy projektach rozwoju full-stack, współpracując z interdyscyplinarnymi zespołami w celu budowania skalowalnych aplikacji internetowych."
+      },
+      {
+        "title": "Młodszy Programista Oprogramowania",
+        "companyName": "Concept Recall Pvt. Ltd.",
+        "date": "2020 - 2021",
+        "description": "Pomagałem w tworzeniu i utrzymywaniu aplikacji internetowych, zdobywając doświadczenie w różnych technologiach i frameworkach."
+      },
+      {
+        "title": "Stażysta w zakresie tworzenia oprogramowania",
+        "companyName": "Sky Electric Pvt. Ltd.",
+        "date": "2019 - 2020",
+        "description": "Zdobyłem praktyczne doświadczenie w tworzeniu oprogramowania, pracując nad projektami z prawdziwego świata i ucząc się najlepszych praktyk branżowych."
+      }
+    ]
+  }
+}

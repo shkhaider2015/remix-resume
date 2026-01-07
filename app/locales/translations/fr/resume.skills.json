@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Compétences de Shakeel Haider",
+    "description": "Compétences de Shakeel Haider",
+    "keywords": "CV, shakeel haider, expérience, formation, compétences, à propos de moi, développement web, développement de logiciels, conception UI/UX, DevOps, développement, exploitation, conception d'interface utilisateur, conception d'expérience utilisateur, applications web, applications mobiles, Next JS, React JS, Angular JS, Node JS, Express JS, MongoDB, SQL, PostgreSQL, API RESTful, GraphQL, Git, Docker, AWS, Firebase",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "CV",
+    "description": "Je me spécialise dans le développement frontend, backend et de bases de données, avec une expertise dans la création d'interfaces conviviales, d'applications côté serveur évolutives et de systèmes de gestion de bases de données efficaces. Mes compétences s'étendent à la création d'expériences utilisateur fluides, d'API robustes et de solutions de stockage de données optimisées, garantissant le développement de bout en bout d'applications logicielles performantes et fiables."
+  }
+}

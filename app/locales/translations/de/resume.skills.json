@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Shakeel Haiders Fähigkeiten",
+    "description": "Shakeel Haiders Fähigkeiten",
+    "keywords": "Lebenslauf, Shakeel Haider, Erfahrung, Ausbildung, Fähigkeiten, über mich, Webentwicklung, Softwareentwicklung, UI/UX-Design, DevOps, Entwicklung, Betrieb, Benutzeroberflächendesign, Benutzererfahrungsdesign, Web-Apps, mobile Apps, Next JS, React JS, Angular JS, Node JS, Express JS, MongoDB, SQL, PostgreSQL, RESTful APIs, GraphQL, Git, Docker, AWS, Firebase",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Lebenslauf",
+    "description": "Ich bin spezialisiert auf die Entwicklung von Frontend, Backend und Datenbanken und verfüge über Fachkenntnisse in der Erstellung benutzerfreundlicher Oberflächen, skalierbarer serverseitiger Anwendungen und effizienter Datenbankmanagementsysteme. Meine Fähigkeiten umfassen die Schaffung nahtloser Benutzererlebnisse, robuster APIs und optimierter Datenspeicherlösungen, um die End-to-End-Entwicklung von leistungsstarken und zuverlässigen Softwareanwendungen zu gewährleisten."
+  }
+}

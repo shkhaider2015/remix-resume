@@ -1,4 +1,10 @@
 {
-    "title": "Remix Lebenslauf",
-    "description": "Erstellen und verwalten Sie Ihren Lebenslauf mit Remix Resume, dem Open-Source-Lebenslauf-Generator"
+    "nav": {
+        "home": "Startseite",
+        "services": "Dienstleistungen",
+        "resume": "Lebenslauf",
+        "work": "Projekte",
+        "blog": "Blog",
+        "contacts": "Kontakte"
+    }
 }

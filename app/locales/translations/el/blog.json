@@ -1,0 +1,416 @@
+{
+  "meta": {
+    "title": "Shakeel Haider - Ιστολόγιο",
+    "description": "Το ιστολόγιο ή άρθρο του Shakeel Haider σχετικά με το React, το NestJS και την ανάπτυξη πλήρους στοίβας (full-stack web development).",
+    "keywords": "shakeel haider, ιστολόγιο, react, nestjs, ανάπτυξη πλήρους στοίβας, ανάπτυξη ιστού, προγραμματισμός, javascript, typescript",
+    "author": "Shakeel Haider"
+  },
+
+  "data": {
+    "title": "Ιστολόγιο",
+
+    "items": [
+      {
+        "id": "1",
+        "title": "Γιατί επέλεξα το React + NestJS για ανάπτυξη πλήρους στοίβας",
+        "slug": "why-i-chose-react-nestjs-for-full-stack-development",
+        "authorId": "user123",
+        "createdAt": "2025-05-12T10:00:00Z",
+        "updatedAt": "2025-05-12T10:00:00Z",
+        "isPublished": true,
+        "content": [
+          {
+            "type": "image",
+            "url": "/images/blogs/why-i-chose-react-nestjs.png",
+            "alt": "Λογότυπα React και NestJS"
+          },
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "🧠 Γιατί επέλεξα το React + NestJS για ανάπτυξη πλήρους στοίβας"
+          },
+          {
+            "type": "paragraph",
+            "text": "Ως προγραμματιστής πλήρους στοίβας, η επιλογή της σωστής τεχνολογικής στοίβας δεν αφορά μόνο τη διαφήμιση — αφορά την παραγωγικότητα, την επεκτασιμότητα και τη μακροπρόθεσμη συντηρησιμότητα. Αφού δημιούργησα πολλά έργα χρησιμοποιώντας διαφορετικές στοίβες, βρήκα τον συνδυασμό του React (για το frontend) και του NestJS (για το backend) να ταιριάζει απόλυτα. Να γιατί."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🔷 1. React – Ένα δυναμικό Frontend"
+          },
+          {
+            "type": "paragraph",
+            "text": "Το React είναι το αγαπημένο μου frontend framework για μερικούς βασικούς λόγους:"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Αρχιτεκτονική βασισμένη σε components: Ενθαρρύνει την επαναχρησιμοποιήσιμη λογική UI",
+              "Τεράστιο οικοσύστημα: Τόνοι βιβλιοθηκών (React Router, Zustand, Redux, Tailwind)",
+              "Εμπειρία προγραμματιστή: Hot reload, dev tools, εύκολος έλεγχος",
+              "Ισχυρή κοινότητα και αγορά εργασίας"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Ένα απλό παράδειγμα: Ένα component κουμπιού στο React"
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "// components/Button.tsx\nimport React from 'react';\n\ntype ButtonProps = {\n    label: string;\n    onClick: () => void;\n  };\n  \n  const Button: React.FC<ButtonProps> = ({ label, onClick }) => {\n    return (\n      <button className=\"px-4 py-2 bg-blue-500 text-white rounded\" onClick={onClick}>\n        {label}\n      </button>\n    );\n  };\n  \n  export default Button;"
+          },
+          {
+            "type": "paragraph",
+            "text": "Αυτό το μοτίβο επαναχρησιμοποιήσιμων component είναι μία από τις μεγαλύτερες νίκες με το React."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🛡️ 2. NestJS – Επεκτάσιμο & Δομημένο Backend"
+          },
+          {
+            "type": "paragraph",
+            "text": "Το NestJS ξεχώρισε για μένα επειδή είναι:"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Opinionated: Παρέχει δομή, σε αντίθεση με το απλό Express",
+              "TypeScript-first: Ασφάλεια τύπου σε όλη την εφαρμογή",
+              "Αρθρωτό: Εξαιρετικό για κλιμάκωση έργων",
+              "Υποστηρίζει REST, GraphQL, WebSockets, Microservices",
+              "Εύκολη ενσωμάτωση βάσεων δεδομένων"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Παράδειγμα: Μια απλή διαδρομή στο NestJS"
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "// users.controller.ts\nimport { Controller, Get } from '@nestjs/common';\n\n@Controller('users')\nexport class UsersController {\n  @Get()\n  findAll() {\n    return [{ id: 1, name: 'John Doe' }];\n  }\n}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Ευανάγνωστο, δοκιμάσιμο και επεκτάσιμο από την αρχή."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🔗 3. Κοινή χρήση τύπων μεταξύ Frontend & Backend"
+          },
+          {
+            "type": "paragraph",
+            "text": "Δεδομένου ότι τόσο το React όσο και το NestJS χρησιμοποιούν TypeScript, μπορώ να μοιράζομαι τύπους/διεπαφές μεταξύ του frontend και του backend — αποφεύγοντας περιττές δηλώσεις και μειώνοντας τα σφάλματα."
+          },
+          {
+            "type": "paragraph",
+            "text": "Παράδειγμα κοινού τύπου"
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "// shared/types.ts\nexport type User = {\n  id: string;\n  name: string;\n  email: string;\n};"
+          },
+          {
+            "type": "paragraph",
+            "text": "Στο NestJS:"
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "import { User } from '../shared/types';"
+          },
+          {
+            "type": "paragraph",
+            "text": "Στο React:"
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "import { User } from '../shared/types';"
+          },
+          {
+            "type": "paragraph",
+            "text": "Καμία ασυμφωνία. Καμία εικασία."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🧩 4. Εύκολη ενσωμάτωση API"
+          },
+          {
+            "type": "paragraph",
+            "text": "Το React + NestJS καθιστά εύκολη τη λήψη και την απόδοση δεδομένων:"
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "// Fetching users in React\nuseEffect(() => {\nfetch('/api/users')\n.then(res => res.json())\n      .then(data => setUsers(data));\n  }, []);"
+          },
+          {
+            "type": "paragraph",
+            "text": "Το backend παραμένει καθαρό και συντηρήσιμο, το frontend παραμένει ανταποκρινόμενο και διαδραστικό."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🚀 Τελικές σκέψεις"
+          },
+          {
+            "type": "paragraph",
+            "text": "Η επιλογή React + NestJS δεν ήταν τυχαία. Προήλθε από την κατασκευή εφαρμογών πραγματικού κόσμου και την κατανόηση του πού εμφανίζονται τα σημεία συμφόρησης. Αυτή η στοίβα με βοήθησε να:"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Κινούμαι πιο γρήγορα χωρίς να θυσιάζω τη δομή",
+              "Διατηρώ και κλιμακώνω εφαρμογές με αυτοπεποίθηση",
+              "Παραδίδω αποτελεσματικά εφαρμογές ιστού και κινητών (ειδικά με το React Native)"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Εάν αποφασίζετε για την αρχιτεκτονική πλήρους στοίβας ή προέρχεστε από ένα υπόβαθρο MERN, συνιστώ ανεπιφύλακτα να δοκιμάσετε το React + NestJS."
+          }
+        ]
+      },
+      {
+        "id": "remix-vs-nextjs-2025",
+        "title": "🥊 Remix vs Next.js — Γιατί να επιλέξετε το RemixJS;",
+        "slug": "remix-vs-nextjs-why-choose-remixjs",
+        "authorId": "shakeel-haider",
+        "createdAt": "2025-05-13T10:00:00Z",
+        "updatedAt": "2025-05-13T10:00:00Z",
+        "isPublished": true,
+        "content": [
+          {
+            "type": "image",
+            "url": "/images/blogs/remix-vs-nextjs-why-choose-remixjs.png",
+            "alt": "Λογότυπα React και NestJS"
+          },
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "🥊 Remix vs Next.js — Γιατί να επιλέξετε το RemixJS;"
+          },
+          {
+            "type": "paragraph",
+            "text": "Τόσο το Remix όσο και το Next.js είναι ισχυρά frameworks React πλήρους στοίβας, σχεδιασμένα για τη δημιουργία σύγχρονων εφαρμογών ιστού. Ενώ το Next.js είναι ένας καθιερωμένος παίκτης που υποστηρίζεται από την Vercel, το RemixJS είναι το νεότερο framework, επικεντρωμένο στα πρότυπα ιστού, το οποίο κερδίζει γρήγορα την προσοχή για την απόδοσή του, την απλότητα και το μοντέλο χειρισμού δεδομένων."
+          },
+          {
+            "type": "paragraph",
+            "text": "Σε αυτό το άρθρο, θα εμβαθύνουμε σε αυτά που διαφοροποιούν το Remix από το Next.js και γιατί το Remix μπορεί να είναι η καλύτερη επιλογή για το επόμενο έργο σας — ειδικά αν αναζητάτε ταχύτητα, συντηρησιμότητα και ευθυγράμμιση με τα βασικά στοιχεία του ιστού."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🚀 Το RemixJS με μια ματιά"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Πλήρης στοίβα React framework",
+              "Χτισμένο γύρω από τα βασικά στοιχεία του ιστού (όπως HTTP caching, native forms)",
+              "Αγκαλιάζει την προοδευτική βελτίωση",
+              "Επικέντρωση σε γρήγορη απόδοση μέσω ελάχιστης εξάρτησης από JavaScript",
+              "Λειτουργεί με οποιονδήποτε στόχο ανάπτυξης (Node, Cloudflare, Deno, κλπ.)"
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🔍 Βασικά πλεονεκτήματα του Remix έναντι του Next.js"
+          },
+          {
+            "type": "paragraph",
+            "text": "Ας συγκρίνουμε και τα δύο με βάση πραγματικές ανησυχίες προγραμματιστών και αρχιτεκτονικές διαφορές."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "1. 🧠 Μοντέλο φόρτωσης δεδομένων"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix: Server-first, co-located loaders\nΚάθε διαδρομή στο Remix ορίζει μια συνάρτηση `loader()` που εκτελείται στον διακομιστή πριν από την απόδοση. Ανακτά όλα τα απαιτούμενα δεδομένα παράλληλα και τα στέλνει ως μέρος της απάντησης."
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "// app/routes/posts.tsx\nexport const loader = async () => {\nconst posts = await getPosts();\nreturn json(posts);\n};"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js: getServerSideProps ή getStaticProps\nΤο Next.js διαχωρίζει τη λήψη δεδομένων σε ειδικές συναρτήσεις, αλλά μόνο σε επίπεδο σελίδας, γεγονός που περιορίζει την επαναχρησιμοποίηση και τη σύνθεση για ένθετα components."
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "// pages/posts.js\nexport async function getServerSideProps() {\n  const posts = await getPosts();\n  return { props: { posts } };\n}"
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 Ετυμηγορία: Το Remix απλοποιεί τη λήψη δεδομένων συνδέοντάς την απευθείας με τη διαδρομή, ακόμα και τις ένθετες — οδηγώντας σε καλύτερη απόδοση και δομή."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "2. 🧭 Ένθετο Routing και Layouts"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix: Native Ένθετες Διαδρομές\nΟι διαδρομές Remix είναι συστεγαζόμενες και εγγενώς ένθετες. Τα layouts και οι διαδρομές δομούνται όπως οι φάκελοι και μπορείτε να έχετε loaders σε επίπεδο layout."
+          },
+          {
+            "type": "code",
+            "language": "text",
+            "code": "routes/\n├── dashboard.tsx        --> /dashboard\n└── dashboard/\n    └── settings.tsx     --> /dashboard/settings"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js: App Router και Συμβάσεις αρχείων\nΤο Next.js εισήγαγε πρόσφατα τη δρομολόγηση με βάση τον κατάλογο εφαρμογών, η οποία υποστηρίζει layouts, αλλά είναι νεότερη και πιο πολύπλοκη, και δεν ενσωματώνεται βαθιά με δεδομένα από την πλευρά του διακομιστή σε layouts."
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 Ετυμηγορία: Οι ένθετες διαδρομές του Remix είναι πιο εύκολο να κατανοηθούν, πιο ευέλικτες και κλιμακώνονται καλύτερα με σύνθετες ιεραρχίες UI."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "3. ⚡ Απόδοση: Λιγότερο JavaScript στον πελάτη"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix: Ελάχιστη εξάρτηση JS\nΤο Remix φορτώνει όσο το δυνατόν λιγότερο JS. Βασίζεται σε τυπική συμπεριφορά του προγράμματος περιήγησης, όπως η υποβολή εγγενών φορμών και η προσωρινή αποθήκευση, για να μειώσει τη λογική της πλευράς του πελάτη."
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js: Βαρύ σε interactivity από την πλευρά του πελάτη\nΤο Next.js βασίζεται περισσότερο στην ενυδάτωση και στις API της πλευράς του πελάτη, γεγονός που συχνά οδηγεί σε βαρύτερα bundles."
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 Ετυμηγορία: Οι εφαρμογές Remix είναι συχνά ταχύτερες από προεπιλογή, επειδή μεταφέρουν περισσότερη εργασία στον περιηγητή και στον διακομιστή."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "4. 📤 Φόρμες & Ενέργειες"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix: Προοδευτικές φόρμες με υποστήριξη από τον διακομιστή\nΟι φόρμες στο Remix χρησιμοποιούν εγγενείς ετικέτες `<form>` με συναρτήσεις `action()` από την πλευρά του διακομιστή για να χειριστούν τις υποβολές — δεν απαιτείται JavaScript."
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "export const action = async ({ request }) => {\n  const formData = await request.formData();\n  await savePost(formData);\n  return redirect(\"/success\");\n};"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js: Απαιτεί JavaScript + API routes\nΟι φόρμες του Next.js συνήθως χειρίζονται μέσω `fetch` ή βιβλιοθηκών από την πλευρά του πελάτη. Δεν υπάρχει ενσωματωμένος χειρισμός φορμών όπως στο Remix."
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 Ετυμηγορία: Το Remix επαναφέρει την απλότητα των παραδοσιακών εφαρμογών που αποδίδονται από τον διακομιστή, επιτρέποντας γρήγορες, προοδευτικές φόρμες με λιγότερο κώδικα πελάτη."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "5. 🌐 Αποθήκευση στην κρυφή μνήμη & Βασικά στοιχεία του Ιστού"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix: Χτισμένο στην προσωρινή αποθήκευση HTTP\nΜπορείτε να ελέγξετε την προσωρινή αποθήκευση σε επίπεδο loader, επιτρέποντας έξυπνο έλεγχο του τι αποθηκεύει το πρόγραμμα περιήγησης ή το CDN."
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "export const loader: LoaderFunction = async ({ request }) => {\n  return new Response(JSON.stringify(data), {\n    headers: { \"Cache-Control\": \"max-age=3600\" },\n  });\n};"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js: Κυρίως χειρίζεται από βελτιστοποιήσεις ειδικές για την Vercel\nΜπορείτε να ελέγξετε τις κεφαλίδες, αλλά είναι πιο αφηρημένο και λιγότερο ευέλικτο αν δεν φιλοξενείται στην Vercel."
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 Ετυμηγορία: Το Remix παρέχει άμεσο έλεγχο στις απαντήσεις HTTP και στην κρυφή μνήμη — υιοθετώντας τις αρχές του εγγενούς ιστού."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "6. 🛠️ Ευελιξία ανάπτυξης"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Το Remix τρέχει σε Node.js, Deno, Cloudflare Workers, Vercel, Netlify, Fly.io — ακόμη και ως αυτόνομη εφαρμογή Express.",
+              "Το Next.js λειτουργεί καλύτερα στην Vercel (χορηγός του). Οι προσαρμοσμένες αναπτύξεις είναι δυνατές αλλά λιγότερο απρόσκοπτες."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 Ετυμηγορία: Εάν πρέπει να αποφύγετε τον Vendor Lock-in, το Remix είναι πιο ευέλικτο."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "7. 🔧 Εμπειρία προγραμματιστή"
+          },
+          {
+            "type": "paragraph",
+            "text": "Ακολουθεί μια γρήγορη σύγκριση χαρακτηριστικών μεταξύ Remix και Next.js:"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Routing — Remix: Ένθετο, layout-first | Next.js: Επίπεδο από προεπιλογή (Σελίδες), ο Κατάλογος Εφαρμογών είναι νέος",
+              "Λήψη Δεδομένων — Remix: Loaders βασισμένα σε διαδρομές | Next.js: getServerSideProps, API routes",
+              "Φόρμες — Remix: Native με actions | Next.js: Custom JS + API endpoints",
+              "Caching — Remix: Πλήρης έλεγχος HTTP | Next.js: Χειρίζεται η Vercel ή custom",
+              "Client JS — Remix: Μικρότερο, ελάχιστο | Next.js: Μεγαλύτερο, heavy hydration",
+              "Deployment — Remix: Οποιοδήποτε (Cloudflare, Deno…) | Next.js: Καλύτερο στην Vercel"
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🧩 Πότε πρέπει να επιλέξετε το Remix έναντι του Next.js;"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "✅ Θέλετε προοδευτική βελτίωση και γρήγορη απόδοση",
+              "✅ Σας ενδιαφέρει ο βαθύς έλεγχος της δρομολόγησης και της λήψης δεδομένων",
+              "✅ Προτιμάτε ελάχιστο JS και καλύτερο SEO",
+              "✅ Θέλετε να δημιουργήσετε εφαρμογές που λειτουργούν ακόμη και με απενεργοποιημένο το JS",
+              "✅ Χρειάζεστε ευέλικτες επιλογές ανάπτυξης πέρα από την Vercel"
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🏁 Τελικές σκέψεις"
+          },
+          {
+            "type": "paragraph",
+            "text": "Τόσο το Remix όσο και το Next.js είναι εξαιρετικά εργαλεία. Όμως το Remix επαναφέρει την απλότητα και την απόδοση των κλασικών εφαρμογών που αποδίδονται από τον διακομιστή, ενώ εξακολουθεί να σας προσφέρει σύγχρονα χαρακτηριστικά React. Προτιμά τα πρότυπα ιστού έναντι των προσαρμοσμένων αφαιρέσεων, κάνοντας τις εφαρμογές σας γρήγορες, ανθεκτικές και ευκολότερες στην κατανόηση."
+          },
+          {
+            "type": "paragraph",
+            "text": "Θέλετε βοήθεια για τη μετεγκατάσταση μιας εφαρμογής από το Next.js στο Remix ή για τη δημιουργία μιας νέας εφαρμογής Remix από την αρχή; Ενημερώστε με! 🚀"
+          }
+        ]
+      }
+    ]
+  }
+}

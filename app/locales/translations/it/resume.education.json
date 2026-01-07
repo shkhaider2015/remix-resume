@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Le formazioni di Shakeel Haider",
+    "description": "Le formazioni di Shakeel Haider",
+    "keywords": "curriculum, shakeel haider, esperienza, istruzione, competenze, su di me, sviluppo web, sviluppo software, UI/UX Design, DevOps, Sviluppo, operazione, progettazione dell'interfaccia utente, progettazione dell'esperienza utente, app web, app mobili, BS Ingegneria del software, Indus University, FSc Pre-Engineering, Pakistan Shipowner's College, SSC, Al Nasir School",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Curriculum",
+    "description": "Il mio percorso formativo è iniziato con la SSC presso la Al Nasir School Pvt., che ha acceso il mio interesse per la risoluzione dei problemi. Ho proseguito con l'FSc Pre-Engineering presso il Pakistan Shipowner's College, rafforzando le mie capacità analitiche. Successivamente, ho conseguito una laurea in Ingegneria del software presso la Indus University Pvt. Ltd., acquisendo competenze nella programmazione e nella progettazione di software. Questa base accademica ha plasmato le mie capacità tecniche e la mia mentalità di crescita, preparandomi per una carriera di successo nello sviluppo di software.",
+    "items": [
+      {
+        "title": "MS Intelligenza Artificiale",
+        "companyName": "Iqra University Pvt. Ltd.",
+        "date": "2026 - Continua",
+        "description": "Focalizzato sullo sviluppo di software, algoritmi e progettazione di sistemi, acquisendo esperienza pratica attraverso progetti e stage."
+      },
+      {
+        "title": "BS Ingegneria del software",
+        "companyName": "Indus University Pvt. Ltd.",
+        "date": "2016 - 2020",
+        "description": "Focalizzato sullo sviluppo di software, algoritmi e progettazione di sistemi, acquisendo esperienza pratica attraverso progetti e stage."
+      },
+      {
+        "title": "FSc Pre-Engineering",
+        "companyName": "Pakistan Shipowner's College",
+        "date": "2014 - 2016",
+        "description": "Ha studiato matematica avanzata, fisica e chimica, sviluppando forti capacità analitiche e di risoluzione dei problemi."
+      },
+      {
+        "title": "SSC",
+        "companyName": "Al Nasir School Pvt. Ltd.",
+        "date": "2012 - 2014",
+        "description": "Ha completato l'istruzione secondaria con un focus sulle materie scientifiche, ponendo le basi per futuri studi di ingegneria."
+      }
+    ]
+  }
+}

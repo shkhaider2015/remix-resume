@@ -1,0 +1,35 @@
+{
+    "meta": {
+        "title": "Contatti di Shakeel Haider",
+        "description": "Contatti di Shakeel Haider",
+        "keywords": "lavori, shakeel haider, progetti, portfolio, sviluppo web, sviluppo software, UI/UX Design, DevOps, Sviluppo, operazione, progettazione dell'interfaccia utente, progettazione dell'esperienza utente, app web, app mobili",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "Contatti",
+        "subtitle": "Lavoriamo insieme",
+        "description": "Sono disponibile per lavori a tempo parziale, a tempo pieno e a contratto. Mettiti in contatto con me tramite il modulo sottostante o inviami un'e-mail direttamente all'indirizzo e-mail fornito.",
+        "first_name": "Nome",
+        "last_name": "Cognome",
+        "email": "E-mail",
+        "phone": "Telefono",
+        "select_service": "Seleziona il servizio",
+        "message": "Messaggio",
+        "web_development": "Sviluppo web",
+        "mobile_development": "Sviluppo mobile",
+        "dev_ops": "DevOps",
+        "ui_ux_design": "Progettazione UI/UX",
+        "send_message": "Invia messaggio",
+        "error_message": "Si è verificato un errore durante l'invio del messaggio. Riprova più tardi.",
+        "email_label": "E-mail",
+        "phone_label": "Numero di telefono",
+        "address_label": "Indirizzo",
+        "button_label": "Invia",
+        "email_error": "Inserisci un indirizzo e-mail valido.",
+        "required_error": "Questo campo è obbligatorio.",
+        "service_error": "Seleziona un servizio.",
+        "something_went_wrong": "Qualcosa è andato storto. Riprova più tardi.",
+        "recaptch_error": "Verifica reCAPTCHA non riuscita. Riprova.",
+        "success_message": "Il tuo messaggio è stato inviato con successo. Ti risponderò al più presto! ❤️❤️"
+    }
+}

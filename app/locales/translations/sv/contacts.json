@@ -1,0 +1,35 @@
+{
+    "meta": {
+        "title": "Shakeel Haiders kontakter",
+        "description": "Shakeel Haiders kontakter",
+        "keywords": "arbeten, shakeel haider, projekt, portfolio, webbutveckling, mjukvaruutveckling, UI/UX-design, DevOps, Utveckling, drift, design av användargränssnitt, design av användarupplevelse, webbappar, mobilappar",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "Kontakter",
+        "subtitle": "Låt oss arbeta tillsammans",
+        "description": "Jag är tillgänglig för deltid, heltid och kontraktsbaserade jobb. Kontakta mig via formuläret nedan eller skicka mig ett e-postmeddelande direkt till den angivna e-postadressen.",
+        "first_name": "Förnamn",
+        "last_name": "Efternamn",
+        "email": "E-post",
+        "phone": "Telefon",
+        "select_service": "Välj tjänst",
+        "message": "Meddelande",
+        "web_development": "Webbutveckling",
+        "mobile_development": "Mobilutveckling",
+        "dev_ops": "DevOps",
+        "ui_ux_design": "UI/UX-design",
+        "send_message": "Skicka meddelande",
+        "error_message": "Det uppstod ett fel när ditt meddelande skickades. Vänligen försök igen senare.",
+        "email_label": "E-post",
+        "phone_label": "Telefonnr.",
+        "address_label": "Adress",
+        "button_label": "Skicka",
+        "email_error": "Vänligen ange en giltig e-postadress.",
+        "required_error": "Detta fält är obligatoriskt.",
+        "service_error": "Vänligen välj en tjänst.",
+        "something_went_wrong": "Något gick fel. Vänligen försök igen senare.",
+        "recaptch_error": "reCAPTCHA-verifieringen misslyckades. Vänligen försök igen.",
+        "success_message": "Ditt meddelande har skickats framgångsrikt. Jag återkommer till dig snart! ❤️❤️"
+    }
+}

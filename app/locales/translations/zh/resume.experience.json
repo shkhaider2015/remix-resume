@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "Shakeel Haider 的经验",
+    "description": "Shakeel Haider 的经验简历",
+    "keywords": "经验, shakeel haider, web 开发, 软件开发, UI/UX 设计, DevOps, 开发, 运营 前端主管开发人员, RunOfShowApp, 全栈开发人员, 自由职业者, Sky Electric Pvt. Ltd, Concept Recall Pvt. Ltd, Retrocube Pvt. Ltd",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "简历",
+    "description": "拥有超过 5 年的软件开发经验，我曾在前端、移动端和全栈领域工作，从 Sky Electric Pvt. Ltd 的实习生开始，逐步晋升到 Concept Recall Pvt. Ltd 和 Retrocube Pvt. Ltd 的职位。目前，我是 RunOfShowApp 的前端主管开发人员，领导团队创建用户友好的界面，同时自 2020 年以来一直以全栈开发人员的身份从事自由职业。我的职业生涯展示了适应性、团队合作以及对高质量解决方案的承诺。我热爱编码和解决问题，并作为一名多才多艺的开发人员不断学习和成长。",
+    "items": [
+      {
+        "title": "团队负责人",
+        "companyName": "BCDApps",
+        "date": "2022 - 至今",
+        "description": "领导前端开发，监督团队创建用户友好的界面，并确保高质量的代码标准。"
+      },
+      {
+        "title": "全栈开发人员（自由职业者）",
+        "companyName": "Upwork",
+        "date": "2024 - 至今",
+        "description": "为各种客户提供端到端的 Web 解决方案，专注于前端和后端开发，以满足多样化的项目需求。"
+      },
+      {
+        "title": "软件开发人员",
+        "companyName": "Retrocube Pvt. Ltd.",
+        "date": "2021 - 2022",
+        "description": "为全栈开发项目做出了贡献，与跨职能团队合作构建可扩展的 Web 应用程序。"
+      },
+      {
+        "title": "初级软件开发人员",
+        "companyName": "Concept Recall Pvt. Ltd.",
+        "date": "2020 - 2021",
+        "description": "协助开发和维护 Web 应用程序，获得了各种技术和框架的经验。"
+      },
+      {
+        "title": "软件开发实习生",
+        "companyName": "Sky Electric Pvt. Ltd.",
+        "date": "2019 - 2020",
+        "description": "在软件开发方面获得了实践经验，参与了真实世界的项目并学习了行业最佳实践。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "title": "Shakeel Haiders tjänster",
+        "description": "Shakeel Haiders tjänster",
+        "keywords": "tjänster, shakeel haider, webbutveckling, mjukvaruutveckling, UI/UX-design, DevOps, Utveckling, drift, design av användargränssnitt, design av användarupplevelse, webbappar, mobilappar",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "Tjänster",
+        "description": "Utforska utbudet av tjänster som erbjuds av Shakeel Haider, inklusive webbutveckling, mobilutveckling, DevOps och UI/UX-design. Levererar högkvalitativa lösningar anpassade efter dina affärsbehov.",
+        "web_development": "Webbutveckling",
+        "mobile_development": "Mobilutveckling",
+        "devops": "DevOps",
+        "uiux_design": "UI/UX-design"
+    }
+}

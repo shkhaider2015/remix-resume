@@ -1,0 +1,416 @@
+{
+  "meta": {
+    "title": "Shakeel Haider - 博客",
+    "description": "Shakeel Haider 关于 React、NestJS 和全栈 Web 开发的博客或文章。",
+    "keywords": "shakeel haider, 博客, react, nestjs, 全栈开发, web 开发, 编程, javascript, typescript",
+    "author": "Shakeel Haider"
+  },
+
+  "data": {
+    "title": "博客",
+
+    "items": [
+      {
+        "id": "1",
+        "title": "为什么我选择 React + NestJS 进行全栈开发",
+        "slug": "why-i-chose-react-nestjs-for-full-stack-development",
+        "authorId": "user123",
+        "createdAt": "2025-05-12T10:00:00Z",
+        "updatedAt": "2025-05-12T10:00:00Z",
+        "isPublished": true,
+        "content": [
+          {
+            "type": "image",
+            "url": "/images/blogs/why-i-chose-react-nestjs.png",
+            "alt": "React 和 NestJS 标志"
+          },
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "🧠 为什么我选择 React + NestJS 进行全栈开发"
+          },
+          {
+            "type": "paragraph",
+            "text": "作为一名全栈开发者，选择正确的技术栈不仅仅是追逐潮流——它关乎生产力、可扩展性和长期可维护性。在用不同的技术栈构建了多个项目之后，我发现 React（前端）和 NestJS（后端）的组合是完美的搭配。原因如下。"
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🔷 1. React – 前端主力军"
+          },
+          {
+            "type": "paragraph",
+            "text": "React 之所以成为我首选的前端框架，有几个关键原因："
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "基于组件的架构：鼓励可重用的 UI 逻辑",
+              "庞大的生态系统：大量的库（React Router、Zustand、Redux、Tailwind）",
+              "开发者体验：热重载、开发工具、易于测试",
+              "强大的社区和就业市场"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "一个简单的例子：React 中的按钮组件"
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "// components/Button.tsx\nimport React from 'react';\n\ntype ButtonProps = {\n    label: string;\n    onClick: () => void;\n  };\n  \n  const Button: React.FC<ButtonProps> = ({ label, onClick }) => {\n    return (\n      <button className=\"px-4 py-2 bg-blue-500 text-white rounded\" onClick={onClick}>\n        {label}\n      </button>\n    );\n  };\n  \n  export default Button;"
+          },
+          {
+            "type": "paragraph",
+            "text": "这种可重用组件模式是 React 的最大优势之一。"
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🛡️ 2. NestJS – 可扩展且结构化的后端"
+          },
+          {
+            "type": "paragraph",
+            "text": "NestJS 之所以脱颖而出，是因为它："
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "有主见：提供结构，不同于原始 Express",
+              "TypeScript 优先：整个应用程序的类型安全",
+              "模块化：非常适合扩展项目",
+              "支持 REST、GraphQL、WebSockets、微服务",
+              "易于数据库集成"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "示例：NestJS 中的简单路由"
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "// users.controller.ts\nimport { Controller, Get } from '@nestjs/common';\n\n@Controller('users')\nexport class UsersController {\n  @Get()\n  findAll() {\n    return [{ id: 1, name: 'John Doe' }];\n  }\n}"
+          },
+          {
+            "type": "paragraph",
+            "text": "从一开始就可读、可测试、可扩展。"
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🔗 3. 前后端之间的类型共享"
+          },
+          {
+            "type": "paragraph",
+            "text": "由于 React 和 NestJS 都使用 TypeScript，我可以在前端和后端之间共享类型/接口——避免冗余声明并减少错误。"
+          },
+          {
+            "type": "paragraph",
+            "text": "共享类型示例"
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "// shared/types.ts\nexport type User = {\n  id: string;\n  name: string;\n  email: string;\n};"
+          },
+          {
+            "type": "paragraph",
+            "text": "在 NestJS 中："
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "import { User } from '../shared/types';"
+          },
+          {
+            "type": "paragraph",
+            "text": "在 React 中："
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "import { User } from '../shared/types';"
+          },
+          {
+            "type": "paragraph",
+            "text": "没有不匹配。没有猜测。"
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🧩 4. 简易 API 集成"
+          },
+          {
+            "type": "paragraph",
+            "text": "React + NestJS 使获取和渲染数据变得容易："
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "// Fetching users in React\nuseEffect(() => {\nfetch('/api/users')\n.then(res => res.json())\n      .then(data => setUsers(data));\n  }, []);"
+          },
+          {
+            "type": "paragraph",
+            "text": "后端保持整洁和可维护，前端保持响应式和交互式。"
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🚀 最终想法"
+          },
+          {
+            "type": "paragraph",
+            "text": "选择 React + NestJS 并非偶然。它源于构建真实世界的应用程序并了解瓶颈所在。这个技术栈帮助我实现了以下目标："
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "在不牺牲结构的情况下更快地发展",
+              "自信地维护和扩展应用程序",
+              "高效地交付 Web 和移动应用程序（尤其是与 React Native 配合使用时）"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "如果您正在决定您的全栈架构或来自 MERN 背景，我强烈建议您尝试一下 React + NestJS。"
+          }
+        ]
+      },
+      {
+        "id": "remix-vs-nextjs-2025",
+        "title": "🥊 Remix vs Next.js — 为什么选择 RemixJS？",
+        "slug": "remix-vs-nextjs-why-choose-remixjs",
+        "authorId": "shakeel-haider",
+        "createdAt": "2025-05-13T10:00:00Z",
+        "updatedAt": "2025-05-13T10:00:00Z",
+        "isPublished": true,
+        "content": [
+          {
+            "type": "image",
+            "url": "/images/blogs/remix-vs-nextjs-why-choose-remixjs.png",
+            "alt": "React 和 NestJS 标志"
+          },
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "🥊 Remix vs Next.js — 为什么选择 RemixJS？"
+          },
+          {
+            "type": "paragraph",
+            "text": "Remix 和 Next.js 都是功能强大的全栈 React 框架，旨在构建现代 Web 应用程序。虽然 Next.js 是一个由 Vercel 支持的老牌玩家，但 RemixJS 是一个更新的、以 Web 标准为重点的框架，其性能、简单性和数据处理模型正迅速受到关注。"
+          },
+          {
+            "type": "paragraph",
+            "text": "在本文中，我们将深入探讨 Remix 与 Next.js 的区别，以及为什么 Remix 可能更适合您的下一个项目——特别是如果您追求速度、可维护性和 Web 基础对齐。"
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🚀 RemixJS 概览"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "全栈 React 框架",
+              "围绕 Web 基础构建（例如 HTTP 缓存、原生表单）",
+              "拥抱渐进式增强",
+              "通过最小化 JavaScript 依赖来关注快速性能",
+              "适用于任何部署目标（Node、Cloudflare、Deno 等）"
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🔍 Remix 相较于 Next.js 的主要优势"
+          },
+          {
+            "type": "paragraph",
+            "text": "让我们根据真实的开发者关注点和架构差异来比较两者。"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "1. 🧠 数据加载模型"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix：服务器优先，共同定位加载器\nRemix 中的每个路由都定义了一个 `loader()` 函数，该函数在渲染之前在服务器上运行。它并行获取所有所需数据，并将其作为响应的一部分发送。"
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "// app/routes/posts.tsx\nexport const loader = async () => {\nconst posts = await getPosts();\nreturn json(posts);\n};"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js：getServerSideProps 或 getStaticProps\nNext.js 将数据获取分离到特殊函数中，但仅限于页面级别，这限制了嵌套组件的可重用性和可组合性。"
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "// pages/posts.js\nexport async function getServerSideProps() {\n  const posts = await getPosts();\n  return { props: { posts } };\n}"
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 结论：Remix 通过将数据获取直接绑定到路由，甚至是嵌套路由，从而简化了数据获取——从而带来更好的性能和结构。"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "2. 🧭 嵌套路由和布局"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix：原生嵌套路由\nRemix 路由是共同定位的，并且本质上是嵌套的。布局和路由的结构就像文件夹一样，您可以拥有布局级别的加载器。"
+          },
+          {
+            "type": "code",
+            "language": "text",
+            "code": "routes/\n├── dashboard.tsx        --> /dashboard\n└── dashboard/\n    └── settings.tsx     --> /dashboard/settings"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js：App Router 和文件约定\nNext.js 最近引入了基于应用程序目录的路由，它支持布局，但它更年轻、更复杂，并且没有与布局中的服务器端数据深度集成。"
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 结论：Remix 的嵌套路由更容易理解，更灵活，并且可以更好地扩展复杂的 UI 层次结构。"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "3. ⚡ 性能：客户端 JavaScript 更少"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix：最小化 JS 依赖\nRemix 加载所需的 JS 尽可能少。它依赖于标准的浏览器行为，例如原生表单提交和缓存，以减少客户端逻辑。"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js：客户端交互性繁重\nNext.js 更侧重于水合和客户端 API，这通常会导致更重的捆绑包。"
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 结论：Remix 应用程序通常默认速度更快，因为它们将更多工作卸载到浏览器和服务器。"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "4. 📤 表单和操作"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix：渐进式、服务器驱动的表单\nRemix 中的表单使用带有服务器端 `action()` 函数的原生 `<form>` 标签来处理提交——不需要 JavaScript。"
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "export const action = async ({ request }) => {\n  const formData = await request.formData();\n  await savePost(formData);\n  return redirect(\"/success\");\n};"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js：需要 JavaScript + API 路由\nNext.js 表单通常通过 `fetch` 或客户端库处理。没有像 Remix 那样的内置表单处理。"
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 结论：Remix 带回了传统服务器渲染应用程序的简单性，从而可以使用更少的客户端代码实现快速、渐进的表单。"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "5. 🌐 缓存和 Web 基础"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix：基于 HTTP 缓存构建\n您可以在加载器级别控制缓存，从而智能地控制浏览器或 CDN 存储的内容。"
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "export const loader: LoaderFunction = async ({ request }) => {\n  return new Response(JSON.stringify(data), {\n    headers: { \"Cache-Control\": \"max-age=3600\" },\n  });\n};"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js：主要由 Vercel 特定优化处理\n您可以控制标头，但如果不在 Vercel 上托管，则它更抽象且灵活性较低。"
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 结论：Remix 提供对 HTTP 响应和缓存的直接控制——拥抱原生 Web 原则。"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "6. 🛠️ 部署灵活性"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Remix 运行在 Node.js、Deno、Cloudflare Workers、Vercel、Netlify、Fly.io——甚至可以作为独立的 Express 应用程序。",
+              "Next.js 在 Vercel（其赞助商）上运行效果最好。自定义部署是可能的，但不够无缝。"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 结论：如果您需要避免供应商锁定，Remix 更灵活。"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "7. 🔧 开发者体验"
+          },
+          {
+            "type": "paragraph",
+            "text": "以下是 Remix 和 Next.js 的快速功能比较："
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "路由 — Remix：嵌套，布局优先 | Next.js：默认扁平（页面），App Dir 是新功能",
+              "数据获取 — Remix：基于路由的加载器 | Next.js：getServerSideProps、API 路由",
+              "表单 — Remix：带操作的原生 | Next.js：自定义 JS + API 端点",
+              "缓存 — Remix：完整 HTTP 控制 | Next.js：Vercel 处理或自定义",
+              "客户端 JS — Remix：更小，最小 | Next.js：更大，重水合",
+              "部署 — Remix：任何（Cloudflare、Deno…） | Next.js：Vercel 上最佳"
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🧩 什么时候应该选择 Remix 而不是 Next.js？"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "✅ 您希望渐进式增强和快速性能",
+              "✅ 您关心对路由和数据获取的深度控制",
+              "✅ 您更喜欢最小化 JS 和更好的 SEO",
+              "✅ 您希望构建即使禁用 JS 也能工作的应用程序",
+              "✅ 您需要 Vercel 之外的灵活部署选项"
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🏁 最终想法"
+          },
+          {
+            "type": "paragraph",
+            "text": "Remix 和 Next.js 都是出色的工具。但 Remix 带回了经典服务器渲染应用程序的简单性和性能，同时仍然为您提供了现代 React 功能。它更倾向于 Web 标准而不是自定义抽象，使您的应用程序快速、有弹性且更易于理解。"
+          },
+          {
+            "type": "paragraph",
+            "text": "需要帮助将应用程序从 Next.js 迁移到 Remix 或从头开始构建新的 Remix 应用程序？请告诉我！🚀"
+          }
+        ]
+      }
+    ]
+  }
+}

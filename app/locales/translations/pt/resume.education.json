@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Formação de Shakeel Haider",
+    "description": "Formação de Shakeel Haider",
+    "keywords": "currículo, shakeel haider, experiência, educação, habilidades, sobre mim, desenvolvimento web, desenvolvimento de software, design UI/UX, DevOps, Desenvolvimento, operação, design de interface de usuário, design de experiência de usuário, aplicativos web, aplicativos móveis, BS Engenharia de Software, Universidade Indus, FSc Pré-Engenharia, Pakistan Shipowner's College, SSC, Escola Al Nasir",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Currículo",
+    "description": "Minha jornada educacional começou com o SSC da Al Nasir School Pvt., despertando meu interesse pela resolução de problemas. Fiz o FSc Pré-Engenharia no Pakistan Shipowner's College, fortalecendo minhas habilidades analíticas. Mais tarde, obtive o bacharelado em Engenharia de Software pela Indus University Pvt. Ltd., adquirindo experiência em programação e design de software. Essa base acadêmica moldou minhas habilidades técnicas e mentalidade de crescimento, preparando-me para uma carreira de sucesso no desenvolvimento de software.",
+    "items": [
+      {
+        "title": "MS Inteligência Artificial",
+        "companyName": "Iqra University Pvt. Ltd.",
+        "date": "2026 - Continuar",
+        "description": "Focado em desenvolvimento de software, algoritmos e design de sistemas, obtendo experiência prática através de projetos e estágios."
+      },
+      {
+        "title": "BS Engenharia de Software",
+        "companyName": "Indus University Pvt. Ltd.",
+        "date": "2016 - 2020",
+        "description": "Focado em desenvolvimento de software, algoritmos e design de sistemas, obtendo experiência prática através de projetos e estágios."
+      },
+      {
+        "title": "FSc Pré-Engenharia",
+        "companyName": "Pakistan Shipowner's College",
+        "date": "2014 - 2016",
+        "description": "Estudou matemática avançada, física e química, desenvolvendo fortes habilidades analíticas e de resolução de problemas."
+      },
+      {
+        "title": "SSC",
+        "companyName": "Al Nasir School Pvt. Ltd.",
+        "date": "2012 - 2014",
+        "description": "Concluiu o ensino médio com foco em matérias científicas, estabelecendo as bases para futuros estudos em engenharia."
+      }
+    ]
+  }
+}

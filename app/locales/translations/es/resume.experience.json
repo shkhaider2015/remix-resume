@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "Experiencia de Shakeel Haider",
+    "description": "Resumen de experiencia de Shakeel Haider",
+    "keywords": "experiencia, shakeel haider, desarrollo web, desarrollo de software, diseño UI/UX, DevOps, Desarrollo, operación Frontend Lead Developer, RunOfShowApp, Fullstack Developer, freelance, Sky Electric Pvt. Ltd, Concept Recall Pvt. Ltd, Retrocube Pvt. Ltd",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Currículum",
+    "description": "Con más de 5 años en desarrollo de software, he trabajado en dominios de frontend, móvil y full-stack, comenzando como pasante en Sky Electric Pvt. Ltd y avanzando a roles en Concept Recall Pvt. Ltd y Retrocube Pvt. Ltd. Actualmente, soy el desarrollador principal de frontend en RunOfShowApp, liderando un equipo para crear interfaces amigables para el usuario mientras trabajo como desarrollador fullstack freelance desde 2020. Mi carrera muestra adaptabilidad, trabajo en equipo y un compromiso con soluciones de alta calidad. Apasionado por la codificación y la resolución de problemas, aprendo y crezco continuamente como un desarrollador versátil.",
+    "items": [
+      {
+        "title": "Jefe de equipo",
+        "companyName": "BCDApps",
+        "date": "2022 - Presente",
+        "description": "Liderar el desarrollo de frontend, supervisando un equipo para crear interfaces fáciles de usar y garantizar estándares de código de alta calidad."
+      },
+      {
+        "title": "Desarrollador Fullstack (Freelance)",
+        "companyName": "Upwork",
+        "date": "2024 - Presente",
+        "description": "Entrega de soluciones web de extremo a extremo para varios clientes, centrándose tanto en el desarrollo frontend como en el backend para satisfacer diversos requisitos del proyecto."
+      },
+      {
+        "title": "Desarrollador de Software",
+        "companyName": "Retrocube Pvt. Ltd.",
+        "date": "2021 - 2022",
+        "description": "Contribuí a proyectos de desarrollo full-stack, colaborando con equipos multifuncionales para construir aplicaciones web escalables."
+      },
+      {
+        "title": "Desarrollador de Software Junior",
+        "companyName": "Concept Recall Pvt. Ltd.",
+        "date": "2020 - 2021",
+        "description": "Asistí en el desarrollo y mantenimiento de aplicaciones web, adquiriendo experiencia en diversas tecnologías y frameworks."
+      },
+      {
+        "title": "Pasante de Desarrollo de Software",
+        "companyName": "Sky Electric Pvt. Ltd.",
+        "date": "2019 - 2020",
+        "description": "Obtuve experiencia práctica en desarrollo de software, trabajando en proyectos del mundo real y aprendiendo las mejores prácticas de la industria."
+      }
+    ]
+  }
+}
