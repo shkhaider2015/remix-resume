@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "홈",
+    "services": "서비스",
+    "resume": "이력서",
+    "work": "작업",
+    "blog": "블로그",
+    "contacts": "연락처"
+  },
+  "resume_tabs": {
+    "experience": "경험",
+    "education": "교육",
+    "about_me": "내 소개",
+    "skills": "기술"
+  },
+  "others": {
+    "download_pdf": "PDF 다운로드"
+  }
+}

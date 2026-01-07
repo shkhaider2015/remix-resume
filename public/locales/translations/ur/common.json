@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "گھر",
+    "services": "خدمات",
+    "resume": "ریزیومے",
+    "work": "کام",
+    "blog": "بلاگ",
+    "contacts": "رابطے"
+  },
+  "resume_tabs": {
+    "experience": "تجربہ",
+    "education": "تعلیم",
+    "about_me": "میرے بارے میں",
+    "skills": "مہارتیں"
+  },
+  "others": {
+    "download_pdf": "پی ڈی ایف ڈاؤن لوڈ کریں"
+  }
+}

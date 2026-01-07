@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Главная",
+    "services": "Услуги",
+    "resume": "Резюме",
+    "work": "Работы",
+    "blog": "Блог",
+    "contacts": "Контакты"
+  },
+  "resume_tabs": {
+    "experience": "Опыт",
+    "education": "Образование",
+    "about_me": "Обо мне",
+    "skills": "Навыки"
+  },
+  "others": {
+    "download_pdf": "Скачать PDF"
+  }
+}

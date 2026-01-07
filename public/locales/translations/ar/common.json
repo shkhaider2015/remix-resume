@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "services": "الخدمات",
+    "resume": "السيرة الذاتية",
+    "work": "أعمالي",
+    "blog": "المدونة",
+    "contacts": "جهات الاتصال"
+  },
+  "resume_tabs": {
+    "experience": "الخبرة",
+    "education": "التعليم",
+    "about_me": "عني",
+    "skills": "المهارات"
+  },
+  "others": {
+    "download_pdf": "تحميل PDF"
+  }
+}
