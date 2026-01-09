@@ -23,6 +23,11 @@ import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 import { useChangeLanguage } from "remix-i18next/react";
 import { useTranslation } from "react-i18next";
 import { getLocaleFromUrl } from "./utils/functions/functions.server";
+import SelectLanguage from "./components/SelectLanguage/SelectLanguage";
+
+export const shouldRevalidate = ({ currentParams, nextParams }: any) => {
+  return currentParams.lang !== nextParams.lang;
+};
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: appStylesHref },
@@ -180,6 +185,7 @@ export default function App() {
 
         <body>
           <ThemeToggle />
+          <SelectLanguage />
           <Loader />
           <Navbar locale={locale} />
           <div id="detail">

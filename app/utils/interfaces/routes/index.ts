@@ -1,3 +1,5 @@
+import { SupportedLocale } from "~/assets/constants";
+
 export interface INavItem {
     name: string;
     label: string;
@@ -12,4 +14,10 @@ export interface IServerProps {
 export interface IResumeAboutItem {
     title: string;
     description: string;
+}
+
+export interface ILanguagesData {
+    name: string;
+    slug: SupportedLocale;
+    flag: string;
 }

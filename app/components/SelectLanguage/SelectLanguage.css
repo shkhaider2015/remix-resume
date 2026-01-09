@@ -1,0 +1,86 @@
+.sl-conntainer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: auto;
+    margin: 10px 120px 0px 100px;
+    z-index: 11;
+    width: 60px;
+}
+
+.sl-conntainer .label {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.sl-conntainer .options {
+    position: relative;
+}
+
+.sl-conntainer .options.show {
+    visibility: visible;
+    transform: translateY(-10px);
+    transition: all 0.5s linear;
+}
+
+.sl-conntainer .options.hide {
+    visibility: hidden;
+    transform: translateY(0px);
+    transition: all 0.2s linear;
+}
+
+.sl-conntainer .options .abs-con {
+    position: absolute;
+    width: max-content;
+    height: 300px;
+    overflow-y: auto;
+    margin-left: -90px;
+    margin-right: auto;
+    margin-top: 25px;
+    padding: 3px;
+    background-color: var(--gray061);
+    border-radius: 5px;
+    text-align: left;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.sl-conntainer .options .abs-con .option {
+    padding: 10px 10px;
+    cursor: pointer;
+    background-color: var(--gray061);
+    transition: background-color .3s linear;
+    direction: ltr;
+}
+
+.sl-conntainer .options .abs-con .option:hover {
+    background-color: var(--gray07);
+}
+
+[dir="rtl"] .sl-conntainer {
+    left: 0;
+    right: auto;
+    margin: 10px 120px 0px 120px;
+}
+
+[dir="rtl"] .sl-conntainer .options .abs-con {
+    margin-left: auto;
+    margin-right: -90px;
+
+}
+
+@media screen and (max-width: 550px) {
+    [dir="rtl"] .sl-conntainer,
+    .sl-conntainer {
+        left: 0;
+        right: auto;
+         margin: 20px 0px 0px 70px;
+    }
+
+    .sl-conntainer .label {
+        font-size: 40px;
+     }
+ }
