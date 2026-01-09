@@ -172,6 +172,8 @@ export default function App() {
             href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
             rel="stylesheet"
           />
+          {/* Other Languages */}
+          <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet" />
           <Meta />
           <Links />
         </head>

@@ -310,8 +310,7 @@
           {
             "type": "code",
             "language": "jsx",
-            "code": "export const action = async ({ request }) => {\n  const formData = await request.formData();\n  await savePost(formData);\n  return redirect(\"/success\");\n};
-"
+            "code": "export const action = async ({ request }) => {\n  const formData = await request.formData();\n  await savePost(formData);\n  return redirect(\"/success\");\n};"
           },
           {
             "type": "paragraph",
@@ -333,8 +332,7 @@
           {
             "type": "code",
             "language": "ts",
-            "code": "export const loader: LoaderFunction = async ({ request }) => {\n  return new Response(JSON.stringify(data), {\n    headers: { \"Cache-Control\": \"max-age=3600\" },\n  });\n};
-"
+            "code": "export const loader: LoaderFunction = async ({ request }) => {\n  return new Response(JSON.stringify(data), {\n    headers: { \"Cache-Control\": \"max-age=3600\" },\n  });\n};"
           },
           {
             "type": "paragraph",

@@ -35,6 +35,7 @@
 
 .blog-container .content .blog-item {
     text-decoration: none;
+    font-family: "Poppins";
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -51,6 +52,7 @@
 
 .blog-container .content .blog-item .desc {
     padding: 10px 20px;
+    font-family: "Poppins";
 }
 
 .blog-container .content .blog-item .image-con {
@@ -109,4 +111,28 @@
     }
 
 
+}
+
+
+
+[dir="rtl"] .blog-container .screen-title {
+    padding: 0px 15% 20px 0px;
+}
+
+
+[lang="ar"] .blog-container .content .blog-item,
+[lang="ar"] .blog-container .content .blog-item .desc,
+[lang="ar"] .blog-container .screen-title {
+    font-family: "Cairo";
+}
+
+[lang="ur"] .blog-container .content .blog-item,
+[lang="ur"] .blog-container .content .blog-item .desc,
+[lang="ur"] .blog-container .screen-title {
+    font-family: "Noto Nastaliq Urdu";
+}
+
+[lang="ur"] .blog-container .content .blog-item,
+[lang="ur"] .blog-container .content .blog-item .desc {
+    line-height: 3;
 }

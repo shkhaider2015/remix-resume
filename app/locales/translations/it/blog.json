@@ -77,7 +77,7 @@
             "style": "unordered",
             "items": [
               "Opinionato: fornisce una struttura, a differenza di Express grezzo",
-              "TypeScript-first: sicurezza dei tipi in tutta l\'app",
+              "TypeScript-first: sicurezza dei tipi in tutta l'app",
               "Modulare: ottimo per la scalabilità dei progetti",
               "Supporta REST, GraphQL, WebSockets, Microservizi",
               "Facile integrazione del database"
@@ -94,7 +94,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Leggibile, testabile e scalabile fin dall\'inizio."
+            "text": "Leggibile, testabile e scalabile fin dall'inizio."
           },
           {
             "type": "heading",
@@ -273,7 +273,7 @@
           },
           {
             "type": "paragraph",
-            "text": "🚫 Next.js: App Router e convenzioni sui file\nNext.js ha introdotto di recente il routing basato sulla directory dell\'app, che supporta i layout, ma è più nuovo e complesso e non si integra profondamente con i dati lato server nei layout."
+            "text": "🚫 Next.js: App Router e convenzioni sui file\nNext.js ha introdotto di recente il routing basato sulla directory dell'app, che supporta i layout, ma è più nuovo e complesso e non si integra profondamente con i dati lato server nei layout."
           },
           {
             "type": "paragraph",
@@ -286,11 +286,11 @@
           },
           {
             "type": "paragraph",
-            "text": "✅ Remix: dipendenza JS minima\nRemix carica il minor numero di JS necessario. Si basa sul comportamento standard del browser come l\'invio di moduli nativi e il caching per ridurre la logica lato client."
+            "text": "✅ Remix: dipendenza JS minima\nRemix carica il minor numero di JS necessario. Si basa sul comportamento standard del browser come l'invio di moduli nativi e il caching per ridurre la logica lato client."
           },
           {
             "type": "paragraph",
-            "text": "🚫 Next.js: interattività pesante lato client\nNext.js si basa maggiormente sull\'idratazione e sulle API lato client, il che spesso porta a pacchetti più pesanti."
+            "text": "🚫 Next.js: interattività pesante lato client\nNext.js si basa maggiormente sull'idratazione e sulle API lato client, il che spesso porta a pacchetti più pesanti."
           },
           {
             "type": "paragraph",
@@ -330,8 +330,7 @@
           {
             "type": "code",
             "language": "ts",
-            "code": "export const loader: LoaderFunction = async ({ request }) => {\n  return new Response(JSON.stringify(data), {\n    headers: { \"Cache-Control\": \"max-age=3600\" },\n  });\n};
-"
+            "code": "export const loader: LoaderFunction = async ({ request }) => {\n  return new Response(JSON.stringify(data), {\n    headers: { \"Cache-Control\": \"max-age=3600\" },\n  });\n};"
           },
           {
             "type": "paragraph",
@@ -375,7 +374,7 @@
               "Recupero dati — Remix: caricatori basati su rotte | Next.js: getServerSideProps, rotte API",
               "Moduli — Remix: nativo con azioni | Next.js: JS personalizzato + endpoint API",
               "Caching — Remix: controllo HTTP completo | Next.js: gestito da Vercel o personalizzato",
-              "JS client — Remix: più piccolo, minimo | Next.js: più grande, pesante per l\'idratazione",
+              "JS client — Remix: più piccolo, minimo | Next.js: più grande, pesante per l'idratazione",
               "Distribuzione — Remix: qualsiasi (Cloudflare, Deno…) | Next.js: migliore su Vercel"
             ]
           },
@@ -406,7 +405,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Vuoi aiuto per migrare un\'app da Next.js a Remix o per creare una nuova app Remix da zero? Fammi sapere! 🚀"
+            "text": "Vuoi aiuto per migrare un'app da Next.js a Remix o per creare una nuova app Remix da zero? Fammi sapere! 🚀"
           }
         ]
       }

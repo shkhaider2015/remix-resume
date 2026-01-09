@@ -85,7 +85,65 @@
 } */
 
 
+/* ================================== */
+/* ================================== */
+/* ================================== */
+
+[lang="ar"] .navbar {
+  font-family: "Cairo";
+  font-weight: "600";
+}
+
+[lang="ur"] .navbar {
+  font-family: "Noto Nastaliq Urdu";
+  font-weight: "600";
+}
+
+[dir="rtl"] .navbar {
+  left: auto;
+  right: 0;
+  margin-right: 2rem;
+  align-items: flex-start;
+}
+
+[dir="rtl"] .nav-item-container {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-label {
+  left: auto;
+  right: 32px;
+  text-align: right;
+}
+
+[dir="rtl"] .nav-item-container.active,
+[dir="rtl"] .nav-item-container:hover {
+  transform: scale(2) translateX(-8px);
+}
+
+[dir="rtl"] .nav-item-container:hover + .nav-item-container:not(.active),
+[dir="rtl"] .navbar :has(+ .nav-item-container:hover):not(.active) {
+  transform: scale(1.5) translateX(-6px);
+}
+
+[dir="rtl"] .nav-item-container.active::after {
+  left: auto;
+  right: 15px;
+}
+
+.nav-label,
+.mobile-nav-item {
+  direction: inherit;
+  unicode-bidi: plaintext;
+}
+
+/* ================================== */
+/* ================================== */
+/* ================================== */
+
+
 @media screen and (max-width: 550px) {
+  [dir="rtl"] .navbar,
   .navbar {
     /* display: none; */
     width: 100%;
@@ -192,6 +250,13 @@
     font-family: Poppins;
     letter-spacing: 5px;
     color: var(--white);
+  }
+
+  [lang="ar"] .navbar .mobile-nav .mobile-nav-item {
+    font-family: "Cairo";
+  }
+  [lang="ur"] .navbar .mobile-nav .mobile-nav-item {
+    font-family: "Noto Nastaliq Urdu";
   }
 
   .navbar .mobile-nav .mobile-nav-item.active {

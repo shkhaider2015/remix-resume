@@ -26,15 +26,17 @@ export const loader: LoaderFunction = async ({ request }) => {
 
   const locale = getLocaleFromUrl(request);
   let t = await i18next.getFixedT(locale, "work");
+  let items = t("data.items", { returnObjects: true }) as any[]
 
   let data: IServerProps = {
     data: {
       title: t("data.title"),
-      // items: items.map((item: IWorkItem, index: number) => ({
-      //   ...workItems[index],
-      //   title: item.title,
-      //   desc: item.desc,
-      // })),
+      items: items.map((item: any, index: number) => ({
+        ...workItems[index],
+        role: item.role,
+        desc: item.desc,
+        count: item.count
+      })),
     },
     meta: {
       title: t("meta.title"),
@@ -58,7 +60,7 @@ export default function Work() {
     <div className="work-container">
       <h1 className="screen-title">{data.title}</h1>
       <div className="work-items">
-        <Carousal />
+        <Carousal items={data.items} />
       </div>
     </div>
   );

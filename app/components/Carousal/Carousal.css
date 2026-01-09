@@ -58,3 +58,9 @@
         background-color: rgb(255, 255, 255);
     }
 }
+
+[dir="rtl"] .carousal-con>.buttons {
+    /* justify-content: flex-start; */
+    margin-left: 20px;
+    margin-right: auto;
+ }

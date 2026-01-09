@@ -315,8 +315,7 @@
           {
             "type": "code",
             "language": "jsx",
-            "code": "export const action = async ({ request }) => {\n  const formData = await request.formData();\n  await savePost(formData);\n  return redirect(\"/success\");\n};
-"
+            "code": "export const action = async ({ request }) => {\n  const formData = await request.formData();\n  await savePost(formData);\n  return redirect(\"/success\");\n};"
           },
           {
             "type": "paragraph",

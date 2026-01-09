@@ -21,3 +21,10 @@
     background-color: var(--black);
     color: var(--primary-green);
 }
+
+[lang="ar"] .button-con {
+    font-family: "Cairo";
+ }
+[lang="ur"] .button-con {
+    font-family: "Noto Nastaliq Urdu";
+ }

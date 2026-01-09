@@ -166,3 +166,25 @@ form > .btn-con {
     }
   }
 
+
+
+
+[dir="rtl"] .contacts-container {
+    padding: 5rem 15% 5% 5%;
+}
+
+[lang="ar"] form .title,
+[lang="ar"] form .desc,
+[lang="ar"] form .fields,
+[lang="ar"] .contacts-container .screen-title,
+[lang="ar"] .contacts-container .success {
+    font-family: "Cairo";
+ }
+
+[lang="ur"] form .title,
+[lang="ur"] form .desc,
+[lang="ur"] form .fields,
+[lang="ur"] .contacts-container .screen-title,
+[lang="ur"] .contacts-container .success {
+    font-family: "Noto Nastaliq";
+ }

@@ -114,8 +114,7 @@
           {
             "type": "code",
             "language": "ts",
-            "code": "// shared/types.ts\nexport type User = {\n  id: string;\n  name: string;\n  email: string;\n};
-"
+            "code": "// shared/types.ts\nexport type User = {\n  id: string;\n  name: string;\n  email: string;\n};"
           },
           {
             "type": "paragraph",
@@ -333,8 +332,7 @@
           {
             "type": "code",
             "language": "ts",
-            "code": "export const loader: LoaderFunction = async ({ request }) => {\n  return new Response(JSON.stringify(data), {\n    headers: { \"Cache-Control\": \"max-age=3600\" },\n  });\n};
-"
+            "code": "export const loader: LoaderFunction = async ({ request }) => {\n  return new Response(JSON.stringify(data), {\n    headers: { \"Cache-Control\": \"max-age=3600\" },\n  });\n};"
           },
           {
             "type": "paragraph",

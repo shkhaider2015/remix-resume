@@ -55,7 +55,6 @@
     }
 }
 
-
 @media screen and (max-width: 1300px) {
     .detail-container .content {
         width: 60%;
@@ -85,4 +84,15 @@
         font-size: 1.8rem;
     }
 
+}
+
+[lang="ar"] .detail-container .content .h1,
+[lang="ar"] .detail-container .content{
+    font-family: "Cairo";
+}
+
+[lang="ur"] .detail-container .content .h1,
+[lang="ur"] .detail-container .content {
+    font-family: "Noto Nastaliq Urdu";
+    line-height: 3;
 }

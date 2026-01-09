@@ -47,3 +47,12 @@
         text-wrap: wrap;
      }
  }
+
+
+
+[lang="ar"] .ci-container .text-con {
+    font-family: "Cairo";
+}
+[lang="ur"] .ci-container .text-con {
+    font-family: "Noto Nastaliq Urdu";
+}

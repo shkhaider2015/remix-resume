@@ -92,7 +92,7 @@
 }
 
 .tab-screen-con .descriptiion.others-desc {
-    width: 50%;
+    width: 60%;
     font-size: 16px;
     font-family: Poppins;
     line-height: 25px;
@@ -158,13 +158,13 @@
         padding: 5rem 0% 3% 20%;
     }
 
-    .tab-screen-con>.descriptiion.others-desc {
+    .tab-screen-con .descriptiion.others-desc {
         width: 60%;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .tab-screen-con>.descriptiion.others-desc {
+    .tab-screen-con .descriptiion.others-desc {
         width: 80%;
     }
 }
@@ -215,7 +215,7 @@
         opacity: 1;
     }
 
-    .tab-screen-con>.descriptiion.others-desc {
+    .tab-screen-con .descriptiion.others-desc {
         width: 100%;
         padding: 0px 5%;
     }
@@ -247,4 +247,37 @@
         text-align: center;
         font-size: 35px;
     }
+}
+
+[dir="rtl"] .resume-container {
+    padding: 5rem 15% 5% 5%;
+}
+[dir="rtl"] .tab-screen-con {
+    padding-left: auto;
+    padding-right: 10px;
+ }
+
+[lang="ar"] .resume-container .resume-header .screen-title, 
+[lang="ar"] .resume-container .resume-header .pdf-con .download-txt,
+[lang="ar"] .tab-screen-con .about-header,
+[lang="ar"] .tab-screen-con>.descriptiion {
+    font-family: "Cairo";
+ }
+
+ [lang="ar"] .tab-screen-con .descriptiion.others-desc {
+    font-family: "Cairo";
+    line-height: 2;
+ }
+
+[lang="ur"] .resume-container .resume-header .screen-title, 
+[lang="ur"] .resume-container .resume-header .pdf-con .download-txt,
+[lang="ur"] .tab-screen-con .descriptiion.others-desc,
+[lang="ur"] .tab-screen-con .about-header,
+[lang="ur"] .tab-screen-con>.descriptiion {
+    font-family: "Noto Nastaliq Urdu";
+    line-height: 2.5;
+ }
+
+[lang="ur"] .tab-screen-con .descriptiion.others-desc {
+    line-height: 3.5;
 }

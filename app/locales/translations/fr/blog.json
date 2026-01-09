@@ -112,8 +112,7 @@
           {
             "type": "code",
             "language": "ts",
-            "code": "// shared/types.ts\nexport type User = {\n  id: string;\n  name: string;\n  email: string;\n};
-"
+            "code": "// shared/types.ts\nexport type User = {\n  id: string;\n  name: string;\n  email: string;\n};"
           },
           {
             "type": "paragraph",

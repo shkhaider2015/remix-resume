@@ -320,3 +320,25 @@
         height: 22px;
     }
 }
+
+[dir="rtl"] .home-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 0% 15% 0% 5%;
+    align-items: center;
+}
+
+[lang="ar"] .home-container .home-section.home-left h1,
+[lang="ar"] .home-container .home-section.home-left h3,
+[lang="ar"] .home-container .home-section.home-left>p {
+    font-family: 'Cairo';
+}
+
+[lang="ur"] .home-container .home-section.home-left h1,
+[lang="ur"] .home-container .home-section.home-left h3,
+[lang="ur"] .home-container .home-section.home-left>p {
+    font-family: 'Noto Nastaliq Urdu';
+    line-height: 2.7;
+}
+

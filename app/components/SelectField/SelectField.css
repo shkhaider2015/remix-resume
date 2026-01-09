@@ -42,7 +42,7 @@
     margin-left: 10px;
 }
 
-  .select-box::after {
+ [dir="ltr"] .select-box::after {
     content: "";
     width: 5px;
     height: 5px;
@@ -75,6 +75,7 @@
     transform: translateY(-10px);
     transition: all 0.2s ease-in-out;
     z-index: 10;
+    font-family: Questrial;
   }
   
   .options-container.open {
@@ -89,11 +90,13 @@
     transform:  rotate(270deg);
 
   }
+
   .options-container > p {
     font-family: Questrial;
     color: var(--black);
     text-align: center;
   }
+
   
   .option {
     padding: 10px 15px;
@@ -111,4 +114,31 @@
   .option:last-child {
     border-bottom: none;
   }
-  
+
+[dir="rtl"] .select-box::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-top: 6px solid transparent; /* Height of the triangle */
+    border-right: 8px solid rgb(100, 100, 100);   /* Base of the triangle and its color */
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 0;
+    /* margin-top: 4px; */
+    margin-left: 20px;
+    transform: rotate(90deg);
+    transition: transform .2s ease-in;
+  }
+
+
+[lang="ar"] .options-container ,
+[lang="ar"] .select-box.placeholder {
+    font-family: "Cairo";
+ }
+
+[lang="ur"] .options-container,
+[lang="ur"] .select-box.placeholder {
+    font-family: "Noto Nastaliq Urdu";
+ }

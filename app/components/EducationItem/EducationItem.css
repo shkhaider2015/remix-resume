@@ -164,7 +164,7 @@
 
 
 /* HTML: <div class="ribbon">Your text content</div> */
-.ribbon {
+[dir="ltr"] .ribbon {
     position: absolute;
     top: 0;
     right: 0;
@@ -176,7 +176,7 @@
     font-family: Poppins;
     letter-spacing: 6px;
   }
-  .ribbon {
+[dir="ltr"] .ribbon {
     --s: 1em; /* the ribbon size */
     --d: .8em;  /* the depth */
     --c: .8em;  /* the cutout part */
@@ -299,4 +299,59 @@
     .edu-item-con .content-con .company > .title {
         font-size: 8px;
     }
+}
+
+[dir="rtl"] .ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -42px;
+  margin-top: -20px;
+  font-size: 22px;
+  font-weight: normal;
+  color: transparent;
+  font-family: Poppins;
+  letter-spacing: 6px;
+
+  --s: 1em;
+  --d: .8em;
+  --c: .8em;
+
+  padding: 0 var(--c) var(--d) calc(var(--s) + .5em);
+  line-height: 1.8;
+
+  /* gradient mirrored horizontally */
+  background: conic-gradient(at left var(--s) bottom var(--d), #0004 62.5%, #0008 0 75%, #0000 0);
+
+  /* mirrored clip-path */
+  clip-path: polygon(
+    calc(100% - var(--c)) 0,
+    calc(var(--s)) 0,
+    calc(var(--s)) var(--d),
+    0 var(--d),
+    var(--c) calc(50% + var(--d)/2),
+    0 100%,
+    calc(var(--s) + var(--d)) 100%,
+    calc(var(--s) + var(--d)) calc(100% - var(--d)),
+    calc(100% - var(--c)) calc(100% - var(--d)),
+    100% calc(50% - var(--d)/2)
+  );
+
+  background-color: var(--gray07);
+  width: fit-content;
+  transition: background-color .7s ease-out;
+}
+
+
+
+[lang="ar"] .edu-item-con .content-con .date,
+[lang="ar"] .edu-item-con .content-con .title,
+[lang="ar"] .edu-item-con .content-con .company {
+    font-family: "Cairo";
+}
+
+[lang="ur"] .edu-item-con .content-con .date,
+[lang="ur"] .edu-item-con .content-con .title,
+[lang="ur"] .edu-item-con .content-con .company {
+    font-family: "Noto Nastaliq Urdu";
 }
