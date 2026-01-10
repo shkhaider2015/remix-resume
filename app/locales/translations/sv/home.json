@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "title": "Shakeel Haiders Portfolio",
+        "description": "Shakeel Haiders Portfolio",
+        "keywords": "portfolio, shakeel haider, mjukvaruingenjör, webbutvecklare, mjukvaruutvecklare, mobilappar, full-stack utvecklare",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "Shakeel Haider",
+        "role": "Mjukvaruingenjör 👨🏻‍💻",
+        "description": "Jag är en passionerad mjukvaruingenjör med över 5 års erfarenhet av 🔴 frontend, 🟢 backend och 🔵 databasutveckling. Jag är skicklig på att skapa användarvänliga gränssnitt, skalbara applikationer och effektiva datalösningar, jag trivs med att lösa komplexa problem och leverera högkvalitativ mjukvara.",
+        "cta": "Låt oss bygga innovativa lösningar tillsammans! 🚀"
+    },
+    "others": {
+        "profile_picture_alt": "Shakeel Haiders profilbild"
+    }
+}

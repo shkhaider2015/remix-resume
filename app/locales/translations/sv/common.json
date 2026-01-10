@@ -1,0 +1,10 @@
+{
+    "nav": {
+        "home": "Hem",
+        "services": "Tjänster",
+        "resume": "CV",
+        "work": "Arbeten",
+        "blog": "Blogg",
+        "contacts": "Kontakter"
+    }
+}

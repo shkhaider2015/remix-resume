@@ -48,3 +48,11 @@ input[data-autocompleted] {
 /* .if-container > input:focus {
     outline: none;
 } */
+
+[lang="ar"] .if-container > input {
+    font-family: "Cairo";
+ }
+
+[lang="ur"] .if-container > input {
+    font-family: "Noto Nastaliq Urdu";
+ }

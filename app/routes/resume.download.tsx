@@ -7,7 +7,7 @@ export const loader: LoaderFunction = async () => {
   const filePath = path.resolve("public/files/Shakeel Haider Resume New.pdf");
   const file = await fs.readFile(filePath);
 
-  return new Response(file, {
+  return new Response(new Uint8Array(file), {
     headers: {
       "Content-Type": "application/pdf",
       "Content-Disposition": 'attachment; filename="report.pdf"',

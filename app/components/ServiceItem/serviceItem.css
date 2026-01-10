@@ -246,3 +246,13 @@
         opacity: 0;
     }
 }
+
+[lang="ar"] .service-item-container .content-con .count,
+[lang="ar"] .service-item-container .content-con .title {
+    font-family: "Cairo";
+}
+
+[lang="ur"] .service-item-container .content-con .count,
+[lang="ur"] .service-item-container .content-con .title {
+    font-family: "Noto Nastaliq Urdu";
+}

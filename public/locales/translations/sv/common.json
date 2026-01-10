@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Hem",
+    "services": "Tjänster",
+    "resume": "CV",
+    "work": "Arbete",
+    "blog": "Blogg",
+    "contacts": "Kontakter"
+  },
+  "resume_tabs": {
+    "experience": "Erfarenhet",
+    "education": "Utbildning",
+    "about_me": "Om mig",
+    "skills": "Färdigheter"
+  },
+  "others": {
+    "download_pdf": "Ladda ner PDF"
+  }
+}

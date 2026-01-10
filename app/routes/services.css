@@ -83,3 +83,15 @@
         padding: 6% 0% 8% 0%;
      }
  }
+
+
+ [dir="rtl"] .services-container {
+    padding: 5rem 15% 0% 5%;
+ }
+
+ [lang="ar"] .services-container > h1 { 
+    font-family: "Cairo";
+  }
+ [lang="ur"] .services-container > h1 { 
+    font-family: "Noto Nastaliq Urdu";
+  }

@@ -1,0 +1,35 @@
+{
+    "meta": {
+        "title": "Shakeel Haider의 연락처",
+        "description": "Shakeel Haider의 연락처",
+        "keywords": "작업, shakeel haider, 프로젝트, 포트폴리오, 웹 개발, 소프트웨어 개발, UI/UX 디자인, DevOps, 개발, 운영, 사용자 인터페이스 디자인, 사용자 경험 디자인, 웹 앱, 모바일 앱",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "연락처",
+        "subtitle": "함께 일합시다",
+        "description": "저는 파트타임, 풀타임 및 계약직으로 일할 수 있습니다. 아래 양식을 통해 저에게 연락하거나 주어진 이메일로 직접 이메일을 보내주십시오.",
+        "first_name": "이름",
+        "last_name": "성",
+        "email": "이메일",
+        "phone": "전화",
+        "select_service": "서비스 선택",
+        "message": "메시지",
+        "web_development": "웹 개발",
+        "mobile_development": "모바일 개발",
+        "dev_ops": "DevOps",
+        "ui_ux_design": "UI/UX 디자인",
+        "send_message": "메시지 보내기",
+        "error_message": "메시지를 보내는 중 오류가 발생했습니다. 나중에 다시 시도하십시오.",
+        "email_label": "이메일",
+        "phone_label": "전화 번호",
+        "address_label": "주소",
+        "button_label": "보내기",
+        "email_error": "유효한 이메일 주소를 입력하십시오.",
+        "required_error": "이 필드는 필수입니다.",
+        "service_error": "서비스를 선택하십시오.",
+        "something_went_wrong": "문제가 발생했습니다. 나중에 다시 시도하십시오.",
+        "recaptch_error": "reCAPTCHA 확인에 실패했습니다. 다시 시도하십시오.",
+        "success_message": "메시지가 성공적으로 전송되었습니다. 곧 연락드리겠습니다! ❤️❤️"
+    }
+}

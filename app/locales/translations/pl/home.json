@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "title": "Portfolio Shakeela Haidera",
+        "description": "Portfolio Shakeela Haidera",
+        "keywords": "portfolio, shakeel haider, inżynier oprogramowania, programista stron internetowych, programista oprogramowania, aplikacje mobilne, programista full-stack",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "Shakeel Haider",
+        "role": "Inżynier oprogramowania 👨🏻‍💻",
+        "description": "Jestem pasjonującym inżynierem oprogramowania z ponad 5-letnim doświadczeniem w rozwoju 🔴 frontend, 🟢 backend i 🔵 baz danych. Umiejętności w tworzeniu przyjaznych dla użytkownika interfejsów, skalowalnych aplikacji i wydajnych rozwiązań do zarządzania danymi. Rozwijam się w rozwiązywaniu złożonych problemów i dostarczaniu wysokiej jakości oprogramowania.",
+        "cta": "Budujmy razem innowacyjne rozwiązania! 🚀"
+    },
+    "others": {
+        "profile_picture_alt": "Zdjęcie profilowe Shakeela Haidera"
+    }
+}

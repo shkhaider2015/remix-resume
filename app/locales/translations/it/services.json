@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "title": "I servizi di Shakeel Haider",
+        "description": "I servizi di Shakeel Haider",
+        "keywords": "servizi, shakeel haider, sviluppo web, sviluppo software, UI/UX Design, DevOps, Sviluppo, operazione, progettazione dell'interfaccia utente, progettazione dell'esperienza utente, app web, app mobili",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "Servizi",
+        "description": "Esplora la gamma di servizi offerti da Shakeel Haider, tra cui sviluppo web, sviluppo mobile, DevOps e progettazione UI/UX. Fornire soluzioni di alta qualità su misura per le esigenze della tua azienda.",
+        "web_development": "Sviluppo web",
+        "mobile_development": "Sviluppo mobile",
+        "devops": "DevOps",
+        "uiux_design": "Progettazione UI/UX"
+    }
+}

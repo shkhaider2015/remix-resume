@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Shakeel Haiders utbildningar",
+    "description": "Shakeel Haiders utbildningar",
+    "keywords": "cv, shakeel haider, erfarenhet, utbildning, färdigheter, om mig, webbutveckling, mjukvaruutveckling, UI/UX-design, DevOps, Utveckling, drift, design av användargränssnitt, design av användarupplevelse, webbappar, mobilappar, BS Software Engineering, Indus University, FSc Pre-Engineering, Pakistan Shipowner's College, SSC, Al Nasir School",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "CV",
+    "description": "Min utbildningsresa började med SSC från Al Nasir School Pvt., vilket väckte mitt intresse för problemlösning. Jag läste FSc Pre-Engineering vid Pakistan Shipowner's College, där jag stärkte mina analytiska färdigheter. Senare tog jag en BS i programvaruteknik från Indus University Pvt. Ltd., där jag fick expertkunskaper inom programmering och mjukvarudesign. Denna akademiska grund har format mina tekniska färdigheter och tillväxtinställning, vilket förberett mig för en framgångsrik karriär inom mjukvaruutveckling.",
+    "items": [
+      {
+        "title": "MS Artificiell Intelligens",
+        "companyName": "Iqra University Pvt. Ltd.",
+        "date": "2026 - Fortsätter",
+        "description": "Fokuserade på mjukvaruutveckling, algoritmer och systemdesign, och skaffade praktisk erfarenhet genom projekt och praktikplatser."
+      },
+      {
+        "title": "BS Programvaruteknik",
+        "companyName": "Indus University Pvt. Ltd.",
+        "date": "2016 - 2020",
+        "description": "Fokuserade på mjukvaruutveckling, algoritmer och systemdesign, och skaffade praktisk erfarenhet genom projekt och praktikplatser."
+      },
+      {
+        "title": "FSc Pre-Engineering",
+        "companyName": "Pakistan Shipowner's College",
+        "date": "2014 - 2016",
+        "description": "Studerade avancerad matematik, fysik och kemi, och utvecklade starka analytiska färdigheter och problemlösningsförmåga."
+      },
+      {
+        "title": "SSC",
+        "companyName": "Al Nasir School Pvt. Ltd.",
+        "date": "2012 - 2014",
+        "description": "Slutförde gymnasieutbildningen med fokus på naturvetenskapliga ämnen, vilket lade grunden för framtida studier inom teknik."
+      }
+    ]
+  }
+}

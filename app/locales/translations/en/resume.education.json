@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Shakeel Haider's Educations",
+    "description": "Shakeel Haider's Educations",
+    "keywords": "resume, shakeel haider, experience, education, skills, about me, web development, software development, UI/UX Design, DevOps, Development, operation, user interface design, user experience design, web apps, mobile apps, BS Software Engineering, Indus University, FSc Pre-Engineering, Pakistan Shipowner's College, SSC, Al Nasir School",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Resume",
+    "description": "My educational journey began with SSC from Al Nasir School Pvt., sparking my interest in problem-solving. I pursued FSc Pre-Engineering at Pakistan Shipowner's College, strengthening my analytical skills. Later, I earned a BS in Software Engineering from Indus University Pvt. Ltd., gaining expertise in programming and software design. This academic foundation has shaped my technical skills and growth mindset, preparing me for a successful career in software development.",
+    "items": [
+      {
+        "title": "MS Artificial Intelligence",
+        "companyName": "Iqra University Pvt. Ltd.",
+        "date": "2026 - Continue",
+        "description": "Focused on software development, algorithms, and system design, gaining practical experience through projects and internships."
+      },
+      {
+        "title": "BS Software Engineering",
+        "companyName": "Indus University Pvt. Ltd.",
+        "date": "2016 - 2020",
+        "description": "Focused on software development, algorithms, and system design, gaining practical experience through projects and internships."
+      },
+      {
+        "title": "FSc Pre-Engineering",
+        "companyName": "Pakistan Shipowner's College",
+        "date": "2014 - 2016",
+        "description": "Studied advanced mathematics, physics, and chemistry, developing strong analytical and problem-solving skills."
+      },
+      {
+        "title": "SSC",
+        "companyName": "Al Nasir School Pvt. Ltd.",
+        "date": "2012 - 2014",
+        "description": "Completed secondary education with a focus on science subjects, laying the groundwork for future studies in engineering."
+      }
+    ]
+  }
+}

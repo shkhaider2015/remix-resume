@@ -1,0 +1,48 @@
+{
+    "meta": {
+        "title": "Shakeel Haiders arbeten",
+        "description": "Shakeel Haiders arbeten",
+        "keywords": "arbeten, shakeel haider, projekt, portfolio, webbutveckling, mjukvaruutveckling, UI/UX-design, DevOps, Utveckling, drift, design av användargränssnitt, design av användarupplevelse, webbappar, mobilappar",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "Arbeten",
+        "items": [
+            {
+                "count": "01",
+                "role": "Frontend Lead",
+                "desc": "RunOfShow är en webbapplikation som hjälper evenemangsarrangörer att hantera sina evenemang effektivt. Den tillhandahåller en plattform för att skapa, hantera och dela evenemangsscheman, vilket gör det möjligt för användare att organisera och utföra evenemang sömlöst. Som Frontend Lead Developer ledde jag utvecklingen av applikationen, skapade användarvänliga gränssnitt och säkerställde en smidig användarupplevelse."
+            },
+            {
+                "count": "02",
+                "role": "Full Stack Developer",
+                "desc": "Hello Aya är en webbapplikation som ger användare möjlighet att reservera och boka rum eller lägenheter för sin vistelse. Den låter användare söka efter tillgängliga rum, visa detaljer och göra bokningar. Som Full Stack Developer bidrog jag till utvecklingen av applikationen, med fokus på att skapa responsiva och intuitiva användargränssnitt och robust backend-funktionalitet."
+            },
+            {
+                "count": "03",
+                "role": "Full Stack Developer",
+                "desc": "Hey Planner är en webbapplikation som hjälper användare att planera och organisera evenemang. Den tillhandahåller en plattform för att skapa, hantera och dela evenemangsdetaljer, vilket gör det möjligt för användare att samordna och utföra evenemang sömlöst. Som Full Stack Developer bidrog jag till utvecklingen av applikationen, med fokus på att skapa responsiva och intuitiva användargränssnitt och robust backend-funktionalitet."
+            },
+            {
+                "count": "04",
+                "role": "Frontend Developer",
+                "desc": "Stunt Listing är en webbapplikation som kopplar samman stuntartister med evenemangsarrangörer. Den låter artister skapa profiler, visa upp sina färdigheter och ansöka om jobb, medan arrangörer kan publicera evenemang, visa artistprofiler och anställa talanger. Som Frontend Developer bidrog jag till utvecklingen av applikationen, med fokus på att skapa responsiva och intuitiva användargränssnitt."
+            },
+            {
+                "count": "05",
+                "role": "Full Stack Developer",
+                "desc": "Minglee är en social nätverksapplikation som kopplar samman användare baserat på gemensamma intressen. Den låter användare skapa profiler, ansluta till andra och dela innehåll, vilket främjar en gemenskap av likasinnade individer. Som Full Stack Developer bidrog jag till utvecklingen av applikationen, med fokus på att skapa en sömlös användarupplevelse och robust backend-arkitektur."
+            },
+            {
+                "count": "06",
+                "role": "Mobilutvecklare",
+                "desc": "RunOfShowApp är en mobilapplikation som hjälper evenemangsarrangörer att hantera sina evenemang effektivt. Den tillhandahåller en plattform för att skapa, hantera och dela evenemangsscheman, vilket gör det möjligt för användare att organisera och utföra evenemang sömlöst. Som mobilutvecklare bidrog jag till utvecklingen av applikationen, med fokus på att skapa en sömlös användarupplevelse och intuitivt gränssnitt."
+            },
+            {
+                "count": "07",
+                "role": "Mobilutvecklare",
+                "desc": "SkyElectric är en mobilapplikation som låter användare övervaka och styra sina solenergisystem. Den tillhandahåller realtidsdata om energiproduktion, förbrukning och besparingar, vilket gör det möjligt för användare att optimera sin energianvändning. Som mobilutvecklare bidrog jag till utvecklingen av applikationen, med fokus på att skapa ett användarvänligt gränssnitt och en sömlös användarupplevelse."
+            }
+        ]
+    }
+}

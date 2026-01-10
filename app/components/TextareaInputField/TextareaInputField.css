@@ -33,3 +33,11 @@
 /* .if-container > input:focus {
     outline: none;
 } */
+
+[lang="ar"] .ta-if-container > textarea {
+    font-family: "Cairo";
+ }
+
+[lang="ur"] .ta-if-container > textarea  {
+    font-family: "Noto Nastaliq Urdu";
+ }

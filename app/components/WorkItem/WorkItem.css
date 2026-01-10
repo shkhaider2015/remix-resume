@@ -273,3 +273,22 @@
         padding: 0px 6% 0px 6%;
     }
   }
+
+
+[lang="ar"] .wi-container .left-sec .count,
+[lang="ar"] .wi-container .left-sec .desc,
+[lang="ar"] .wi-container .left-sec .role {
+    font-family: "Cairo";
+}
+
+[lang="ur"] .wi-container .left-sec .count,
+[lang="ur"] .wi-container .left-sec .desc,
+[lang="ur"] .wi-container .left-sec .role {
+    font-family: "Noto Nastaliq Urdu";
+}
+
+
+[lang="ar"] .wi-container .left-sec .desc,
+[lang="ur"] .wi-container .left-sec .desc {
+    line-height: 3.5;
+}

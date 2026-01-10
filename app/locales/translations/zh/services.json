@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "title": "Shakeel Haider 的服务",
+        "description": "Shakeel Haider 的服务",
+        "keywords": "服务, shakeel haider, web 开发, 软件开发, UI/UX 设计, DevOps, 开发, 运营, 用户界面设计, 用户体验设计, web 应用, 移动应用",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "服务",
+        "description": "探索 Shakeel Haider 提供的服务范围，包括 Web 开发、移动开发、DevOps 和 UI/UX 设计。提供根据您的业务需求量身定制的高质量解决方案。",
+        "web_development": "Web 开发",
+        "mobile_development": "移动开发",
+        "devops": "DevOps",
+        "uiux_design": "UI/UX 设计"
+    }
+}

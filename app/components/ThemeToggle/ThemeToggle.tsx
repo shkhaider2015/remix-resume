@@ -8,7 +8,6 @@ export default function ThemeToggle() {
 
   const _handleToggle = () => {
     const newTheme = theme === "light" ? "dark" : "light";
-    console.log("newTheme", newTheme);
 
     toggleTheme();
     // Send a request to update the cookie

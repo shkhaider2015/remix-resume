@@ -1,0 +1,35 @@
+{
+    "meta": {
+        "title": "Shakeel Haider 的联系方式",
+        "description": "Shakeel Haider 的联系方式",
+        "keywords": "作品, shakeel haider, 项目, 作品集, web 开发, 软件开发, UI/UX 设计, DevOps, 开发, 运营, 用户界面设计, 用户体验设计, web 应用, 移动应用",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "联系方式",
+        "subtitle": "让我们一起工作",
+        "description": "我可提供兼职、全职和合同制工作。请通过以下表格与我联系，或直接发送电子邮件至指定邮箱。",
+        "first_name": "名字",
+        "last_name": "姓氏",
+        "email": "电子邮件",
+        "phone": "电话",
+        "select_service": "选择服务",
+        "message": "消息",
+        "web_development": "Web 开发",
+        "mobile_development": "移动开发",
+        "dev_ops": "DevOps",
+        "ui_ux_design": "UI/UX 设计",
+        "send_message": "发送消息",
+        "error_message": "发送消息时出现错误。请稍后重试。",
+        "email_label": "电子邮件",
+        "phone_label": "电话号码",
+        "address_label": "地址",
+        "button_label": "发送",
+        "email_error": "请输入有效的电子邮件地址。",
+        "required_error": "此字段为必填项。",
+        "service_error": "请选择一项服务。",
+        "something_went_wrong": "发生了一些错误。请稍后重试。",
+        "recaptch_error": "reCAPTCHA 验证失败。请重试。",
+        "success_message": "您的消息已成功发送。我将尽快回复您！❤️❤️"
+    }
+}

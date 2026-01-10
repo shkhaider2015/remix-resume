@@ -66,3 +66,11 @@
         font-size: 16px; 
     }
  }
+
+[lang="ar"] .tabs-container > a {
+    font-family: "Cairo";
+  }
+
+[lang="ur"] .tabs-container > a {
+    font-family: "Noto Nastaliq Urdu";
+  }

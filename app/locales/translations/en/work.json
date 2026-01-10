@@ -1,0 +1,49 @@
+{
+    "meta": {
+        "title": "Shakeel Haider's Works",
+        "description": "Shakeel Haider's Works",
+        "keywords": "works, shakeel haider, projects, portfolio, web development, software development, UI/UX Design, DevOps, Development, operation, user interface design, user experience design, web apps, mobile apps",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "Works",
+        "items": [
+            {
+                "count": "01",
+                "role": "Frontend Lead",
+                "desc": "The RunOfShow is a web application that helps event organizers manage their events efficiently. It provides a platform to create, manage, and share event schedules, enabling users to organize and execute events seamlessly. As the Frontend Lead Developer, I led the development of the application, creating user-friendly interfaces and ensuring a smooth user experience."
+            },
+            {
+                "count": "02",
+                "role": "Full Stack Developer",
+                "desc": "Hello Aya is a web application that provides users to reserve and book room or appartment for their stay. It allows users to search for available rooms, view details, and make reservations. As a Full Stack Developer, I contributed to the development of the application, focusing on creating responsive and intuitive user interfaces and robust backend functionality."
+            },
+            {
+                "count": "03",
+                "role": "Full Stack Developer",
+                "desc": "Hey Planner is a web application that helps users plan and organize events. It provides a platform to create, manage, and share event details, enabling users to coordinate and execute events seamlessly. As a Full Stack Developer, I contributed to the development of the application, focusing on creating responsive and intuitive user interfaces and robust backend functionality."
+            },
+            {
+                "count": "04",
+                "role": "Frontend Developer",
+                "desc": "Stunt Listing is a web application that connects stunt performers with event organizers. It allows performers to create profiles, showcase their skills, and apply for gigs, while organizers can post events, view performer profiles, and hire talent. As a Frontend Developer, I contributed to the development of the application, focusing on creating responsive and intuitive user interfaces."
+            },
+            {
+                "count": "05",
+                "role": "Full Stack Developer",
+                "desc": "Minglee is a social networking application that connects users based on shared interests. It allows users to create profiles, connect with others, and share content, fostering a community of like-minded individuals. As a Full Stack Developer, I contributed to the development of the application, focusing on creating a seamless user experience and robust backend architecture."
+            },
+            {
+                "count": "06",
+                "role": "Mobile Developer",
+                "desc": "RunOfShowApp is a mobile application that helps event organizers manage their events efficiently. It provides a platform to create, manage, and share event schedules, enabling users to organize and execute events seamlessly. As a Mobile Developer, I contributed to the development of the application, focusing on creating a seamless user experience and intuitive interface."
+            },
+            {
+                "count": "07",
+                "role": "Mobile Developer",
+                "desc": "SkyElectric is a mobile application that allows users to monitor and control their solar energy systems. It provides real-time data on energy production, consumption, and savings, enabling users to optimize their energy usage. As a Mobile Developer, I contributed to the development of the application, focusing on creating a user-friendly interface and seamless user experience."
+            }
+
+        ]
+    }
+}

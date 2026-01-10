@@ -1,0 +1,49 @@
+{
+    "meta": {
+        "title": "Les projets de Shakeel Haider",
+        "description": "Les projets de Shakeel Haider",
+        "keywords": "projets, shakeel haider, projets, portfolio, développement web, développement de logiciels, conception UI/UX, DevOps, développement, exploitation, conception d'interface utilisateur, conception d'expérience utilisateur, applications web, applications mobiles",
+        "author": "Shakeel Haider"
+    },
+    "data": {
+        "title": "Projets",
+        "items": [
+            {
+                "count": "01",
+                "role": "Responsable Frontend",
+                "desc": "RunOfShow est une application web qui aide les organisateurs d'événements à gérer leurs événements de manière efficace. Elle fournit une plateforme pour créer, gérer et partager les plannings d'événements, permettant aux utilisateurs d'organiser et d'exécuter des événements en toute transparence. En tant que développeur principal frontend, j'ai dirigé le développement de l'application, en créant des interfaces conviviales et en garantissant une expérience utilisateur fluide."
+            },
+            {
+                "count": "02",
+                "role": "Développeur Full Stack",
+                "desc": "Hello Aya est une application web qui permet aux utilisateurs de réserver une chambre ou un appartement pour leur séjour. Elle permet aux utilisateurs de rechercher des chambres disponibles, de consulter les détails et de faire des réservations. En tant que développeur Full Stack, j'ai contribué au développement de l'application, en me concentrant sur la création d'interfaces utilisateur réactives et intuitives et sur des fonctionnalités backend robustes."
+            },
+            {
+                "count": "03",
+                "role": "Développeur Full Stack",
+                "desc": "Hey Planner est une application web qui aide les utilisateurs à planifier et à organiser des événements. Elle fournit une plateforme pour créer, gérer et partager les détails de l'événement, permettant aux utilisateurs de coordonner et d'exécuter des événements en toute transparence. En tant que développeur Full Stack, j'ai contribué au développement de l'application, en me concentrant sur la création d'interfaces utilisateur réactives et intuitives et sur des fonctionnalités backend robustes."
+            },
+            {
+                "count": "04",
+                "role": "Développeur Frontend",
+                "desc": "Stunt Listing est une application web qui met en relation les cascadeurs avec les organisateurs d'événements. Elle permet aux artistes de créer des profils, de présenter leurs compétences et de postuler à des concerts, tandis que les organisateurs peuvent publier des événements, consulter les profils des artistes et engager des talents. En tant que développeur Frontend, j'ai contribué au développement de l'application, en me concentrant sur la création d'interfaces utilisateur réactives et intuitives."
+            },
+            {
+                "count": "05",
+                "role": "Développeur Full Stack",
+                "desc": "Minglee est une application de réseautage social qui connecte les utilisateurs en fonction d'intérêts communs. Elle permet aux utilisateurs de créer des profils, de se connecter avec d'autres et de partager du contenu, favorisant ainsi une communauté de personnes partageant les mêmes idées. En tant que développeur Full Stack, j'ai contribué au développement de l'application, en me concentrant sur la création d'une expérience utilisateur transparente et d'une architecture backend robuste."
+            },
+            {
+                "count": "06",
+                "role": "Développeur Mobile",
+                "desc": "RunOfShowApp est une application mobile qui aide les organisateurs d'événements à gérer leurs événements de manière efficace. Elle fournit une plateforme pour créer, gérer et partager les plannings d'événements, permettant aux utilisateurs d'organiser et d'exécuter des événements en toute transparence. En tant que développeur mobile, j'ai contribué au développement de l'application, en me concentrant sur la création d'une expérience utilisateur transparente et d'une interface intuitive."
+            },
+            {
+                "count": "07",
+                "role": "Développeur Mobile",
+                "desc": "SkyElectric est une application mobile qui permet aux utilisateurs de surveiller et de contrôler leurs systèmes d'énergie solaire. Elle fournit des données en temps réel sur la production, la consommation et les économies d'énergie, permettant aux utilisateurs d'optimiser leur consommation d'énergie. En tant que développeur mobile, j'ai contribué au développement de l'application, en me concentrant sur la création d'une interface conviviale et d'une expérience utilisateur transparente."
+            }
+
+        ]
+    }
+}

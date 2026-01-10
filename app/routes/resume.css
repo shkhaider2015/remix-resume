@@ -28,7 +28,14 @@
     text-decoration: none;
 }
 
-.resume-container .resume-header .pdf-logo {
+.resume-container .resume-header .pdf-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-container .resume-header .pdf-con .pdf-logo {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -38,11 +45,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    row-gap: 5px;
+    row-gap: 0px;
 
 }
 
-.resume-container .resume-header .pdf-logo::after {
+.resume-container .resume-header .pdf-con .download-txt {
     content: 'Download PDF';
     font-family: Poppins;
     font-style: italic;
@@ -51,6 +58,7 @@
     color: var(--primary-green);
     width: 100px;
     height: 20px;
+    margin-top: -10px;
 }
 
 .resume-container .resume-header img {
@@ -79,19 +87,19 @@
     color: var(--white);
 }
 
-.tab-screen-con>.descriptiion.about-desc {
+.tab-screen-con .descriptiion.about-desc {
     opacity: 1;
 }
 
-.tab-screen-con>.descriptiion.others-desc {
-    width: 50%;
-    font-size: 14px;
+.tab-screen-con .descriptiion.others-desc {
+    width: 60%;
+    font-size: 16px;
     font-family: Poppins;
     line-height: 25px;
     text-align: left;
 }
 
-.tab-screen-con>.about-header {
+.tab-screen-con .about-header {
     background-color: var(--primary-green);
     padding: 2px 10px;
     color: var(--black);
@@ -150,13 +158,13 @@
         padding: 5rem 0% 3% 20%;
     }
 
-    .tab-screen-con>.descriptiion.others-desc {
+    .tab-screen-con .descriptiion.others-desc {
         width: 60%;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .tab-screen-con>.descriptiion.others-desc {
+    .tab-screen-con .descriptiion.others-desc {
         width: 80%;
     }
 }
@@ -207,7 +215,7 @@
         opacity: 1;
     }
 
-    .tab-screen-con>.descriptiion.others-desc {
+    .tab-screen-con .descriptiion.others-desc {
         width: 100%;
         padding: 0px 5%;
     }
@@ -239,4 +247,37 @@
         text-align: center;
         font-size: 35px;
     }
+}
+
+[dir="rtl"] .resume-container {
+    padding: 5rem 15% 5% 5%;
+}
+[dir="rtl"] .tab-screen-con {
+    padding-left: auto;
+    padding-right: 10px;
+ }
+
+[lang="ar"] .resume-container .resume-header .screen-title, 
+[lang="ar"] .resume-container .resume-header .pdf-con .download-txt,
+[lang="ar"] .tab-screen-con .about-header,
+[lang="ar"] .tab-screen-con>.descriptiion {
+    font-family: "Cairo";
+ }
+
+ [lang="ar"] .tab-screen-con .descriptiion.others-desc {
+    font-family: "Cairo";
+    line-height: 2;
+ }
+
+[lang="ur"] .resume-container .resume-header .screen-title, 
+[lang="ur"] .resume-container .resume-header .pdf-con .download-txt,
+[lang="ur"] .tab-screen-con .descriptiion.others-desc,
+[lang="ur"] .tab-screen-con .about-header,
+[lang="ur"] .tab-screen-con>.descriptiion {
+    font-family: "Noto Nastaliq Urdu";
+    line-height: 2.5;
+ }
+
+[lang="ur"] .tab-screen-con .descriptiion.others-desc {
+    line-height: 3.5;
 }

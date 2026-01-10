@@ -1,0 +1,10 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "resume": "Currículum",
+        "work": "Trabajo",
+        "blog": "Blog",
+        "contacts": "Contactos"
+    }
+}

@@ -45,10 +45,15 @@ export type ApiResponse<T> = {
   status: "success" | "error";
   message: string;
   data: BlogPost | null;
+  pageTitle?: string;
+  meta: any
 };
 
 export type BlogListApiResponse<T> = {
   status: "success" | "error";
   message: string;
   data: BlogPost[] | null;
+  pageTitle?: string;
+  meta: any
+  isListingPage?: boolean;
 };

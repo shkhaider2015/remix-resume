@@ -1,0 +1,414 @@
+{
+  "meta": {
+    "title": "Shakeel Haider - Blog",
+    "description": "Shakeel Haiders Blog oder Artikel über React, NestJS und Full-Stack-Webentwicklung.",
+    "keywords": "Shakeel Haider, Blog, React, NestJS, Full-Stack-Entwicklung, Webentwicklung, Programmierung, Javascript, Typescript",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Blog",
+    "items": [
+      {
+        "id": "1",
+        "title": "Warum ich mich für React + NestJS für die Full-Stack-Entwicklung entschieden habe",
+        "slug": "why-i-chose-react-nestjs-for-full-stack-development",
+        "authorId": "user123",
+        "createdAt": "2025-05-12T10:00:00Z",
+        "updatedAt": "2025-05-12T10:00:00Z",
+        "isPublished": true,
+        "content": [
+          {
+            "type": "image",
+            "url": "/images/blogs/why-i-chose-react-nestjs.png",
+            "alt": "React- und NestJS-Logos"
+          },
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "🧠 Warum ich mich für React + NestJS für die Full-Stack-Entwicklung entschieden habe"
+          },
+          {
+            "type": "paragraph",
+            "text": "Als Full-Stack-Entwickler geht es bei der Wahl des richtigen Tech-Stacks nicht nur um den Hype – es geht um Produktivität, Skalierbarkeit und langfristige Wartbarkeit. Nachdem ich mehrere Projekte mit unterschiedlichen Stacks erstellt hatte, fand ich die Kombination aus React (für das Frontend) und NestJS (für das Backend) perfekt. Hier ist der Grund."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🔷 1. React – Ein Frontend-Kraftpaket"
+          },
+          {
+            "type": "paragraph",
+            "text": "React ist aus einigen wichtigen Gründen mein bevorzugtes Frontend-Framework:"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Komponentenbasierte Architektur: Fördert wiederverwendbare UI-Logik",
+              "Riesiges Ökosystem: Tonnen von Bibliotheken (React Router, Zustand, Redux, Tailwind)",
+              "Entwicklererfahrung: Hot Reload, Entwicklertools, einfaches Testen",
+              "Starke Community & Arbeitsmarkt"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Ein einfaches Beispiel: Eine Schaltflächenkomponente in React"
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "// components/Button.tsx\nimport React from 'react';\n\ntype ButtonProps = {\n    label: string;\n    onClick: () => void;\n  };\n  \n  const Button: React.FC<ButtonProps> = ({ label, onClick }) => {\n    return (\n      <button className=\"px-4 py-2 bg-blue-500 text-white rounded\" onClick={onClick}>\n        {label}\n      </button>\n    );\n  };\n  \n  export default Button;"
+          },
+          {
+            "type": "paragraph",
+            "text": "Dieses wiederverwendbare Komponentenmuster ist einer der größten Vorteile von React."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🛡️ 2. NestJS – Skalierbares und strukturiertes Backend"
+          },
+          {
+            "type": "paragraph",
+            "text": "NestJS ist mir aufgefallen, weil es:"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Meinungsstark: Gibt Struktur, im Gegensatz zu rohem Express",
+              "TypeScript-first: Typsicherheit in der gesamten App",
+              "Modular: Ideal für die Skalierung von Projekten",
+              "Unterstützt REST, GraphQL, WebSockets, Microservices",
+              "Einfache Datenbankintegration"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Beispiel: Eine einfache Route in NestJS"
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "// users.controller.ts\nimport { Controller, Get } from '@nestjs/common';\n\n@Controller('users')\nexport class UsersController {\n  @Get()\n  findAll() {\n    return [{ id: 1, name: 'John Doe' }];\n  }\n}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Lesbar, testbar und von Anfang an skalierbar."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🔗 3. Typfreigabe zwischen Frontend und Backend"
+          },
+          {
+            "type": "paragraph",
+            "text": "Da sowohl React als auch NestJS TypeScript verwenden, kann ich Typen/Schnittstellen zwischen Frontend und Backend gemeinsam nutzen – wodurch redundante Deklarationen vermieden und Fehler reduziert werden."
+          },
+          {
+            "type": "paragraph",
+            "text": "Beispiel für gemeinsamen Typ"
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "// shared/types.ts\nexport type User = {\n  id: string;\n  name: string;\n  email: string;\n};"
+          },
+          {
+            "type": "paragraph",
+            "text": "In NestJS:"
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "import { User } from '../shared/types';"
+          },
+          {
+            "type": "paragraph",
+            "text": "In React:"
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "import { User } from '../shared/types';"
+          },
+          {
+            "type": "paragraph",
+            "text": "Keine Diskrepanz. Kein Raten."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🧩 4. Einfache API-Integration"
+          },
+          {
+            "type": "paragraph",
+            "text": "React + NestJS erleichtert das Abrufen und Rendern von Daten:"
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "// Fetching users in React\nuseEffect(() => {\nfetch('/api/users')\n.then(res => res.json())\n      .then(data => setUsers(data));\n  }, []);"
+          },
+          {
+            "type": "paragraph",
+            "text": "Das Backend bleibt sauber und wartbar, das Frontend bleibt reaktionsschnell und interaktiv."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🚀 Abschließende Gedanken"
+          },
+          {
+            "type": "paragraph",
+            "text": "Die Wahl von React + NestJS war kein Zufall. Sie entstand aus der Entwicklung realer Anwendungen und dem Verständnis, wo Engpässe auftreten. Dieser Stack hat mir geholfen:"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Schneller voranzukommen, ohne die Struktur zu opfern",
+              "Apps sicher zu warten und zu skalieren",
+              "Sowohl Web- als auch mobile Apps effizient bereitzustellen (insbesondere mit React Native)"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Wenn Sie sich für Ihre Full-Stack-Architektur entscheiden oder aus einem MERN-Hintergrund kommen, empfehle ich Ihnen dringend, React + NestJS auszuprobieren."
+          }
+        ]
+      },
+      {
+        "id": "remix-vs-nextjs-2025",
+        "title": "🥊 Remix vs. Next.js – Warum RemixJS wählen?",
+        "slug": "remix-vs-nextjs-why-choose-remixjs",
+        "authorId": "shakeel-haider",
+        "createdAt": "2025-05-13T10:00:00Z",
+        "updatedAt": "2025-05-13T10:00:00Z",
+        "isPublished": true,
+        "content": [
+          {
+            "type": "image",
+            "url": "/images/blogs/remix-vs-nextjs-why-choose-remixjs.png",
+            "alt": "React- und NestJS-Logos"
+          },
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "🥊 Remix vs. Next.js – Warum RemixJS wählen?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Sowohl Remix als auch Next.js sind leistungsstarke Full-Stack-React-Frameworks, die für die Erstellung moderner Webanwendungen entwickelt wurden. Während Next.js ein seit langem etablierter Player ist, der von Vercel unterstützt wird, ist RemixJS das neuere, auf Webstandards ausgerichtete Framework, das aufgrund seiner Leistung, Einfachheit und seines Datenverarbeitungsmodells schnell an Aufmerksamkeit gewinnt."
+          },
+          {
+            "type": "paragraph",
+            "text": "In diesem Artikel werden wir uns ansehen, was Remix von Next.js unterscheidet und warum Remix für Ihr nächstes Projekt die bessere Wahl sein könnte – insbesondere wenn Sie auf Geschwindigkeit, Wartbarkeit und die Ausrichtung auf Web-Grundlagen Wert legen."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🚀 RemixJS auf einen Blick"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Full-Stack-React-Framework",
+              "Basiert auf Web-Grundlagen (wie HTTP-Caching, nativen Formularen)",
+              "Umfasst progressive Verbesserung",
+              "Fokus auf schnelle Leistung durch minimale JavaScript-Abhängigkeit",
+              "Funktioniert mit jedem Bereitstellungsziel (Node, Cloudflare, Deno usw.)"
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🔍 Hauptvorteile von Remix gegenüber Next.js"
+          },
+          {
+            "type": "paragraph",
+            "text": "Vergleichen wir beide anhand realer Entwickleranliegen und architektonischer Unterschiede."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "1. 🧠 Datenlademodell"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix: Server-first, co-located loaders\nJede Route in Remix definiert eine `loader()`-Funktion, die vor dem Rendern auf dem Server ausgeführt wird. Sie ruft alle erforderlichen Daten parallel ab und sendet sie als Teil der Antwort."
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "// app/routes/posts.tsx\nexport const loader = async () => {\nconst posts = await getPosts();\nreturn json(posts);\n};"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js: getServerSideProps oder getStaticProps\nNext.js trennt das Abrufen von Daten in spezielle Funktionen, aber nur auf Seitenebene, was die Wiederverwendbarkeit und Komponierbarkeit für verschachtelte Komponenten einschränkt."
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "// pages/posts.js\nexport async function getServerSideProps() {\n  const posts = await getPosts();\n  return { props: { posts } };\n}"
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 Urteil: Remix vereinfacht das Abrufen von Daten, indem es sie direkt an die Route bindet, auch an verschachtelte – was zu einer besseren Leistung und Struktur führt."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "2. 🧭 Verschachteltes Routing und Layouts"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix: Native verschachtelte Routen\nRemix-Routen sind co-located und von Natur aus verschachtelt. Layouts und Routen sind genau wie Ordner strukturiert, und Sie können Lader auf Layout-Ebene haben."
+          },
+          {
+            "type": "code",
+            "language": "text",
+            "code": "routes/\n├── dashboard.tsx        --> /dashboard\n└── dashboard/\n    └── settings.tsx     --> /dashboard/settings"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js: App Router und Dateikonventionen\nNext.js hat kürzlich ein auf App-Verzeichnissen basierendes Routing eingeführt, das Layouts unterstützt, aber es ist neuer und komplexer und lässt sich nicht tief in serverseitige Daten in Layouts integrieren."
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 Urteil: Die verschachtelten Routen von Remix sind leichter zu verstehen, flexibler und skalieren besser mit komplexen UI-Hierarchien."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "3. ⚡ Leistung: Weniger JavaScript auf dem Client"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix: Minimale JS-Abhängigkeit\nRemix lädt so wenig JS wie nötig. Es stützt sich auf das Standardverhalten des Browsers wie die native Formularübermittlung und das Caching, um die clientseitige Logik zu reduzieren."
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js: Client-lastige Interaktivität\nNext.js stützt sich mehr auf Hydratation und clientseitige APIs, was oft zu größeren Bündeln führt."
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 Urteil: Remix-Apps sind oft standardmäßig schneller, da sie mehr Arbeit an den Browser und den Server auslagern."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "4. 📤 Formulare & Aktionen"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix: Progressive, vom Server betriebene Formulare\nFormulare in Remix verwenden native `<form>`-Tags mit serverseitigen `action()`-Funktionen, um Übermittlungen zu verarbeiten – kein JavaScript erforderlich."
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "export const action = async ({ request }) => {\n  const formData = await request.formData();\n  await savePost(formData);\n  return redirect(\"/success\");\n};"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js: Benötigt JavaScript + API-Routen\nNext.js-Formulare werden normalerweise über `fetch` oder clientseitige Bibliotheken verarbeitet. Keine integrierte Formularverarbeitung wie bei Remix."
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 Urteil: Remix bringt die Einfachheit traditioneller serverseitig gerenderter Apps zurück und ermöglicht schnelle, progressive Formulare mit weniger Client-Code."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "5. 🌐 Caching & Web-Grundlagen"
+          },
+          {
+            "type": "paragraph",
+            "text": "✅ Remix: Basiert auf HTTP-Caching\nSie können das Caching auf Lader-Ebene steuern und so intelligent steuern, was der Browser oder das CDN speichert."
+          },
+          {
+            "type": "code",
+            "language": "ts",
+            "code": "export const loader: LoaderFunction = async ({ request }) => {\n  return new Response(JSON.stringify(data), {\n    headers: { \"Cache-Control\": \"max-age=3600\" },\n  });\n};"
+          },
+          {
+            "type": "paragraph",
+            "text": "🚫 Next.js: Wird hauptsächlich von Vercel-spezifischen Optimierungen gehandhabt\nSie können Header steuern, aber es ist abstrakter und weniger flexibel, wenn es nicht auf Vercel gehostet wird."
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 Urteil: Remix gibt direkte Kontrolle über HTTP-Antworten und Cache – und übernimmt native Web-Prinzipien."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "6. 🛠️ Bereitstellungsflexibilität"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Remix läuft auf Node.js, Deno, Cloudflare Workers, Vercel, Netlify, Fly.io – sogar als eigenständige Express-App.",
+              "Next.js funktioniert am besten auf Vercel (seinem Sponsor). Benutzerdefinierte Bereitstellungen sind möglich, aber weniger nahtlos."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "🔍 Urteil: Wenn Sie einen Anbieter-Lock-in vermeiden müssen, ist Remix flexibler."
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "7. 🔧 Entwicklererfahrung"
+          },
+          {
+            "type": "paragraph",
+            "text": "Hier ist ein kurzer Funktionsvergleich zwischen Remix und Next.js:"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "Routing – Remix: Verschachtelt, Layout-first | Next.js: Standardmäßig flach (Seiten), App Dir ist neu",
+              "Datenabruf – Remix: Routenbasierte Lader | Next.js: getServerSideProps, API-Routen",
+              "Formulare – Remix: Nativ mit Aktionen | Next.js: Benutzerdefiniertes JS + API-Endpunkte",
+              "Caching – Remix: Volle HTTP-Kontrolle | Next.js: Vercel-behandelt oder benutzerdefiniert",
+              "Client-JS – Remix: Kleiner, minimal | Next.js: Größer, hydratationslastig",
+              "Bereitstellung – Remix: Beliebig (Cloudflare, Deno…) | Next.js: Am besten auf Vercel"
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🧩 Wann sollten Sie sich für Remix anstelle von Next.js entscheiden?"
+          },
+          {
+            "type": "list",
+            "style": "unordered",
+            "items": [
+              "✅ Sie möchten progressive Verbesserung und schnelle Leistung",
+              "✅ Ihnen ist die tiefe Kontrolle über Routing und Datenabruf wichtig",
+              "✅ Sie bevorzugen minimales JS und besseres SEO",
+              "✅ Sie möchten Apps erstellen, die auch bei deaktiviertem JS funktionieren",
+              "✅ Sie benötigen flexible Bereitstellungsoptionen über Vercel hinaus"
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "🏁 Abschließende Gedanken"
+          },
+          {
+            "type": "paragraph",
+            "text": "Sowohl Remix als auch Next.js sind hervorragende Werkzeuge. Aber Remix bringt die Einfachheit und Leistung klassischer serverseitig gerenderter Apps zurück und bietet Ihnen dennoch moderne React-Funktionen. Es bevorzugt Webstandards gegenüber benutzerdefinierten Abstraktionen, wodurch Ihre Apps schnell, widerstandsfähig und leichter verständlich werden."
+          },
+          {
+            "type": "paragraph",
+            "text": "Benötigen Sie Hilfe bei der Migration einer App von Next.js zu Remix oder beim Erstellen einer neuen Remix-App von Grund auf? Lassen Sie es mich wissen! 🚀"
+          }
+        ]
+      }
+    ]
+  }
+}

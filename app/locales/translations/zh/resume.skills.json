@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Shakeel Haider 的技能",
+    "description": "Shakeel Haider 的技能",
+    "keywords": "简历, shakeel haider, 经验, 教育, 技能, 关于我, web 开发, 软件开发, UI/UX 设计, DevOps, 开发, 运营, 用户界面设计, 用户体验设计, web 应用, 移动应用, Next JS, React JS, Angular JS, Node JS, Express JS, MongoDB, SQL, PostgreSQL, RESTful APIs, GraphQL, Git, Docker, AWS, Firebase",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "简历",
+    "description": "我专注于前端、后端和数据库开发，在构建用户友好的界面、可扩展的服务器端应用程序和高效的数据库管理系统方面拥有专业知识。我的技能涵盖创建无缝的用户体验、强大的 API 和优化的数据存储解决方案，确保高性能和可靠的软件应用程序的端到端开发。"
+  }
+}

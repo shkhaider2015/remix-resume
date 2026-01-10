@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Shakeel Haiders Ausbildungen",
+    "description": "Shakeel Haiders Ausbildungen",
+    "keywords": "Lebenslauf, Shakeel Haider, Erfahrung, Ausbildung, Fähigkeiten, über mich, Webentwicklung, Softwareentwicklung, UI/UX-Design, DevOps, Entwicklung, Betrieb, Benutzeroberflächendesign, Benutzererfahrungsdesign, Web-Apps, mobile Apps, BS Software Engineering, Indus University, FSc Pre-Engineering, Pakistan Shipowner's College, SSC, Al Nasir School",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Lebenslauf",
+    "description": "Meine Bildungsreise begann mit dem SSC von der Al Nasir School Pvt., was mein Interesse an der Problemlösung weckte. Ich absolvierte das FSc Pre-Engineering am Pakistan Shipowner's College und stärkte meine analytischen Fähigkeiten. Später erwarb ich einen BS in Software Engineering an der Indus University Pvt. Ltd. und sammelte Fachkenntnisse in Programmierung und Softwaredesign. Diese akademische Grundlage hat meine technischen Fähigkeiten und meine Wachstumsmentalität geprägt und mich auf eine erfolgreiche Karriere in der Softwareentwicklung vorbereitet.",
+    "items": [
+      {
+        "title": "MS Künstliche Intelligenz",
+        "companyName": "Iqra University Pvt. Ltd.",
+        "date": "2026 - Fortsetzung",
+        "description": "Konzentriert auf Softwareentwicklung, Algorithmen und Systemdesign, um praktische Erfahrungen durch Projekte und Praktika zu sammeln."
+      },
+      {
+        "title": "BS Software Engineering",
+        "companyName": "Indus University Pvt. Ltd.",
+        "date": "2016 - 2020",
+        "description": "Konzentriert auf Softwareentwicklung, Algorithmen und Systemdesign, um praktische Erfahrungen durch Projekte und Praktika zu sammeln."
+      },
+      {
+        "title": "FSc Pre-Engineering",
+        "companyName": "Pakistan Shipowner's College",
+        "date": "2014 - 2016",
+        "description": "Studium der höheren Mathematik, Physik und Chemie zur Entwicklung ausgeprägter analytischer und problemlösender Fähigkeiten."
+      },
+      {
+        "title": "SSC",
+        "companyName": "Al Nasir School Pvt. Ltd.",
+        "date": "2012 - 2014",
+        "description": "Abschluss der Sekundarschulbildung mit Schwerpunkt auf naturwissenschaftlichen Fächern als Grundlage für ein zukünftiges Ingenieurstudium."
+      }
+    ]
+  }
+}

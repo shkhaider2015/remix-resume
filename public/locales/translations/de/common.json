@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "resume": "Lebenslauf",
+    "work": "Projekte",
+    "blog": "Blog",
+    "contacts": "Kontaktz"
+  },
+  "resume_tabs": {
+    "experience": "Berufserfahrung",
+    "education": "Ausbildung",
+    "about_me": "Über mich",
+    "skills": "Fähigkeiten"
+  },
+    "others": {
+        "download_pdf": "PDF herunterladen"
+    }
+}

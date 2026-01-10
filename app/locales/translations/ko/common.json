@@ -1,0 +1,10 @@
+{
+    "nav": {
+        "home": "홈",
+        "services": "서비스",
+        "resume": "이력서",
+        "work": "작업",
+        "blog": "블로그",
+        "contacts": "연락처"
+    }
+}

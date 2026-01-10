@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Αρχική",
+    "services": "Υπηρεσίες",
+    "resume": "Βιογραφικό",
+    "work": "Έργα",
+    "blog": "Ιστολόγιο",
+    "contacts": "Επαφές"
+  },
+  "resume_tabs": {
+    "experience": "Εμπειρία",
+    "education": "Εκπαίδευση",
+    "about_me": "Σχετικά με εμένα",
+    "skills": "Δεξιότητες"
+  },
+  "others": {
+    "download_pdf": "Λήψη PDF"
+  }
+}

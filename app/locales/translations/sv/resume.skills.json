@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Shakeel Haiders färdigheter",
+    "description": "Shakeel Haiders färdigheter",
+    "keywords": "cv, shakeel haider, erfarenhet, utbildning, färdigheter, om mig, webbutveckling, mjukvaruutveckling, UI/UX-design, DevOps, Utveckling, drift, design av användargränssnitt, design av användarupplevelse, webbappar, mobilappar, Next JS, React JS, Angular JS, Node JS, Express JS, MongoDB, SQL, PostgreSQL, RESTful APIs, GraphQL, Git, Docker, AWS, Firebase",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "CV",
+    "description": "Jag är specialiserad på frontend-, backend- och databasutveckling, med expertis inom att bygga användarvänliga gränssnitt, skalbara server-sidiga applikationer och effektiva databashanteringssystem. Mina färdigheter sträcker sig över att skapa sömlösa användarupplevelser, robusta API:er och optimerade datalagringslösningar, vilket säkerställer end-to-end-utveckling av högpresterande och pålitliga programvaruapplikationer."
+  }
+}

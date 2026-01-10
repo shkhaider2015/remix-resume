@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "首页",
+    "services": "服务",
+    "resume": "简历",
+    "work": "作品",
+    "blog": "博客",
+    "contacts": "联系方式"
+  },
+  "resume_tabs": {
+    "experience": "经验",
+    "education": "教育",
+    "about_me": "关于我",
+    "skills": "技能"
+  },
+  "others": {
+    "download_pdf": "下载PDF"
+  }
+}

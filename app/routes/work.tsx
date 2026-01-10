@@ -1,28 +1,8 @@
-import { LinksFunction } from "@remix-run/node";
-import worStyleHref from "./work.css?url";
-import Carousal from "~/components/Carousal/Carousal";
-import { MetaFunction } from "@remix-run/react";
+import { LoaderFunction, redirect } from "@remix-run/node";
+import i18next from "~/locales/i18next.server";
 
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: worStyleHref },
-];
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Shakeel's Work" },
-    { name: "description", content: "Shakeel's Work" },
-    { name: "keywords", content: "work, shakeel haider, projects, portfolio" },
-    { name: "author", content: "Shakeel Haider" },
-  ];
+export const loader:LoaderFunction = async ({ request }) => {
+  // Redirect "/" to "/en"
+  let lng = await i18next.getLocale(request);
+  return redirect(`/${lng}/work`);
 };
-
-export default function Work() {
-  return (
-    <div className="work-container">
-      <h1 className="screen-title">WORK</h1>
-      <div className="work-items">
-        <Carousal />
-      </div>
-    </div>
-  );
-}

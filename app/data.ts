@@ -109,26 +109,32 @@ export const navData: INavItem[] = [
   {
     name: "",
     label: "Home",
+    key: "home",
   },
   {
     name: "services",
     label: "Services",
+    key: "services",
   },
   {
     name: "resume",
     label: "Resume",
+    key: "resume",
   },
   {
     name: "work",
     label: "Work",
+    key: "work",
   },
   {
     name: "contacts",
     label: "Contacts",
+    key: "contacts",
   },
   {
     name: "blog",
     label: "Blog",
+    key: "blog",
   },
 ];
 
@@ -136,25 +142,25 @@ export const serviceItems: IServicesItem[] = [
   {
     id: "si-1",
     count: 1,
-    title: "Web Development",
+    title: "web_development",
     imageURI: WebApps,
   },
   {
     id: "si-2",
     count: 2,
-    title: "Mobile Development",
+    title: "mobile_development",
     imageURI: MobApps,
   },
   {
     id: "si-3",
     count: 3,
-    title: "DevOps",
+    title: "devops",
     imageURI: DevOps,
   },
   {
     id: "si-4",
     count: 4,
-    title: "UI/UX Design",
+    title: "uiux_design",
     imageURI: UIUX,
   },
 ];
@@ -260,19 +266,19 @@ export const skillItems: ISkillItem[] = [
 
 export const contacts: IContactItem[] = [
   {
-    label: "Email",
+    label: "email_label",
     value: "shkhaider2015@gmail.com",
     Icon: EmailIcon,
     type: "EMAIL",
   },
   {
-    label: "Phone No.",
+    label: "phone_label",
     value: "+92 346 0027852",
     Icon: PhoneIcon,
     type: "PHONE",
   },
   {
-    label: "Address",
+    label: "address_label",
     value: "Banaras, Karachi, Pakistan",
     Icon: LocationIcon,
     type: "ADDRESS",
@@ -544,30 +550,5 @@ export const workItems: IWorkItem[] = [
       appStore: "https://apps.apple.com/pk/app/skyelectric/id1407222778",
     },
     image: SkyElectricImages,
-  },
-   {
-    count: 8,
-    title: "Shoe Store",
-    role: "Frontend Developer",
-    desc: "Shoe Store is a dummy e-commerce website that sells shoes online. It features a catalog of shoes and shopping cart, allowing users to browse and select products. As a Frontend Developer, I built the website using React.js, Redux.js, and Material UI, focusing on creating an engaging and user-friendly shopping experience.",
-    techStack: [
-      {
-        name: "React.js",
-        url: "https://reactjs.org/",
-      },
-      {
-        name: "Redux.js",
-        url: "https://redux.js.org/",
-      },
-      {
-        name: "Material UI",
-        url: "https://material-ui.com/",
-      },
-    ],
-    links: {
-      web: "https://shkhaider_shoes_store.surge.sh/",
-      github: "https://github.com/shkhaider2015/Project3_ShoesStore_React",
-    },
-    image: ShoeStoreImages,
   },
 ];

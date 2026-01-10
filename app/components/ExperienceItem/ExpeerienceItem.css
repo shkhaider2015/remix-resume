@@ -126,7 +126,7 @@
     background-color: var(--primary-green);
 }
 
-.experience-item-con .content-con .left-tringle {
+[dir="ltr"] .experience-item-con .content-con .left-tringle {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -141,7 +141,7 @@
     opacity: 1;
     transition: opacity .3s ease-out, border-right .3s ease-out;
 }
-.experience-item-con:hover .content-con .left-tringle {
+[dir="ltr"] .experience-item-con:hover .content-con .left-tringle {
     /* opacity: 1; */
     border-right: 80px solid var(--primary-green);  
 }
@@ -233,4 +233,36 @@
     }
     .experience-item-con .content-con .title {
     }
+}
+
+[dir="rtl"] .experience-item-con .content-con .left-tringle {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 80px solid transparent; /* Height of the triangle */
+    border-left: 80px solid var(--left-triangle);   /* Base of the triangle and its color */
+    border-bottom: 0px solid transparent; /* Symmetric to top */
+    border-bottom-left-radius: 10px;
+    opacity: 1;
+    transition: opacity .3s ease-out, border-left .3s ease-out;
+ }
+ [dir="rtl"] .experience-item-con:hover .content-con .left-tringle {
+    /* opacity: 1; */
+    border-left: 80px solid var(--primary-green);  
+}
+
+[lang="ar"] .experience-item-con .content-con > .title ,
+[lang="ar"] .experience-item-con .content-con .date,
+[lang="ar"] .experience-item-con .content-con .company  {
+    font-family: "Cairo";
+}
+
+[lang="ur"] .experience-item-con .content-con > .title ,
+[lang="ur"] .experience-item-con .content-con .date,
+[lang="ur"] .experience-item-con .content-con .company  {
+    font-family: "Noto Nastaliq Urdu";
 }

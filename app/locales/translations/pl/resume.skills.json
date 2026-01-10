@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Umiejętności Shakeela Haidera",
+    "description": "Umiejętności Shakeela Haidera",
+    "keywords": "cv, shakeel haider, doświadczenie, edukacja, umiejętności, o mnie, rozwój stron internetowych, rozwój oprogramowania, projektowanie UI/UX, DevOps, Rozwój, operacje, projektowanie interfejsu użytkownika, projektowanie doświadczeń użytkownika, aplikacje webowe, aplikacje mobilne, Next JS, React JS, Angular JS, Node JS, Express JS, MongoDB, SQL, PostgreSQL, RESTful APIs, GraphQL, Git, Docker, AWS, Firebase",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "CV",
+    "description": "Specjalizuję się w rozwoju frontend, backend i baz danych, z doświadczeniem w budowaniu przyjaznych dla użytkownika interfejsów, skalowalnych aplikacji po stronie serwera i wydajnych systemów zarządzania bazami danych. Moje umiejętności obejmują tworzenie płynnych doświadczeń użytkownika, solidnych interfejsów API i zoptymalizowanych rozwiązań do przechowywania danych, zapewniając kompleksowy rozwój wydajnych i niezawodnych aplikacji."
+  }
+}

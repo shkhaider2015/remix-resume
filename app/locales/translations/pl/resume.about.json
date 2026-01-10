@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "O Shakeelu Haiderze",
+    "description": "O Shakeelu Haiderze",
+    "keywords": "cv, shakeel haider, doświadczenie, edukacja, umiejętności, o mnie, rozwój stron internetowych, rozwój oprogramowania, projektowanie UI/UX, DevOps, Rozwój, operacje, projektowanie interfejsu użytkownika, projektowanie doświadczeń użytkownika, aplikacje webowe, aplikacje mobilne",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "CV",
+    "description": "Jestem pasjonującym i oddanym programistą oprogramowania z ponad 5-letnim doświadczeniem w rozwoju frontend, backend i baz danych. Moja podróż w branży technologicznej napędzana jest głęboką ciekawością rozwiązywania problemów i zaangażowaniem w dostarczanie wysokiej jakości, skalowalnych rozwiązań. Rozwijam się w dynamicznych środowiskach, gdzie mogę wykorzystać swoją wiedzę techniczną do tworzenia innowacyjnych aplikacji, które mają realny wpływ.",
+    "items": [
+        {
+            "title": "💼 Doświadczenie",
+            "description": "Moja kariera rozpoczęła się od stażu w Sky Electric Pvt. Ltd, gdzie zdobyłem podstawową wiedzę z zakresu tworzenia oprogramowania i doskonaliłem umiejętności rozwiązywania problemów. Stamtąd awansowałem na stanowiska w Concept Recall Pvt. Ltd jako Młodszy Programista Webowy, gdzie pracowałem nad budowaniem i utrzymaniem aplikacji webowych, a później w Retrocube Pvt. Ltd jako Młodszy Programista Mobilny, gdzie przyczyniłem się do rozwoju aplikacji mobilnych. Obecnie pełnię funkcję Lidera Programistów Frontend w RunOfShowApp, kierując zespołem w projektowaniu i wdrażaniu przyjaznych dla użytkownika interfejsów, zapewniając jednocześnie płynne doświadczenia użytkownika.<br /><br /> Oprócz ról pełnoetatowych, od 2020 roku pracuję jako freelancer Fullstack Developer, podejmując różnorodne projekty, które pozwoliły mi udoskonalić moje umiejętności zarówno w rozwoju frontend, jak i backend. Moja zdolność do adaptacji do nowych technologii, skutecznej współpracy z interdyscyplinarnymi zespołami i dostarczania solidnych rozwiązań jest kamieniem węgielnym mojego rozwoju zawodowego.<br /><br /> Pasjonuję się kodowaniem, rozwiązywaniem problemów i ciągłym uczeniem się, co napędza mnie do bycia na bieżąco z najnowszymi trendami i technologiami branżowymi. Niezależnie od tego, czy chodzi o budowanie skalowalnych systemów backend, tworzenie intuicyjnych interfejsów użytkownika czy optymalizację wydajności baz danych, jestem zaangażowany w dostarczanie doskonałości w każdym projekcie, który podejmuję."
+        },
+        {
+            "title": "🎓 Edukacja",
+            "description": "Moja edukacyjna podróż rozpoczęła się od SSC w Al Nasir School Pvt., co rozpaliło moje zainteresowanie rozwiązywaniem problemów. Następnie kontynuowałem naukę w Pakistan Shipowner's College na kierunku FSc Pre-Engineering, wzmacniając swoje umiejętności analityczne. Później uzyskałem tytuł licencjata inżynierii oprogramowania na Indus University Pvt. Ltd., zdobywając wiedzę specjalistyczną w programowaniu i projektowaniu oprogramowania. Te akademickie podstawy ukształtowały moje umiejętności techniczne i nastawienie na rozwój, przygotowując mnie do udanej kariery w tworzeniu oprogramowania."
+        },
+        {
+            "title": "🛠️ Umiejętności",
+            "description": "Specjalizuję się w rozwoju frontend, backend i baz danych, z doświadczeniem w budowaniu przyjaznych dla użytkownika interfejsów, skalowalnych aplikacji po stronie serwera i wydajnych systemów zarządzania bazami danych. Moje umiejętności obejmują tworzenie płynnych doświadczeń użytkownika, solidnych interfejsów API i zoptymalizowanych rozwiązań do przechowywania danych, zapewniając kompleksowy rozwój wydajnych i niezawodnych aplikacji."
+        }
+    ]
+  }
+}

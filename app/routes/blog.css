@@ -1,0 +1,138 @@
+.blog-container {
+    min-height: 100vh;
+    padding: 5rem 0% 5% 0%;
+    opacity: 0;
+    animation: fade 1s ease-out forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-container .screen-title {
+    font-family:'Protest Riot';
+    font-size: 72px;
+    letter-spacing: 16px;
+    margin: 0px;
+    color: var(--primary-green);
+    text-align: start;
+    width: 100%;
+    padding: 0px 0px 20px 15%;
+}
+
+.blog-container .content {
+    /* background-color: rgb(62, 62, 62); */
+    width: 45%;
+    padding: 20px 40px;
+    border-radius: 20px;
+    /* border: 1px solid red; */
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog-container .content .blog-item {
+    text-decoration: none;
+    font-family: "Poppins";
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    background-color: var(--gray061);
+    min-height: 300px;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-container .content .blog-item .desc {
+    padding: 10px 20px;
+    font-family: "Poppins";
+}
+
+.blog-container .content .blog-item .image-con {
+    width: 100%;
+    min-height: 250px;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.blog-container .content .blog-item .image-con img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-repeat: repeat-x;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    .blog-container .content {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .blog-container .content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .blog-container .screen-title { 
+        font-size: 35px;
+        text-align: center;
+    }
+
+
+    .blog-container .content {
+        width: 90%;
+        padding: 20px 20px;
+    }
+
+
+}
+
+
+
+[dir="rtl"] .blog-container .screen-title {
+    padding: 0px 15% 20px 0px;
+}
+
+
+[lang="ar"] .blog-container .content .blog-item,
+[lang="ar"] .blog-container .content .blog-item .desc,
+[lang="ar"] .blog-container .screen-title {
+    font-family: "Cairo";
+}
+
+[lang="ur"] .blog-container .content .blog-item,
+[lang="ur"] .blog-container .content .blog-item .desc,
+[lang="ur"] .blog-container .screen-title {
+    font-family: "Noto Nastaliq Urdu";
+}
+
+[lang="ur"] .blog-container .content .blog-item,
+[lang="ur"] .blog-container .content .blog-item .desc {
+    line-height: 3;
+}

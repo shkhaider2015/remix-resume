@@ -71,3 +71,15 @@
         padding: 5rem 0% 100px 0%;
     }
   }
+
+[dir="rtl"] .work-container {
+    padding: 8% 15% 0% 5%;
+}
+
+[lang="ar"] .work-container .screen-title {
+    font-family: "Cairo";
+}
+
+[lang="ur"] .work-container .screen-title {
+    font-family: "Noto Nastaliq Urdu";
+}

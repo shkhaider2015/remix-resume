@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Shakeel Haider's Skills",
+    "description": "Shakeel Haider's Skills",
+    "keywords": "resume, shakeel haider, experience, education, skills, about me, web development, software development, UI/UX Design, DevOps, Development, operation, user interface design, user experience design, web apps, mobile apps, Next JS, React JS, Angular JS, Node JS, Express JS, MongoDB, SQL, PostgreSQL, RESTful APIs, GraphQL, Git, Docker, AWS, Firebase",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Resume",
+    "description": "I specialize in frontend, backend, and database development, with expertise in building user-friendly interfaces, scalable server-side applications, and efficient database management systems. My skills span across creating seamless user experiences, robust APIs, and optimized data storage solutions, ensuring end-to-end development of high-performing and reliable software applications."
+  }
+}

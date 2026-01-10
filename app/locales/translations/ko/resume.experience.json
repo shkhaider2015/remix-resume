@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "Shakeel Haider의 경력",
+    "description": "Shakeel Haider의 경력 이력서",
+    "keywords": "경험, shakeel haider, 웹 개발, 소프트웨어 개발, UI/UX 디자인, DevOps, 개발, 운영 프런트엔드 리드 개발자, RunOfShowApp, 풀스택 개발자, 프리랜서, Sky Electric Pvt. Ltd, Concept Recall Pvt. Ltd, Retrocube Pvt. Ltd",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "이력서",
+    "description": "5년 이상의 소프트웨어 개발 경력으로 프런트엔드, 모바일, 풀스택 분야에서 일했으며, Sky Electric Pvt. Ltd에서 인턴으로 시작하여 Concept Recall Pvt. Ltd와 Retrocube Pvt. Ltd의 역할을 거쳤습니다. 현재 저는 RunOfShowApp의 프런트엔드 리드 개발자로, 사용자 친화적인 인터페이스를 만들고 원활한 사용자 경험을 보장하는 팀을 이끌고 있으며, 2020년부터 풀스택 개발자로 프리랜서 활동을 하고 있습니다. 저의 경력은 적응력, 팀워크, 고품질 솔루션에 대한 헌신을 보여줍니다. 코딩과 문제 해결에 열정적이며, 다재다능한 개발자로서 끊임없이 배우고 성장합니다.",
+    "items": [
+      {
+        "title": "팀 리드",
+        "companyName": "BCDApps",
+        "date": "2022 - 현재",
+        "description": "프런트엔드 개발을 이끌고, 사용자 친화적인 인터페이스를 만들고 고품질 코드 표준을 보장하는 팀을 감독합니다."
+      },
+      {
+        "title": "풀스택 개발자 (프리랜서)",
+        "companyName": "Upwork",
+        "date": "2024 - 현재",
+        "description": "다양한 클라이언트에게 엔드투엔드 웹 솔루션을 제공하며, 다양한 프로젝트 요구 사항을 충족하기 위해 프런트엔드 및 백엔드 개발에 중점을 둡니다."
+      },
+      {
+        "title": "소프트웨어 개발자",
+        "companyName": "Retrocube Pvt. Ltd.",
+        "date": "2021 - 2022",
+        "description": "풀스택 개발 프로젝트에 기여하고, 확장 가능한 웹 애플리케이션을 구축하기 위해 교차 기능 팀과 협력했습니다."
+      },
+      {
+        "title": "주니어 소프트웨어 개발자",
+        "companyName": "Concept Recall Pvt. Ltd.",
+        "date": "2020 - 2021",
+        "description": "다양한 기술 및 프레임워크에 대한 경험을 쌓으면서 웹 애플리케이션 개발 및 유지 보수를 지원했습니다."
+      },
+      {
+        "title": "소프트웨어 개발 인턴",
+        "companyName": "Sky Electric Pvt. Ltd.",
+        "date": "2019 - 2020",
+        "description": "실제 프로젝트에서 작업하고 업계 모범 사례를 배우면서 소프트웨어 개발에 대한 실무 경험을 얻었습니다."
+      }
+    ]
+  }
+}
