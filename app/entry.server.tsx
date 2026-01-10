@@ -32,7 +32,7 @@ export default async function handleRequest(
       lng, // The locale we detected from the request
       ns,
       backend: {
-        loadPath: resolve("./app/locales/translations/{{lng}}/{{ns}}.json"),
+        loadPath: resolve(process.cwd(), "/app/locales/translations/{{lng}}/{{ns}}.json"),
       },
     });
 
