@@ -1,11 +1,11 @@
 {
   "nav": {
-    "home": "گھر",
+    "home": "ہوم",
     "services": "خدمات",
     "resume": "ریزیومے",
     "work": "کام",
     "blog": "بلاگ",
-    "contacts": "رابطے"
+    "contacts": "رابطہ"
   },
   "resume_tabs": {
     "experience": "تجربہ",
