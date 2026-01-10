@@ -5,6 +5,6 @@
       name: "Remix server handler",
       generator: "@netlify/remix-adapter@2.6.0",
       path: "/*",
-      preferStatic: true,
+      preferStatic: false,
     };
     
