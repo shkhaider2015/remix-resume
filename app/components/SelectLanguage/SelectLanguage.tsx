@@ -64,6 +64,7 @@ const SelectLanguage = () => {
             <div
               className="option"
               onClick={() => onSelectOption(item)}
+              key={item.name}
             >{`${item.flag} ${item.name}`}</div>
           ))}
         </div>
