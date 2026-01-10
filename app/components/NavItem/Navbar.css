@@ -52,6 +52,7 @@
 .navbar .nav-item-container:hover .nav-label {
   visibility: visible;
   font-size: -7px;
+  width: max-content;
 }
 
 .navbar .nav-item-container.active::after {
