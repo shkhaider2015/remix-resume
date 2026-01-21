@@ -17,6 +17,9 @@
     width: 80%;
 }
 
+[dir="rtl"] .work-container {
+    padding: 8% 15% 0% 5%;
+}
 
 
 
@@ -54,6 +57,10 @@
     .work-container {
         padding: 5rem 0% 5% 15%;
     }
+    [dir="rtl"] .work-container {
+        padding: 5rem 15% 5% 0%;
+    }
+
  }
 
  @media screen and (max-width: 550px) { 
@@ -64,17 +71,20 @@
     .work-container {
         padding: 5rem 0% 5% 0%;
     }
+    [dir="rtl"] .work-container {
+        padding: 5rem 0% 5% 0%;
+    }
  }
 
  @media screen and (max-width: 400px) { 
     .work-container {
         padding: 5rem 0% 100px 0%;
     }
+    [dir="rtl"] .work-container {
+        padding: 5rem 0% 100px 0%;
+    }
   }
 
-[dir="rtl"] .work-container {
-    padding: 8% 15% 0% 5%;
-}
 
 [lang="ar"] .work-container .screen-title {
     font-family: "Cairo";
