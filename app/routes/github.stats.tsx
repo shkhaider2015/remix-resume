@@ -13,8 +13,8 @@ export const loader = () => {
   }
   const currentStreak = {
     count: 7,
-    startDate: 'Sep 12 2018',
-    endDate: 'Present'
+    startDate: 'Jan 12 2026',
+    endDate: 'Jan 21 2026'
   }
   const longestStreak = {
     count: 104,
