@@ -18,7 +18,7 @@ const CodeBlock = (props: CodeBlockProps) => {
   }, [code]);
 
   return (
-    <pre className={`language-${language}`}>
+    <pre className={`language-${language}`} dir="ltr">
       <code className={`language-${language}`}>{code}</code>
     </pre>
   );
