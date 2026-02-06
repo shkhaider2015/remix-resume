@@ -1,8 +1,8 @@
 import { LinksFunction, LoaderFunction } from "@remix-run/node";
 import indexStylesHref from "./_index.css?url";
 import {
-  ProfilePictreDarkerReduce,
-  ProfilePictreLightReduce,
+  ProfilePictreDark,
+  ProfilePictreLight,
 } from "~/assets/images";
 import { MetaFunction, useLoaderData } from "@remix-run/react";
 import { socialLinks } from "~/data";
@@ -64,12 +64,12 @@ const ProfilePicture = () => {
     <picture>
       <source
         srcSet={
-          isLightMode ? ProfilePictreLightReduce : ProfilePictreDarkerReduce
+          isLightMode ? ProfilePictreLight : ProfilePictreDark
         }
         media="(prefers-color-scheme: dark)"
       />
       <img
-        src={isLightMode ? ProfilePictreLightReduce : ProfilePictreDarkerReduce}
+        src={isLightMode ? ProfilePictreLight : ProfilePictreDark}
         alt={t("others.profile_picture_alt")}
       />
     </picture>
