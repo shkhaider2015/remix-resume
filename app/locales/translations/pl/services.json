@@ -2,7 +2,7 @@
     "meta": {
         "title": "Usługi Shakeela Haidera",
         "description": "Usługi Shakeela Haidera",
-        "keywords": "usługi, shakeel haider, rozwój stron internetowych, rozwój oprogramowania, projektowanie UI/UX, DevOps, Rozwój, operacje, projektowanie interfejsu użytkownika, projektowanie doświadczeń użytkownika, aplikacje webowe, aplikacje mobilne",
+        "keywords": "usługi, shakeel haider, rozwój stron internetowych, rozwój oprogramowania, Naprawa błędów, DevOps, Rozwój, operacje, projektowanie interfejsu użytkownika, projektowanie doświadczeń użytkownika, aplikacje webowe, aplikacje mobilne",
         "author": "Shakeel Haider"
     },
     "data": {
@@ -11,6 +11,6 @@
         "web_development": "Rozwój stron internetowych",
         "mobile_development": "Rozwój aplikacji mobilnych",
         "devops": "DevOps",
-        "uiux_design": "Projektowanie UI/UX"
+        "bug_fixing": "Naprawa błędów"
     }
 }

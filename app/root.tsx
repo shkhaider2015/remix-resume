@@ -184,6 +184,8 @@ export default function App() {
         </head>
 
         <body>
+          <div className="blur-circle circle-1"></div>
+<div className="blur-circle circle-2"></div>
           <ThemeToggle />
           <SelectLanguage />
           <Loader />

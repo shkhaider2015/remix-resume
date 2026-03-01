@@ -90,6 +90,31 @@ body {
   background-size: cover;
 }
 
+.blur-circle {
+  position: fixed;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.25;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.circle-1 {
+  top: 8%;
+  left: 3%;
+  background: #22c55e;
+}
+
+.circle-2 {
+  width: 500px;
+  height: 500px;
+  bottom: 8%;
+  right: 3%;
+  background: #4ade80;
+}
+
 #error-page {
   display: flex;
   flex-direction: column;

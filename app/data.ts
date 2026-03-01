@@ -160,7 +160,7 @@ export const serviceItems: IServicesItem[] = [
   {
     id: "si-4",
     count: 4,
-    title: "uiux_design",
+    title: "bug_fixing",
     imageURI: UIUX,
   },
 ];
