@@ -114,7 +114,7 @@ export const loader: LoaderFunction = async ({
       description: t("data.description"),
       webDevelopment: t("data.web_development"),
       mobileDevelopment: t("data.mobile_development"),
-      uiUxDesign: t("data.ui_ux_design"),
+      uiUxDesign: t("data.bug_fixing"),
       devOps: t("data.dev_ops"),
       firstName: t("data.first_name"),
       lastName: t("data.last_name"),
@@ -139,6 +139,7 @@ export const loader: LoaderFunction = async ({
     ENV: {
       RECAPTCHA_SITE_KEY: process.env.RECAPTCHA_SITE_KEY,
     },
+    locale,
     ...data,
   });
 };
@@ -188,7 +189,7 @@ export let handle = {
 const ContactScreen = () => {
   const navigate = useNavigate();
   const fetcher = useFetcher<typeof action>();
-  const { data } = useLoaderData<typeof loader>();
+  const { data, locale } = useLoaderData<typeof loader>();
   const actionData = fetcher.data as any;
   const options: IOption[] = [
     {
@@ -201,7 +202,7 @@ const ContactScreen = () => {
     },
     {
       label: data?.uiUxDesign,
-      value: EService.UI_UX_DESIGN,
+      value: EService.BUG_FIXING,
     },
     {
       label: data?.devOps,
@@ -237,7 +238,7 @@ const ContactScreen = () => {
     let timer: NodeJS.Timeout;
     if (!actionData?.error && actionData?.message) {
       timer = setTimeout(() => {
-        navigate("/");
+        navigate(`/${locale}`);
       }, 2000);
     }
 

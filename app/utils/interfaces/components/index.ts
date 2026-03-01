@@ -65,7 +65,7 @@ export interface IOption {
 
 export enum EService {
   WEB_DEVELOPMENT = "WEB_DEVELOPMENT",
-  UI_UX_DESIGN = "UI_UX_DESIGN",
+  BUG_FIXING = "BUG_FIXING",
   MOBILE_DEVELOPMENT = "MOBILE_DEVELOPMENT",
   DEV_OPS = "DEV_OPS",
 }

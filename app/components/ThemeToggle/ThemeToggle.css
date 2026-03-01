@@ -26,9 +26,11 @@ button {
 
 .tt-container.dark {
     background-color:  #6f7071 ;
+    box-shadow: rgba(1, 161, 17, 0.25) 0px 14px 28px, rgba(1, 161, 17, 0.22) 0px 10px 10px;
 }
 .tt-container.light {
     background-color: #8fd8ff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 @media screen and (max-width: 550px) {
