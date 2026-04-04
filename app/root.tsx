@@ -191,7 +191,6 @@ export default function App() {
           <Loader />
           <Navbar locale={locale} />
           <div id="detail">
-            <Cursor />
               <Outlet />
           </div>
           <ScrollRestoration />
