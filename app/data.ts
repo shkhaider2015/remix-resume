@@ -287,24 +287,14 @@ export const contacts: IContactItem[] = [
 
 export const experienceItems: IExperienceItem[] = [
   {
-    date: "2022 - Continue",
-    title: "Frontend Lead Developer",
-    companyName: "RunOfShowApp",
+    date: "2023 - 2026",
+    title: "Senior Software Engineer",
+    companyName: "BCDApps Pvt. Ltd",
   },
   {
     date: "2021 - 2022",
     title: "Jr. Mobile Developer",
-    companyName: "Retrocube Pvt. Ltd",
-  },
-  {
-    date: "2020 - 2021",
-    title: "Jr. Web Developer",
-    companyName: "Concept Recall Pvt. Ltd",
-  },
-  {
-    date: "2020 - Continue",
-    title: "Fullstack Developer",
-    companyName: "Freelance",
+    companyName: "Abtach Pvt. Ltd",
   },
   {
     date: "2020 - 2020",

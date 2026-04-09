@@ -14,7 +14,6 @@ import type { LinksFunction, LoaderFunction } from "@remix-run/node";
 import appStylesHref from "./app.css?url";
 import Navbar from "~/components/NavItem/Navbar";
 import Loader from "./components/Loader/Loader";
-import Cursor from "./components/Cursor/Cursor";
 import { BASE_URL } from "./assets/constants";
 import { useEffect } from "react";
 import { ThemeProvider } from "./context/theme";

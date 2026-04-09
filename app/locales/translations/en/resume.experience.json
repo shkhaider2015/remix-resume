@@ -10,33 +10,21 @@
     "description": "With over 5 years in software development, I’ve worked across frontend, mobile, and full-stack domains, starting as an intern at Sky Electric Pvt. Ltd and advancing to roles at Concept Recall Pvt. Ltd and Retrocube Pvt. Ltd. Currently, I’m the Frontend Lead Developer at RunOfShowApp, leading a team to create user-friendly interfaces while freelancing as a Fullstack Developer since 2020. My career showcases adaptability, teamwork, and a commitment to high-quality solutions. Passionate about coding and problem-solving, I continuously learn and grow as a versatile developer.",
     "items": [
       {
-        "title": "Team Lead",
+        "title": "Senior Software Engineer",
         "companyName": "BCDApps",
-        "date": "2022 - Present",
-        "description": "Leading frontend development, overseeing a team to create user-friendly interfaces, and ensuring high-quality code standards."
+        "date": "2023 - 2026",
+        "description": "Leading full-stack development, overseeing a team to create user-friendly interfaces, and ensuring high-quality code standards."
       },
       {
-        "title": "Fullstack Developer (Freelancer)",
-        "companyName": "Upwork",
-        "date": "2024 - Present",
-        "description": "Delivering end-to-end web solutions for various clients, focusing on both frontend and backend development to meet diverse project requirements."
-      },
-      {
-        "title": "Software Developer",
+        "title": "Junior Mobile Developer",
         "companyName": "Retrocube Pvt. Ltd.",
         "date": "2021 - 2022",
         "description": "Contributed to full-stack development projects, collaborating with cross-functional teams to build scalable web applications."
       },
       {
-        "title": "Junior Software Developer",
-        "companyName": "Concept Recall Pvt. Ltd.",
-        "date": "2020 - 2021",
-        "description": "Assisted in developing and maintaining web applications, gaining experience in various technologies and frameworks."
-      },
-      {
         "title": "Software Development Intern",
         "companyName": "Sky Electric Pvt. Ltd.",
-        "date": "2019 - 2020",
+        "date": "2020 - 2021",
         "description": "Gained hands-on experience in software development, working on real-world projects and learning industry best practices."
       }
     ]
