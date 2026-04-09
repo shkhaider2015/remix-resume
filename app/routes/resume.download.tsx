@@ -4,7 +4,7 @@ import fs from "fs/promises";
 import path from "path";
 
 export const loader: LoaderFunction = async () => {
-  const filePath = path.resolve("public/files/Shakeel Haider Resume New.pdf");
+  const filePath = path.resolve("public/files/shakeel-haider-resume.pdf");
   const file = await fs.readFile(filePath);
 
   return new Response(new Uint8Array(file), {
