@@ -1,3 +1,4 @@
+import { captureRemixErrorBoundaryError, withSentry } from "@sentry/remix";
 import {
   json,
   Link,
@@ -53,7 +54,7 @@ export let handle = {
   i18n: "common",
 };
 
-export default function App() {
+function App() {
   const { theme, ENV, locale } = useLoaderData<typeof loader>();
    // Get the locale from the loader
   let { i18n } = useTranslation();
@@ -200,6 +201,8 @@ export default function App() {
   );
 }
 
+export default withSentry(App);
+
 export function ErrorBoundary() {
   const error = useRouteError();
   const navigate = useNavigate();
@@ -207,6 +210,7 @@ export function ErrorBoundary() {
   const _goBack = () => {
     navigate(-1);
   };
+  captureRemixErrorBoundaryError(error);
   return (
     <html>
       <head>

@@ -7,3 +7,5 @@ node_modules
 /.cache
 /build
 /public/build
+# Sentry Config File
+.env.sentry-build-plugin
