@@ -13,9 +13,9 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@remix-run/node": "*",
-    "@remix-run/react": "*",
-    "@remix-run/serve": "*",
+    "@remix-run/node": "2.15.1",
+    "@remix-run/react": "2.15.1",
+    "@remix-run/serve": "2.15.1",
     "@types/prismjs": "^1.26.5",
     "fs-extra": "^11.2.0",
     "gsap": "^3.12.7",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@netlify/remix-adapter": "^2.6.0",
-    "@remix-run/dev": "*",
+    "@remix-run/dev": "2.15.1",
     "@types/nodemailer": "^6.4.17",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
