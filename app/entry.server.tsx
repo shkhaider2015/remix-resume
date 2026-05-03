@@ -1,3 +1,4 @@
+import * as Sentry from "@sentry/remix";
 import { createInstance } from "i18next";
 import Backend from "i18next-fs-backend/cjs";
 import { resolve } from "node:path";
@@ -7,6 +8,10 @@ import i18n from "./locales/i18n"; // The configuration file we created
 import { renderToString } from "react-dom/server";
 import { RemixServer } from "@remix-run/react";
 import { getLocaleFromUrl } from "./utils/functions/functions.server";
+
+export const handleError = Sentry.wrapHandleErrorWithSentry((error, { request }) => {
+  // Custom handleError implementation
+});
 
 export default async function handleRequest(
   request: Request,
