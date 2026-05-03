@@ -23,7 +23,6 @@ import {
   IContactForm,
   IContactFormError,
 } from "~/utils/interfaces/functions";
-import nodemailer from "nodemailer";
 import Loader from "~/components/Loader/Loader";
 import { useCallback, useEffect, useState } from "react";
 import {
@@ -33,6 +32,7 @@ import {
 import { getLocaleFromUrl } from "~/utils/functions/functions.server";
 import i18next from "~/locales/i18next.server";
 import { IServerProps } from "~/utils/interfaces/routes";
+import { Resend } from "resend";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: contactsStyleHref },
@@ -144,37 +144,32 @@ export const loader: LoaderFunction = async ({
   });
 };
 
-const _sendEmail = async (data: IContactForm): Promise<boolean> => {
+const _sendEmail = async (localData: IContactForm): Promise<boolean> => {
   try {
-    const SMTP_Email = process.env.EMAIL_USER_SMTP;
-    const SMTP_PASSWORD = process.env.EMAIL_PASSWORD_SMTP;
-    const MY_EMAIL = process.env.SENDER_EMAIL;
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: SMTP_Email,
-        pass: SMTP_PASSWORD,
-      },
-    });
-
-    await transporter.sendMail({
-      from: `"Resume" <${MY_EMAIL}`, // sender address
-      to: MY_EMAIL, // list of receivers
-      subject: "Through Your Resume 🚀", // Subject line
-      text: `${data.message}`, // plain text body
+    const { data, error } = await resend.emails.send({
+      from: 'Resume <shkhaider2015@shakeelhaider.com>',
+      to: ['shkhaider2015@gmail.com'],
+      subject: 'Through Your Resume 🚀',
       html: `<div>Hi, <b>Shakeel</b>
-        <h3>You have new message through your resume</h3>
-        <h5>Here are the details of client </h5>
-        <div>
-          <div>First Name : ${data.firstName} - Last Name : ${data.lastName}  </div>
-          <div>Email : ${data.email} </div>
-          <div>Phone : ${data.phone} </div>
-          <div>Service : ${data.service} </div>
-          <div>Message : ${data.message} </div>
-        </div>
-      </div>`, // html body
+         <h3>You have new message through your resume</h3>
+         <h5>Here are the details of client </h5>
+         <div>
+           <div>First Name : ${localData.firstName} - Last Name : ${localData.lastName}  </div>
+           <div>Email : ${localData.email} </div>
+           <div>Phone : ${localData.phone} </div>
+           <div>Service : ${localData.service} </div>
+           <div>Message : ${localData.message} </div>
+         </div>
+       </div>`,
     });
+
+    if (error) {
+      console.error("Error sending email:", error);
+      return false;
+    }
+
     return true;
   } catch (error: any) {
     console.log("Error SMTP : ", error);
