@@ -49,8 +49,8 @@ const Navbar = ({ locale="en" }: { locale: string }) => {
         ))}
       </div>
       <HomeIcon name={`${locale}`} label={t("nav.home")} />
-      <ServicesIcon name={`${locale}/services`} label={t("nav.services")} />
       <ResumeIcon name={`${locale}/resume`} label={t("nav.resume")} />
+      <ServicesIcon name={`${locale}/services`} label={t("nav.services")} />
       <WorkIcon name={`${locale}/work`} label={t("nav.work")} />
       <ContactsIcon name={`${locale}/contacts`} label={t("nav.contacts")} />
       <BlogIcon name={`${locale}/blog`} label={t("nav.blog")} />
