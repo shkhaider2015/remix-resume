@@ -15,7 +15,7 @@ import type { LinksFunction, LoaderFunction } from "@remix-run/node";
 import appStylesHref from "./app.css?url";
 import Navbar from "~/components/NavItem/Navbar";
 import Loader from "./components/Loader/Loader";
-import { BASE_URL } from "./assets/constants";
+import { BASE_URL, DEFAULT_LOCALE, SUPPORTED_LOCALES } from "./assets/constants";
 import { useEffect } from "react";
 import { ThemeProvider } from "./context/theme";
 import { getThemeFromCookies } from "./utils/theme.server";
@@ -38,6 +38,7 @@ export const loader: LoaderFunction = async ({
 }: {
   request: Request;
 }) => {
+  const url = new URL(request.url);
   const theme = getThemeFromCookies(request);
   let locale = getLocaleFromUrl(request);
   
@@ -47,6 +48,8 @@ export const loader: LoaderFunction = async ({
       GOOGLE_TAG_ID: process.env.GOOGLE_TAG_ID
     },
     locale,
+    url: url.href,
+    pathname: url.pathname,
   });
 };
 
@@ -55,7 +58,7 @@ export let handle = {
 };
 
 function App() {
-  const { theme, ENV, locale } = useLoaderData<typeof loader>();
+  const { theme, ENV, locale, url, pathname } = useLoaderData<typeof loader>();
    // Get the locale from the loader
   let { i18n } = useTranslation();
 
@@ -68,6 +71,12 @@ function App() {
       });
     }
   }, []);
+
+  const firstSegment = pathname.split("/")[1];
+  const isLocaleInPath = (SUPPORTED_LOCALES as string[]).includes(firstSegment);
+  const pathWithoutLocale = isLocaleInPath 
+    ? pathname.substring(firstSegment.length + 1) || "/" 
+    : pathname;
 
   return (
     <ThemeProvider initialTheme={theme}>
@@ -91,9 +100,26 @@ function App() {
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+          {/* Canonical and Hreflang Tags */}
+          <link rel="canonical" href={url} />
+          {SUPPORTED_LOCALES.map((lang) => (
+            <link
+              key={lang}
+              rel="alternate"
+              hrefLang={lang}
+              href={`${BASE_URL}/${lang}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`}
+            />
+          ))}
+          <link
+            rel="alternate"
+            hrefLang="x-default"
+            href={`${BASE_URL}/${DEFAULT_LOCALE}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`}
+          />
+
           <meta property="og:title" content={"Shakeel Haider's Portfolio"} />
           <meta property="og:site_name" content="shakeel haider Portfolio" />
-          <meta property="og:url" content={`${BASE_URL}/`} />
+          <meta property="og:url" content={url} />
           <meta
             property="og:description"
             content="Explore the portfolio of Shakeel Haider, a skilled full-stack developer specializing in React, React Native, NestJS, TypeScript, and Python. Crafting high-performance web and mobile applications with clean code and modern technologies. Let's build something amazing together!"
@@ -113,7 +139,7 @@ function App() {
             name="twitter:image"
             content={`${BASE_URL}/portfolio-image.png`}
           />
-          <meta name="twitter:url" content={`${BASE_URL}/`} />
+          <meta name="twitter:url" content={url} />
           <meta name="twitter:site" content="Portfolio" />
           <meta name="twitter:creator" content="Shakeel Haider" />
 

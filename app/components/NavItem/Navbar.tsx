@@ -36,7 +36,7 @@ const Navbar = ({ locale="en" }: { locale: string }) => {
         {navData1.map((navItem) => (
           <NavLink
             key={navItem.label}
-            to={`${locale}/${navItem.name}`}
+            to={`/${locale}/${navItem.name}`}
             className={({ isActive, isPending }) => {
               return `mobile-nav-item ${
                 isActive ? "active" : isPending ? "pending" : ""
@@ -48,12 +48,12 @@ const Navbar = ({ locale="en" }: { locale: string }) => {
           </NavLink>
         ))}
       </div>
-      <HomeIcon name={`${locale}`} label={t("nav.home")} />
-      <ResumeIcon name={`${locale}/resume`} label={t("nav.resume")} />
-      <ServicesIcon name={`${locale}/services`} label={t("nav.services")} />
-      <WorkIcon name={`${locale}/work`} label={t("nav.work")} />
-      <ContactsIcon name={`${locale}/contacts`} label={t("nav.contacts")} />
-      <BlogIcon name={`${locale}/blog`} label={t("nav.blog")} />
+      <HomeIcon name={`/${locale}`} label={t("nav.home")} />
+      <ResumeIcon name={`/${locale}/resume`} label={t("nav.resume")} />
+      <ServicesIcon name={`/${locale}/services`} label={t("nav.services")} />
+      <WorkIcon name={`/${locale}/work`} label={t("nav.work")} />
+      <ContactsIcon name={`/${locale}/contacts`} label={t("nav.contacts")} />
+      <BlogIcon name={`/${locale}/blog`} label={t("nav.blog")} />
     </nav>
   );
 };

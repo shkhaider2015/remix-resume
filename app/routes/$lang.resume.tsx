@@ -29,7 +29,7 @@ export const loader: LoaderFunction = ({ request }) => {
 
   // Check if the current path is `/resume`
   if (section === "resume" && url.pathname.split("/").length <= 3) {
-    return redirect(`/${lang}/resume/experience`);
+    return redirect(`/${lang}/resume/experience`, 301);
   }
 
 

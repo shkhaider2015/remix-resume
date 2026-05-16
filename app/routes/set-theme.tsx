@@ -10,7 +10,7 @@ export const action: ActionFunction = async ({ request }) => {
   }
   const headers = new Headers({ "Set-Cookie": createThemeCookie(theme) });
   const referer = request.headers.get("Referer") || "/";
-  return redirect(referer, { headers });
+  return redirect(referer, { status: 302, headers });
   // return redirect("/", {
   //   headers: {
   //     "Set-Cookie": createThemeCookie(theme),
