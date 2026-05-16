@@ -5,5 +5,5 @@ export const loader:LoaderFunction = async ({ request, params }) => {
   // Redirect "/" to "/en"
   let lng = await i18next.getLocale(request);
   let slug = params.slug;
-  return redirect(`/${lng}/blog/${slug}`);
+  return redirect(`/${lng}/blog/${slug}`, 302);
 };

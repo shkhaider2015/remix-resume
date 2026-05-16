@@ -2,7 +2,7 @@ import { ILanguagesData } from "~/utils/interfaces/routes";
 import "./SelectLanguage.css";
 import { useState } from "react";
 import { useOutsideClick } from "~/hooks/useOutsideClick";
-import { useLocation, useNavigate } from "@remix-run/react";
+import { useLocation, Link } from "@remix-run/react";
 
 export const LANGUAGES: ILanguagesData[] = [
   { name: "English", slug: "en", flag: "🇬🇧" },
@@ -22,32 +22,29 @@ export const LANGUAGES: ILanguagesData[] = [
 ]
 
 const SelectLanguage = () => {
-  const navigate = useNavigate();
   const location = useLocation();
   const [openOptions, setOpenOptions] = useState(false);
+  
   const getInitialLang = () => {
     const segment = location.pathname.split("/")[1]; // after leading slash
     return LANGUAGES.find((l) => l.slug === segment) ?? LANGUAGES[0];
   };
-  const [selectedValue, setSelectedValue] = useState(getInitialLang());
+
+  const selectedValue = getInitialLang();
+
   const ref = useOutsideClick(() => {
     setOpenOptions(false);
   });
 
-  const onSelectOption = (value: ILanguagesData) => {
-    setSelectedValue(value);
-    setOpenOptions(false);
-
+  const getTargetUrl = (targetLang: string) => {
     const segments = location.pathname.split("/").filter(Boolean);
-
     // replace first segment if it matches a language
     if (LANGUAGES.some((l) => l.slug === segments[0])) {
-      segments[0] = value.slug;
+      segments[0] = targetLang;
     } else {
-      segments.unshift(value.slug);
+      segments.unshift(targetLang);
     }
-
-    navigate("/" + segments.join("/"));
+    return "/" + segments.join("/");
   };
 
   return (
@@ -61,11 +58,12 @@ const SelectLanguage = () => {
       <div className={`options ${openOptions ? "show" : "hide"}`}>
         <div className="abs-con">
           {LANGUAGES.map((item) => (
-            <div
+            <Link
               className="option"
-              onClick={() => onSelectOption(item)}
+              to={getTargetUrl(item.slug)}
               key={item.name}
-            >{`${item.flag} ${item.name}`}</div>
+              onClick={() => setOpenOptions(false)}
+            >{`${item.flag} ${item.name}`}</Link>
           ))}
         </div>
       </div>

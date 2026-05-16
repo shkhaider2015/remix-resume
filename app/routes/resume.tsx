@@ -7,7 +7,7 @@ export const loader: LoaderFunction = async ({ request }) => {
   // Check if the current path is `/resume`
   if (url.pathname === "/resume" || url.pathname === "/resume/") {
     let lng = await i18next.getLocale(request);
-    return redirect(`/${lng}/resume/experience`);
+    return redirect(`/${lng}/resume/experience`, 301);
   }
 
   // If not `/resume` or `/resume/`, do nothing (allow the route to render as-is)
