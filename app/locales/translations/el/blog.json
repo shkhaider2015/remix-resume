@@ -2,13 +2,11 @@
   "meta": {
     "title": "Shakeel Haider - Ιστολόγιο",
     "description": "Το ιστολόγιο ή άρθρο του Shakeel Haider σχετικά με το React, το NestJS και την ανάπτυξη πλήρους στοίβας (full-stack web development).",
-    "keywords": "shakeel haider, ιστολόγιο, react, nestjs, ανάπτυξη πλήρους στοίβας, ανάπτυξη ιστού, προγραμματισμός, javascript, typescript",
+    "keywords": "shakeel haider, Πακιστανός Προγραμματιστής, Προγραμματιστής React Native στο Πακιστάν, Προγραμματιστής Full Stack στο Καράτσι, Προγραμματιστής Next.js στο Πακιστάν, Προγραμματιστής NestJS, Ελεύθερος επαγγελματίας Προγραμματιστής React Native, Προγραμματιστής εφαρμογών για κινητά στο Πακιστάν, Προγραμματιστής TypeScript, Προγραμματιστής JavaScript, ιστολόγιο, react, nestjs, ανάπτυξη full-stack, ανάπτυξη ιστοσελίδων, προγραμματισμός, javascript, typescript",
     "author": "Shakeel Haider"
   },
-
   "data": {
     "title": "Ιστολόγιο",
-
     "items": [
       {
         "id": "1",

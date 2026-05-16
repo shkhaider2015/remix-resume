@@ -1,16 +1,16 @@
 {
-    "meta": {
-        "title": "Shakeel Haiders tjänster",
-        "description": "Shakeel Haiders tjänster",
-        "keywords": "tjänster, shakeel haider, webbutveckling, mjukvaruutveckling, Buggfix, DevOps, Utveckling, drift, design av användargränssnitt, design av användarupplevelse, webbappar, mobilappar",
-        "author": "Shakeel Haider"
-    },
-    "data": {
-        "title": "Tjänster",
-        "description": "Utforska utbudet av tjänster som erbjuds av Shakeel Haider, inklusive webbutveckling, mobilutveckling, DevOps och Buggfix. Levererar högkvalitativa lösningar anpassade efter dina affärsbehov.",
-        "web_development": "Webbutveckling",
-        "mobile_development": "Mobilutveckling",
-        "devops": "DevOps",
-        "bug_fixing": "Buggfix"
-    }
+  "meta": {
+    "title": "Shakeel Haiders tjänster",
+    "description": "Shakeel Haiders tjänster",
+    "keywords": "tjänster, shakeel haider, Pakistansk utvecklare, React Native-utvecklare i Pakistan, Full Stack-utvecklare i Karachi, Next.js-utvecklare i Pakistan, NestJS-utvecklare, Frilansande React Native-utvecklare, Mobilappsutvecklare i Pakistan, TypeScript-utvecklare, JavaScript-utvecklare, webbutveckling, programvaruutveckling, UI/UX-design, DevOps, Utveckling, drift, design av användargränssnitt, design av användarupplevelse, webbappar, mobilappar",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Tjänster",
+    "description": "Utforska utbudet av tjänster som erbjuds av Shakeel Haider, inklusive webbutveckling, mobilutveckling, DevOps och Buggfix. Levererar högkvalitativa lösningar anpassade efter dina affärsbehov.",
+    "web_development": "Webbutveckling",
+    "mobile_development": "Mobilutveckling",
+    "devops": "DevOps",
+    "bug_fixing": "Buggfix"
+  }
 }

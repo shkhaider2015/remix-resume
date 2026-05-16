@@ -1,16 +1,16 @@
 {
-    "meta": {
-        "title": "I servizi di Shakeel Haider",
-        "description": "I servizi di Shakeel Haider",
-        "keywords": "servizi, shakeel haider, sviluppo web, sviluppo software, UI/UX Design, DevOps, Sviluppo, operazione, progettazione dell'interfaccia utente, progettazione dell'esperienza utente, app web, app mobili",
-        "author": "Shakeel Haider"
-    },
-    "data": {
-        "title": "Servizi",
-        "description": "Esplora la gamma di servizi offerti da Shakeel Haider, tra cui sviluppo web, sviluppo mobile, DevOps e Correzione dei bug. Fornire soluzioni di alta qualità su misura per le esigenze della tua azienda.",
-        "web_development": "Sviluppo web",
-        "mobile_development": "Sviluppo mobile",
-        "devops": "DevOps",
-        "bug_fixing": "Correzione dei bug"
-    }
+  "meta": {
+    "title": "I servizi di Shakeel Haider",
+    "description": "I servizi di Shakeel Haider",
+    "keywords": "servizi, shakeel haider, Sviluppatore Pakistano, Sviluppatore React Native in Pakistan, Sviluppatore Full Stack a Karachi, Sviluppatore Next.js in Pakistan, Sviluppatore NestJS, Freelancer React Native, Sviluppatore di app mobili in Pakistan, Sviluppatore TypeScript, Sviluppatore JavaScript, sviluppo web, sviluppo software, Design UI/UX, DevOps, Sviluppo, operazione, progettazione dell'interfaccia utente, progettazione dell'esperienza utente, app web, app mobili",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Servizi",
+    "description": "Esplora la gamma di servizi offerti da Shakeel Haider, tra cui sviluppo web, sviluppo mobile, DevOps e Correzione dei bug. Fornire soluzioni di alta qualità su misura per le esigenze della tua azienda.",
+    "web_development": "Sviluppo web",
+    "mobile_development": "Sviluppo mobile",
+    "devops": "DevOps",
+    "bug_fixing": "Correzione dei bug"
+  }
 }

@@ -2,13 +2,11 @@
   "meta": {
     "title": "Shakeel Haider - Blogg",
     "description": "Shakeel Haiders blogg eller artikel om React, NestJS och full-stack webbutveckling.",
-    "keywords": "shakeel haider, blogg, react, nestjs, full-stack utveckling, webbutveckling, programmering, javascript, typescript",
+    "keywords": "shakeel haider, Pakistansk utvecklare, React Native-utvecklare i Pakistan, Full Stack-utvecklare i Karachi, Next.js-utvecklare i Pakistan, NestJS-utvecklare, Frilansande React Native-utvecklare, Mobilappsutvecklare i Pakistan, TypeScript-utvecklare, JavaScript-utvecklare, blogg, react, nestjs, full-stack-utveckling, webbutveckling, programmering, javascript, typescript",
     "author": "Shakeel Haider"
   },
-
   "data": {
     "title": "Blogg",
-
     "items": [
       {
         "id": "1",

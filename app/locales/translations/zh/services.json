@@ -1,16 +1,16 @@
 {
-    "meta": {
-        "title": "Shakeel Haider 的服务",
-        "description": "Shakeel Haider 的服务",
-        "keywords": "服务, shakeel haider, web 开发, 软件开发, 漏洞修复, DevOps, 开发, 运营, 用户界面设计, 用户体验设计, web 应用, 移动应用",
-        "author": "Shakeel Haider"
-    },
-    "data": {
-        "title": "服务",
-        "description": "探索 Shakeel Haider 提供的服务范围，包括 Web 开发、移动开发、DevOps 和 漏洞修复。提供根据您的业务需求量身定制的高质量解决方案。",
-        "web_development": "Web 开发",
-        "mobile_development": "移动开发",
-        "devops": "DevOps",
-        "bug_fixing": "漏洞修复"
-    }
+  "meta": {
+    "title": "Shakeel Haider 的服务",
+    "description": "Shakeel Haider 的服务",
+    "keywords": "服务, shakeel haider, 巴基斯坦开发人员, 巴基斯坦 React Native 开发人员, 卡拉奇全栈开发人员, 巴基斯坦 Next.js 开发人员, NestJS 开发人员, React Native 自由职业者, 巴基斯坦移动应用程序开发人员, TypeScript 开发人员, JavaScript 开发人员, Web 开发, 软件开发, UI/UX 设计, DevOps, 开发, 运营, 用户界面设计, 用户体验设计, Web 应用程序, 移动应用程序",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "服务",
+    "description": "探索 Shakeel Haider 提供的服务范围，包括 Web 开发、移动开发、DevOps 和 漏洞修复。提供根据您的业务需求量身定制的高质量解决方案。",
+    "web_development": "Web 开发",
+    "mobile_development": "移动开发",
+    "devops": "DevOps",
+    "bug_fixing": "漏洞修复"
+  }
 }

@@ -2,13 +2,11 @@
   "meta": {
     "title": "Shakeel Haider - 블로그",
     "description": "Shakeel Haider의 React, NestJS 및 풀 스택 웹 개발에 대한 블로그 또는 기사.",
-    "keywords": "shakeel haider, 블로그, react, nestjs, 풀 스택 개발, 웹 개발, 프로그래밍, javascript, typescript",
+    "keywords": "shakeel haider, 파키스탄 개발자, 파키스탄 React Native 개발자, 카라치 풀스택 개발자, 파키스탄 Next.js 개발자, NestJS 개발자, React Native 프리랜서, 파키스탄 모바일 앱 개발자, TypeScript 개발자, JavaScript 개발자, 블로그, react, nestjs, 풀스택 개발, 웹 개발, 프로그래밍, javascript, typescript",
     "author": "Shakeel Haider"
   },
-
   "data": {
     "title": "블로그",
-
     "items": [
       {
         "id": "1",

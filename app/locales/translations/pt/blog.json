@@ -2,13 +2,11 @@
   "meta": {
     "title": "Shakeel Haider - Blog",
     "description": "Blog ou artigo de Shakeel Haider sobre React, NestJS e desenvolvimento web full-stack.",
-    "keywords": "shakeel haider, blog, react, nestjs, desenvolvimento full-stack, desenvolvimento web, programação, javascript, typescript",
+    "keywords": "shakeel haider, Desenvolvedor Pakistanês, Desenvolvedor React Native no Paquistão, Desenvolvedor Full Stack em Karachi, Desenvolvedor Next.js no Paquistão, Desenvolvedور NestJS, Freelancer React Native, Desenvolvedor de aplicativos móveis no Paquistão, Desenvolvedor TypeScript, Desenvolvedor JavaScript, blog, react, nestjs, desenvolvimento full-stack, desenvolvimento web, programação, javascript, typescript",
     "author": "Shakeel Haider"
   },
-
   "data": {
     "title": "Blog",
-
     "items": [
       {
         "id": "1",

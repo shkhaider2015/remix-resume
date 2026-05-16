@@ -1,17 +1,17 @@
 {
-    "meta": {
-        "title": "Shakeel Haiders Portfolio",
-        "description": "Shakeel Haiders Portfolio",
-        "keywords": "portfolio, shakeel haider, mjukvaruingenjör, webbutvecklare, mjukvaruutvecklare, mobilappar, full-stack utvecklare",
-        "author": "Shakeel Haider"
-    },
-    "data": {
-        "title": "SHAKEEL HAIDER",
-        "role": "Mjukvaruingenjör 👨🏻‍💻",
-        "description": "Jag är en passionerad mjukvaruingenjör med över 5 års erfarenhet av 🔴 frontend, 🟢 backend och 🔵 databasutveckling. Jag är skicklig på att skapa användarvänliga gränssnitt, skalbara applikationer och effektiva datalösningar, jag trivs med att lösa komplexa problem och leverera högkvalitativ mjukvara.",
-        "cta": "Låt oss bygga innovativa lösningar tillsammans! 🚀"
-    },
-    "others": {
-        "profile_picture_alt": "Shakeel Haiders profilbild"
-    }
+  "meta": {
+    "title": "Shakeel Haiders Portfolio",
+    "description": "Shakeel Haiders Portfolio",
+    "keywords": "portfolio, shakeel haider, Pakistansk utvecklare, React Native-utvecklare i Pakistan, Full Stack-utvecklare i Karachi, Next.js-utvecklare i Pakistan, NestJS-utvecklare, Frilansande React Native-utvecklare, Mobilappsutvecklare i Pakistan, TypeScript-utvecklare, JavaScript-utvecklare, programvarutekniker, webbutvecklare, programvaruutvecklare, mobilappar, full-stack-utvecklare",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "SHAKEEL HAIDER",
+    "role": "Mjukvaruingenjör 👨🏻‍💻",
+    "description": "Jag är en passionerad mjukvaruingenjör med över 5 års erfarenhet av 🔴 frontend, 🟢 backend och 🔵 databasutveckling. Jag är skicklig på att skapa användarvänliga gränssnitt, skalbara applikationer och effektiva datalösningar, jag trivs med att lösa komplexa problem och leverera högkvalitativ mjukvara.",
+    "cta": "Låt oss bygga innovativa lösningar tillsammans! 🚀"
+  },
+  "others": {
+    "profile_picture_alt": "Shakeel Haiders profilbild"
+  }
 }

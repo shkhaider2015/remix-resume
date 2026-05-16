@@ -2,25 +2,25 @@
   "meta": {
     "title": "Acerca de Shakeel Haider",
     "description": "Acerca de Shakeel Haider",
-    "keywords": "currículum, shakeel haider, experiencia, educación, habilidades, sobre mí, desarrollo web, desarrollo de software, diseño UI/UX, DevOps, Desarrollo, operación, diseño de interfaz de usuario, diseño de experiencia de usuario, aplicaciones web, aplicaciones móviles",
+    "keywords": "currículum, shakeel haider, Desarrollador Pakistaní, Desarrollador de React Native en Pakistán, Desarrollador Full Stack en Karachi, Desarrollador de Next.js en Pakistán, Desarrollador de NestJS, Freelancer de React Native, Desarrollador de aplicaciones móviles en Pakistán, Desarrollador de TypeScript, Desarrollador de JavaScript, experiencia, educación, habilidades, sobre mí, desarrollo web, desارrollo de software, Diseño UI/UX, DevOps, Desarrollo, operación, diseño de interfaz de usuario, diseño de experiencia de usuario, aplicaciones web, aplicaciones móviles",
     "author": "Shakeel Haider"
   },
   "data": {
     "title": "Currículum",
     "description": "Soy un desarrollador de software apasionado y dedicado con más de 5 años de experiencia práctica en el desarrollo de frontend, backend y bases de datos. Mi trayectoria en la industria tecnológica ha estado impulsada por una profunda curiosidad por la resolución de problemas y el compromiso de ofrecer soluciones escalables y de alta calidad. Prospero en entornos dinámicos donde puedo aprovechar mi experiencia técnica para crear aplicaciones innovadoras que tengan un impacto real.",
     "items": [
-        {
-            "title": "💼 Experiencia",
-            "description": "Mi carrera comenzó con una pasantía en Sky Electric Pvt. Ltd, donde adquirí conocimientos fundamentales en desarrollo de software y perfeccioné mis habilidades para resolver problemas. A partir de ahí, avancé a roles en Concept Recall Pvt. Ltd como desarrollador web junior, donde trabajé en la construcción y el mantenimiento de aplicaciones web, y más tarde en Retrocube Pvt. Ltd como desarrollador móvil junior, donde contribuí al desarrollo de aplicaciones móviles. Actualmente, me desempeño como líder de desarrollo frontend en RunOfShowApp, liderando un equipo para diseñar e implementar interfaces amigables para el usuario mientras garantizo experiencias de usuario fluidas.<br /><br /> Además de mis roles de tiempo completo, he trabajado como desarrollador fullstack independiente desde 2020, asumiendo diversos proyectos que me han permitido refinar mis habilidades tanto en el desarrollo frontend como en el backend. Mi capacidad para adaptarme a nuevas tecnologías, colaborar eficazmente con equipos multifuncionales y ofrecer soluciones sólidas ha sido una piedra angular de mi crecimiento profesional.<br /><br /> Me apasiona la codificación, la resolución de problemas y el aprendizaje continuo, lo que impulsa mi motivación para mantenerme actualizado con las últimas tendencias y tecnologías de la industria. Ya sea construyendo sistemas backend escalables, creando interfaces de usuario intuitivas u optimizando el rendimiento de las bases de datos, me comprometo a ofrecer excelencia en cada proyecto que emprendo."
-        },
-        {
-            "title": "🎓 Educación",
-            "description": "Mi trayectoria educativa comenzó con el SSC de Al Nasir School Pvt., lo que despertó mi interés en la resolución de problemas. Cursé FSc Pre-Engineering en Pakistan Shipowner's College, fortaleciendo mis habilidades analíticas. Más tarde, obtuve una licenciatura en Ingeniería de Software de Indus University Pvt. Ltd., adquiriendo experiencia en programación y diseño de software. Esta base académica ha moldeado mis habilidades técnicas y mi mentalidad de crecimiento, preparándome para una carrera exitosa en el desarrollo de software."
-        },
-        {
-            "title": "🛠️ Habilidades",
-            "description": "Me especializo en desarrollo frontend, backend y de bases de datos, con experiencia en la creación de interfaces fáciles de usar, aplicaciones escalables del lado del servidor y sistemas eficientes de gestión de bases de datos. Mis habilidades abarcan la creación de experiencias de usuario fluidas, API robustas y soluciones de almacenamiento de datos optimizadas, asegurando el desarrollo de extremo a extremo de aplicaciones de software de alto rendimiento y confiables."
-        }
+      {
+        "title": "💼 Experiencia",
+        "description": "Mi carrera comenzó con una pasantía en Sky Electric Pvt. Ltd, donde adquirí conocimientos fundamentales en desarrollo de software y perfeccioné mis habilidades para resolver problemas. A partir de ahí, avancé a roles en Concept Recall Pvt. Ltd como desarrollador web junior, donde trabajé en la construcción y el mantenimiento de aplicaciones web, y más tarde en Retrocube Pvt. Ltd como desarrollador móvil junior, donde contribuí al desarrollo de aplicaciones móviles. Actualmente, me desempeño como líder de desarrollo frontend en RunOfShowApp, liderando un equipo para diseñar e implementar interfaces amigables para el usuario mientras garantizo experiencias de usuario fluidas.<br /><br /> Además de mis roles de tiempo completo, he trabajado como desarrollador fullstack independiente desde 2020, asumiendo diversos proyectos que me han permitido refinar mis habilidades tanto en el desarrollo frontend como en el backend. Mi capacidad para adaptarme a nuevas tecnologías, colaborar eficazmente con equipos multifuncionales y ofrecer soluciones sólidas ha sido una piedra angular de mi crecimiento profesional.<br /><br /> Me apasiona la codificación, la resolución de problemas y el aprendizaje continuo, lo que impulsa mi motivación para mantenerme actualizado con las últimas tendencias y tecnologías de la industria. Ya sea construyendo sistemas backend escalables, creando interfaces de usuario intuitivas u optimizando el rendimiento de las bases de datos, me comprometo a ofrecer excelencia en cada proyecto que emprendo."
+      },
+      {
+        "title": "🎓 Educación",
+        "description": "Mi trayectoria educativa comenzó con el SSC de Al Nasir School Pvt., lo que despertó mi interés en la resolución de problemas. Cursé FSc Pre-Engineering en Pakistan Shipowner's College, fortaleciendo mis habilidades analíticas. Más tarde, obtuve una licenciatura en Ingeniería de Software de Indus University Pvt. Ltd., adquiriendo experiencia en programación y diseño de software. Esta base académica ha moldeado mis habilidades técnicas y mi mentalidad de crecimiento, preparándome para una carrera exitosa en el desarrollo de software."
+      },
+      {
+        "title": "🛠️ Habilidades",
+        "description": "Me especializo en desarrollo frontend, backend y de bases de datos, con experiencia en la creación de interfaces fáciles de usar, aplicaciones escalables del lado del servidor y sistemas eficientes de gestión de bases de datos. Mis habilidades abarcan la creación de experiencias de usuario fluidas, API robustas y soluciones de almacenamiento de datos optimizadas, asegurando el desarrollo de extremo a extremo de aplicaciones de software de alto rendimiento y confiables."
+      }
     ]
   }
 }

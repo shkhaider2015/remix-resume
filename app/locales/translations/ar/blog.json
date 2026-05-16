@@ -2,13 +2,11 @@
   "meta": {
     "title": "شاكيل حيدر - مدونة",
     "description": "مدونة شاكيل حيدر أو مقال عن React و NestJS وتطوير الويب الكامل.",
-    "keywords": "شاكيل حيدر, مدونة, React, NestJS, تطوير الويب الكامل, تطوير الويب, البرمجة, javascript, typescript",
+    "keywords": "شاكيل حيدر, مطور باكستاني, مطور React Native في باكستان, مطور Full Stack في كراتشي, مطور Next.js في باكستان, مطور NestJS, مطور React Native مستقل, مطور تطبيقات جوال في باكستان, مطور TypeScript, مطور JavaScript, مدونة, react, nestjs, تطوير فول ستاك, تطوير الويب, برمجة, javascript, typescript",
     "author": "شاكيل حيدر"
   },
-
   "data": {
     "title": "مدونة",
-
     "items": [
       {
         "id": "1",
