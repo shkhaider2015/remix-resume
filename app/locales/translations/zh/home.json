@@ -1,17 +1,17 @@
 {
-    "meta": {
-        "title": "Shakeel Haider 的作品集",
-        "description": "Shakeel Haider 的作品集",
-        "keywords": "作品集, shakeel haider, 软件工程师, web 开发人员, 软件开发人员, 移动应用, 全栈开发人员",
-        "author": "Shakeel Haider"
-    },
-    "data": {
-        "title": "SHAKEEL HAIDER",
-        "role": "软件工程师 👨🏻‍💻",
-        "description": "我是一名充满激情的软件工程师，在 🔴 前端、🟢 后端和 🔵 数据库开发方面拥有 5 年以上的经验。我擅长创建用户友好的界面、可扩展的应用程序和高效的数据解决方案，我乐于解决复杂问题并交付高质量的软件。",
-        "cta": "让我们一起构建创新的解决方案！🚀"
-    },
-    "others": {
-        "profile_picture_alt": "Shakeel Haider 的头像"
-    }
+  "meta": {
+    "title": "Shakeel Haider 的作品集",
+    "description": "Shakeel Haider 的作品集",
+    "keywords": "作品集, shakeel haider, 巴基斯坦开发人员, 巴基斯坦 React Native 开发人员, 卡拉奇全栈开发人员, 巴基斯坦 Next.js 开发人员, NestJS 开发人员, React Native 自由职业者, 巴基斯坦移动应用程序开发人员, TypeScript 开发人员, JavaScript 开发人员, 软件工程师, Web 开发人员, 软件开发人员, 移动应用程序, 全栈开发人员",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "SHAKEEL HAIDER",
+    "role": "软件工程师 👨🏻‍💻",
+    "description": "我是一名充满激情的软件工程师，在 🔴 前端、🟢 后端和 🔵 数据库开发方面拥有 5 年以上的经验。我擅长创建用户友好的界面、可扩展的应用程序和高效的数据解决方案，我乐于解决复杂问题并交付高质量的软件。",
+    "cta": "让我们一起构建创新的解决方案！🚀"
+  },
+  "others": {
+    "profile_picture_alt": "Shakeel Haider 的头像"
+  }
 }

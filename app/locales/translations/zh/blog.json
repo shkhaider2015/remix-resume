@@ -2,13 +2,11 @@
   "meta": {
     "title": "Shakeel Haider - 博客",
     "description": "Shakeel Haider 关于 React、NestJS 和全栈 Web 开发的博客或文章。",
-    "keywords": "shakeel haider, 博客, react, nestjs, 全栈开发, web 开发, 编程, javascript, typescript",
+    "keywords": "shakeel haider, 巴基斯坦开发人员, 巴基斯坦 React Native 开发人员, 卡拉奇全栈开发人员, 巴基斯坦 Next.js 开发人员, NestJS 开发人员, React Native 自由职业者, 巴基斯坦移动应用程序开发人员, TypeScript 开发人员, JavaScript 开发人员, 博客, react, nestjs, 全栈开发, Web 开发, 编程, javascript, typescript",
     "author": "Shakeel Haider"
   },
-
   "data": {
     "title": "博客",
-
     "items": [
       {
         "id": "1",

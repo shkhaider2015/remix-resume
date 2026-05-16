@@ -2,25 +2,25 @@
   "meta": {
     "title": "Om Shakeel Haider",
     "description": "Om Shakeel Haider",
-    "keywords": "cv, shakeel haider, erfarenhet, utbildning, färdigheter, om mig, webbutveckling, mjukvaruutveckling, UI/UX-design, DevOps, Utveckling, drift, design av användargränssnitt, design av användarupplevelse, webbappar, mobilappar",
+    "keywords": "meritförteckning, shakeel haider, Pakistansk utvecklare, React Native-utvecklare i Pakistan, Full Stack-utvecklare i Karachi, Next.js-utvecklare i Pakistan, NestJS-utvecklare, Frilansande React Native-utvecklare, Mobilappsutvecklare i Pakistan, TypeScript-utvecklare, JavaScript-utvecklare, erfarenhet, utbildning, färdigheter, om mig, webbutveckling, programvaruutveckling, UI/UX-design, DevOps, Utveckling, drift, design av användargränssnitt, design av användarupplevelse, webbappar, mobilappar",
     "author": "Shakeel Haider"
   },
   "data": {
     "title": "CV",
     "description": "Jag är en passionerad och engagerad mjukvaruutvecklare med över 5 års praktisk erfarenhet inom frontend-, backend- och databasutveckling. Min resa inom teknikbranschen har drivits av en djup nyfikenhet för problemlösning och ett engagemang för att leverera högkvalitativa, skalbara lösningar. Jag trivs i dynamiska miljöer där jag kan utnyttja min tekniska expertis för att skapa innovativa applikationer som gör verklig skillnad.",
     "items": [
-        {
-            "title": "💼 Erfarenhet",
-            "description": "Min karriär började med en praktikplats på Sky Electric Pvt. Ltd, där jag fick grundläggande kunskaper inom mjukvaruutveckling och finslipade mina problemlösningsförmågor. Därefter avancerade jag till roller på Concept Recall Pvt. Ltd som Jr. Web Developer, där jag arbetade med att bygga och underhålla webbapplikationer, och senare på Retrocube Pvt. Ltd som Jr. Mobile Developer, där jag bidrog till utveckling av mobilappar. För närvarande tjänstgör jag som Frontend Lead Developer på RunOfShowApp, där jag leder ett team för att designa och implementera användarvänliga gränssnitt samtidigt som jag säkerställer en sömlös användarupplevelse.<br /><br /> Utöver mina heltidstjänster har jag frilansat som Fullstack Developer sedan 2020, och tagit mig an olika projekt som har gjort det möjligt för mig att förfina mina färdigheter inom både frontend- och backendutveckling. Min förmåga att anpassa mig till nya teknologier, samarbeta effektivt med tvärfunktionella team och leverera robusta lösningar har varit en hörnsten i min professionella tillväxt.<br /><br /> Jag brinner för kodning, problemlösning och kontinuerligt lärande, vilket driver mig att hålla mig uppdaterad med de senaste branschtrenderna och teknikerna. Oavsett om det handlar om att bygga skalbara backend-system, skapa intuitiva användargränssnitt eller optimera databasprestanda, är jag fast besluten att leverera excellens i varje projekt jag åtar mig."
-        },
-        {
-            "title": "🎓 Utbildning",
-            "description": "Min utbildningsresa började med SSC från Al Nasir School Pvt., vilket väckte mitt intresse för problemlösning. Jag läste FSc Pre-Engineering vid Pakistan Shipowner's College, där jag stärkte mina analytiska färdigheter. Senare tog jag en BS i programvaruteknik från Indus University Pvt. Ltd., där jag fick expertkunskaper inom programmering och mjukvarudesign. Denna akademiska grund har format mina tekniska färdigheter och tillväxtinställning, vilket förberett mig för en framgångsrik karriär inom mjukvaruutveckling."
-        },
-        {
-            "title": "🛠️ Färdigheter",
-            "description": "Jag är specialiserad på frontend-, backend- och databasutveckling, med expertis inom att bygga användarvänliga gränssnitt, skalbara server-sidiga applikationer och effektiva databashanteringssystem. Mina färdigheter sträcker sig över att skapa sömlösa användarupplevelser, robusta API:er och optimerade datalagringslösningar, vilket säkerställer end-to-end-utveckling av högpresterande och pålitliga programvaruapplikationer."
-        }
+      {
+        "title": "💼 Erfarenhet",
+        "description": "Min karriär började med en praktikplats på Sky Electric Pvt. Ltd, där jag fick grundläggande kunskaper inom mjukvaruutveckling och finslipade mina problemlösningsförmågor. Därefter avancerade jag till roller på Concept Recall Pvt. Ltd som Jr. Web Developer, där jag arbetade med att bygga och underhålla webbapplikationer, och senare på Retrocube Pvt. Ltd som Jr. Mobile Developer, där jag bidrog till utveckling av mobilappar. För närvarande tjänstgör jag som Frontend Lead Developer på RunOfShowApp, där jag leder ett team för att designa och implementera användarvänliga gränssnitt samtidigt som jag säkerställer en sömlös användarupplevelse.<br /><br /> Utöver mina heltidstjänster har jag frilansat som Fullstack Developer sedan 2020, och tagit mig an olika projekt som har gjort det möjligt för mig att förfina mina färdigheter inom både frontend- och backendutveckling. Min förmåga att anpassa mig till nya teknologier, samarbeta effektivt med tvärfunktionella team och leverera robusta lösningar har varit en hörnsten i min professionella tillväxt.<br /><br /> Jag brinner för kodning, problemlösning och kontinuerligt lärande, vilket driver mig att hålla mig uppdaterad med de senaste branschtrenderna och teknikerna. Oavsett om det handlar om att bygga skalbara backend-system, skapa intuitiva användargränssnitt eller optimera databasprestanda, är jag fast besluten att leverera excellens i varje projekt jag åtar mig."
+      },
+      {
+        "title": "🎓 Utbildning",
+        "description": "Min utbildningsresa började med SSC från Al Nasir School Pvt., vilket väckte mitt intresse för problemlösning. Jag läste FSc Pre-Engineering vid Pakistan Shipowner's College, där jag stärkte mina analytiska färdigheter. Senare tog jag en BS i programvaruteknik från Indus University Pvt. Ltd., där jag fick expertkunskaper inom programmering och mjukvarudesign. Denna akademiska grund har format mina tekniska färdigheter och tillväxtinställning, vilket förberett mig för en framgångsrik karriär inom mjukvaruutveckling."
+      },
+      {
+        "title": "🛠️ Färdigheter",
+        "description": "Jag är specialiserad på frontend-, backend- och databasutveckling, med expertis inom att bygga användarvänliga gränssnitt, skalbara server-sidiga applikationer och effektiva databashanteringssystem. Mina färdigheter sträcker sig över att skapa sömlösa användarupplevelser, robusta API:er och optimerade datalagringslösningar, vilket säkerställer end-to-end-utveckling av högpresterande och pålitliga programvaruapplikationer."
+      }
     ]
   }
 }

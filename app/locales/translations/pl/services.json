@@ -1,16 +1,16 @@
 {
-    "meta": {
-        "title": "Usługi Shakeela Haidera",
-        "description": "Usługi Shakeela Haidera",
-        "keywords": "usługi, shakeel haider, rozwój stron internetowych, rozwój oprogramowania, Naprawa błędów, DevOps, Rozwój, operacje, projektowanie interfejsu użytkownika, projektowanie doświadczeń użytkownika, aplikacje webowe, aplikacje mobilne",
-        "author": "Shakeel Haider"
-    },
-    "data": {
-        "title": "Usługi",
-        "description": "Zapoznaj się z zakresem usług oferowanych przez Shakeela Haidera, w tym tworzeniem stron internetowych, tworzeniem aplikacji mobilnych, DevOps i projektowaniem UI/UX. Dostarczanie wysokiej jakości rozwiązań dostosowanych do potrzeb Twojej firmy.",
-        "web_development": "Rozwój stron internetowych",
-        "mobile_development": "Rozwój aplikacji mobilnych",
-        "devops": "DevOps",
-        "bug_fixing": "Naprawa błędów"
-    }
+  "meta": {
+    "title": "Usługi Shakeela Haidera",
+    "description": "Usługi Shakeela Haidera",
+    "keywords": "usługi, shakeel haider, Pakistański Programista, Programista React Native w Pakistanie, Programista Full Stack w Karaczi, Programista Next.js w Pakistanie, Programista NestJS, Freelancer React Native, Programista aplikacji mobilnych w Pakistanie, Programista TypeScript, Programista JavaScript, tworzenie stron WWW, tworzenie oprogramowania, Projektowanie UI/UX, DevOps, Rozwój, operacja, projektowanie interfejsu użytkownika, projektowanie doświadczeń użytkownika, aplikacje internetowe, aplikacje mobilne",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Usługi",
+    "description": "Zapoznaj się z zakresem usług oferowanych przez Shakeela Haidera, w tym tworzeniem stron internetowych, tworzeniem aplikacji mobilnych, DevOps i projektowaniem UI/UX. Dostarczanie wysokiej jakości rozwiązań dostosowanych do potrzeb Twojej firmy.",
+    "web_development": "Rozwój stron internetowych",
+    "mobile_development": "Rozwój aplikacji mobilnych",
+    "devops": "DevOps",
+    "bug_fixing": "Naprawa błędów"
+  }
 }

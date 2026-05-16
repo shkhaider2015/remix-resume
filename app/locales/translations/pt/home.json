@@ -1,17 +1,17 @@
 {
-    "meta": {
-        "title": "Portfólio de Shakeel Haider",
-        "description": "Portfólio de Shakeel Haider",
-        "keywords": "portfólio, shakeel haider, engenheiro de software, desenvolvedor web, desenvolvedor de software, aplicativos móveis, desenvolvedor full-stack",
-        "author": "Shakeel Haider"
-    },
-    "data": {
-        "title": "SHAKEEL HAIDER",
-        "role": "Engenheiro de Software 👨🏻‍💻",
-        "description": "Sou um engenheiro de software apaixonado com mais de 5 anos de experiência em desenvolvimento 🔴 frontend, 🟢 backend e 🔵 de banco de dados. Habilidoso na criação de interfaces amigáveis, aplicativos escaláveis e soluções de dados eficientes, prospero na resolução de problemas complexos e na entrega de software de alta qualidade.",
-        "cta": "Vamos construir soluções inovadoras juntos! 🚀"
-    },
-    "others": {
-        "profile_picture_alt": "Foto de perfil de Shakeel Haider"
-    }
+  "meta": {
+    "title": "Portfólio de Shakeel Haider",
+    "description": "Portfólio de Shakeel Haider",
+    "keywords": "portfólio, shakeel haider, Desenvolvedor Pakistanês, Desenvolvedor React Native no Paquistão, Desenvolvedor Full Stack em Karachi, Desenvolvedor Next.js no Paquistão, Desenvolvedور NestJS, Freelancer React Native, Desenvolvedor de aplicativos móveis no Paquistão, Desenvolvedor TypeScript, Desenvolvedor JavaScript, engenheiro de software, desenvolvedor web, desenvolvedor de software, aplicativos móveis, desenvolvedor full-stack",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "SHAKEEL HAIDER",
+    "role": "Engenheiro de Software 👨🏻‍💻",
+    "description": "Sou um engenheiro de software apaixonado com mais de 5 anos de experiência em desenvolvimento 🔴 frontend, 🟢 backend e 🔵 de banco de dados. Habilidoso na criação de interfaces amigáveis, aplicativos escaláveis e soluções de dados eficientes, prospero na resolução de problemas complexos e na entrega de software de alta qualidade.",
+    "cta": "Vamos construir soluções inovadoras juntos! 🚀"
+  },
+  "others": {
+    "profile_picture_alt": "Foto de perfil de Shakeel Haider"
+  }
 }
