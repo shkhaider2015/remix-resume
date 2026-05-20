@@ -75,7 +75,7 @@
 }
 .edu-item-con:hover:after, .edu-item-con:hover::before {
     opacity: .3;
-    background: var(--gray02);
+    background: var(--primary-green);
     animation: spin 5s linear infinite;
 }
 
@@ -267,7 +267,7 @@
   @media screen and (max-width: 400px) {
     * {
         --edu-box-width: 250px;
-        --edu-box-height: 160px;
+        --edu-box-height: 200px;
     } .ribbon {
         --s: .7em;
     }
