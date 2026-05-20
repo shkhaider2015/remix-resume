@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Zertifizierungen von Shakeel Haider",
+    "description": "Zertifizierungen von Shakeel Haider",
+    "keywords": "Lebenslauf, Shakeel Haider, Zertifizierung, pakistanischer Entwickler, React Native Entwickler Pakistan, Full Stack Entwickler Karatschi, zertifizierter KI-Entwickler, zertifizierter KI-Ingenieur, zertifizierter Full Stack Entwickler, zertifizierter Next.js Entwickler Pakistan, zertifizierter NestJS Entwickler, zertifizierter React Native Freelancer, zertifizierter App-Entwickler Pakistan, zertifizierter TypeScript Entwickler, zertifizierter JavaScript Entwickler, Bildung, Fähigkeiten, über mich, Webentwicklung, Softwareentwicklung, UI/UX Design, DevOps, Entwicklung, Betrieb, Benutzeroberflächendesign, User Experience Design, Web-Apps, mobile Apps, zertifizierter Softwareingenieur, Coursera, Udacity, Microsoft",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Lebenslauf",
+    "description": "Meine Bildungsreise begann mit dem SSC an der Al Nasir School Pvt., was mein Interesse an der Problemlösung weckte. Ich absolvierte das FSc Pre-Engineering am Pakistan Shipowner's College, was meine analytischen Fähigkeiten stärkte. Später erwarb ich einen BS in Software Engineering an der Indus University Pvt. Ltd. und sammelte Fachwissen in Programmierung und Softwaredesign. Diese akademische Grundlage hat meine technischen Fähigkeiten und meine Wachstumsmentalität geprägt und mich auf eine erfolgreiche Karriere in der Softwareentwicklung vorbereitet.",
+    "items": [
+      {
+        "title": "Meta Frontend Developer Specialization",
+        "companyName": "Coursera",
+        "date": "Ausgestellt Aug. 2024",
+        "description": "Abschluss einer umfassenden Spezialisierung auf Frontend-Entwicklung, die React, JavaScript und UI/UX-Designprinzipien umfasst und mich mit den Fähigkeiten ausstattet, reaktionsschnelle und benutzerfreundliche Webanwendungen zu erstellen."
+      },
+      {
+        "title": "Einführung in die Programmierung mit Python",
+        "companyName": "Microsoft",
+        "date": "Ausgestellt Feb. 2021",
+        "description": "Grundlegende Programmierkenntnisse in Python erworben, einschließlich Datenstrukturen, Algorithmen und Problemlösungstechniken, die für meine Reise in die Softwareentwicklung entscheidend waren."
+      },
+      {
+        "title": "PIAIC - Künstliche Intelligenz",
+        "companyName": "PIAIC",
+        "date": "Ausgestellt Sept. 2021",
+        "description": "Abschluss eines umfassenden Programms in künstlicher Intelligenz, das maschinelles Lernen, Deep Learning und KI-Anwendungen umfasst und meine Fähigkeit zur Entwicklung intelligenter Systeme und Lösungen verbessert."
+      },
+      {
+        "title": "KI für alle",
+        "companyName": "Coursera",
+        "date": "Ausgestellt Mai 2019",
+        "description": "Abschluss eines umfassenden Kurses über künstliche Intelligenz, der die Grundlagen der KI und ihrer Anwendungen abdeckt und mein Verständnis für intelligente Systeme verbessert hat."
+      },
+      {
+        "title": "Python für Data Science und KI",
+        "companyName": "Coursera",
+        "date": "Ausgestellt Sept. 2019",
+        "description": "Abschluss eines umfassenden Kurses in Python für Data Science und KI, der die Grundlagen der Datenanalyse und des maschinellen Lernens abdeckt und mein Verständnis für intelligente Systeme verbessert hat."
+      },
+      {
+        "title": "Einführung in TensorFlow",
+        "companyName": "Coursera",
+        "date": "Ausgestellt Jan. 2020",
+        "description": "Abschluss eines umfassenden Kurses in TensorFlow, der die Grundlagen des Deep Learning und neuronaler Netze abdeckt und mein Verständnis für intelligente Systeme verbessert hat."
+      },
+      {
+        "title": "AWS Fundamentals: Going Cloud-Native",
+        "companyName": "Coursera",
+        "date": "Ausgestellt Dez. 2020",
+        "description": "Abschluss eines umfassenden Kurses in AWS Fundamentals, der die Grundlagen des Cloud Computing und die Kerndienste abdeckt und mein Verständnis für Cloud-native Entwicklung verbessert hat."
+      },
+      {
+        "title": "Einstieg in AWS Machine Learning",
+        "companyName": "Coursera",
+        "date": "Ausgestellt Apr. 2021",
+        "description": "Abschluss eines umfassenden Kurses in AWS Machine Learning, der die Grundlagen des maschinellen Lernens auf der AWS-Plattform abdeckt und mein Verständnis für Cloud-based KI-Lösungen verbessert hat."
+      }
+    ]
+  }
+}

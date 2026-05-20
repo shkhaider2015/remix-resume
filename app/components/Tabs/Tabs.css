@@ -66,6 +66,17 @@
         font-size: 16px; 
     }
  }
+ @media screen and (max-width: 400px) { 
+    .tabs-container {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .tabs-container > a {
+        font-size: 12px;
+        font-weight: 800; 
+    }
+ }
 
 [lang="ar"] .tabs-container > a {
     font-family: "Cairo";

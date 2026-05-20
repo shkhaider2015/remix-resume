@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Shakeel Haider의 자격증",
+    "description": "Shakeel Haider의 자격증",
+    "keywords": "이력서, shakeel haider, 자격증, 파키스탄 개발자, React Native 개발자 파키스탄, 풀스택 개발자 카라치, 공인 AI 개발자, 공인 AI 엔지니어, 공인 풀스택 개발자, 공인 Next.js 개발자 파키스탄, 공인 NestJS 개발자, 공인 React Native 프리랜서, 공인 모바일 앱 개발자 파키스탄, 공인 TypeScript 개발자, 공인 JavaScript 개발자, 교육, 기술, 자기소개, 웹 개발, 소프트웨어 개발, UI/UX 디자인, DevOps, 개발, 운영, 사용자 인터페이스 디자인, 사용자 경험 디자인, 웹 앱, 모바일 앱, 공인 소프트웨어 엔지니어, Coursera, Udacity, Microsoft",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "이력서",
+    "description": "나의 교육 여정은 Al Nasir School Pvt.에서 SSC를 마치는 것으로 시작되었으며, 이를 통해 문제 해결에 대한 관심을 갖게 되었습니다. 그 후 Pakistan Shipowner's College에서 FSc Pre-Engineering을 전공하며 분석 능력을 강화했습니다. 나중에 Indus University Pvt. Ltd.에서 소프트웨어 공학 학사 학위를 취득하여 프로그래밍 및 소프트웨어 설계에 대한 전문 지식을 쌓았습니다. 이러한 학문적 토대는 저의 기술력과 성장 마인드를 형성했으며, 소프트웨어 개발 분야에서 성공적인 경력을 쌓을 수 있도록 준비시켜 주었습니다.",
+    "items": [
+      {
+        "title": "Meta 프론트엔드 개발자 전문가 과정",
+        "companyName": "Coursera",
+        "date": "2024년 8월 발급",
+        "description": "React, JavaScript 및 UI/UX 디자인 원칙을 아우르는 프론트엔드 개발의 포괄적인 전문 과정을 완료하여 반응형 및 사용자 친화적인 웹 애플리케이션을 구축할 수 있는 기술을 갖추었습니다."
+      },
+      {
+        "title": "Python을 이용한 프로그래밍 입문",
+        "companyName": "Microsoft",
+        "date": "2021년 2월 발급",
+        "description": "데이터 구조, 알고리즘 및 문제 해결 기술을 포함한 Python의 기초 프로그래밍 기술을 습득했으며, 이는 저의 소프트웨어 개발 여정에 큰 도움이 되었습니다."
+      },
+      {
+        "title": "PIAIC - 인공지능",
+        "companyName": "PIAIC",
+        "date": "2021년 9월 발급",
+        "description": "머신러닝, 딥러닝 및 AI 애플리케이션을 아우르는 인공지능에 대한 포괄적인 프로그램을 완료하여 지능형 시스템 및 솔루션을 개발할 수 있는 능력을 향상시켰습니다."
+      },
+      {
+        "title": "모두를 위한 AI",
+        "companyName": "Coursera",
+        "date": "2019년 5월 발급",
+        "description": "AI의 기초와 그 응용 분야를 다루는 인공지능에 관한 포괄적인 과정을 완료하여 지능형 시스템에 대한 이해를 높였습니다."
+      },
+      {
+        "title": "데이터 사이언스 및 AI를 위한 Python",
+        "companyName": "Coursera",
+        "date": "2019년 9월 발급",
+        "description": "데이터 분석 및 머신러닝의 기초를 다루는 데이터 사이언스 및 AI를 위한 Python 과정을 완료하여 지능형 시스템에 대한 이해를 높였습니다."
+      },
+      {
+        "title": "TensorFlow 입문",
+        "companyName": "Coursera",
+        "date": "2020년 1월 발급",
+        "description": "딥러닝 및 신경망의 기초를 다루는 TensorFlow에 대한 포괄적인 과정을 완료하여 지능형 시스템에 대한 이해를 높였습니다."
+      },
+      {
+        "title": "AWS 기초: 클라우드 네이티브로 가기",
+        "companyName": "Coursera",
+        "date": "2020년 12월 발급",
+        "description": "클라우드 컴퓨팅의 기초와 핵심 서비스를 다루는 AWS 기초 과정을 완료하여 클라우드 네이티브 개발에 대한 이해를 높였습니다."
+      },
+      {
+        "title": "AWS 머신러닝 시작하기",
+        "companyName": "Coursera",
+        "date": "2021년 4월 발급",
+        "description": "AWS 플랫폼의 머신러닝 기초를 다루는 AWS 머신러닝 과정을 완료하여 클라우드 기반 AI 솔루션에 대한 이해를 높였습니다."
+      }
+    ]
+  }
+}

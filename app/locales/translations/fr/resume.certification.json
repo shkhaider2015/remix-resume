@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Certifications de Shakeel Haider",
+    "description": "Certifications de Shakeel Haider",
+    "keywords": "résumé, shakeel haider, certification, développeur pakistanais, développeur React Native Pakistan, développeur Full Stack Karachi, développeur IA certifié, ingénieur IA certifié, développeur Full Stack certifié, développeur Next.js certifié Pakistan, développeur NestJS certifié, freelance React Native certifié, développeur d'applications mobiles certifié Pakistan, développeur TypeScript certifié, développeur JavaScript certifié, éducation, compétences, à propos de moi, développement web, développement logiciel, design UI/UX, DevOps, Développement, opération, design d'interface utilisateur, design d'expérience utilisateur, applications web, applications mobiles, ingénieur logiciel certifié, Coursera, Udacity, Microsoft",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Résumé",
+    "description": "Mon parcours éducatif a commencé par le SSC de l'Al Nasir School Pvt., ce qui a éveillé mon intérêt pour la résolution de problèmes. J'ai poursuivi en FSc Pre-Engineering au Pakistan Shipowner's College, renforçant ainsi mes capacités d'analyse. Plus tard, j'ai obtenu un BS en génie logiciel de l'Indus University Pvt. Ltd., acquérant ainsi une expertise en programmation et en conception de logiciels. Cette base académique a façonné mes compétences techniques et mon esprit de croissance, me préparant à une carrière réussie dans le développement de logiciels.",
+    "items": [
+      {
+        "title": "Spécialisation de développeur frontend Meta",
+        "companyName": "Coursera",
+        "date": "Délivré en août 2024",
+        "description": "J'ai suivi une spécialisation complète en développement frontend, couvrant React, JavaScript et les principes de conception UI/UX, ce qui m'a permis d'acquérir les compétences nécessaires pour créer des applications web réactives et conviviales."
+      },
+      {
+        "title": "Introduction à la programmation avec Python",
+        "companyName": "Microsoft",
+        "date": "Délivré en fév. 2021",
+        "description": "J'ai acquis des compétences fondamentales en programmation Python, notamment les structures de données, algos et techniques de résolution de problèmes, qui ont été essentielles dans mon parcours de développement de logiciels."
+      },
+      {
+        "title": "PIAIC - Intelligence Artificielle",
+        "companyName": "PIAIC",
+        "date": "Délivré en sept. 2021",
+        "description": "J'ai suivi un programme complet en intelligence artificielle, couvrant l'apprentissage automatique, l'apprentissage profond et les applications de l'IA, renforçant ainsi ma capacité à développer des systèmes et des solutions intelligents."
+      },
+      {
+        "title": "L'IA pour tous",
+        "companyName": "Coursera",
+        "date": "Délivré en mai 2019",
+        "description": "J'ai suivi un cours complet sur l'intelligence artificielle, couvrant les bases de l'IA et de ses applications, ce qui a renforcé ma compréhension des systèmes intelligents."
+      },
+      {
+        "title": "Python pour la science des données et l'IA",
+        "companyName": "Coursera",
+        "date": "Délivré en sept. 2019",
+        "description": "J'ai suivi un cours complet sur Python pour la science des données et l'IA, couvrant les bases de l'analyse de données et de l'apprentissage automatique, ce qui a renforcé ma compréhension des systèmes intelligents."
+      },
+      {
+        "title": "Introduction à TensorFlow",
+        "companyName": "Coursera",
+        "date": "Délivré en janv. 2020",
+        "description": "J'ai suivi un cours complet sur TensorFlow, couvrant les bases de l'apprentissage profond et des réseaux neuronaux, ce qui a renforcé ma compréhension des systèmes intelligents."
+      },
+      {
+        "title": "Fondamentaux d'AWS : Passer au Cloud-Native",
+        "companyName": "Coursera",
+        "date": "Délivré en déc. 2020",
+        "description": "J'ai suivi un cours complet sur les fondamentaux d'AWS, couvrant les bases de l'informatique en nuage et les services de base, ce qui a renforcé ma compréhension du développement natif en nuage."
+      },
+      {
+        "title": "Premiers pas avec AWS Machine Learning",
+        "companyName": "Coursera",
+        "date": "Délivré en avr. 2021",
+        "description": "J'ai suivi un cours complet sur l'apprentissage automatique AWS, couvrant les bases de l'apprentissage automatique sur la plateforme AWS, ce qui a renforcé ma compréhension des solutions d'IA basées sur le nuage."
+      }
+    ]
+  }
+}

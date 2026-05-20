@@ -11,7 +11,8 @@
     "experience": "Experience",
     "education": "Education",
     "about_me": "About Me",
-    "skills": "Skills"
+    "skills": "Skills",
+    "certification": "Certification"
   },
   "others": {
     "download_pdf": "Download PDF"

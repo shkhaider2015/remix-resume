@@ -7,6 +7,7 @@ const Linkedin = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className="social-icon hoverable"
+      aria-label="Shakeel Haider's LinkedIn Profile"
     >
       <g clipPath="url(#clip0_141_143)">
         <rect y="11" width="200" height="200" rx="50" fill="white" />

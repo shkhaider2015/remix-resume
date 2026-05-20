@@ -1,7 +1,6 @@
 import { LoaderFunction } from "@remix-run/node";
 import { MetaFunction, useLoaderData } from "@remix-run/react";
 import EducationItem from "~/components/EducationItem/EducationItem";
-import { educationItem, educationParagraph } from "~/data";
 import i18next from "~/locales/i18next.server";
 import { getLocaleFromUrl } from "~/utils/functions/functions.server";
 import { IExperienceItem } from "~/utils/interfaces/components";

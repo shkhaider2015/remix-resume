@@ -1,9 +1,6 @@
 import { LinksFunction, LoaderFunction } from "@remix-run/node";
 import indexStylesHref from "./_index.css?url";
-import {
-  ProfilePictreDark,
-  ProfilePictreLight,
-} from "~/assets/images";
+import { ProfilePictreDark, ProfilePictreLight } from "~/assets/images";
 import { MetaFunction, useLoaderData } from "@remix-run/react";
 import { socialLinks } from "~/data";
 import { useTheme } from "~/context/theme";
@@ -29,7 +26,6 @@ export const meta: MetaFunction = ({ data: { meta } }: any) => {
 };
 
 export const loader: LoaderFunction = async ({ request }) => {
-
   const locale = getLocaleFromUrl(request);
   let t = await i18next.getFixedT(locale, "home");
 
@@ -45,11 +41,11 @@ export const loader: LoaderFunction = async ({ request }) => {
       description: t("meta.description"),
       keywords: t("meta.keywords"),
       author: t("meta.author"),
-    }
+    },
   };
 
   return Response.json({ ...data });
-}
+};
 
 export let handle = {
   i18n: "home",
@@ -63,9 +59,7 @@ const ProfilePicture = () => {
   return (
     <picture>
       <source
-        srcSet={
-          isLightMode ? ProfilePictreLight : ProfilePictreDark
-        }
+        srcSet={isLightMode ? ProfilePictreLight : ProfilePictreDark}
         media="(prefers-color-scheme: dark)"
       />
       <img
@@ -82,8 +76,9 @@ export default function Index() {
     <div className="home-container">
       <div className="home-section home-left">
         <h1>{data.title}</h1>
-        <h3>{data.role}</h3>
-        <p>{data.description}
+        <h2>{data.role}</h2>
+        <p>
+          {data.description}
           <br /> <span>{data.cta}</span>
         </p>
         <div className="socials">
