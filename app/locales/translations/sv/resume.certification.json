@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Shakeel Haiders certifieringar",
+    "description": "Shakeel Haiders certifieringar",
+    "keywords": "CV, shakeel haider, certifiering, pakistansk utvecklare, React Native-utvecklare Pakistan, Full Stack-utvecklare Karachi, certifierad AI-utvecklare, certifierad AI-ingenjör, certifierad Full Stack-utvecklare, certifierad Next.js-utvecklare Pakistan, certifierad NestJS-utvecklare, certifierad React Native-frilansare, certifierad mobilappsutvecklare Pakistan, certifierad TypeScript-utvecklare, certifierad JavaScript-utvecklare, utbildning, färdigheter, om mig, webbutveckling, mjukvaruutveckling, UI/UX-design, DevOps, utveckling, drift, design av användargränssnitt, design av användarupplevelse, webbappar, mobilappar, certifierad mjukvaruingenjör, Coursera, Udacity, Microsoft",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "CV",
+    "description": "Min utbildningsresa började med SSC från Al Nasir School Pvt., vilket väckte mitt intresse för problemlösning. Jag läste FSc Pre-Engineering vid Pakistan Shipowner's College, vilket stärkte min analytiska förmåga. Senare tog jag en kandidatexamen i mjukvaruteknik från Indus University Pvt. Ltd., där jag fick expertis inom programmering och mjukvarudesign. Denna akademiska grund har format mina tekniska färdigheter och mitt tillväxttänkande, vilket har förberett mig för en framgångsrik karriär inom mjukvaruutveckling.",
+    "items": [
+      {
+        "title": "Meta Frontend Developer Specialization",
+        "companyName": "Coursera",
+        "date": "Utfärdad aug 2024",
+        "description": "Genomfört en omfattande specialisering inom frontend-utveckling, som täcker React, JavaScript och UI/UX-designprinciper, vilket ger mig färdigheterna att bygga responsiva och användarvänliga webbapplikationer."
+      },
+      {
+        "title": "Introduktion till programmering med Python",
+        "companyName": "Microsoft",
+        "date": "Utfärdad feb 2021",
+        "description": "Fått grundläggande programmeringskunskaper i Python, inklusive datastrukturer, algoritmer och problemlösningstekniker, vilket har varit avgörande i min resa inom mjukvaruutveckling."
+      },
+      {
+        "title": "PIAIC - Artificiell intelligens",
+        "companyName": "PIAIC",
+        "date": "Utfärdad sept 2021",
+        "description": "Genomfört ett omfattande program inom artificiell intelligens, som täcker maskininlärning, djupinärning och AI-applikationer, vilket förbättrar min förmåga att utveckla intelligenta system och lösningar."
+      },
+      {
+        "title": "AI för alla",
+        "companyName": "Coursera",
+        "date": "Utfärdad maj 2019",
+        "description": "Genomfört en omfattande kurs i artificiell intelligens, som täcker grunderna i AI och dess tillämpningar, vilket har ökat min förståelse för intelligenta system."
+      },
+      {
+        "title": "Python för Data Science och AI",
+        "companyName": "Coursera",
+        "date": "Utfärdad sept 2019",
+        "description": "Genomfört en omfattande kurs i Python för Data Science och AI, som täcker grunderna i dataanalys och maskininlärning, vilket har ökat min förståelse för intelligenta system."
+      },
+      {
+        "title": "Introduktion till TensorFlow",
+        "companyName": "Coursera",
+        "date": "Utfärdad jan 2020",
+        "description": "Genomfört en omfattande kurs i TensorFlow, som täcker grunderna i djupinlärning och neurala nätverk, vilket har ökat min förståelse för intelligenta system."
+      },
+      {
+        "title": "AWS Fundamentals: Going Cloud-Native",
+        "companyName": "Coursera",
+        "date": "Utfärdad dec 2020",
+        "description": "Genomfört en omfattande kurs i AWS Fundamentals, som täcker grunderna i molnbaserad databehandling och kärntjänsterna, vilket har ökat min förståelse för molnbaserad utveckling."
+      },
+      {
+        "title": "Kom igång med AWS Machine Learning",
+        "companyName": "Coursera",
+        "date": "Utfärdad apr 2021",
+        "description": "Genomfört en omfattande kurs i AWS Machine Learning, som täcker grunderna i maskininlärning på AWS-plattformen, vilket har ökat min förståelse för molnbaserade AI-lösningar."
+      }
+    ]
+  }
+}

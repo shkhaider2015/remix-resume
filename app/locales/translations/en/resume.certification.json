@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Shakeel Haider's Certifications",
+    "description": "Shakeel Haider's Certifications",
+    "keywords": "resume, shakeel haider, certification, Pakistani Developer, React Native Developer Pakistan, Full Stack Developer Karachi, Certified Ai Developer, Certified AI Engineer, Certified Full Stack Developer, Certified Next.js Developer Pakistan, Certified NestJS Developer, Certified React Native Freelancer, Certified Mobile App Developer Pakistan, Certified TypeScript Developer, Certified JavaScript Developer, education, skills, about me, web development, software development, UI/UX Design, DevOps, Development, operation, user interface design, user experience design, web apps, mobile apps, Certified Software Engineer, Coursera, Udacity, Microsoft",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Resume",
+    "description": "My educational journey began with SSC from Al Nasir School Pvt., sparking my interest in problem-solving. I pursued FSc Pre-Engineering at Pakistan Shipowner's College, strengthening my analytical skills. Later, I earned a BS in Software Engineering from Indus University Pvt. Ltd., gaining expertise in programming and software design. This academic foundation has shaped my technical skills and growth mindset, preparing me for a successful career in software development.",
+    "items": [
+      {
+        "title": "Meta Frontend Developer Specialization",
+        "companyName": "Coursera",
+        "date": "Issued Aug 2024",
+        "description": "Completed a comprehensive specialization in frontend development, covering React, JavaScript, and UI/UX design principles, equipping me with the skills to build responsive and user-friendly web applications."
+      },
+      {
+        "title": "Introduction to Programming using Python",
+        "companyName": "Microsoft",
+        "date": "Issued Feb 2021",
+        "description": "Gained foundational programming skills in Python, including data structures, algorithms, and problem-solving techniques, which have been instrumental in my software development journey."
+      },
+      {
+        "title": "PIAIC - Artificial Intelligence",
+        "companyName": "PIAIC",
+        "date": "Issued Sept 2021",
+        "description": "Completed a comprehensive program in Artificial Intelligence, covering machine learning, deep learning, and AI applications, enhancing my ability to develop intelligent systems and solutions."
+      },
+      {
+        "title": "AI For Everyone",
+        "companyName": "Coursera",
+        "date": "Issued May 2019",
+        "description": "Completed a comprehensive course in Artificial Intelligence, covering the fundamentals of AI and its applications, which has enhanced my understanding of intelligent systems."
+      },
+      {
+        "title": "Python For Data Science and AI",
+        "companyName": "Coursera",
+        "date": "Issued Sept 2019",
+        "description": "Completed a comprehensive course in Python for Data Science and AI, covering the fundamentals of data analysis and machine learning, which has enhanced my understanding of intelligent systems."
+      },
+      {
+        "title": "Introduction to TensorFlow",
+        "companyName": "Coursera",
+        "date": "Issued Jan 2020",
+        "description": "Completed a comprehensive course in TensorFlow, covering the fundamentals of deep learning and neural networks, which has enhanced my understanding of intelligent systems."
+      },
+      {
+        "title": "AWS Fundamentals: Going Cloud-Native",
+        "companyName": "Coursera",
+        "date": "Issued Dec 2020",
+        "description": "Completed a comprehensive course in AWS Fundamentals, covering the basics of cloud computing and the core services, which has enhanced my understanding of cloud-native development."
+      },
+      {
+        "title": "Geetting Started with AWS Machine Learning",
+        "companyName": "Coursera",
+        "date": "Issued Apr 2021",
+        "description": "Completed a comprehensive course in AWS Machine Learning, covering the fundamentals of machine learning on the AWS platform, which has enhanced my understanding of cloud-based AI solutions."
+      }
+    ]
+  }
+}

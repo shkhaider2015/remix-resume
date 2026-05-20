@@ -27,6 +27,7 @@ export const loader = async () => {
     { slug: `/${item}/work`, lastmod: lastMod, priority: 0.9 },
     { slug: `/${item}/contacts`, lastmod: lastMod, priority: 0.7 },
     { slug: `/${item}/resume/education`, lastmod: lastMod, priority: 0.7 },
+    { slug: `/${item}/resume/certifications`, lastmod: lastMod, priority: 0.7 },
     { slug: `/${item}/resume/experience`, lastmod: lastMod, priority: 0.9 },
     { slug: `/${item}/resume/skills`, lastmod: lastMod, priority: 0.7 },
     { slug: `/${item}/resume/about`, lastmod: lastMod, priority: 0.7 },

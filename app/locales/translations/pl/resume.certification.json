@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Certyfikaty Shakeela Haidera",
+    "description": "Certyfikaty Shakeela Haidera",
+    "keywords": "resume, shakeel haider, certyfikacja, pakistański programista, programista React Native Pakistan, Full Stack Developer Karaczi, certyfikowany programista AI, certyfikowany inżynier AI, certyfikowany programista Full Stack, certyfikowany programista Next.js Pakistan, certyfikowany programista NestJS, certyfikowany freelancer React Native, certyfikowany programista aplikacji mobilnych Pakistan, certyfikowany programista TypeScript, certyfikowany programista JavaScript, edukacja, umiejętności, o mnie, tworzenie stron internetowych, tworzenie oprogramowania, projektowanie UI/UX, DevOps, Rozwój, operacje, projektowanie interfejsu użytkownika, projektowanie doświadczeń użytkownika, aplikacje internetowe, aplikacje mobilne, certyfikowany inżynier oprogramowania, Coursera, Udacity, Microsoft",
+    "author": "Shakeel Haider"
+  },
+  "data": {
+    "title": "Resume",
+    "description": "Moja ścieżka edukacyjna rozpoczęła się od SSC w Al Nasir School Pvt., co rozbudziło moje zainteresowanie rozwiązywaniem problemów. Kontynuowałem naukę na profilu FSc Pre-Engineering w Pakistan Shipowner's College, wzmacniając swoje umiejętności analityczne. Później uzyskałem stopień licencjata w dziedzinie inżynierii oprogramowania na Indus University Pvt. Ltd., zdobywając wiedzę w zakresie programowania i projektowania oprogramowania. Te fundamenty akademickie ukształtowały moje umiejętności techniczne i nastawienie na rozwój, przygotowując mnie do udanej kariery w tworzeniu oprogramowania.",
+    "items": [
+      {
+        "title": "Specjalizacja Meta Frontend Developer",
+        "companyName": "Coursera",
+        "date": "Wydano w sierpniu 2024",
+        "description": "Ukończyłem kompleksową specjalizację w zakresie rozwoju frontend, obejmującą React, JavaScript oraz zasady projektowania UI/UX, co wyposażyło mnie w umiejętności budowania responsywnych i przyjaznych dla użytkownika aplikacji internetowych."
+      },
+      {
+        "title": "Wprowadzenie do programowania przy użyciu języka Python",
+        "companyName": "Microsoft",
+        "date": "Wydano w lutym 2021",
+        "description": "Zdobyłem podstawowe umiejętności programowania w języku Python, w tym struktury danych, algorytmy i techniki rozwiązywania problemów, które były kluczowe w mojej drodze do tworzenia oprogramowania."
+      },
+      {
+        "title": "PIAIC - Sztuczna Inteligencja",
+        "companyName": "PIAIC",
+        "date": "Wydano we wrześniu 2021",
+        "description": "Ukończyłem kompleksowy program w zakresie sztucznej inteligencji, obejmujący uczenie maszynowe, uczenie głębokie i zastosowania AI, co zwiększyło moją zdolność do opracowywania inteligentnych systemów i rozwiązań."
+      },
+      {
+        "title": "AI dla każdego",
+        "companyName": "Coursera",
+        "date": "Wydano w maju 2019",
+        "description": "Ukończyłem kompleksowy kurs sztucznej inteligencji, obejmujący podstawy AI i jej zastosowania, co pogłębiło moje zrozumienie inteligentnych systemów."
+      },
+      {
+        "title": "Python dla Data Science i AI",
+        "companyName": "Coursera",
+        "date": "Wydano we wrześniu 2019",
+        "description": "Ukończyłem kompleksowy kurs języka Python w Data Science i AI, obejmujący podstawy analizy danych i uczenia maszynowego, co pogłębiło moje zrozumienie inteligentnych systemów."
+      },
+      {
+        "title": "Wprowadzenie do TensorFlow",
+        "companyName": "Coursera",
+        "date": "Wydano w styczniu 2020",
+        "description": "Ukończyłem kompleksowy kurs TensorFlow, obejmujący podstawy uczenia głębokiego i sieci neuronowych, co pogłębiło moje zrozumienie inteligentnych systemów."
+      },
+      {
+        "title": "Podstawy AWS: Cloud-Native",
+        "companyName": "Coursera",
+        "date": "Wydano w grudniu 2020",
+        "description": "Ukończyłem kompleksowy kurs podstaw AWS, obejmujący podstawy przetwarzania w chmurze i kluczowe usługi, co pogłębiło moje zrozumienie rozwoju opartego na chmurze."
+      },
+      {
+        "title": "Wprowadzenie do AWS Machine Learning",
+        "companyName": "Coursera",
+        "date": "Wydano w kwietniu 2021",
+        "description": "Ukończyłem kompleksowy kurs AWS Machine Learning, obejmujący podstawy uczenia maszynowego na platformie AWS, co pogłębiło moje zrozumienie rozwiązań AI opartych na chmurze."
+      }
+    ]
+  }
+}
