@@ -7,6 +7,7 @@ const Gmail = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className="social-icon hoverable"
+      aria-label="Send Email to Shakeel Haider"
     >
       <g clipPath="url(#clip0_141_169)">
         <path

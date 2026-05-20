@@ -37,6 +37,7 @@ const Navbar = ({ locale="en" }: { locale: string }) => {
           <NavLink
             key={navItem.label}
             to={`/${locale}/${navItem.name}`}
+            aria-label={navItem.name}
             className={({ isActive, isPending }) => {
               return `mobile-nav-item ${
                 isActive ? "active" : isPending ? "pending" : ""

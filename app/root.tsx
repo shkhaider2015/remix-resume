@@ -15,7 +15,11 @@ import type { LinksFunction, LoaderFunction } from "@remix-run/node";
 import appStylesHref from "./app.css?url";
 import Navbar from "~/components/NavItem/Navbar";
 import Loader from "./components/Loader/Loader";
-import { BASE_URL, DEFAULT_LOCALE, SUPPORTED_LOCALES } from "./assets/constants";
+import {
+  BASE_URL,
+  DEFAULT_LOCALE,
+  SUPPORTED_LOCALES,
+} from "./assets/constants";
 import { useEffect } from "react";
 import { ThemeProvider } from "./context/theme";
 import { getThemeFromCookies } from "./utils/theme.server";
@@ -41,11 +45,11 @@ export const loader: LoaderFunction = async ({
   const url = new URL(request.url);
   const theme = getThemeFromCookies(request);
   let locale = getLocaleFromUrl(request);
-  
+
   return json({
     theme,
     ENV: {
-      GOOGLE_TAG_ID: process.env.GOOGLE_TAG_ID
+      GOOGLE_TAG_ID: process.env.GOOGLE_TAG_ID,
     },
     locale,
     url: url.href,
@@ -59,7 +63,7 @@ export let handle = {
 
 function App() {
   const { theme, ENV, locale, url, pathname } = useLoaderData<typeof loader>();
-   // Get the locale from the loader
+  // Get the locale from the loader
   let { i18n } = useTranslation();
 
   useChangeLanguage(locale);
@@ -74,15 +78,15 @@ function App() {
 
   const firstSegment = pathname.split("/")[1];
   const isLocaleInPath = (SUPPORTED_LOCALES as string[]).includes(firstSegment);
-  const pathWithoutLocale = isLocaleInPath 
-    ? pathname.substring(firstSegment.length + 1) || "/" 
+  const pathWithoutLocale = isLocaleInPath
+    ? pathname.substring(firstSegment.length + 1) || "/"
     : pathname;
 
   return (
     <ThemeProvider initialTheme={theme}>
       <html lang={locale} dir={i18n.dir()}>
         <head>
-           {/* Google Analytics */}
+          {/* Google Analytics */}
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${ENV.GOOGLE_TAG_ID}`}
@@ -108,13 +112,17 @@ function App() {
               key={lang}
               rel="alternate"
               hrefLang={lang}
-              href={`${BASE_URL}/${lang}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`}
+              href={`${BASE_URL}/${lang}${
+                pathWithoutLocale === "/" ? "" : pathWithoutLocale
+              }`}
             />
           ))}
           <link
             rel="alternate"
             hrefLang="x-default"
-            href={`${BASE_URL}/${DEFAULT_LOCALE}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`}
+            href={`${BASE_URL}/${DEFAULT_LOCALE}${
+              pathWithoutLocale === "/" ? "" : pathWithoutLocale
+            }`}
           />
 
           <meta property="og:title" content={"Shakeel Haider's Portfolio"} />
@@ -204,21 +212,24 @@ function App() {
             rel="stylesheet"
           />
           {/* Other Languages */}
-          <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap"
+            rel="stylesheet"
+          />
           <Meta />
           <Links />
         </head>
 
         <body>
           <div className="blur-circle circle-1"></div>
-<div className="blur-circle circle-2"></div>
+          <div className="blur-circle circle-2"></div>
           <ThemeToggle />
           <SelectLanguage />
           <Loader />
           <Navbar locale={locale} />
-          <div id="detail">
+          <main id="detail">
               <Outlet />
-          </div>
+          </main>
           <ScrollRestoration />
           <Scripts />
         </body>
@@ -256,11 +267,18 @@ export function ErrorBoundary() {
             changed or is temporarily unavailable.
           </p>
           <p className="output">
-            Please try to <Link className="error-link" to="#" replace onClick={_goBack}>go back</Link> or{" "}
-            <Link className="error-link" to="/" replace>return to the homepage</Link>.
+            Please try to{" "}
+            <Link className="error-link" to="#" replace onClick={_goBack}>
+              go back
+            </Link>{" "}
+            or{" "}
+            <Link className="error-link" to="/" replace>
+              return to the homepage
+            </Link>
+            .
           </p>
           <p className="output">Good luck.</p>
-          <p className="underscore" >&nbsp;</p>
+          <p className="underscore">&nbsp;</p>
         </div>
         <Scripts />
       </body>

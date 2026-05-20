@@ -15,6 +15,7 @@ const HomeIcon = (props: NavIconProps) => {
   return (
     <NavLink
       to={name}
+      aria-label={"Home"}
       className={({ isActive, isPending }) => {
         return `nav-item-container ${
           isActive ? "active" : isPending ? "pending" : ""
