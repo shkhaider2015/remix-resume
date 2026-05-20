@@ -3,11 +3,11 @@ import ServicesIcon from "~/assets/icons/Services";
 import ResumeIcon from "~/assets/icons/Resume";
 import WorkIcon from "~/assets/icons/Work";
 import ContactsIcon from "~/assets/icons/Contacts";
+import BlogIcon from "~/assets/icons/Blog";
 import "./Navbar.css";
 import { NavLink } from "@remix-run/react";
 import { navData } from "~/data";
 import { useState } from "react";
-import { BlogIcon } from "~/assets/icon";
 import { useTranslation } from "react-i18next";
 
 const Navbar = ({ locale="en" }: { locale: string }) => {
