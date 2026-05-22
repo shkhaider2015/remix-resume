@@ -1,5 +1,6 @@
 import { captureRemixErrorBoundaryError, withSentry } from "@sentry/remix";
 import {
+  isRouteErrorResponse,
   json,
   Link,
   Links,
@@ -106,7 +107,7 @@ function App() {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
 
           {/* Canonical and Hreflang Tags */}
-          <link rel="canonical" href={url} />
+          <link rel="canonical" href={`${BASE_URL}${pathname === "/" ? "" : pathname}`} />
           {SUPPORTED_LOCALES.map((lang) => (
             <link
               key={lang}
@@ -244,10 +245,24 @@ export function ErrorBoundary() {
   const error = useRouteError();
   const navigate = useNavigate();
 
+
+  captureRemixErrorBoundaryError(error);
+
   const _goBack = () => {
     navigate(-1);
   };
-  captureRemixErrorBoundaryError(error);
+
+  let status = 500;
+  let message = "The page you are looking for might have been removed, had its name changed or is temporarily unavailable.";
+
+  if (isRouteErrorResponse(error)) {
+    status = error.status;
+    message = error.statusText || message;
+    if (error.status === 404) {
+      message = "The page you are looking for might have been removed, had its name changed or is temporarily unavailable.";
+    }
+  }
+
   return (
     <html>
       <head>
@@ -260,12 +275,9 @@ export function ErrorBoundary() {
         <div className="overlay"></div>
         <div className="terminal">
           <h1>
-            Error <span className="errorcode">404</span>
+            Error <span className="errorcode">{status}</span>
           </h1>
-          <p className="output">
-            The page you are looking for might have been removed, had its name
-            changed or is temporarily unavailable.
-          </p>
+          <p className="output">{message}</p>
           <p className="output">
             Please try to{" "}
             <Link className="error-link" to="#" replace onClick={_goBack}>
@@ -280,7 +292,6 @@ export function ErrorBoundary() {
           <p className="output">Good luck.</p>
           <p className="underscore">&nbsp;</p>
         </div>
-        <Scripts />
       </body>
     </html>
   );

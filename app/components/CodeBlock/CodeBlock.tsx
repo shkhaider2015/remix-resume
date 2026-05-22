@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Prism from "prismjs";
 
 // Load the theme
@@ -18,7 +18,7 @@ const CodeBlock = (props: CodeBlockProps) => {
   }, [code]);
 
   return (
-    <pre className={`language-${language}`} dir="ltr">
+    <pre className={`language-${language}`} dir="ltr" tabIndex={0}>
       <code className={`language-${language}`}>{code}</code>
     </pre>
   );
