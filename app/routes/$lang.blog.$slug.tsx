@@ -32,13 +32,7 @@ export const loader: LoaderFunction = async ({
   const post = blogPosts.find((post) => post.slug === slug);
 
   if (!post) {
-    const errorResponse: ApiResponse<BlogPost> = {
-      status: "error",
-      message: "Post not found",
-      data: null,
-      meta,
-    };
-    return errorResponse;
+    throw new Response("Post not found", { status: 404 });
   }
 
   meta = {

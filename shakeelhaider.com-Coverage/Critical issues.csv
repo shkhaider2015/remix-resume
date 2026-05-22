@@ -1,0 +1,8 @@
+Reason,Source,Validation,Pages
+Page with redirect,Website,Failed,2
+Crawled - currently not indexed,Google systems,Failed,41
+"Duplicate, Google chose different canonical than user",Google systems,Not Started,1
+Discovered - currently not indexed,Google systems,Not Started,1
+Server error (5xx),Website,Started,65
+Duplicate without user-selected canonical,Website,Started,13
+Not found (404),Website,Started,4
