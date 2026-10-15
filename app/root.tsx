@@ -58,6 +58,52 @@ export const loader: LoaderFunction = async ({
   });
 };
 
+// JSON-LD structured data — generated once, injected into every page
+const PERSON_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Shakeel Haider",
+  url: BASE_URL,
+  image: `${BASE_URL}/portfolio-image.png`,
+  jobTitle: "Senior Software Engineer",
+  worksFor: {
+    "@type": "Organization",
+    name: "BCDApps",
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Karachi",
+    addressCountry: "PK",
+  },
+  email: "shkhaider2015@gmail.com",
+  telephone: "+92-346-0027852",
+  sameAs: [
+    "https://www.linkedin.com/in/shakeel-haider-818233176/",
+    "https://github.com/shkhaider2015",
+    "https://stackoverflow.com/users/8307195/shakeel-haider",
+  ],
+  knowsAbout: [
+    "React", "React Native", "NestJS", "TypeScript", "JavaScript",
+    "Python", "Next.js", "Remix", "AWS", "Docker", "MongoDB", "PostgreSQL",
+  ],
+  description: "Full-stack and React Native developer with 5+ years of experience building web and mobile applications. Available for freelance and full-time roles.",
+};
+
+const WEBSITE_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Shakeel Haider Portfolio",
+  url: BASE_URL,
+  author: { "@type": "Person", name: "Shakeel Haider" },
+  description: "Portfolio and blog of Shakeel Haider, a Senior Software Engineer specializing in React, React Native, NestJS, and TypeScript.",
+  inLanguage: "en",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: { "@type": "EntryPoint", urlTemplate: `${BASE_URL}/en/blog?q={search_term_string}` },
+    "query-input": "required name=search_term_string",
+  },
+};
+
 export let handle = {
   i18n: "common",
 };
@@ -106,8 +152,15 @@ function App() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-          {/* Canonical and Hreflang Tags */}
-          <link rel="canonical" href={`${BASE_URL}${pathname === "/" ? "" : pathname}`} />
+          {/* Canonical: always point to the English (default) version of the page.
+              This tells Google the /en/* URL is the canonical source. Localized
+              versions are declared via hreflang, not via individual canonical tags. */}
+          <link
+            rel="canonical"
+            href={`${BASE_URL}/${DEFAULT_LOCALE}${
+              pathWithoutLocale === "/" ? "" : pathWithoutLocale
+            }`}
+          />
           {SUPPORTED_LOCALES.map((lang) => (
             <link
               key={lang}
@@ -126,20 +179,37 @@ function App() {
             }`}
           />
 
-          <meta property="og:title" content={"Shakeel Haider's Portfolio"} />
-          <meta property="og:site_name" content="shakeel haider Portfolio" />
+          {/* JSON-LD Structured Data: Person + WebSite schemas */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }}
+          />
+
+          <meta property="og:title" content={"Shakeel Haider | Full-Stack & React Native Developer"} />
+          <meta property="og:site_name" content="Shakeel Haider Portfolio" />
           <meta property="og:url" content={url} />
           <meta
             property="og:description"
             content="Explore the portfolio of Shakeel Haider, a skilled full-stack developer specializing in React, React Native, NestJS, TypeScript, and Python. Crafting high-performance web and mobile applications with clean code and modern technologies. Let's build something amazing together!"
           />
-          <meta property="og:type" content="Portfolio" />
+          <meta property="og:type" content="website" />
+          <meta property="og:locale" content={`${locale}_PK`} />
+          {SUPPORTED_LOCALES.filter((l) => l !== locale).map((l) => (
+            <meta key={l} property="og:locale:alternate" content={`${l}_PK`} />
+          ))}
           <meta
             property="og:image"
             content={`${BASE_URL}/portfolio-image.png`}
           />
-          <meta name="twitter:card" content="App" />
-          <meta name="twitter:title" content="Shakeel Haider's Portfolio" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content="Shakeel Haider - Full-Stack & React Native Developer" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Shakeel Haider | Full-Stack & React Native Developer" />
           <meta
             name="twitter:description"
             content="Explore the portfolio of Shakeel Haider, a skilled full-stack developer specializing in React, React Native, NestJS, TypeScript, and Python. Crafting high-performance web and mobile applications with clean code and modern technologies. Let's build something amazing together!"
@@ -148,17 +218,35 @@ function App() {
             name="twitter:image"
             content={`${BASE_URL}/portfolio-image.png`}
           />
+          <meta name="twitter:image:alt" content="Shakeel Haider Portfolio" />
           <meta name="twitter:url" content={url} />
-          <meta name="twitter:site" content="Portfolio" />
-          <meta name="twitter:creator" content="Shakeel Haider" />
+          <meta name="twitter:site" content="@shakeelhaider" />
+          <meta name="twitter:creator" content="@shakeelhaider" />
+
+          {/* Indexing directive */}
+          <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+          <meta name="googlebot" content="index, follow" />
 
           <meta name="apple-mobile-web-app-title" content="Shakeel Haider" />
+          <meta name="theme-color" content="#0d0d0d" />
+          <meta name="author" content="Shakeel Haider" />
+          <meta name="geo.region" content="PK-SD" />
+          <meta name="geo.placename" content="Karachi, Pakistan" />
 
           {/* For Bing search engine */}
           <meta
             name="msvalidate.01"
             content="07B20D201CA84FDD3652BA3812A08DDF"
           />
+
+          {/* Preload LCP image for improved Core Web Vitals */}
+          <link
+            rel="preload"
+            as="image"
+            href={`${BASE_URL}/portfolio-image.png`}
+            fetchPriority="high"
+          />
+
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
           <link
