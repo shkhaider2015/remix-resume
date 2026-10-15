@@ -106,8 +106,15 @@ function App() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-          {/* Canonical and Hreflang Tags */}
-          <link rel="canonical" href={`${BASE_URL}${pathname === "/" ? "" : pathname}`} />
+          {/* Canonical: always point to the English (default) version of the page.
+              This tells Google the /en/* URL is the canonical source. Localized
+              versions are declared via hreflang, not via individual canonical tags. */}
+          <link
+            rel="canonical"
+            href={`${BASE_URL}/${DEFAULT_LOCALE}${
+              pathWithoutLocale === "/" ? "" : pathWithoutLocale
+            }`}
+          />
           {SUPPORTED_LOCALES.map((lang) => (
             <link
               key={lang}
@@ -127,18 +134,18 @@ function App() {
           />
 
           <meta property="og:title" content={"Shakeel Haider's Portfolio"} />
-          <meta property="og:site_name" content="shakeel haider Portfolio" />
+          <meta property="og:site_name" content="Shakeel Haider Portfolio" />
           <meta property="og:url" content={url} />
           <meta
             property="og:description"
             content="Explore the portfolio of Shakeel Haider, a skilled full-stack developer specializing in React, React Native, NestJS, TypeScript, and Python. Crafting high-performance web and mobile applications with clean code and modern technologies. Let's build something amazing together!"
           />
-          <meta property="og:type" content="Portfolio" />
+          <meta property="og:type" content="website" />
           <meta
             property="og:image"
             content={`${BASE_URL}/portfolio-image.png`}
           />
-          <meta name="twitter:card" content="App" />
+          <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Shakeel Haider's Portfolio" />
           <meta
             name="twitter:description"
@@ -149,8 +156,8 @@ function App() {
             content={`${BASE_URL}/portfolio-image.png`}
           />
           <meta name="twitter:url" content={url} />
-          <meta name="twitter:site" content="Portfolio" />
-          <meta name="twitter:creator" content="Shakeel Haider" />
+          <meta name="twitter:site" content="@shakeelhaider" />
+          <meta name="twitter:creator" content="@shakeelhaider" />
 
           <meta name="apple-mobile-web-app-title" content="Shakeel Haider" />
 
