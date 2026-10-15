@@ -58,11 +58,13 @@ export default function Posts() {
   return (
     <div className="blog-container">
       <h1 className="screen-title">{pageTitle}</h1>
-      <div className="content">
+      <ul className="content" role="list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
         {data?.map((post, index) => (
-          <PostItem key={index} {...post} />
+          <li key={index}>
+            <PostItem {...post} />
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }
@@ -73,12 +75,18 @@ const PostItem = (prop: BlogPost) => {
   const paragraphs = content.filter((block) => block.type === "paragraph")?.[0];
 
   return (
-    <Link to={slug} className="blog-item">
+    <Link to={slug} className="blog-item" aria-label={`Read article: ${title}`}>
       {image && (
-        <MyImage className="image-con" src={image?.url} alt={image?.alt} />
+        <MyImage
+          className="image-con"
+          src={image?.url}
+          alt={image?.alt ?? title}
+          loading="lazy"
+        />
       )}
       <div className="desc">
-        <h1>{title}</h1>
+        {/* h2 is correct here — the page h1 is the blog section title above */}
+        <h2>{title}</h2>
         {paragraphs && (
           <p>
             {paragraphs.text.length > 160
